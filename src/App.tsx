@@ -1,40 +1,42 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import './App.css';
 
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Index from "./pages/Index";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Portfolio from "./pages/Portfolio";
-import Contact from "./pages/Contact";
-import NotFound from "./pages/NotFound";
+function Screen1() {
+  return <div style={{ padding: 20 }}>Screen 1</div>;
+}
+function Screen2() {
+  return <div style={{ padding: 20 }}>Screen 2</div>;
+}
+function Screen3() {
+  return <div style={{ padding: 20 }}>Screen 3</div>;
+}
+function Screen4() {
+  return <div style={{ padding: 20 }}>Screen 4</div>;
+}
+function Screen5() {
+  return <div style={{ padding: 20 }}>Screen 5</div>;
+}
 
-const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <div className="min-h-screen">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/contact" element={<Contact />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </div>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+function App() {
+  return (
+    <Router>
+      <nav style={{ display: 'flex', gap: 16, padding: 16, background: '#eee' }}>
+        <Link to="/">Screen 1</Link>
+        <Link to="/screen2">Screen 2</Link>
+        <Link to="/screen3">Screen 3</Link>
+        <Link to="/screen4">Screen 4</Link>
+        <Link to="/screen5">Screen 5</Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Screen1 />} />
+        <Route path="/screen2" element={<Screen2 />} />
+        <Route path="/screen3" element={<Screen3 />} />
+        <Route path="/screen4" element={<Screen4 />} />
+        <Route path="/screen5" element={<Screen5 />} />
+      </Routes>
+    </Router>
+  );
+}
 
 export default App;
