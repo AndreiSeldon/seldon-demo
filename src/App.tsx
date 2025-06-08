@@ -20,13 +20,13 @@ function Screen5() {
 }
 
 function App() {
-  const isMobile = useMediaQuery({ maxWidth: 600 });
-  const isTablet = useMediaQuery({ minWidth: 601, maxWidth: 900 });
-  const isLaptop = useMediaQuery({ minWidth: 901, maxWidth: 1200 });
-  const isDesktop = useMediaQuery({ minWidth: 1201 });
+  const mobile = useMediaQuery({ maxWidth: 600 });
+  const tablet = useMediaQuery({ minWidth: 601, maxWidth: 900 });
+  const laptop = useMediaQuery({ minWidth: 901, maxWidth: 1200 });
+  const desktop = useMediaQuery({ minWidth: 1201 });
 
   let nav;
-  if (isMobile) {
+  if (mobile) {
     nav = (
       <nav style={{ background: "#eee", padding: 16 }}>
         <div>Mobile Navigation</div>
@@ -37,7 +37,7 @@ function App() {
         <Link to="/screen5">Screen 5</Link>
       </nav>
     );
-  } else if (isTablet) {
+  } else if (tablet) {
     nav = (
       <nav
         style={{
@@ -56,7 +56,7 @@ function App() {
         <Link to="/screen5">Screen 5</Link>
       </nav>
     );
-  } else if (isLaptop) {
+  } else if (laptop) {
     nav = (
       <nav
         style={{ background: "#cec", padding: 16, display: "flex", gap: 24 }}
@@ -69,7 +69,7 @@ function App() {
         <Link to="/screen5">Screen 5</Link>
       </nav>
     );
-  } else if (isDesktop) {
+  } else if (desktop) {
     nav = (
       <nav
         style={{
