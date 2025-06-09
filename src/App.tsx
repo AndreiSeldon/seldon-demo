@@ -2,9 +2,15 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import "./App.css";
+import { InputIconic } from "./components/seldon/elements/InputIconic.tsx"
 
 function Screen1() {
-  return <div style={{ padding: 20 }}>Screen 1</div>;
+  return (
+    <div>
+      <div style={{ padding: 20 }}>Screen 1</div>
+      <InputIconic />
+    </div>
+  );
 }
 function Screen2() {
   return <div style={{ padding: 20 }}>Screen 2</div>;
