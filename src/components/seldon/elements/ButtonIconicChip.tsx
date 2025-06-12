@@ -3,28 +3,42 @@
  * Licensed under the Terms of Use: https://seldon.app/terms
  * Do not redistribute or sublicense without permission.
  */
-import { HTMLButton } from "../native-react/HTML.Button";
-import { CSSProperties } from "react";
-import { ButtonHTMLAttributes } from "react";
+import { HTMLButton } from "../native-react/HTML.Button"
+import { CSSProperties } from "react"
+import { IconProps, Icon } from "../primitives/Icon"
 
-interface ButtonIconicChipTokens {}
-
-type ButtonIconicChipProps = ButtonHTMLAttributes<HTMLButtonElement> &
-  ButtonIconicChipTokens;
+export type ButtonIconicChipProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+  iconProps?: IconProps
+}
 
 export const ButtonIconicChip = ({
   style,
+  iconProps,
   ...props
 }: ButtonIconicChipProps) => {
-  const styles = style || defaultStyles;
+  const styles = style || defaultStyles
 
   return (
-    <HTMLButton style={styles} {...props}>
-      {props.children}
+    <HTMLButton style={styles} {...{ ...defaultProps.component, ...props }}>
+      <Icon
+        style={{ color: "hsl(0deg 4% 98%)", fontSize: "0.8rem" }}
+        {...{ ...defaultProps.children.iconProps, ...iconProps }}
+      />
     </HTMLButton>
-  );
-};
-
+  )
+}
+type DefaultProps = {
+  component: ButtonIconicChipProps
+  children: ButtonIconicChipProps
+}
+const defaultProps: DefaultProps = {
+  component: {},
+  children: {
+    iconProps: {
+      icon: "__default__",
+    },
+  },
+}
 const defaultStyles: CSSProperties = {
   backgroundColor: "hsl(0deg 4% 8% / 15%)",
   cursor: "pointer",
@@ -54,4 +68,4 @@ const defaultStyles: CSSProperties = {
   paddingLeft: "0.5rem",
   width: "fit-content",
   height: "fit-content",
-};
+}

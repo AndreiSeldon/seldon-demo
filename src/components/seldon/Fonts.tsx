@@ -37,5 +37,5 @@ export function Fonts() {
         rel="stylesheet"
       />
     </>
-  );
+  )
 }

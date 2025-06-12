@@ -3,28 +3,52 @@
  * Licensed under the Terms of Use: https://seldon.app/terms
  * Do not redistribute or sublicense without permission.
  */
-import { CSSProperties } from "react";
-import { HTMLAttributes } from "react";
-import { Description } from "../primitives/Description";
-import { Icon } from "../primitives/Icon";
-import { LabelButton } from "../primitives/LabelButton";
-import { Tagline } from "../primitives/Tagline";
-import { Title } from "../primitives/Title";
-import { Frame } from "../frames/Frame";
-import { Button } from "../elements/Button";
-import { ButtonBar } from "../elements/ButtonBar";
-import { ButtonIconic } from "../elements/ButtonIconic";
-import { TextblockDetails } from "../elements/TextblockDetails";
+import { CSSProperties, HTMLAttributes } from "react"
+import { DescriptionProps } from "../primitives/Description"
+import { IconProps } from "../primitives/Icon"
+import { LabelButtonProps } from "../primitives/LabelButton"
+import { TaglineProps } from "../primitives/Tagline"
+import { TitleProps } from "../primitives/Title"
+import { Frame } from "../frames/Frame"
+import { ButtonProps } from "../elements/Button"
+import { ButtonBarProps, ButtonBar } from "../elements/ButtonBar"
+import { ButtonIconicProps } from "../elements/ButtonIconic"
+import {
+  TextblockDetailsProps,
+  TextblockDetails,
+} from "../elements/TextblockDetails"
 
-interface CardProductTokens {}
+export type CardProductProps = HTMLAttributes<HTMLElement> & {
+  textblockDetailsProps?: TextblockDetailsProps
+  textblockDetailsTaglineProps?: TaglineProps
+  textblockDetailsTitleProps?: TitleProps
+  textblockDetailsDescriptionProps?: DescriptionProps
+  buttonBarProps?: ButtonBarProps
+  buttonBarButtonProps?: ButtonProps
+  buttonBarButtonIconProps?: IconProps
+  buttonBarButtonLabelButtonProps?: LabelButtonProps
+  buttonBarButtonIconicProps?: ButtonIconicProps
+  buttonBarButtonIconicIconProps?: IconProps
+}
 
-type CardProductProps = HTMLAttributes<HTMLElement> & CardProductTokens;
-
-export const CardProduct = ({ style, ...props }: CardProductProps) => {
-  const styles = style || defaultStyles;
+export const CardProduct = ({
+  style,
+  textblockDetailsProps,
+  textblockDetailsTaglineProps,
+  textblockDetailsTitleProps,
+  textblockDetailsDescriptionProps,
+  buttonBarProps,
+  buttonBarButtonProps,
+  buttonBarButtonIconProps,
+  buttonBarButtonLabelButtonProps,
+  buttonBarButtonIconicProps,
+  buttonBarButtonIconicIconProps,
+  ...props
+}: CardProductProps) => {
+  const styles = style || defaultStyles
 
   return (
-    <Frame style={styles} {...props}>
+    <Frame style={styles} {...{ ...defaultProps.component, ...props }}>
       <TextblockDetails
         style={{
           cursor: "pointer",
@@ -41,73 +65,23 @@ export const CardProduct = ({ style, ...props }: CardProductProps) => {
           alignSelf: "stretch",
           height: "fit-content",
         }}
-      >
-        <Tagline
-          style={{
-            color: "hsl(0deg 4% 98%)",
-            textShadow: "0px 1px 0.125rem hsl(0deg 4% 8% / 33%)",
-            alignSelf: "stretch",
-            height: "fit-content",
-            fontFamily: "Inter",
-            fontStyle: "normal",
-            fontSynthesisStyle: "none",
-            fontWeight: 500,
-            fontSize: "0.75rem",
-            lineHeight: 1.25,
-            whiteSpace: "normal",
-            overflow: "hidden",
-            display: "-webkit-box",
-            WebkitLineClamp: 2,
-            lineClamp: 2,
-            WebkitBoxOrient: "vertical",
-            boxOrient: "vertical",
-          }}
-        >
-          Tagline
-        </Tagline>
-        <Title
-          style={{
-            color: "hsl(0deg 4% 98%)",
-            marginBottom: "1rem",
-            textShadow: "0px 1px 0.125rem hsl(0deg 4% 8% / 33%)",
-            alignSelf: "stretch",
-            height: "fit-content",
-            fontFamily: "Inter",
-            fontStyle: "normal",
-            fontSynthesisStyle: "none",
-            fontWeight: 600,
-            fontSize: "2.002rem",
-            lineHeight: 1.25,
-            whiteSpace: "normal",
-            overflow: "hidden",
-            display: "-webkit-box",
-            WebkitLineClamp: 2,
-            lineClamp: 2,
-            WebkitBoxOrient: "vertical",
-            boxOrient: "vertical",
-          }}
-        >
-          Product Card Title
-        </Title>
-        <Description
-          style={{
-            color: "hsl(0deg 4% 98%)",
-            textShadow: "0px 1px 0.125rem hsl(0deg 4% 8% / 33%)",
-            alignSelf: "stretch",
-            height: "fit-content",
-            fontFamily: "Inter",
-            fontStyle: "normal",
-            fontSynthesisStyle: "none",
-            fontWeight: 500,
-            fontSize: "0.75rem",
-            lineHeight: 1.25,
-            whiteSpace: "normal",
-          }}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec
-          purus. Donec euismod in fringilla.
-        </Description>
-      </TextblockDetails>
+        {...{
+          ...defaultProps.children.textblockDetailsProps,
+          ...textblockDetailsProps,
+        }}
+        taglineProps={{
+          ...defaultProps.children.textblockDetailsTaglineProps,
+          ...textblockDetailsTaglineProps,
+        }}
+        titleProps={{
+          ...defaultProps.children.textblockDetailsTitleProps,
+          ...textblockDetailsTitleProps,
+        }}
+        descriptionProps={{
+          ...defaultProps.children.textblockDetailsDescriptionProps,
+          ...textblockDetailsDescriptionProps,
+        }}
+      ></TextblockDetails>
       <ButtonBar
         style={{
           flexWrap: "wrap",
@@ -121,104 +95,63 @@ export const CardProduct = ({ style, ...props }: CardProductProps) => {
           width: "fit-content",
           height: "fit-content",
         }}
-      >
-        <Button
-          style={{
-            backgroundColor: "hsl(0deg 0% 15%)",
-            cursor: "pointer",
-            borderTopWidth: "0.069rem",
-            borderTopStyle: "solid",
-            borderTopColor: "hsl(0deg 0% 15%)",
-            borderRightWidth: "0.069rem",
-            borderRightStyle: "solid",
-            borderRightColor: "hsl(0deg 0% 15%)",
-            borderBottomWidth: "0.069rem",
-            borderBottomStyle: "solid",
-            borderBottomColor: "hsl(0deg 0% 15%)",
-            borderLeftWidth: "0.069rem",
-            borderLeftStyle: "solid",
-            borderLeftColor: "hsl(0deg 0% 15%)",
-            borderTopRightRadius: "99999px",
-            borderBottomRightRadius: "99999px",
-            borderBottomLeftRadius: "99999px",
-            borderTopLeftRadius: "99999px",
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "0.5rem",
-            paddingTop: "0.5rem",
-            paddingRight: "0.875rem",
-            paddingBottom: "0.5rem",
-            paddingLeft: "0.75rem",
-            width: "fit-content",
-            height: "fit-content",
-          }}
-        >
-          <Icon
-            style={{ color: "hsl(0deg 4% 98%)", fontSize: "0.8rem" }}
-            icon="__default__"
-          />
-          <LabelButton
-            style={{
-              color: "hsl(0deg 4% 98%)",
-              fontFamily: "Inter",
-              fontStyle: "normal",
-              fontSynthesisStyle: "none",
-              fontWeight: 500,
-              fontSize: "0.8rem",
-              lineHeight: 1.15,
-              letterSpacing: "0.1px",
-              whiteSpace: "nowrap",
-              textOverflow: "ellipsis",
-              overflow: "hidden",
-            }}
-          >
-            Label
-          </LabelButton>
-        </Button>
-        <ButtonIconic
-          style={{
-            backgroundColor: "hsl(0deg 0% 15%)",
-            cursor: "pointer",
-            borderTopWidth: "0.069rem",
-            borderTopStyle: "solid",
-            borderTopColor: "hsl(0deg 0% 15%)",
-            borderRightWidth: "0.069rem",
-            borderRightStyle: "solid",
-            borderRightColor: "hsl(0deg 0% 15%)",
-            borderBottomWidth: "0.069rem",
-            borderBottomStyle: "solid",
-            borderBottomColor: "hsl(0deg 0% 15%)",
-            borderLeftWidth: "0.069rem",
-            borderLeftStyle: "solid",
-            borderLeftColor: "hsl(0deg 0% 15%)",
-            borderTopRightRadius: "99999px",
-            borderBottomRightRadius: "99999px",
-            borderBottomLeftRadius: "99999px",
-            borderTopLeftRadius: "99999px",
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "center",
-            paddingTop: "0.5rem",
-            paddingRight: "0.5rem",
-            paddingBottom: "0.5rem",
-            paddingLeft: "0.5rem",
-            width: "fit-content",
-            height: "fit-content",
-          }}
-        >
-          <Icon
-            style={{ color: "hsl(0deg 4% 98%)", fontSize: "0.8rem" }}
-            icon="__default__"
-          />
-        </ButtonIconic>
-      </ButtonBar>
+        {...{ ...defaultProps.children.buttonBarProps, ...buttonBarProps }}
+        buttonProps={{
+          ...defaultProps.children.buttonBarButtonProps,
+          ...buttonBarButtonProps,
+        }}
+        buttonIconProps={{
+          ...defaultProps.children.buttonBarButtonIconProps,
+          ...buttonBarButtonIconProps,
+        }}
+        buttonLabelButtonProps={{
+          ...defaultProps.children.buttonBarButtonLabelButtonProps,
+          ...buttonBarButtonLabelButtonProps,
+        }}
+        buttonIconicProps={{
+          ...defaultProps.children.buttonBarButtonIconicProps,
+          ...buttonBarButtonIconicProps,
+        }}
+        buttonIconicIconProps={{
+          ...defaultProps.children.buttonBarButtonIconicIconProps,
+          ...buttonBarButtonIconicIconProps,
+        }}
+      ></ButtonBar>
     </Frame>
-  );
-};
-
+  )
+}
+type DefaultProps = {
+  component: CardProductProps
+  children: CardProductProps
+}
+const defaultProps: DefaultProps = {
+  component: {},
+  children: {
+    textblockDetailsProps: {},
+    textblockDetailsTaglineProps: {
+      children: "Tagline",
+    },
+    textblockDetailsTitleProps: {
+      children: "Product Card Title",
+    },
+    textblockDetailsDescriptionProps: {
+      children:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus. Donec euismod in fringilla.",
+    },
+    buttonBarProps: {},
+    buttonBarButtonProps: {},
+    buttonBarButtonIconProps: {
+      icon: "__default__",
+    },
+    buttonBarButtonLabelButtonProps: {
+      children: "Label",
+    },
+    buttonBarButtonIconicProps: {},
+    buttonBarButtonIconicIconProps: {
+      icon: "__default__",
+    },
+  },
+}
 const defaultStyles: CSSProperties = {
   backgroundColor: "hsl(0deg 4% 98%)",
   backgroundImage:
@@ -239,4 +172,4 @@ const defaultStyles: CSSProperties = {
   boxShadow: "0px 4px 0.375rem 0.125rem hsl(0deg 4% 8% / 15%)",
   alignSelf: "stretch",
   height: "fit-content",
-};
+}
