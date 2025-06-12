@@ -3,40 +3,46 @@
  * Licensed under the Terms of Use: https://seldon.app/terms
  * Do not redistribute or sublicense without permission.
  */
-import { HTMLLabel } from "../native-react/HTML.Label";
-import { HTMLSpan } from "../native-react/HTML.Span";
-import { CSSProperties } from "react";
-import { HTMLAttributes } from "react";
+import { HTMLLabel } from "../native-react/HTML.Label"
+import { HTMLSpan } from "../native-react/HTML.Span"
+import { CSSProperties, HTMLAttributes } from "react"
 
-interface LabelButtonTokens {
-  htmlElement?: "span" | "label";
+export type LabelButtonProps = HTMLAttributes<HTMLSpanElement> & {
+  htmlElement?: "span" | "label"
 }
 
-type LabelButtonProps = HTMLAttributes<HTMLSpanElement> & LabelButtonTokens;
-
 export const LabelButton = ({
-  htmlElement,
   style,
+  htmlElement,
   ...props
 }: LabelButtonProps) => {
-  const styles = style || defaultStyles;
+  const styles = style || defaultStyles
 
   switch (htmlElement) {
     case "span":
       return (
-        <HTMLSpan style={styles} {...props}>
+        <HTMLSpan style={styles} {...{ ...defaultProps.component, ...props }}>
           {props.children}
         </HTMLSpan>
-      );
+      )
     default:
       return (
         <HTMLLabel style={styles} {...props}>
           {props.children}
         </HTMLLabel>
-      );
+      )
   }
-};
-
+}
+type DefaultProps = {
+  component: LabelButtonProps
+  children: LabelButtonProps
+}
+const defaultProps: DefaultProps = {
+  component: {
+    children: "Label",
+  },
+  children: {},
+}
 const defaultStyles: CSSProperties = {
   color: "hsl(0deg 4% 8%)",
   fontFamily: "Inter",
@@ -49,4 +55,4 @@ const defaultStyles: CSSProperties = {
   whiteSpace: "nowrap",
   textOverflow: "ellipsis",
   overflow: "hidden",
-};
+}
