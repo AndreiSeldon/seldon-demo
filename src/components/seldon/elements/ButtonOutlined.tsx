@@ -3,25 +3,64 @@
  * Licensed under the Terms of Use: https://seldon.app/terms
  * Do not redistribute or sublicense without permission.
  */
-import { HTMLButton } from "../native-react/HTML.Button";
-import { CSSProperties } from "react";
-import { ButtonHTMLAttributes } from "react";
+import { HTMLButton } from "../native-react/HTML.Button"
+import { CSSProperties } from "react"
+import { IconProps, Icon } from "../primitives/Icon"
+import { LabelButtonProps, LabelButton } from "../primitives/LabelButton"
 
-interface ButtonOutlinedTokens {}
+export type ButtonOutlinedProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+  iconProps?: IconProps
+  labelButtonProps?: LabelButtonProps
+}
 
-type ButtonOutlinedProps = ButtonHTMLAttributes<HTMLButtonElement> &
-  ButtonOutlinedTokens;
-
-export const ButtonOutlined = ({ style, ...props }: ButtonOutlinedProps) => {
-  const styles = style || defaultStyles;
+export const ButtonOutlined = ({
+  style,
+  iconProps,
+  labelButtonProps,
+  ...props
+}: ButtonOutlinedProps) => {
+  const styles = style || defaultStyles
 
   return (
-    <HTMLButton style={styles} {...props}>
-      {props.children}
+    <HTMLButton style={styles} {...{ ...defaultProps.component, ...props }}>
+      <Icon
+        style={{ color: "hsl(0deg 4% 98%)", fontSize: "0.8rem" }}
+        {...{ ...defaultProps.children.iconProps, ...iconProps }}
+      />
+      <LabelButton
+        style={{
+          color: "hsl(0deg 4% 98%)",
+          fontFamily: "Inter",
+          fontStyle: "normal",
+          fontSynthesisStyle: "none",
+          fontWeight: 500,
+          fontSize: "0.8rem",
+          lineHeight: 1.15,
+          letterSpacing: "0.1px",
+          whiteSpace: "nowrap",
+          textOverflow: "ellipsis",
+          overflow: "hidden",
+        }}
+        {...{ ...defaultProps.children.labelButtonProps, ...labelButtonProps }}
+      />
     </HTMLButton>
-  );
-};
-
+  )
+}
+type DefaultProps = {
+  component: ButtonOutlinedProps
+  children: ButtonOutlinedProps
+}
+const defaultProps: DefaultProps = {
+  component: {},
+  children: {
+    iconProps: {
+      icon: "__default__",
+    },
+    labelButtonProps: {
+      children: "Label",
+    },
+  },
+}
 const defaultStyles: CSSProperties = {
   backgroundColor: "hsl(0deg 4% 98% / 15%)",
   cursor: "pointer",
@@ -52,4 +91,4 @@ const defaultStyles: CSSProperties = {
   paddingLeft: "0.75rem",
   width: "fit-content",
   height: "fit-content",
-};
+}
