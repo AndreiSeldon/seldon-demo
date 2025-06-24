@@ -13,70 +13,64 @@ import { HTMLHeading6 } from "../native-react/HTML.Heading6"
 import { CSSProperties, HTMLAttributes } from "react"
 
 export type TitleProps = HTMLAttributes<HTMLHeadingElement> & {
+  children?: string
   htmlElement?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
 }
 
-export const Title = ({ style, htmlElement, ...props }: TitleProps) => {
-  const styles = style || defaultStyles
+export const Title = ({
+  style,
+  children = "Title",
+  htmlElement = "h4",
+  ...props
+}: TitleProps) => {
+  const styles = { ...defaultStyles, ...style }
 
   switch (htmlElement) {
     case "h1":
       return (
-        <HTMLHeading1
-          style={styles}
-          {...{ ...defaultProps.component, ...props }}
-        >
-          {props.children}
+        <HTMLHeading1 style={styles} {...props}>
+          {children}
         </HTMLHeading1>
       )
     case "h2":
       return (
         <HTMLHeading2 style={styles} {...props}>
-          {props.children}
+          {children}
         </HTMLHeading2>
       )
     case "h3":
       return (
         <HTMLHeading3 style={styles} {...props}>
-          {props.children}
+          {children}
         </HTMLHeading3>
       )
     case "h4":
       return (
         <HTMLHeading4 style={styles} {...props}>
-          {props.children}
+          {children}
         </HTMLHeading4>
       )
     case "h5":
       return (
         <HTMLHeading5 style={styles} {...props}>
-          {props.children}
+          {children}
         </HTMLHeading5>
       )
     case "h6":
       return (
         <HTMLHeading6 style={styles} {...props}>
-          {props.children}
+          {children}
         </HTMLHeading6>
       )
     default:
       return (
         <HTMLDiv style={styles} {...props}>
-          {props.children}
+          {children}
         </HTMLDiv>
       )
   }
 }
-type DefaultProps = {
-  component: TitleProps
-  children: TitleProps
-}
-const defaultProps: DefaultProps = {
-  component: {
-    children: "Title",
-  },
-  children: {},
-}
+const defaultProps: TitleProps = {}
 const defaultStyles: CSSProperties = {
   color: "hsl(0deg 4% 8%)",
   alignSelf: "stretch",
