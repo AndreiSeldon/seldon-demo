@@ -79,7 +79,7 @@ const defaultProps: AvatarFriendlyProps = {
       children: "Andrei Herasimchuk",
       htmlElement: "h4",
       style: {
-        color: "hsl(0deg 4% 8%)",
+        color: "#ff0000",
         alignSelf: "stretch",
         height: "fit-content",
         fontFamily: "Dosis",
