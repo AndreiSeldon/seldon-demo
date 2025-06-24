@@ -12,17 +12,17 @@ import { HTMLHeading5 } from "../native-react/HTML.Heading5"
 import { HTMLHeading6 } from "../native-react/HTML.Heading6"
 import { CSSProperties, HTMLAttributes } from "react"
 
-export type TitleProps = HTMLAttributes<HTMLHeadingElement> & {
+export type SubtitleProps = HTMLAttributes<HTMLHeadingElement> & {
   children?: string
   htmlElement?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
 }
 
-export const Title = ({
+export const Subtitle = ({
   style,
-  children = "Title",
-  htmlElement = "h4",
+  children = "Subtitle",
+  htmlElement = "h5",
   ...props
-}: TitleProps) => {
+}: SubtitleProps) => {
   const styles = { ...defaultStyles, ...style }
 
   switch (htmlElement) {
@@ -70,7 +70,7 @@ export const Title = ({
       )
   }
 }
-const defaultProps: TitleProps = {}
+const defaultProps: SubtitleProps = {}
 const defaultStyles: CSSProperties = {
   color: "hsl(0deg 4% 8%)",
   alignSelf: "stretch",
@@ -78,8 +78,8 @@ const defaultStyles: CSSProperties = {
   fontFamily: "Inter",
   fontStyle: "normal",
   fontSynthesisStyle: "none",
-  fontWeight: 500,
-  fontSize: "1rem",
+  fontWeight: 400,
+  fontSize: "0.875rem",
   lineHeight: 1.25,
   whiteSpace: "normal",
   overflow: "hidden",
