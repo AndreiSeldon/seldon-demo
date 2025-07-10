@@ -54,7 +54,7 @@ export function ListItemStandard({
 
 const seldon: ListItemStandardProps = {
   iconProps: {
-    icon: "material-arrowForwardIos",
+    icon: "material-arrowCircleRight",
     style: {
       color: "hsl(0deg 4% 98%)",
       fontSize: "0.75rem",
@@ -62,10 +62,6 @@ const seldon: ListItemStandardProps = {
   },
   frameProps: {
     style: {
-      borderTopColor: "hsl(0deg 0% 15%)",
-      borderRightColor: "hsl(0deg 0% 15%)",
-      borderBottomColor: "hsl(0deg 0% 15%)",
-      borderLeftColor: "hsl(0deg 0% 15%)",
       flexWrap: "nowrap",
       display: "flex",
       flexDirection: "row",
@@ -75,8 +71,6 @@ const seldon: ListItemStandardProps = {
       paddingLeft: "0.5rem",
       alignSelf: "stretch",
       flex: "1 0 0",
-      borderWidth: "var(--hairline)",
-      borderStyle: "solid",
     },
   },
   frameIconProps: {

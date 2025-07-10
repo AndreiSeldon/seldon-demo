@@ -107,7 +107,7 @@ const seldon: ListStandardProps = {
     },
   },
   listItemStandardIconProps: {
-    icon: "material-arrowForwardIos",
+    icon: "material-arrowCircleRight",
     style: {
       color: "hsl(0deg 4% 98%)",
       fontSize: "0.75rem",
@@ -115,10 +115,6 @@ const seldon: ListStandardProps = {
   },
   listItemStandardFrameProps: {
     style: {
-      borderTopColor: "hsl(0deg 0% 15%)",
-      borderRightColor: "hsl(0deg 0% 15%)",
-      borderBottomColor: "hsl(0deg 0% 15%)",
-      borderLeftColor: "hsl(0deg 0% 15%)",
       flexWrap: "nowrap",
       display: "flex",
       flexDirection: "row",
@@ -128,8 +124,6 @@ const seldon: ListStandardProps = {
       paddingLeft: "0.5rem",
       alignSelf: "stretch",
       flex: "1 0 0",
-      borderWidth: "var(--hairline)",
-      borderStyle: "solid",
     },
   },
   listItemStandardFrameIconProps: {
@@ -214,7 +208,7 @@ const seldon: ListStandardProps = {
     },
   },
   listItemStandard1IconProps: {
-    icon: "material-arrowForwardIos",
+    icon: "material-arrowCircleRight",
     style: {
       color: "hsl(0deg 4% 98%)",
       fontSize: "0.75rem",
@@ -222,10 +216,6 @@ const seldon: ListStandardProps = {
   },
   listItemStandard1FrameProps: {
     style: {
-      borderTopColor: "hsl(0deg 0% 15%)",
-      borderRightColor: "hsl(0deg 0% 15%)",
-      borderBottomColor: "hsl(0deg 0% 15%)",
-      borderLeftColor: "hsl(0deg 0% 15%)",
       flexWrap: "nowrap",
       display: "flex",
       flexDirection: "row",
@@ -235,8 +225,6 @@ const seldon: ListStandardProps = {
       paddingLeft: "0.5rem",
       alignSelf: "stretch",
       flex: "1 0 0",
-      borderWidth: "var(--hairline)",
-      borderStyle: "solid",
     },
   },
   listItemStandard1FrameIconProps: {
@@ -321,7 +309,7 @@ const seldon: ListStandardProps = {
     },
   },
   listItemStandard2IconProps: {
-    icon: "material-arrowForwardIos",
+    icon: "material-arrowCircleRight",
     style: {
       color: "hsl(0deg 4% 98%)",
       fontSize: "0.75rem",
@@ -329,10 +317,6 @@ const seldon: ListStandardProps = {
   },
   listItemStandard2FrameProps: {
     style: {
-      borderTopColor: "hsl(0deg 0% 15%)",
-      borderRightColor: "hsl(0deg 0% 15%)",
-      borderBottomColor: "hsl(0deg 0% 15%)",
-      borderLeftColor: "hsl(0deg 0% 15%)",
       flexWrap: "nowrap",
       display: "flex",
       flexDirection: "row",
@@ -342,8 +326,6 @@ const seldon: ListStandardProps = {
       paddingLeft: "0.5rem",
       alignSelf: "stretch",
       flex: "1 0 0",
-      borderWidth: "var(--hairline)",
-      borderStyle: "solid",
     },
   },
   listItemStandard2FrameIconProps: {

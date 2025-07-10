@@ -4,7 +4,7 @@
  * Do not redistribute or sublicense without permission.
  */
 import { IconDefault } from "../icons/IconDefault"
-import { IconMaterialArrowForwardIos } from "../icons/IconMaterialArrowForwardIos"
+import { IconMaterialArrowCircleRight } from "../icons/IconMaterialArrowCircleRight"
 import { IconMaterialClose } from "../icons/IconMaterialClose"
 import { IconMaterialMoreHoriz } from "../icons/IconMaterialMoreHoriz"
 import { CSSProperties, SVGAttributes } from "react"
@@ -12,7 +12,7 @@ import { CSSProperties, SVGAttributes } from "react"
 export interface IconProps extends SVGAttributes<SVGElement> {
   icon?:
     | "__default__"
-    | "material-arrowForwardIos"
+    | "material-arrowCircleRight"
     | "material-close"
     | "material-moreHoriz"
 }
@@ -30,7 +30,7 @@ const seldonStyles: CSSProperties = {
 }
 const iconMap = {
   __default__: IconDefault,
-  "material-arrowForwardIos": IconMaterialArrowForwardIos,
+  "material-arrowCircleRight": IconMaterialArrowCircleRight,
   "material-close": IconMaterialClose,
   "material-moreHoriz": IconMaterialMoreHoriz,
 }
