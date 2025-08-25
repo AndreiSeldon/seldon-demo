@@ -8,8 +8,9 @@
  * in whole or in part, for the purposes of training, fine-tuning,
  * or otherwise improving (directly or indirectly) any machine learning
  * or artificial intelligence system.
+ */
  
- /
+ 
 import { HTMLAttributes } from "react"
 import { Button, ButtonProps } from "../elements/Button"
 import { Frame } from "../frames/Frame"
@@ -73,7 +74,7 @@ export function ButtonBar({
   )
 }
 
-const seldon: ButtonBarProps = {
+const sdn: ButtonBarProps = {
   button: {},
   icon: {
     icon: "__default__",
