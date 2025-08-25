@@ -173,7 +173,7 @@ export function CardProductInline({
 const sdn: CardProductInlineProps = {
   button: {},
   icon: {
-    icon: "__default__",
+    icon: "material-360",
   },
   label: {
     children: "Andrei!",
@@ -190,7 +190,7 @@ const sdn: CardProductInlineProps = {
   },
   button2: {},
   icon2: {
-    icon: "__default__",
+    icon: "material-apps",
   },
   label2: {
     children: "Button 1",
@@ -198,7 +198,7 @@ const sdn: CardProductInlineProps = {
   },
   button3: {},
   icon3: {
-    icon: "__default__",
+    icon: "material-addLocation",
   },
   label3: {
     children: "Button 2",
@@ -211,7 +211,7 @@ const sdn: CardProductInlineProps = {
   buttonBar: {},
   button4: {},
   icon4: {
-    icon: "__default__",
+    icon: "material-assistantNavigation",
   },
   label4: {
     children: "Button W",
@@ -219,7 +219,7 @@ const sdn: CardProductInlineProps = {
   },
   button5: {},
   icon5: {
-    icon: "__default__",
+    icon: "material-batteryHoriz050",
   },
   label5: {
     children: "Button X",
@@ -227,7 +227,7 @@ const sdn: CardProductInlineProps = {
   },
   button6: {},
   icon6: {
-    icon: "__default__",
+    icon: "material-accountCircle",
   },
   label6: {
     children: "Button Y",
@@ -235,7 +235,7 @@ const sdn: CardProductInlineProps = {
   },
   button7: {},
   icon7: {
-    icon: "__default__",
+    icon: "material-arrowOutward",
   },
   label7: {
     children: "Button Z",
