@@ -181,11 +181,11 @@ const sdn: CardProductInlineProps = {
   },
   textblockDetails: {},
   tagline: {
-    children: "Tagline",
+    children: "Inline Tagline Text",
     htmlElement: "p",
   },
   titleProps: {
-    children: "Product Card Title",
+    children: "Inline Product Card Title",
     htmlElement: "h4",
   },
   button2: {},
@@ -205,8 +205,7 @@ const sdn: CardProductInlineProps = {
     htmlElement: "label",
   },
   description: {
-    children:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus.",
+    children: "Random content for inline rendering",
     htmlElement: "p",
   },
   buttonBar: {},

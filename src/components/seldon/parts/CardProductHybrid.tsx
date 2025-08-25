@@ -123,11 +123,11 @@ const sdn: CardProductHybridProps = {
   },
   textblockDetails: {},
   tagline: {
-    children: "Tagline",
+    children: "Hybrid Tagline",
     htmlElement: "p",
   },
   title2Props: {
-    children: "Product Card Title",
+    children: "Hybrid Product Card Title",
     htmlElement: "h4",
   },
   buttonBar: {},
