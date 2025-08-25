@@ -19,7 +19,6 @@ import { HTMLSpan } from "../native-react/HTML.Span"
 export interface DescriptionProps
   extends HTMLAttributes<HTMLParagraphElement | HTMLSpanElement> {
   className?: string
-
   children?: string
   htmlElement?: "p" | "span"
 }
