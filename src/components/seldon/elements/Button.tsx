@@ -19,7 +19,6 @@ import { Label, LabelProps } from "../primitives/Label"
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string
-
   icon?: IconProps
   label?: LabelProps
 }

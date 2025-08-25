@@ -25,62 +25,82 @@ import { Title, TitleProps } from "../primitives/Title"
 
 export interface CardProductInlineProps extends HTMLAttributes<HTMLElement> {
   className?: string
-
-  button?: ButtonProps
-  icon?: IconProps
-  label?: LabelProps
   textblockDetails?: TextblockDetailsProps
   tagline?: TaglineProps
   titleProps?: TitleProps
-  button2?: ButtonProps
-  icon2?: IconProps
-  label2?: LabelProps
-  button3?: ButtonProps
-  icon3?: IconProps
-  label3?: LabelProps
   description?: DescriptionProps
   buttonBar?: ButtonBarProps
+
+  button?: ButtonProps
+
+  button2?: ButtonProps
+
+  button3?: ButtonProps
+
   button4?: ButtonProps
-  icon4?: IconProps
-  label4?: LabelProps
+
   button5?: ButtonProps
-  icon5?: IconProps
-  label5?: LabelProps
+
   button6?: ButtonProps
-  icon6?: IconProps
-  label6?: LabelProps
+
   button7?: ButtonProps
+
+  icon?: IconProps
+
+  icon2?: IconProps
+
+  icon3?: IconProps
+
+  icon4?: IconProps
+
+  icon5?: IconProps
+
+  icon6?: IconProps
+
   icon7?: IconProps
+
+  label?: LabelProps
+
+  label2?: LabelProps
+
+  label3?: LabelProps
+
+  label4?: LabelProps
+
+  label5?: LabelProps
+
+  label6?: LabelProps
+
   label7?: LabelProps
 }
 
 export function CardProductInline({
   className = "",
-  button,
-  icon,
-  label,
   textblockDetails,
   tagline,
   titleProps,
-  button2,
-  icon2,
-  label2,
-  button3,
-  icon3,
-  label3,
   description,
   buttonBar,
+  button,
+  button2,
+  button3,
   button4,
-  icon4,
-  label4,
   button5,
-  icon5,
-  label5,
   button6,
-  icon6,
-  label6,
   button7,
+  icon,
+  icon2,
+  icon3,
+  icon4,
+  icon5,
+  icon6,
   icon7,
+  label,
+  label2,
+  label3,
+  label4,
+  label5,
+  label6,
   label7,
   ...props
 }: CardProductInlineProps) {

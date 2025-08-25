@@ -24,6 +24,7 @@ import { IconMaterial_360 } from "../icons/IconMaterial_360"
 
 export interface IconProps extends SVGAttributes<SVGElement> {
   className?: string
+
   icon?:
     | "__default__"
     | "material-addComment"
