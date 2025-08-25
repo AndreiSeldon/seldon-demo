@@ -1,8 +1,11 @@
+
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import "./App.css";
+import "./components/seldon/styles.css";
 import { CardProductInline } from "./components/seldon/parts/CardProductInline";
+import { Fonts } from "./components/seldon/Fonts";
 
 function Screen1() {
   return (
@@ -117,6 +120,7 @@ function App() {
 
   return (
     <Router>
+      <Fonts />
       {nav}
       <Routes>
         <Route path="/" element={<Screen1 />} />
