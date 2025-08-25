@@ -51,7 +51,7 @@ export function Avatar({
       <TextblockAvatar
         {...{ ...sdn.textblockAvatar, ...textblockAvatar }}
         className={
-          "sdn-textblockDetails-anDbbcMd sdn-textblockDetails" +
+          "sdn-textblockAvatar-6qke1loE sdn-textblockAvatar" +
           (textblockAvatar?.className ? " " + textblockAvatar.className : "")
         }
         titleProps={{ ...sdn.titleProps, ...titleProps }}

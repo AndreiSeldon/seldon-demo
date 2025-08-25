@@ -68,7 +68,7 @@ export function CardProduct({
       <TextblockDetails
         {...{ ...sdn.textblockDetails, ...textblockDetails }}
         className={
-          "sdn-textblockDetails-Mn7No9dM sdn-textblockDetails" +
+          "sdn-textblockDetails-Mn7No9dM sdn-textblockAvatar" +
           (textblockDetails?.className ? " " + textblockDetails.className : "")
         }
         tagline={{ ...sdn.tagline, ...tagline }}

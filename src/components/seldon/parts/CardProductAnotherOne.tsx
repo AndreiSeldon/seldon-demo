@@ -89,7 +89,7 @@ export function CardProductAnotherOne({
       <TextblockDetails
         {...{ ...sdn.textblockDetails, ...textblockDetails }}
         className={
-          "sdn-textblockDetails-anDbbcMd sdn-textblockDetails-Mn7No9dM sdn-textblockDetails" +
+          "sdn-textblockAvatar-6qke1loE sdn-textblockDetails-Mn7No9dM sdn-textblockAvatar" +
           (textblockDetails?.className ? " " + textblockDetails.className : "")
         }
         tagline={{ ...sdn.tagline, ...tagline }}
@@ -98,7 +98,7 @@ export function CardProductAnotherOne({
       <ButtonBar
         {...{ ...sdn.buttonBar, ...buttonBar }}
         className={
-          "sdn-buttonBar-TKZw657P sdn-buttonBar-bxSi11kk sdn-buttonBar" +
+          "sdn-buttonBar-Pxqn6L7O sdn-buttonBar-bxSi11kk sdn-buttonBar" +
           (buttonBar?.className ? " " + buttonBar.className : "")
         }
         button={{ ...sdn.button, ...button }}

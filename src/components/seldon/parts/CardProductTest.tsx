@@ -93,14 +93,14 @@ export function CardProductTest({
         <Button
           {...{ ...sdn.button, ...button }}
           className={
-            "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button" +
+            "sdn-button-1wSr8QN5 sdn-button-1wSr8QN5 sdn-button-1wSr8QN5 sdn-button" +
             (button?.className ? " " + button.className : "")
           }
         />
       )}
       <div
         className={
-          "sdn-textblockDetails-anDbbcMd sdn-textblockDetails-Mn7No9dM sdn-textblockDetails" +
+          "sdn-textblockAvatar-6qke1loE sdn-textblockDetails-Mn7No9dM sdn-textblockAvatar" +
           (textblockDetails?.className ? " " + textblockDetails.className : "")
         }
       >
@@ -121,7 +121,7 @@ export function CardProductTest({
           <Button
             {...{ ...sdn.button2, ...button2 }}
             className={
-              "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button" +
+              "sdn-button-1wSr8QN5 sdn-button-1wSr8QN5 sdn-button-1wSr8QN5 sdn-button" +
               (button2?.className ? " " + button2.className : "")
             }
           />
@@ -130,7 +130,7 @@ export function CardProductTest({
           <Button
             {...{ ...sdn.button3, ...button3 }}
             className={
-              "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button" +
+              "sdn-button-1wSr8QN5 sdn-button-1wSr8QN5 sdn-button-1wSr8QN5 sdn-button" +
               (button3?.className ? " " + button3.className : "")
             }
           />
@@ -145,28 +145,28 @@ export function CardProductTest({
       </div>
       <div
         className={
-          "sdn-buttonBar-TKZw657P sdn-buttonBar-bxSi11kk sdn-buttonBar" +
+          "sdn-buttonBar-Pxqn6L7O sdn-buttonBar-bxSi11kk sdn-buttonBar" +
           (buttonBar?.className ? " " + buttonBar.className : "")
         }
       >
         <Button
           {...{ ...sdn.button4, ...button4 }}
           className={
-            "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button" +
+            "sdn-button-1wSr8QN5 sdn-button-1wSr8QN5 sdn-button-1wSr8QN5 sdn-button" +
             (button4?.className ? " " + button4.className : "")
           }
         />
         <Button
           {...{ ...sdn.button5, ...button5 }}
           className={
-            "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button" +
+            "sdn-button-1wSr8QN5 sdn-button-1wSr8QN5 sdn-button-1wSr8QN5 sdn-button" +
             (button5?.className ? " " + button5.className : "")
           }
         />
         <Button
           {...{ ...sdn.button6, ...button6 }}
           className={
-            "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button" +
+            "sdn-button-1wSr8QN5 sdn-button-1wSr8QN5 sdn-button-1wSr8QN5 sdn-button" +
             (button6?.className ? " " + button6.className : "")
           }
         />
@@ -174,7 +174,7 @@ export function CardProductTest({
           <Button
             {...{ ...sdn.button7, ...button7 }}
             className={
-              "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button" +
+              "sdn-button-1wSr8QN5 sdn-button-1wSr8QN5 sdn-button-1wSr8QN5 sdn-button" +
               (button7?.className ? " " + button7.className : "")
             }
           />

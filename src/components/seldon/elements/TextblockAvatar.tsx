@@ -31,7 +31,7 @@ export function TextblockAvatar({
   ...props
 }: TextblockAvatarProps) {
   return (
-    <Frame className={"sdn-textblockDetails " + className} {...props}>
+    <Frame className={"sdn-textblockAvatar " + className} {...props}>
       <Title
         {...{ ...sdn.titleProps, ...titleProps }}
         className={
