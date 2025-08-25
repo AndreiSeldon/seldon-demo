@@ -34,22 +34,7 @@ export function TextblockDetails({
   ...props
 }: TextblockDetailsProps) {
   return (
-    <Frame className={"sdn-textblockDetails " + className} {...props}>
-      <Tagline
-        {...{ ...sdn.tagline, ...tagline }}
-        className={" sdn-tagline " + (tagline?.className ?? "")}
-      />
-      <Title
-        {...{ ...sdn.titleProps, ...titleProps }}
-        className={
-          "sdn-title-hSn5CIeE sdn-title " + (titleProps?.className ?? "")
-        }
-      />
-      <Description
-        {...{ ...sdn.description, ...description }}
-        className={" sdn-description " + (description?.className ?? "")}
-      />
-    </Frame>
+    <Frame className={"sdn-textblockDetails " + className} {...props}></Frame>
   )
 }
 
