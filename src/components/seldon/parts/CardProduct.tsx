@@ -95,8 +95,8 @@ export function CardProduct({
           "sdn-button-4H5eOOLe sdn-button-4H5eOOLe sdn-button " +
           (button?.className ?? "")
         }
-        iconProps={{ ...sdn.icon, ...icon }}
-        labelProps={{ ...sdn.label, ...label }}
+        icon={{ ...sdn.icon, ...icon }}
+        label={{ ...sdn.label, ...label }}
       />
       <TextblockDetails
         {...{ ...sdn.textblockDetails, ...textblockDetails }}
@@ -104,21 +104,21 @@ export function CardProduct({
           "sdn-textblockDetails-pWavDCZm sdn-textblockDetails " +
           (textblockDetails?.className ?? "")
         }
-        taglineProps={{ ...sdn.tagline, ...tagline }}
+        tagline={{ ...sdn.tagline, ...tagline }}
         titleProps={{ ...sdn.titleProps, ...titleProps }}
-        descriptionProps={{ ...sdn.description, ...description }}
-        buttonProps={{ ...sdn.button2, ...button2 }}
-        button1Props={{ ...sdn.button3, ...button3 }}
+        description={{ ...sdn.description, ...description }}
+        button2={{ ...sdn.button2, ...button2 }}
+        button3={{ ...sdn.button3, ...button3 }}
       />
       <ButtonBar
         {...{ ...sdn.buttonBar, ...buttonBar }}
         className={
           "sdn-buttonBar-9sNmcUKH sdn-buttonBar " + (buttonBar?.className ?? "")
         }
-        buttonProps={{ ...sdn.button4, ...button4 }}
-        button1Props={{ ...sdn.button5, ...button5 }}
-        button2Props={{ ...sdn.button6, ...button6 }}
-        button3Props={{ ...sdn.button7, ...button7 }}
+        button4={{ ...sdn.button4, ...button4 }}
+        button5={{ ...sdn.button5, ...button5 }}
+        button6={{ ...sdn.button6, ...button6 }}
+        button7={{ ...sdn.button7, ...button7 }}
       />
     </Frame>
   )

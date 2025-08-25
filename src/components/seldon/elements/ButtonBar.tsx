@@ -52,24 +52,24 @@ export function ButtonBar({
         className={
           "sdn-button-4H5eOOLe sdn-button " + (button?.className ?? "")
         }
-        iconProps={{ ...sdn.icon, ...icon }}
-        labelProps={{ ...sdn.label, ...label }}
+        icon={{ ...sdn.icon, ...icon }}
+        label={{ ...sdn.label, ...label }}
       />
       <Button
         {...{ ...sdn.button2, ...button2 }}
         className={
           "sdn-button-4H5eOOLe sdn-button " + (button2?.className ?? "")
         }
-        iconProps={{ ...sdn.icon2, ...icon2 }}
-        labelProps={{ ...sdn.label2, ...label2 }}
+        icon2={{ ...sdn.icon2, ...icon2 }}
+        label2={{ ...sdn.label2, ...label2 }}
       />
       <Button
         {...{ ...sdn.button3, ...button3 }}
         className={
           "sdn-button-4H5eOOLe sdn-button " + (button3?.className ?? "")
         }
-        iconProps={{ ...sdn.icon3, ...icon3 }}
-        labelProps={{ ...sdn.label3, ...label3 }}
+        icon3={{ ...sdn.icon3, ...icon3 }}
+        label3={{ ...sdn.label3, ...label3 }}
       />
     </Frame>
   )
