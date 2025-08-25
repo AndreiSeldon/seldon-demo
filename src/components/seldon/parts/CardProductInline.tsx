@@ -94,6 +94,8 @@ export function CardProductInline({
             "sdn-button-q4Fkf10Z sdn-button-1wSr8QN5 sdn-button-1wSr8QN5 sdn-button" +
             (button?.className ? " " + button.className : "")
           }
+          icon={{ ...sdn.icon, ...icon }}
+          label={{ ...sdn.label, ...label }}
         />
       )}
       <Frame

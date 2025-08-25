@@ -83,6 +83,8 @@ export function CardProductHybrid({
             "sdn-avatar-F1NB5NPg sdn-avatar" +
             (avatar?.className ? " " + avatar.className : "")
           }
+          image={{ ...sdn.image, ...image }}
+          textblockAvatar={{ ...sdn.textblockAvatar, ...textblockAvatar }}
         />
       )}
       <TextblockDetails
