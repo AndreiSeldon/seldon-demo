@@ -336,7 +336,6 @@ html {
 }
 
 .sdn-button-U1rpy2gN {
-  background-color: hsl(0 0% 0%);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -474,7 +473,6 @@ html {
 }
 
 .sdn-button-PZ55a4By {
-  background-color: hsl(0 0% 0%);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -491,10 +489,6 @@ html {
 }
 
 .sdn-cardProduct-glyJ5UUE {
-  background-color: hsl(0 0% 100%);
-  background-image: url(https://static.seldon.app/background-default-light.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   flex-wrap: nowrap;
   display: flex;
   flex-direction: column;
