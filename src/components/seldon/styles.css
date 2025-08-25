@@ -295,8 +295,8 @@ html {
 }
 
 .sdn-button-7btDGonq {
-  background-color: hsl(0 0% 0%);
   display: flex;
+  background-color: hsl(0 0% 0%);
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -493,14 +493,6 @@ html {
   flex-wrap: nowrap;
   display: flex;
   flex-direction: column;
-}
-
-.sdn-avatar-Lic4tmW4 {
-  flex-wrap: nowrap;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Theme Variables */
