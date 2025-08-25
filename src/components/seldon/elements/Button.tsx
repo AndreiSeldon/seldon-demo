@@ -26,7 +26,16 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export function Button({ className = "", icon, label, ...props }: ButtonProps) {
   return (
-    <HTMLButton className={"sdn-button " + className} {...props}></HTMLButton>
+    <HTMLButton className={"sdn-button " + className} {...props}>
+      <Icon
+        {...{ ...sdn.icon, ...icon }}
+        className={"sdn-icon-5qXzcl1T sdn-icon " + (icon?.className ?? "")}
+      />
+      <Label
+        {...{ ...sdn.label, ...label }}
+        className={"sdn-label-RO2pofat sdn-label " + (label?.className ?? "")}
+      />
+    </HTMLButton>
   )
 }
 
