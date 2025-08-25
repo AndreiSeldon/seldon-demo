@@ -30,18 +30,30 @@ export interface CardProductProps extends HTMLAttributes<HTMLElement> {
   className?: string
 
   textblockDetails?: TextblockDetailsProps
+  // Custom component prop (not in schema)
   tagline?: TaglineProps
+  // Custom component prop (not in schema)
   titleProps?: TitleProps
+  // Custom component prop (not in schema)
   description?: DescriptionProps
   buttonBar?: ButtonBarProps
+  // Custom component prop (not in schema)
   button?: ButtonProps
+  // Custom component prop (not in schema)
   icon?: IconProps
+  // Custom component prop (not in schema)
   label?: LabelProps
+  // Custom component prop (not in schema)
   button2?: ButtonProps
+  // Custom component prop (not in schema)
   icon2?: IconProps
+  // Custom component prop (not in schema)
   label2?: LabelProps
+  // Custom component prop (not in schema)
   button3?: ButtonProps
+  // Custom component prop (not in schema)
   icon3?: IconProps
+  // Custom component prop (not in schema)
   label3?: LabelProps
 }
 

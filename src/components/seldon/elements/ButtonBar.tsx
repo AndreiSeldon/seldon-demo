@@ -22,13 +22,19 @@ export interface ButtonBarProps extends HTMLAttributes<HTMLElement> {
   className?: string
 
   button?: ButtonProps
+  // Custom component prop (not in schema)
   icon?: IconProps
+  // Custom component prop (not in schema)
   label?: LabelProps
   button2?: ButtonProps
+  // Custom component prop (not in schema)
   icon2?: IconProps
+  // Custom component prop (not in schema)
   label2?: LabelProps
   button3?: ButtonProps
+  // Custom component prop (not in schema)
   icon3?: IconProps
+  // Custom component prop (not in schema)
   label3?: LabelProps
 }
 

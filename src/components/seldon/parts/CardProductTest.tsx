@@ -29,25 +29,43 @@ import { TitleProps } from "../primitives/Title"
 export interface CardProductTestProps extends HTMLAttributes<HTMLElement> {
   className?: string
 
+  // Custom component prop (not in schema)
   button?: ButtonProps
+  // Custom component prop (not in schema)
   icon?: IconProps
+  // Custom component prop (not in schema)
   label?: LabelProps
   textblockDetails?: TextblockDetailsProps
+  // Custom component prop (not in schema)
   tagline?: TaglineProps
+  // Custom component prop (not in schema)
   titleProps?: TitleProps
+  // Custom component prop (not in schema)
   button2?: ButtonProps
+  // Custom component prop (not in schema)
   icon2?: IconProps
+  // Custom component prop (not in schema)
   label2?: LabelProps
+  // Custom component prop (not in schema)
   button3?: ButtonProps
+  // Custom component prop (not in schema)
   icon3?: IconProps
+  // Custom component prop (not in schema)
   label3?: LabelProps
+  // Custom component prop (not in schema)
   description?: DescriptionProps
   buttonBar?: ButtonBarProps
+  // Custom component prop (not in schema)
   button4?: ButtonProps
+  // Custom component prop (not in schema)
   icon4?: IconProps
+  // Custom component prop (not in schema)
   label4?: LabelProps
+  // Custom component prop (not in schema)
   button5?: ButtonProps
+  // Custom component prop (not in schema)
   icon5?: IconProps
+  // Custom component prop (not in schema)
   label5?: LabelProps
 }
 
@@ -80,15 +98,15 @@ export function CardProductTest({
       className={"sdn-cardProduct sdn-cardProduct-1jt9y4Ne " + className}
       {...props}
     >
-      <Button
-        {...{ ...sdn.button, ...button }}
-        className={
-          "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button " +
-          (button?.className ?? "")
-        }
-        icon={{ ...sdn.icon, ...icon }}
-        label={{ ...sdn.label, ...label }}
-      />
+      {button && (
+        <Button
+          {...{ ...sdn.button, ...button }}
+          className={
+            "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button " +
+            (button?.className ?? "")
+          }
+        />
+      )}
       <TextblockDetails
         {...{ ...sdn.textblockDetails, ...textblockDetails }}
         className={
