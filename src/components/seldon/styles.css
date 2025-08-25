@@ -413,7 +413,7 @@ html {
 }
 
 .sdn-cardProduct {
-  background-color: hsl(0 0% 100%);
+  background-color: hsl(270 12% 98%);
   background-image: url(https://static.seldon.app/background-default-light.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -425,8 +425,8 @@ html {
   gap: auto;
   align-self: stretch;
   height: fit-content;
-  border-radius: 0.5rem;
-  border: var(--hairline) solid hsl(0 0% 0%);
+  border-radius: 0.409rem;
+  border: var(--hairline) solid hsl(270 100% 70%);
 }
 
 .sdn-textblockDetails-Njjvy0sD {
@@ -464,8 +464,13 @@ html {
   flex-direction: column;
 }
 
+.sdn-icon-tTReqgk7 {
+  font-size: 1rem;
+  color: hsl(270 12% 8%);
+}
+
 .sdn-button-OPNTxNTH {
-  background-color: hsl(0 100% 65%);
+  background-color: hsl(0 0% 25%);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -606,4 +611,107 @@ html {
   --sdn-default-border-width-medium: 0.125rem;
   --sdn-default-border-width-large: 0.25rem;
   --sdn-default-border-width-xlarge: 0.5rem;
+  /* Core */
+  --sdn-wildberry-ratio: 1.333;
+  --sdn-wildberry-font-size: 16px;
+  --sdn-wildberry-size: 1;
+  /* Font Families */
+  --sdn-wildberry-font-family-primary: "DM Sans";
+  --sdn-wildberry-font-family-secondary: "DM Sans";
+  /* Colors */
+  --sdn-wildberry-color-base-hue: 270;
+  --sdn-wildberry-color-base-saturation: 100%;
+  --sdn-wildberry-color-base-lightness: 70%;
+  --sdn-wildberry-color-harmony: 4;
+  --sdn-wildberry-color-angle: 30deg;
+  --sdn-wildberry-color-step: 10;
+  --sdn-wildberry-color-white-point: 98%;
+  --sdn-wildberry-color-gray-point: 56%;
+  --sdn-wildberry-color-black-point: 8%;
+  --sdn-wildberry-color-bleed: 12;
+  --sdn-wildberry-color-contrast-ratio: 2;
+  /* Swatches */
+  --sdn-wildberry-swatch-background: hsl(0 4% 8%);
+  --sdn-wildberry-swatch-custom1: hsl(0 0% 25%);
+  --sdn-wildberry-swatch-custom2: hsl(135 100% 35%);
+  --sdn-wildberry-swatch-custom3: hsl(203 100% 62%);
+  --sdn-wildberry-swatch-custom4: hsl(60 100% 46%);
+  --sdn-wildberry-swatch-custom5: hsl(300 76% 48%);
+  --sdn-wildberry-swatch-custom6: hsl(0 0% 93%);
+  --sdn-wildberry-swatch-white: hsl(270 12% 98%);
+  --sdn-wildberry-swatch-gray: hsl(270 12% 56%);
+  --sdn-wildberry-swatch-black: hsl(270 12% 8%);
+  --sdn-wildberry-swatch-primary: hsl(270 100% 70%);
+  --sdn-wildberry-swatch-swatch1: hsl(270 100% 80%);
+  --sdn-wildberry-swatch-swatch2: hsl(90 100% 70%);
+  --sdn-wildberry-swatch-swatch3: hsl(0 100% 70%);
+  --sdn-wildberry-swatch-swatch4: hsl(180 100% 70%);
+  /* Sizes */
+  --sdn-wildberry-size-tiny: 0.069rem;
+  --sdn-wildberry-size-xxsmall: 0.168rem;
+  --sdn-wildberry-size-xsmall: 0.409rem;
+  --sdn-wildberry-size-small: 0.69rem;
+  --sdn-wildberry-size-medium: 1rem;
+  --sdn-wildberry-size-large: 1.687rem;
+  --sdn-wildberry-size-xlarge: 2.445rem;
+  --sdn-wildberry-size-xxlarge: 4.113rem;
+  --sdn-wildberry-size-huge: 5.959rem;
+  /* Margins */
+  --sdn-wildberry-margin-tight: 0.168rem;
+  --sdn-wildberry-margin-compact: 0.409rem;
+  --sdn-wildberry-margin-cozy: 1rem;
+  --sdn-wildberry-margin-comfortable: 2.445rem;
+  --sdn-wildberry-margin-open: 5.959rem;
+  /* Paddings */
+  --sdn-wildberry-padding-tight: 0.168rem;
+  --sdn-wildberry-padding-compact: 0.409rem;
+  --sdn-wildberry-padding-cozy: 1rem;
+  --sdn-wildberry-padding-comfortable: 2.445rem;
+  --sdn-wildberry-padding-open: 5.959rem;
+  /* Gaps */
+  --sdn-wildberry-gap-tight: 0.168rem;
+  --sdn-wildberry-gap-compact: 0.409rem;
+  --sdn-wildberry-gap-cozy: 1rem;
+  --sdn-wildberry-gap-comfortable: 2.445rem;
+  --sdn-wildberry-gap-open: 5.959rem;
+  /* Corners */
+  --sdn-wildberry-corners-tight: 0.168rem;
+  --sdn-wildberry-corners-compact: 0.409rem;
+  --sdn-wildberry-corners-cozy: 1rem;
+  --sdn-wildberry-corners-comfortable: 1.687rem;
+  --sdn-wildberry-corners-open: 5.61rem;
+  /* Font Sizes */
+  --sdn-wildberry-font-size-tiny: 0.409rem;
+  --sdn-wildberry-font-size-xxsmall: 0.545rem;
+  --sdn-wildberry-font-size-xsmall: 0.69rem;
+  --sdn-wildberry-font-size-small: 0.842rem;
+  --sdn-wildberry-font-size-medium: 1rem;
+  --sdn-wildberry-font-size-large: 1.777rem;
+  --sdn-wildberry-font-size-xlarge: 2.445rem;
+  --sdn-wildberry-font-size-xxlarge: 4.113rem;
+  --sdn-wildberry-font-size-huge: 5.959rem;
+  /* Font Weights */
+  --sdn-wildberry-font-weight-thin: 100;
+  --sdn-wildberry-font-weight-xlight: 200;
+  --sdn-wildberry-font-weight-light: 300;
+  --sdn-wildberry-font-weight-normal: 400;
+  --sdn-wildberry-font-weight-medium: 500;
+  --sdn-wildberry-font-weight-semibold: 600;
+  --sdn-wildberry-font-weight-bold: 700;
+  --sdn-wildberry-font-weight-xbold: 800;
+  --sdn-wildberry-font-weight-black: 900;
+  /* Line Heights */
+  --sdn-wildberry-line-height-none: 1;
+  --sdn-wildberry-line-height-solid: 1.15;
+  --sdn-wildberry-line-height-tight: 1.25;
+  --sdn-wildberry-line-height-compact: 1.33;
+  --sdn-wildberry-line-height-cozy: 1.5;
+  --sdn-wildberry-line-height-comfortable: 2;
+  --sdn-wildberry-line-height-open: 2.5;
+  /* Border Widths */
+  --sdn-wildberry-border-width-xsmall: 0.012rem;
+  --sdn-wildberry-border-width-small: 0.032rem;
+  --sdn-wildberry-border-width-medium: 0.069rem;
+  --sdn-wildberry-border-width-large: 0.168rem;
+  --sdn-wildberry-border-width-xlarge: 0.409rem;
 }

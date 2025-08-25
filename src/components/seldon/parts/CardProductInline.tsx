@@ -158,7 +158,7 @@ export function CardProductInline({
         <Button
           {...{ ...sdn.button4, ...button4 }}
           className={
-            "sdn-button-U1rpy2gN sdn-button-EOkV8PVa sdn-button" +
+            "sdn-button-EOkV8PVa sdn-button-U1rpy2gN sdn-button" +
             (button4?.className ? " " + button4.className : "")
           }
           icon={{ ...sdn.icon4, ...icon4 }}
