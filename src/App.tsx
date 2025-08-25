@@ -17,7 +17,7 @@ function Screen1() {
       
       {/* Customized version */}
       <CardProductInline
-        style={{ marginTop: 20 }}
+        style={{ marginTop: 20, width: 600 }}
         tagline={{ children: "New Product" }}
         titleProps={{ children: "Amazing Product Title" }}
         description={{ children: "This is a detailed description of our amazing product with all its features." }}
