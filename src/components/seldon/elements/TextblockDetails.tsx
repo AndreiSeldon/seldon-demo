@@ -1,4 +1,5 @@
 /*
+ *
  * This code was generated using Seldon (https://seldon.app)
  *
  * Licensed under the Terms of Use: https://seldon.digital/terms-of-service
@@ -8,8 +9,8 @@
  * in whole or in part, for the purposes of training, fine-tuning,
  * or otherwise improving (directly or indirectly) any machine learning
  * or artificial intelligence system.
+ * 
  */
- 
  
 import { HTMLAttributes } from "react"
 import { Frame } from "../frames/Frame"
@@ -35,17 +36,17 @@ export function TextblockDetails({
   return (
     <Frame className={"sdn-textblockDetails " + className} {...props}>
       <Tagline
-        {...{ ...seldon.tagline, ...tagline }}
+        {...{ ...sdn.tagline, ...tagline }}
         className={" sdn-tagline " + (tagline?.className ?? "")}
       />
       <Title
-        {...{ ...seldon.titleProps, ...titleProps }}
+        {...{ ...sdn.titleProps, ...titleProps }}
         className={
           "sdn-title-9wKEYuqh sdn-title " + (titleProps?.className ?? "")
         }
       />
       <Description
-        {...{ ...seldon.description, ...description }}
+        {...{ ...sdn.description, ...description }}
         className={" sdn-description " + (description?.className ?? "")}
       />
     </Frame>

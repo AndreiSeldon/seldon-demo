@@ -1,4 +1,5 @@
 /*
+ *
  * This code was generated using Seldon (https://seldon.app)
  *
  * Licensed under the Terms of Use: https://seldon.digital/terms-of-service
@@ -8,8 +9,8 @@
  * in whole or in part, for the purposes of training, fine-tuning,
  * or otherwise improving (directly or indirectly) any machine learning
  * or artificial intelligence system.
+ * 
  */
- 
  
 import { HTMLAttributes } from "react"
 import { Button, ButtonProps } from "../elements/Button"
@@ -89,35 +90,35 @@ export function CardProduct({
   return (
     <Frame className={"sdn-cardProduct " + className} {...props}>
       <Button
-        {...{ ...seldon.button, ...button }}
+        {...{ ...sdn.button, ...button }}
         className={
           "sdn-button-4H5eOOLe sdn-button-4H5eOOLe sdn-button " +
           (button?.className ?? "")
         }
-        iconProps={{ ...seldon.icon, ...icon }}
-        labelProps={{ ...seldon.label, ...label }}
+        iconProps={{ ...sdn.icon, ...icon }}
+        labelProps={{ ...sdn.label, ...label }}
       />
       <TextblockDetails
-        {...{ ...seldon.textblockDetails, ...textblockDetails }}
+        {...{ ...sdn.textblockDetails, ...textblockDetails }}
         className={
           "sdn-textblockDetails-pWavDCZm sdn-textblockDetails " +
           (textblockDetails?.className ?? "")
         }
-        taglineProps={{ ...seldon.tagline, ...tagline }}
-        titleProps={{ ...seldon.titleProps, ...titleProps }}
-        descriptionProps={{ ...seldon.description, ...description }}
-        buttonProps={{ ...seldon.button2, ...button2 }}
-        button1Props={{ ...seldon.button3, ...button3 }}
+        taglineProps={{ ...sdn.tagline, ...tagline }}
+        titleProps={{ ...sdn.titleProps, ...titleProps }}
+        descriptionProps={{ ...sdn.description, ...description }}
+        buttonProps={{ ...sdn.button2, ...button2 }}
+        button1Props={{ ...sdn.button3, ...button3 }}
       />
       <ButtonBar
-        {...{ ...seldon.buttonBar, ...buttonBar }}
+        {...{ ...sdn.buttonBar, ...buttonBar }}
         className={
           "sdn-buttonBar-9sNmcUKH sdn-buttonBar " + (buttonBar?.className ?? "")
         }
-        buttonProps={{ ...seldon.button4, ...button4 }}
-        button1Props={{ ...seldon.button5, ...button5 }}
-        button2Props={{ ...seldon.button6, ...button6 }}
-        button3Props={{ ...seldon.button7, ...button7 }}
+        buttonProps={{ ...sdn.button4, ...button4 }}
+        button1Props={{ ...sdn.button5, ...button5 }}
+        button2Props={{ ...sdn.button6, ...button6 }}
+        button3Props={{ ...sdn.button7, ...button7 }}
       />
     </Frame>
   )

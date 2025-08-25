@@ -1,4 +1,5 @@
 /*
+ *
  * This code was generated using Seldon (https://seldon.app)
  *
  * Licensed under the Terms of Use: https://seldon.digital/terms-of-service
@@ -8,8 +9,8 @@
  * in whole or in part, for the purposes of training, fine-tuning,
  * or otherwise improving (directly or indirectly) any machine learning
  * or artificial intelligence system.
+ * 
  */
- 
  
 import { ButtonHTMLAttributes } from "react"
 import { HTMLButton } from "../native-react/HTML.Button"
@@ -27,11 +28,11 @@ export function Button({ className = "", icon, label, ...props }: ButtonProps) {
   return (
     <HTMLButton className={"sdn-button " + className} {...props}>
       <Icon
-        {...{ ...seldon.icon, ...icon }}
+        {...{ ...sdn.icon, ...icon }}
         className={"sdn-icon-0FTVEz3x sdn-icon " + (icon?.className ?? "")}
       />
       <Label
-        {...{ ...seldon.label, ...label }}
+        {...{ ...sdn.label, ...label }}
         className={"sdn-label-RM76hUEF sdn-label " + (label?.className ?? "")}
       />
     </HTMLButton>

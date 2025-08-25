@@ -1,4 +1,5 @@
 /*
+ *
  * This code was generated using Seldon (https://seldon.app)
  *
  * Licensed under the Terms of Use: https://seldon.digital/terms-of-service
@@ -8,8 +9,8 @@
  * in whole or in part, for the purposes of training, fine-tuning,
  * or otherwise improving (directly or indirectly) any machine learning
  * or artificial intelligence system.
+ * 
  */
- 
  
 import { HTMLAttributes } from "react"
 import { Button, ButtonProps } from "../elements/Button"
@@ -47,28 +48,28 @@ export function ButtonBar({
   return (
     <Frame className={"sdn-buttonBar " + className} {...props}>
       <Button
-        {...{ ...seldon.button, ...button }}
+        {...{ ...sdn.button, ...button }}
         className={
           "sdn-button-4H5eOOLe sdn-button " + (button?.className ?? "")
         }
-        iconProps={{ ...seldon.icon, ...icon }}
-        labelProps={{ ...seldon.label, ...label }}
+        iconProps={{ ...sdn.icon, ...icon }}
+        labelProps={{ ...sdn.label, ...label }}
       />
       <Button
-        {...{ ...seldon.button2, ...button2 }}
+        {...{ ...sdn.button2, ...button2 }}
         className={
           "sdn-button-4H5eOOLe sdn-button " + (button2?.className ?? "")
         }
-        iconProps={{ ...seldon.icon2, ...icon2 }}
-        labelProps={{ ...seldon.label2, ...label2 }}
+        iconProps={{ ...sdn.icon2, ...icon2 }}
+        labelProps={{ ...sdn.label2, ...label2 }}
       />
       <Button
-        {...{ ...seldon.button3, ...button3 }}
+        {...{ ...sdn.button3, ...button3 }}
         className={
           "sdn-button-4H5eOOLe sdn-button " + (button3?.className ?? "")
         }
-        iconProps={{ ...seldon.icon3, ...icon3 }}
-        labelProps={{ ...seldon.label3, ...label3 }}
+        iconProps={{ ...sdn.icon3, ...icon3 }}
+        labelProps={{ ...sdn.label3, ...label3 }}
       />
     </Frame>
   )
