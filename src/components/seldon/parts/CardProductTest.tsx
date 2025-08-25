@@ -14,8 +14,6 @@
  
 import { HTMLAttributes } from "react"
 import { Button, ButtonProps } from "../elements/Button"
-import { ButtonBarProps } from "../elements/ButtonBar"
-import { TextblockDetailsProps } from "../elements/TextblockDetails"
 import { Frame } from "../frames/Frame"
 import { Description, DescriptionProps } from "../primitives/Description"
 import { Icon, IconProps } from "../primitives/Icon"
