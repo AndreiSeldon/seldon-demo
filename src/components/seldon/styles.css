@@ -307,6 +307,7 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin: 1rem;
 }
 
 .sdn-button-1wSr8QN5 {
@@ -315,6 +316,15 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.sdn-button-q4Fkf10Z {
+  background-color: hsl(0 0% 0%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
 }
 
 .sdn-image {
