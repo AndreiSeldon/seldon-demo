@@ -2,11 +2,32 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import "./App.css";
+import { CardProductInline } from "./components/seldon/parts/CardProductInline";
 
 function Screen1() {
   return (
-    <div>
-      <div style={{ padding: 20 }}>Screen 1</div>
+    <div style={{ padding: 20 }}>
+      <h2>Screen 1 - CardProductInline Demo</h2>
+      
+      {/* Basic usage with default values */}
+      <CardProductInline />
+      
+      {/* Customized version */}
+      <CardProductInline
+        style={{ marginTop: 20 }}
+        tagline={{ children: "New Product" }}
+        titleProps={{ children: "Amazing Product Title" }}
+        description={{ children: "This is a detailed description of our amazing product with all its features." }}
+        button={{ onClick: () => alert("Special button clicked!") }}
+        label={{ children: "Featured" }}
+        icon={{ icon: "material-addChart" }}
+        button4={{ onClick: () => alert("Action A clicked!") }}
+        label4={{ children: "Buy Now" }}
+        icon4={{ icon: "material-addBox" }}
+        button5={{ onClick: () => alert("Action B clicked!") }}
+        label5={{ children: "Learn More" }}
+        icon5={{ icon: "material-addLocation" }}
+      />
     </div>
   );
 }
