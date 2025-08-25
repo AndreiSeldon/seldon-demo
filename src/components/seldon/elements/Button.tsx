@@ -17,37 +17,30 @@ import { Label, LabelProps } from "../primitives/Label"
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string
 
-  iconProps?: IconProps
-  labelProps?: LabelProps
+  icon?: IconProps
+  label?: LabelProps
 }
 
-export function Button({
-  className = "",
-  iconProps,
-  labelProps,
-  ...props
-}: ButtonProps) {
+export function Button({ className = "", icon, label, ...props }: ButtonProps) {
   return (
     <HTMLButton className={"sdn-button " + className} {...props}>
       <Icon
-        {...{ ...seldon.iconProps, ...iconProps }}
-        className={"sdn-icon-1HoxUeHL sdn-icon " + (iconProps?.className ?? "")}
+        {...{ ...seldon.icon, ...icon }}
+        className={"sdn-icon-0FTVEz3x sdn-icon " + (icon?.className ?? "")}
       />
       <Label
-        {...{ ...seldon.labelProps, ...labelProps }}
-        className={
-          "sdn-label-w4mIKPFB sdn-label " + (labelProps?.className ?? "")
-        }
+        {...{ ...seldon.label, ...label }}
+        className={"sdn-label-RM76hUEF sdn-label " + (label?.className ?? "")}
       />
     </HTMLButton>
   )
 }
 
 const seldon: ButtonProps = {
-  iconProps: {
+  icon: {
     icon: "__default__",
   },
-  labelProps: {
+  label: {
     children: "Label",
     htmlElement: "label",
   },

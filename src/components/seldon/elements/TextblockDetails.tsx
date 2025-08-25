@@ -18,40 +18,40 @@ import { Title, TitleProps } from "../primitives/Title"
 export interface TextblockDetailsProps extends HTMLAttributes<HTMLElement> {
   className?: string
 
-  taglineProps?: TaglineProps
+  tagline?: TaglineProps
   titleProps?: TitleProps
-  descriptionProps?: DescriptionProps
+  description?: DescriptionProps
 }
 
 export function TextblockDetails({
   className = "",
-  taglineProps,
+  tagline,
   titleProps,
-  descriptionProps,
+  description,
   ...props
 }: TextblockDetailsProps) {
   return (
     <Frame className={"sdn-textblockDetails " + className} {...props}>
       <Tagline
-        {...{ ...seldon.taglineProps, ...taglineProps }}
-        className={" sdn-tagline " + (taglineProps?.className ?? "")}
+        {...{ ...seldon.tagline, ...tagline }}
+        className={" sdn-tagline " + (tagline?.className ?? "")}
       />
       <Title
         {...{ ...seldon.titleProps, ...titleProps }}
         className={
-          "sdn-title-bKdKJgPe sdn-title " + (titleProps?.className ?? "")
+          "sdn-title-9wKEYuqh sdn-title " + (titleProps?.className ?? "")
         }
       />
       <Description
-        {...{ ...seldon.descriptionProps, ...descriptionProps }}
-        className={" sdn-description " + (descriptionProps?.className ?? "")}
+        {...{ ...seldon.description, ...description }}
+        className={" sdn-description " + (description?.className ?? "")}
       />
     </Frame>
   )
 }
 
 const seldon: TextblockDetailsProps = {
-  taglineProps: {
+  tagline: {
     children: "Tagline",
     htmlElement: "p",
   },
@@ -59,7 +59,7 @@ const seldon: TextblockDetailsProps = {
     children: "Product Card Title",
     htmlElement: "h4",
   },
-  descriptionProps: {
+  description: {
     children:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus.",
     htmlElement: "p",
