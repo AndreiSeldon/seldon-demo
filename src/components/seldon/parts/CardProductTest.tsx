@@ -29,55 +29,31 @@ import { TitleProps } from "../primitives/Title"
 export interface CardProductTestProps extends HTMLAttributes<HTMLElement> {
   className?: string
 
-  // Custom component prop (not in schema)
   button?: ButtonProps
-  // Custom component prop (not in schema)
   icon?: IconProps
-  // Custom component prop (not in schema)
   label?: LabelProps
   textblockDetails?: TextblockDetailsProps
-  // Custom component prop (not in schema)
   tagline?: TaglineProps
-  // Custom component prop (not in schema)
   titleProps?: TitleProps
-  // Custom component prop (not in schema)
   button2?: ButtonProps
-  // Custom component prop (not in schema)
   icon2?: IconProps
-  // Custom component prop (not in schema)
   label2?: LabelProps
-  // Custom component prop (not in schema)
   button3?: ButtonProps
-  // Custom component prop (not in schema)
   icon3?: IconProps
-  // Custom component prop (not in schema)
   label3?: LabelProps
-  // Custom component prop (not in schema)
   description?: DescriptionProps
   buttonBar?: ButtonBarProps
-  // Custom component prop (not in schema)
   button4?: ButtonProps
-  // Custom component prop (not in schema)
   icon4?: IconProps
-  // Custom component prop (not in schema)
   label4?: LabelProps
-  // Custom component prop (not in schema)
   button5?: ButtonProps
-  // Custom component prop (not in schema)
   icon5?: IconProps
-  // Custom component prop (not in schema)
   label5?: LabelProps
-  // Custom component prop (not in schema)
   button6?: ButtonProps
-  // Custom component prop (not in schema)
   icon6?: IconProps
-  // Custom component prop (not in schema)
   label6?: LabelProps
-  // Custom component prop (not in schema)
   button7?: ButtonProps
-  // Custom component prop (not in schema)
   icon7?: IconProps
-  // Custom component prop (not in schema)
   label7?: LabelProps
 }
 
@@ -125,34 +101,45 @@ export function CardProductTest({
           }
         />
       )}
-      {button2 && (
-        <Button
-          {...{ ...sdn.button2, ...button2 }}
-          className={
-            "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button " +
-            (button2?.className ?? "")
-          }
-        />
-      )}
-      {button3 && (
-        <Button
-          {...{ ...sdn.button3, ...button3 }}
-          className={
-            "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button " +
-            (button3?.className ?? "")
-          }
-        />
-      )}
-      <TextblockDetails
-        {...{ ...sdn.textblockDetails, ...textblockDetails }}
+      <div
         className={
           "sdn-textblockDetails-anDbbcMd sdn-textblockDetails-Mn7No9dM sdn-textblockDetails " +
           (textblockDetails?.className ?? "")
         }
-        tagline={{ ...sdn.tagline, ...tagline }}
-        titleProps={{ ...sdn.titleProps, ...titleProps }}
-        description={{ ...sdn.description, ...description }}
-      />
+      >
+        <Tagline
+          {...{ ...sdn.tagline, ...tagline }}
+          className={"   sdn-tagline " + (tagline?.className ?? "")}
+        />
+        <Title
+          {...{ ...sdn.titleProps, ...titleProps }}
+          className={
+            "  sdn-title-hSn5CIeE sdn-title " + (titleProps?.className ?? "")
+          }
+        />
+        {button2 && (
+          <Button
+            {...{ ...sdn.button2, ...button2 }}
+            className={
+              "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button " +
+              (button2?.className ?? "")
+            }
+          />
+        )}
+        {button3 && (
+          <Button
+            {...{ ...sdn.button3, ...button3 }}
+            className={
+              "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button " +
+              (button3?.className ?? "")
+            }
+          />
+        )}
+        <Description
+          {...{ ...sdn.description, ...description }}
+          className={"   sdn-description " + (description?.className ?? "")}
+        />
+      </div>
       <ButtonBar
         {...{ ...sdn.buttonBar, ...buttonBar }}
         className={
