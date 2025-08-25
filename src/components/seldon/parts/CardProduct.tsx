@@ -35,13 +35,13 @@ export interface CardProductProps extends HTMLAttributes<HTMLElement> {
   textblockDetails?: TextblockDetailsProps
   tagline?: TaglineProps
   titleProps?: TitleProps
-  description?: DescriptionProps
   button2?: ButtonProps
   icon2?: IconProps
   label2?: LabelProps
   button3?: ButtonProps
   icon3?: IconProps
   label3?: LabelProps
+  description?: DescriptionProps
   buttonBar?: ButtonBarProps
   button4?: ButtonProps
   icon4?: IconProps
@@ -65,13 +65,13 @@ export function CardProduct({
   textblockDetails,
   tagline,
   titleProps,
-  description,
   button2,
   icon2,
   label2,
   button3,
   icon3,
   label3,
+  description,
   buttonBar,
   button4,
   icon4,
@@ -92,8 +92,7 @@ export function CardProduct({
       <Button
         {...{ ...sdn.button, ...button }}
         className={
-          "sdn-button-4H5eOOLe sdn-button-4H5eOOLe sdn-button " +
-          (button?.className ?? "")
+          "sdn-button-LLbOfXdB sdn-button " + (button?.className ?? "")
         }
         icon={{ ...sdn.icon, ...icon }}
         label={{ ...sdn.label, ...label }}
@@ -101,19 +100,19 @@ export function CardProduct({
       <TextblockDetails
         {...{ ...sdn.textblockDetails, ...textblockDetails }}
         className={
-          "sdn-textblockDetails-pWavDCZm sdn-textblockDetails " +
+          "sdn-textblockDetails-Ap3jJHAm sdn-textblockDetails " +
           (textblockDetails?.className ?? "")
         }
         tagline={{ ...sdn.tagline, ...tagline }}
         titleProps={{ ...sdn.titleProps, ...titleProps }}
-        description={{ ...sdn.description, ...description }}
         button2={{ ...sdn.button2, ...button2 }}
         button3={{ ...sdn.button3, ...button3 }}
+        description={{ ...sdn.description, ...description }}
       />
       <ButtonBar
         {...{ ...sdn.buttonBar, ...buttonBar }}
         className={
-          "sdn-buttonBar-9sNmcUKH sdn-buttonBar " + (buttonBar?.className ?? "")
+          "sdn-buttonBar-h44fqGnr sdn-buttonBar " + (buttonBar?.className ?? "")
         }
         button4={{ ...sdn.button4, ...button4 }}
         button5={{ ...sdn.button5, ...button5 }}
@@ -142,11 +141,6 @@ const sdn: CardProductProps = {
     children: "Product Card Title",
     htmlElement: "h4",
   },
-  description: {
-    children:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus.",
-    htmlElement: "p",
-  },
   button2: {},
   icon2: {
     icon: "__default__",
@@ -162,6 +156,11 @@ const sdn: CardProductProps = {
   label3: {
     children: "Label",
     htmlElement: "label",
+  },
+  description: {
+    children:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus.",
+    htmlElement: "p",
   },
   buttonBar: {},
   button4: {},

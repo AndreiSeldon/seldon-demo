@@ -30,6 +30,9 @@ export interface ButtonBarProps extends HTMLAttributes<HTMLElement> {
   button3?: ButtonProps
   icon3?: IconProps
   label3?: LabelProps
+  button4?: ButtonProps
+  icon4?: IconProps
+  label4?: LabelProps
 }
 
 export function ButtonBar({
@@ -43,6 +46,9 @@ export function ButtonBar({
   button3,
   icon3,
   label3,
+  button4,
+  icon4,
+  label4,
   ...props
 }: ButtonBarProps) {
   return (
@@ -50,7 +56,7 @@ export function ButtonBar({
       <Button
         {...{ ...sdn.button, ...button }}
         className={
-          "sdn-button-4H5eOOLe sdn-button " + (button?.className ?? "")
+          "sdn-button-LLbOfXdB sdn-button " + (button?.className ?? "")
         }
         icon={{ ...sdn.icon, ...icon }}
         label={{ ...sdn.label, ...label }}
@@ -58,7 +64,7 @@ export function ButtonBar({
       <Button
         {...{ ...sdn.button2, ...button2 }}
         className={
-          "sdn-button-4H5eOOLe sdn-button " + (button2?.className ?? "")
+          "sdn-button-LLbOfXdB sdn-button " + (button2?.className ?? "")
         }
         icon2={{ ...sdn.icon2, ...icon2 }}
         label2={{ ...sdn.label2, ...label2 }}
@@ -66,10 +72,18 @@ export function ButtonBar({
       <Button
         {...{ ...sdn.button3, ...button3 }}
         className={
-          "sdn-button-4H5eOOLe sdn-button " + (button3?.className ?? "")
+          "sdn-button-LLbOfXdB sdn-button " + (button3?.className ?? "")
         }
         icon3={{ ...sdn.icon3, ...icon3 }}
         label3={{ ...sdn.label3, ...label3 }}
+      />
+      <Button
+        {...{ ...sdn.button4, ...button4 }}
+        className={
+          "sdn-button-LLbOfXdB sdn-button " + (button4?.className ?? "")
+        }
+        icon4={{ ...sdn.icon4, ...icon4 }}
+        label4={{ ...sdn.label4, ...label4 }}
       />
     </Frame>
   )
@@ -97,6 +111,14 @@ const sdn: ButtonBarProps = {
     icon: "__default__",
   },
   label3: {
+    children: "Label",
+    htmlElement: "label",
+  },
+  button4: {},
+  icon4: {
+    icon: "__default__",
+  },
+  label4: {
     children: "Label",
     htmlElement: "label",
   },

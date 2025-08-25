@@ -13,8 +13,11 @@
  *****/
  
 import { HTMLAttributes } from "react"
+import { Button, ButtonProps } from "../elements/Button"
 import { Frame } from "../frames/Frame"
 import { Description, DescriptionProps } from "../primitives/Description"
+import { IconProps } from "../primitives/Icon"
+import { LabelProps } from "../primitives/Label"
 import { Tagline, TaglineProps } from "../primitives/Tagline"
 import { Title, TitleProps } from "../primitives/Title"
 
@@ -23,6 +26,12 @@ export interface TextblockDetailsProps extends HTMLAttributes<HTMLElement> {
 
   tagline?: TaglineProps
   titleProps?: TitleProps
+  button?: ButtonProps
+  icon?: IconProps
+  label?: LabelProps
+  button2?: ButtonProps
+  icon2?: IconProps
+  label2?: LabelProps
   description?: DescriptionProps
 }
 
@@ -30,6 +39,12 @@ export function TextblockDetails({
   className = "",
   tagline,
   titleProps,
+  button,
+  icon,
+  label,
+  button2,
+  icon2,
+  label2,
   description,
   ...props
 }: TextblockDetailsProps) {
@@ -42,8 +57,24 @@ export function TextblockDetails({
       <Title
         {...{ ...sdn.titleProps, ...titleProps }}
         className={
-          "sdn-title-9wKEYuqh sdn-title " + (titleProps?.className ?? "")
+          "sdn-title-lnsr54q1 sdn-title " + (titleProps?.className ?? "")
         }
+      />
+      <Button
+        {...{ ...sdn.button, ...button }}
+        className={
+          "sdn-button-LLbOfXdB sdn-button " + (button?.className ?? "")
+        }
+        icon={{ ...sdn.icon, ...icon }}
+        label={{ ...sdn.label, ...label }}
+      />
+      <Button
+        {...{ ...sdn.button2, ...button2 }}
+        className={
+          "sdn-button-LLbOfXdB sdn-button " + (button2?.className ?? "")
+        }
+        icon2={{ ...sdn.icon2, ...icon2 }}
+        label2={{ ...sdn.label2, ...label2 }}
       />
       <Description
         {...{ ...sdn.description, ...description }}
@@ -61,6 +92,22 @@ const sdn: TextblockDetailsProps = {
   titleProps: {
     children: "Product Card Title",
     htmlElement: "h4",
+  },
+  button: {},
+  icon: {
+    icon: "__default__",
+  },
+  label: {
+    children: "Label",
+    htmlElement: "label",
+  },
+  button2: {},
+  icon2: {
+    icon: "__default__",
+  },
+  label2: {
+    children: "Label",
+    htmlElement: "label",
   },
   description: {
     children:
