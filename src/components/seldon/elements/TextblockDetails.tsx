@@ -73,8 +73,8 @@ export function TextblockDetails({
         className={
           "sdn-button-LLbOfXdB sdn-button " + (button2?.className ?? "")
         }
-        icon2={{ ...sdn.icon2, ...icon2 }}
-        label2={{ ...sdn.label2, ...label2 }}
+        icon={{ ...sdn.icon2, ...icon2 }}
+        label={{ ...sdn.label2, ...label2 }}
       />
       <Description
         {...{ ...sdn.description, ...description }}

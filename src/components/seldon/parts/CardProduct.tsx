@@ -105,8 +105,8 @@ export function CardProduct({
         }
         tagline={{ ...sdn.tagline, ...tagline }}
         titleProps={{ ...sdn.titleProps, ...titleProps }}
-        button2={{ ...sdn.button2, ...button2 }}
-        button3={{ ...sdn.button3, ...button3 }}
+        button={{ ...sdn.button2, ...button2 }}
+        button1={{ ...sdn.button3, ...button3 }}
         description={{ ...sdn.description, ...description }}
       />
       <ButtonBar
@@ -114,10 +114,10 @@ export function CardProduct({
         className={
           "sdn-buttonBar-h44fqGnr sdn-buttonBar " + (buttonBar?.className ?? "")
         }
-        button4={{ ...sdn.button4, ...button4 }}
-        button5={{ ...sdn.button5, ...button5 }}
-        button6={{ ...sdn.button6, ...button6 }}
-        button7={{ ...sdn.button7, ...button7 }}
+        button={{ ...sdn.button4, ...button4 }}
+        button1={{ ...sdn.button5, ...button5 }}
+        button2={{ ...sdn.button6, ...button6 }}
+        button3={{ ...sdn.button7, ...button7 }}
       />
     </Frame>
   )

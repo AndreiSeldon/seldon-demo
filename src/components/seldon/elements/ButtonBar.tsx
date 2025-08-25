@@ -66,24 +66,24 @@ export function ButtonBar({
         className={
           "sdn-button-LLbOfXdB sdn-button " + (button2?.className ?? "")
         }
-        icon2={{ ...sdn.icon2, ...icon2 }}
-        label2={{ ...sdn.label2, ...label2 }}
+        icon={{ ...sdn.icon2, ...icon2 }}
+        label={{ ...sdn.label2, ...label2 }}
       />
       <Button
         {...{ ...sdn.button3, ...button3 }}
         className={
           "sdn-button-LLbOfXdB sdn-button " + (button3?.className ?? "")
         }
-        icon3={{ ...sdn.icon3, ...icon3 }}
-        label3={{ ...sdn.label3, ...label3 }}
+        icon={{ ...sdn.icon3, ...icon3 }}
+        label={{ ...sdn.label3, ...label3 }}
       />
       <Button
         {...{ ...sdn.button4, ...button4 }}
         className={
           "sdn-button-LLbOfXdB sdn-button " + (button4?.className ?? "")
         }
-        icon4={{ ...sdn.icon4, ...icon4 }}
-        label4={{ ...sdn.label4, ...label4 }}
+        icon={{ ...sdn.icon4, ...icon4 }}
+        label={{ ...sdn.label4, ...label4 }}
       />
     </Frame>
   )
