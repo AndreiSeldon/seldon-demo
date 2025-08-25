@@ -201,7 +201,7 @@ export function CardProductInline({
 const sdn: CardProductInlineProps = {
   button: {},
   icon: {
-    icon: "material-360",
+    icon: "material-bolt",
   },
   label: {
     children: "Special",

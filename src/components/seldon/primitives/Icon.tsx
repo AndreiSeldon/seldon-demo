@@ -20,7 +20,7 @@ import { IconMaterialAddChart } from "../icons/IconMaterialAddChart"
 import { IconMaterialAddComment } from "../icons/IconMaterialAddComment"
 import { IconMaterialAddLocation } from "../icons/IconMaterialAddLocation"
 import { IconMaterialArrowDownward } from "../icons/IconMaterialArrowDownward"
-import { IconMaterial_360 } from "../icons/IconMaterial_360"
+import { IconMaterialBolt } from "../icons/IconMaterialBolt"
 
 export interface IconProps extends SVGAttributes<SVGElement> {
   className?: string
@@ -28,7 +28,7 @@ export interface IconProps extends SVGAttributes<SVGElement> {
     | "__default__"
     | "material-addComment"
     | "material-addLocation"
-    | "material-360"
+    | "material-bolt"
     | "material-addBox"
     | "material-accountCircle"
     | "material-addChart"
@@ -51,7 +51,7 @@ const iconMap = {
   __default__: IconDefault,
   "material-addComment": IconMaterialAddComment,
   "material-addLocation": IconMaterialAddLocation,
-  "material-360": IconMaterial_360,
+  "material-bolt": IconMaterialBolt,
   "material-addBox": IconMaterialAddBox,
   "material-accountCircle": IconMaterialAccountCircle,
   "material-addChart": IconMaterialAddChart,
