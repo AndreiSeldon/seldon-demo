@@ -176,7 +176,7 @@ const sdn: CardProductInlineProps = {
     icon: "material-360",
   },
   label: {
-    children: "Andrei!",
+    children: "Test Button",
     htmlElement: "label",
   },
   textblockDetails: {},
