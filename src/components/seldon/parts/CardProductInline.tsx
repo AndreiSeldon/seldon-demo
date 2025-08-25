@@ -115,7 +115,7 @@ export function CardProductInline({
         <Title
           {...{ ...sdn.titleProps, ...titleProps }}
           className={
-            "sdn-title-NxxLFPyV sdn-title" +
+            "sdn-title-AWpEkwtT sdn-title-NxxLFPyV sdn-title" +
             (titleProps?.className ? " " + titleProps.className : "")
           }
         />
