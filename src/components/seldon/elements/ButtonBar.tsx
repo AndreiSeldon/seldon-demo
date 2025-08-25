@@ -50,7 +50,7 @@ export function ButtonBar({
       <Button
         {...{ ...sdn.button, ...button }}
         className={
-          "sdn-button-U1rpy2gN sdn-button" +
+          "sdn-button-7k7U4i3x sdn-button" +
           (button?.className ? " " + button.className : "")
         }
         icon={{ ...sdn.icon, ...icon }}
@@ -59,7 +59,7 @@ export function ButtonBar({
       <Button
         {...{ ...sdn.button2, ...button2 }}
         className={
-          "sdn-button-U1rpy2gN sdn-button" +
+          "sdn-button-7k7U4i3x sdn-button" +
           (button2?.className ? " " + button2.className : "")
         }
         icon={{ ...sdn.icon2, ...icon2 }}
@@ -68,7 +68,7 @@ export function ButtonBar({
       <Button
         {...{ ...sdn.button3, ...button3 }}
         className={
-          "sdn-button-U1rpy2gN sdn-button" +
+          "sdn-button-7k7U4i3x sdn-button" +
           (button3?.className ? " " + button3.className : "")
         }
         icon={{ ...sdn.icon3, ...icon3 }}

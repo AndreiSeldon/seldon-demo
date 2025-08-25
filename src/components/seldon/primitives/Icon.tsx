@@ -26,13 +26,13 @@ export interface IconProps extends SVGAttributes<SVGElement> {
   className?: string
   icon?:
     | "__default__"
-    | "material-addComment"
-    | "material-addLocation"
-    | "material-bolt"
-    | "material-addBox"
+    | "material-arrowDownward"
     | "material-accountCircle"
     | "material-addChart"
-    | "material-arrowDownward"
+    | "material-addLocation"
+    | "material-addBox"
+    | "material-bolt"
+    | "material-addComment"
 }
 
 export function Icon({
@@ -49,11 +49,11 @@ export function Icon({
 }
 const iconMap = {
   __default__: IconDefault,
-  "material-addComment": IconMaterialAddComment,
-  "material-addLocation": IconMaterialAddLocation,
-  "material-bolt": IconMaterialBolt,
-  "material-addBox": IconMaterialAddBox,
+  "material-arrowDownward": IconMaterialArrowDownward,
   "material-accountCircle": IconMaterialAccountCircle,
   "material-addChart": IconMaterialAddChart,
-  "material-arrowDownward": IconMaterialArrowDownward,
+  "material-addLocation": IconMaterialAddLocation,
+  "material-addBox": IconMaterialAddBox,
+  "material-bolt": IconMaterialBolt,
+  "material-addComment": IconMaterialAddComment,
 }
