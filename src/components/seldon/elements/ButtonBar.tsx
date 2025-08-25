@@ -8,7 +8,8 @@
  * in whole or in part, for the purposes of training, fine-tuning,
  * or otherwise improving (directly or indirectly) any machine learning
  * or artificial intelligence system.
- */
+ 
+ /
 import { HTMLAttributes } from "react"
 import { Button, ButtonProps } from "../elements/Button"
 import { Frame } from "../frames/Frame"
@@ -21,10 +22,10 @@ export interface ButtonBarProps extends HTMLAttributes<HTMLElement> {
   button?: ButtonProps
   icon?: IconProps
   label?: LabelProps
-  button1?: ButtonProps
+  button2?: ButtonProps
   icon2?: IconProps
   label2?: LabelProps
-  button2?: ButtonProps
+  button3?: ButtonProps
   icon3?: IconProps
   label3?: LabelProps
 }
@@ -34,10 +35,10 @@ export function ButtonBar({
   button,
   icon,
   label,
-  button1,
+  button2,
   icon2,
   label2,
-  button2,
+  button3,
   icon3,
   label3,
   ...props
@@ -53,17 +54,17 @@ export function ButtonBar({
         labelProps={{ ...seldon.label, ...label }}
       />
       <Button
-        {...{ ...seldon.button1, ...button1 }}
+        {...{ ...seldon.button2, ...button2 }}
         className={
-          "sdn-button-4H5eOOLe sdn-button " + (button1?.className ?? "")
+          "sdn-button-4H5eOOLe sdn-button " + (button2?.className ?? "")
         }
         iconProps={{ ...seldon.icon2, ...icon2 }}
         labelProps={{ ...seldon.label2, ...label2 }}
       />
       <Button
-        {...{ ...seldon.button2, ...button2 }}
+        {...{ ...seldon.button3, ...button3 }}
         className={
-          "sdn-button-4H5eOOLe sdn-button " + (button2?.className ?? "")
+          "sdn-button-4H5eOOLe sdn-button " + (button3?.className ?? "")
         }
         iconProps={{ ...seldon.icon3, ...icon3 }}
         labelProps={{ ...seldon.label3, ...label3 }}
@@ -81,6 +82,20 @@ const seldon: ButtonBarProps = {
     children: "Label",
     htmlElement: "label",
   },
-  button1: {},
   button2: {},
+  icon2: {
+    icon: "__default__",
+  },
+  label2: {
+    children: "Label",
+    htmlElement: "label",
+  },
+  button3: {},
+  icon3: {
+    icon: "__default__",
+  },
+  label3: {
+    children: "Label",
+    htmlElement: "label",
+  },
 }

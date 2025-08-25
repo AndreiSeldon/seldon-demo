@@ -8,7 +8,8 @@
  * in whole or in part, for the purposes of training, fine-tuning,
  * or otherwise improving (directly or indirectly) any machine learning
  * or artificial intelligence system.
- */
+ 
+ /
 import { HTMLAttributes } from "react"
 import { HTMLHeading1 } from "../native-react/HTML.Heading1"
 import { HTMLHeading2 } from "../native-react/HTML.Heading2"

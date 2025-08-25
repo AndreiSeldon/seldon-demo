@@ -8,7 +8,8 @@
  * in whole or in part, for the purposes of training, fine-tuning,
  * or otherwise improving (directly or indirectly) any machine learning
  * or artificial intelligence system.
- */
+ 
+ /
 import { HTMLAttributes } from "react"
 import { Button, ButtonProps } from "../elements/Button"
 import { ButtonBar, ButtonBarProps } from "../elements/ButtonBar"
@@ -36,20 +37,20 @@ export interface CardProductProps extends HTMLAttributes<HTMLElement> {
   button2?: ButtonProps
   icon2?: IconProps
   label2?: LabelProps
-  button1?: ButtonProps
+  button3?: ButtonProps
   icon3?: IconProps
   label3?: LabelProps
   buttonBar?: ButtonBarProps
-  button3?: ButtonProps
+  button4?: ButtonProps
   icon4?: IconProps
   label4?: LabelProps
-  button12?: ButtonProps
+  button5?: ButtonProps
   icon5?: IconProps
   label5?: LabelProps
-  button22?: ButtonProps
+  button6?: ButtonProps
   icon6?: IconProps
   label6?: LabelProps
-  button32?: ButtonProps
+  button7?: ButtonProps
   icon7?: IconProps
   label7?: LabelProps
 }
@@ -66,20 +67,20 @@ export function CardProduct({
   button2,
   icon2,
   label2,
-  button1,
+  button3,
   icon3,
   label3,
   buttonBar,
-  button3,
+  button4,
   icon4,
   label4,
-  button12,
+  button5,
   icon5,
   label5,
-  button22,
+  button6,
   icon6,
   label6,
-  button32,
+  button7,
   icon7,
   label7,
   ...props
@@ -105,17 +106,17 @@ export function CardProduct({
         titleProps={{ ...seldon.titleProps, ...titleProps }}
         descriptionProps={{ ...seldon.description, ...description }}
         buttonProps={{ ...seldon.button2, ...button2 }}
-        button1Props={{ ...seldon.button1, ...button1 }}
+        button1Props={{ ...seldon.button3, ...button3 }}
       />
       <ButtonBar
         {...{ ...seldon.buttonBar, ...buttonBar }}
         className={
           "sdn-buttonBar-9sNmcUKH sdn-buttonBar " + (buttonBar?.className ?? "")
         }
-        buttonProps={{ ...seldon.button3, ...button3 }}
-        button1Props={{ ...seldon.button12, ...button12 }}
-        button2Props={{ ...seldon.button22, ...button22 }}
-        button3Props={{ ...seldon.button32, ...button32 }}
+        buttonProps={{ ...seldon.button4, ...button4 }}
+        button1Props={{ ...seldon.button5, ...button5 }}
+        button2Props={{ ...seldon.button6, ...button6 }}
+        button3Props={{ ...seldon.button7, ...button7 }}
       />
     </Frame>
   )
@@ -144,8 +145,53 @@ const seldon: CardProductProps = {
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus.",
     htmlElement: "p",
   },
-  button1: {},
-  buttonBar: {},
   button2: {},
+  icon2: {
+    icon: "__default__",
+  },
+  label2: {
+    children: "Label",
+    htmlElement: "label",
+  },
   button3: {},
+  icon3: {
+    icon: "__default__",
+  },
+  label3: {
+    children: "Label",
+    htmlElement: "label",
+  },
+  buttonBar: {},
+  button4: {},
+  icon4: {
+    icon: "__default__",
+  },
+  label4: {
+    children: "Label",
+    htmlElement: "label",
+  },
+  button5: {},
+  icon5: {
+    icon: "__default__",
+  },
+  label5: {
+    children: "Label",
+    htmlElement: "label",
+  },
+  button6: {},
+  icon6: {
+    icon: "__default__",
+  },
+  label6: {
+    children: "Label",
+    htmlElement: "label",
+  },
+  button7: {},
+  icon7: {
+    icon: "__default__",
+  },
+  label7: {
+    children: "Label",
+    htmlElement: "label",
+  },
 }
