@@ -158,7 +158,7 @@ export function CardProductInline({
         <Button
           {...{ ...sdn.button4, ...button4 }}
           className={
-            "sdn-button-U1rpy2gN sdn-button-U1rpy2gN sdn-button-U1rpy2gN sdn-button" +
+            "sdn-button-EOkV8PVa sdn-button-EOkV8PVa sdn-button-U1rpy2gN sdn-button" +
             (button4?.className ? " " + button4.className : "")
           }
           icon={{ ...sdn.icon4, ...icon4 }}
@@ -167,7 +167,7 @@ export function CardProductInline({
         <Button
           {...{ ...sdn.button5, ...button5 }}
           className={
-            "sdn-button-U1rpy2gN sdn-button-U1rpy2gN sdn-button-U1rpy2gN sdn-button" +
+            "sdn-button-OPNTxNTH sdn-button-U1rpy2gN sdn-button-U1rpy2gN sdn-button" +
             (button5?.className ? " " + button5.className : "")
           }
           icon={{ ...sdn.icon5, ...icon5 }}
