@@ -107,6 +107,24 @@ export function CardProductTest({
           }
         />
       )}
+      {button2 && (
+        <Button
+          {...{ ...sdn.button2, ...button2 }}
+          className={
+            "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button " +
+            (button2?.className ?? "")
+          }
+        />
+      )}
+      {button3 && (
+        <Button
+          {...{ ...sdn.button3, ...button3 }}
+          className={
+            "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button " +
+            (button3?.className ?? "")
+          }
+        />
+      )}
       <TextblockDetails
         {...{ ...sdn.textblockDetails, ...textblockDetails }}
         className={
@@ -115,8 +133,6 @@ export function CardProductTest({
         }
         tagline={{ ...sdn.tagline, ...tagline }}
         titleProps={{ ...sdn.titleProps, ...titleProps }}
-        button={{ ...sdn.button2, ...button2 }}
-        button2={{ ...sdn.button3, ...button3 }}
         description={{ ...sdn.description, ...description }}
       />
       <ButtonBar
