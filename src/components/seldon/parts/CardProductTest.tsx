@@ -14,7 +14,7 @@
  
 import { HTMLAttributes } from "react"
 import { Button, ButtonProps } from "../elements/Button"
-import { ButtonBar, ButtonBarProps } from "../elements/ButtonBar"
+import { ButtonBarProps } from "../elements/ButtonBar"
 import { TextblockDetailsProps } from "../elements/TextblockDetails"
 import { Frame } from "../frames/Frame"
 import { Description, DescriptionProps } from "../primitives/Description"
@@ -143,17 +143,43 @@ export function CardProductTest({
           }
         />
       </div>
-      <ButtonBar
-        {...{ ...sdn.buttonBar, ...buttonBar }}
+      <div
         className={
           "sdn-buttonBar-TKZw657P sdn-buttonBar-bxSi11kk sdn-buttonBar" +
           (buttonBar?.className ? " " + buttonBar.className : "")
         }
-        button={{ ...sdn.button4, ...button4 }}
-        button2={{ ...sdn.button5, ...button5 }}
-        button3={{ ...sdn.button6, ...button6 }}
-        button4={{ ...sdn.button7, ...button7 }}
-      />
+      >
+        <Button
+          {...{ ...sdn.button4, ...button4 }}
+          className={
+            "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button" +
+            (button4?.className ? " " + button4.className : "")
+          }
+        />
+        <Button
+          {...{ ...sdn.button5, ...button5 }}
+          className={
+            "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button" +
+            (button5?.className ? " " + button5.className : "")
+          }
+        />
+        <Button
+          {...{ ...sdn.button6, ...button6 }}
+          className={
+            "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button" +
+            (button6?.className ? " " + button6.className : "")
+          }
+        />
+        {button7 && (
+          <Button
+            {...{ ...sdn.button7, ...button7 }}
+            className={
+              "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button" +
+              (button7?.className ? " " + button7.className : "")
+            }
+          />
+        )}
+      </div>
     </Frame>
   )
 }

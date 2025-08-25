@@ -467,6 +467,62 @@ html {
   height: fit-content;
 }
 
+.sdn-subtitle {
+  color: hsl(0 0% 0%);
+  align-self: stretch;
+  height: fit-content;
+  font-family: Inter;
+  font-style: normal;
+  font-synthesis-style: none;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  webkit-line-clamp: 2;
+  line-clamp: 2;
+  webkit-box-orient: vertical;
+  box-orient: vertical;
+}
+
+.sdn-subtitle-gICr3aGd {
+  color: hsl(0 0% 0%);
+}
+
+.sdn-image {
+  object-fit: cover;
+  align-self: stretch;
+  flex: 1 0 0;
+}
+
+.sdn-avatar {
+  border-bottom-style: solid;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1 0 0;
+  height: fit-content;
+}
+
+.sdn-image-vx4bDzOM {
+  object-fit: cover;
+  width: 2.002rem;
+  height: 2.002rem;
+  border-radius: 99999px;
+}
+
+.sdn-avatar-F1NB5NPg {
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Theme Variables */
 :root {
   /********************************************
