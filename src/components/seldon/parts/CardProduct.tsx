@@ -13,8 +13,10 @@
  *****/
  
 import { HTMLAttributes } from "react"
+import { AvatarProps } from "../elements/Avatar"
 import { Button, ButtonProps } from "../elements/Button"
 import { ButtonBar, ButtonBarProps } from "../elements/ButtonBar"
+import { TextblockAvatarProps } from "../elements/TextblockAvatar"
 import {
   TextblockDetails,
   TextblockDetailsProps,
@@ -22,7 +24,9 @@ import {
 import { Frame } from "../frames/Frame"
 import { DescriptionProps } from "../primitives/Description"
 import { IconProps } from "../primitives/Icon"
+import { ImageProps } from "../primitives/Image"
 import { LabelProps } from "../primitives/Label"
+import { SubtitleProps } from "../primitives/Subtitle"
 import { TaglineProps } from "../primitives/Tagline"
 import { TitleProps } from "../primitives/Title"
 
@@ -55,6 +59,11 @@ export interface CardProductProps extends HTMLAttributes<HTMLElement> {
   button7?: ButtonProps
   icon7?: IconProps
   label7?: LabelProps
+  avatar?: AvatarProps
+  image?: ImageProps
+  textblockAvatar?: TextblockAvatarProps
+  title2Props?: TitleProps
+  subtitle?: SubtitleProps
 }
 
 export function CardProduct({
@@ -85,6 +94,11 @@ export function CardProduct({
   button7,
   icon7,
   label7,
+  avatar,
+  image,
+  textblockAvatar,
+  title2Props,
+  subtitle,
   ...props
 }: CardProductProps) {
   return (
@@ -92,7 +106,7 @@ export function CardProduct({
       <Button
         {...{ ...sdn.button, ...button }}
         className={
-          "sdn-button-bJE5auvA sdn-button-bJE5auvA sdn-button " +
+          "sdn-button-7btDGonq sdn-button-7btDGonq sdn-button " +
           (button?.className ?? "")
         }
         icon={{ ...sdn.icon, ...icon }}
@@ -119,6 +133,7 @@ export function CardProduct({
         button2={{ ...sdn.button5, ...button5 }}
         button3={{ ...sdn.button6, ...button6 }}
         button4={{ ...sdn.button7, ...button7 }}
+        avatar={{ ...sdn.avatar, ...avatar }}
       />
     </Frame>
   )
@@ -195,5 +210,18 @@ const sdn: CardProductProps = {
   label7: {
     children: "Label",
     htmlElement: "label",
+  },
+  avatar: {},
+  image: {
+    src: "https://static.seldon.app/avatar-user.jpg",
+  },
+  textblockAvatar: {},
+  title2Props: {
+    children: "Name",
+    htmlElement: "h4",
+  },
+  subtitle: {
+    children: "Details",
+    htmlElement: "h5",
   },
 }
