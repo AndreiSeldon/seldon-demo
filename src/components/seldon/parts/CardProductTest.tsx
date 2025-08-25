@@ -15,16 +15,13 @@
 import { HTMLAttributes } from "react"
 import { Button, ButtonProps } from "../elements/Button"
 import { ButtonBar, ButtonBarProps } from "../elements/ButtonBar"
-import {
-  TextblockDetails,
-  TextblockDetailsProps,
-} from "../elements/TextblockDetails"
+import { TextblockDetailsProps } from "../elements/TextblockDetails"
 import { Frame } from "../frames/Frame"
-import { DescriptionProps } from "../primitives/Description"
-import { IconProps } from "../primitives/Icon"
-import { LabelProps } from "../primitives/Label"
-import { TaglineProps } from "../primitives/Tagline"
-import { TitleProps } from "../primitives/Title"
+import { Description, DescriptionProps } from "../primitives/Description"
+import { Icon, IconProps } from "../primitives/Icon"
+import { Label, LabelProps } from "../primitives/Label"
+import { Tagline, TaglineProps } from "../primitives/Tagline"
+import { Title, TitleProps } from "../primitives/Title"
 
 export interface CardProductTestProps extends HTMLAttributes<HTMLElement> {
   className?: string
@@ -96,33 +93,36 @@ export function CardProductTest({
         <Button
           {...{ ...sdn.button, ...button }}
           className={
-            "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button " +
-            (button?.className ?? "")
+            "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button" +
+            (button?.className ? " " + button.className : "")
           }
         />
       )}
       <div
         className={
-          "sdn-textblockDetails-anDbbcMd sdn-textblockDetails-Mn7No9dM sdn-textblockDetails " +
-          (textblockDetails?.className ?? "")
+          "sdn-textblockDetails-anDbbcMd sdn-textblockDetails-Mn7No9dM sdn-textblockDetails" +
+          (textblockDetails?.className ? " " + textblockDetails.className : "")
         }
       >
         <Tagline
           {...{ ...sdn.tagline, ...tagline }}
-          className={"   sdn-tagline " + (tagline?.className ?? "")}
+          className={
+            "sdn-tagline" + (tagline?.className ? " " + tagline.className : "")
+          }
         />
         <Title
           {...{ ...sdn.titleProps, ...titleProps }}
           className={
-            "  sdn-title-hSn5CIeE sdn-title " + (titleProps?.className ?? "")
+            "sdn-title-hSn5CIeE sdn-title" +
+            (titleProps?.className ? " " + titleProps.className : "")
           }
         />
         {button2 && (
           <Button
             {...{ ...sdn.button2, ...button2 }}
             className={
-              "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button " +
-              (button2?.className ?? "")
+              "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button" +
+              (button2?.className ? " " + button2.className : "")
             }
           />
         )}
@@ -130,21 +130,24 @@ export function CardProductTest({
           <Button
             {...{ ...sdn.button3, ...button3 }}
             className={
-              "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button " +
-              (button3?.className ?? "")
+              "sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button-2BBvyfaJ sdn-button" +
+              (button3?.className ? " " + button3.className : "")
             }
           />
         )}
         <Description
           {...{ ...sdn.description, ...description }}
-          className={"   sdn-description " + (description?.className ?? "")}
+          className={
+            "sdn-description" +
+            (description?.className ? " " + description.className : "")
+          }
         />
       </div>
       <ButtonBar
         {...{ ...sdn.buttonBar, ...buttonBar }}
         className={
-          "sdn-buttonBar-TKZw657P sdn-buttonBar-bxSi11kk sdn-buttonBar " +
-          (buttonBar?.className ?? "")
+          "sdn-buttonBar-TKZw657P sdn-buttonBar-bxSi11kk sdn-buttonBar" +
+          (buttonBar?.className ? " " + buttonBar.className : "")
         }
         button={{ ...sdn.button4, ...button4 }}
         button2={{ ...sdn.button5, ...button5 }}

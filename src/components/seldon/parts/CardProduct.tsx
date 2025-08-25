@@ -13,18 +13,18 @@
  *****/
  
 import { HTMLAttributes } from "react"
-import { ButtonProps } from "../elements/Button"
+import { Button, ButtonProps } from "../elements/Button"
 import { ButtonBar, ButtonBarProps } from "../elements/ButtonBar"
 import {
   TextblockDetails,
   TextblockDetailsProps,
 } from "../elements/TextblockDetails"
 import { Frame } from "../frames/Frame"
-import { DescriptionProps } from "../primitives/Description"
-import { IconProps } from "../primitives/Icon"
-import { LabelProps } from "../primitives/Label"
-import { TaglineProps } from "../primitives/Tagline"
-import { TitleProps } from "../primitives/Title"
+import { Description, DescriptionProps } from "../primitives/Description"
+import { Icon, IconProps } from "../primitives/Icon"
+import { Label, LabelProps } from "../primitives/Label"
+import { Tagline, TaglineProps } from "../primitives/Tagline"
+import { Title, TitleProps } from "../primitives/Title"
 
 export interface CardProductProps extends HTMLAttributes<HTMLElement> {
   className?: string
@@ -68,8 +68,8 @@ export function CardProduct({
       <TextblockDetails
         {...{ ...sdn.textblockDetails, ...textblockDetails }}
         className={
-          "sdn-textblockDetails-Mn7No9dM sdn-textblockDetails " +
-          (textblockDetails?.className ?? "")
+          "sdn-textblockDetails-Mn7No9dM sdn-textblockDetails" +
+          (textblockDetails?.className ? " " + textblockDetails.className : "")
         }
         tagline={{ ...sdn.tagline, ...tagline }}
         titleProps={{ ...sdn.titleProps, ...titleProps }}
@@ -78,7 +78,8 @@ export function CardProduct({
       <ButtonBar
         {...{ ...sdn.buttonBar, ...buttonBar }}
         className={
-          "sdn-buttonBar-bxSi11kk sdn-buttonBar " + (buttonBar?.className ?? "")
+          "sdn-buttonBar-bxSi11kk sdn-buttonBar" +
+          (buttonBar?.className ? " " + buttonBar.className : "")
         }
         button={{ ...sdn.button, ...button }}
         button2={{ ...sdn.button2, ...button2 }}

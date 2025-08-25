@@ -37,17 +37,23 @@ export function TextblockDetails({
     <Frame className={"sdn-textblockDetails " + className} {...props}>
       <Tagline
         {...{ ...sdn.tagline, ...tagline }}
-        className={" sdn-tagline " + (tagline?.className ?? "")}
+        className={
+          "sdn-tagline" + (tagline?.className ? " " + tagline.className : "")
+        }
       />
       <Title
         {...{ ...sdn.titleProps, ...titleProps }}
         className={
-          "sdn-title-hSn5CIeE sdn-title " + (titleProps?.className ?? "")
+          "sdn-title-hSn5CIeE sdn-title" +
+          (titleProps?.className ? " " + titleProps.className : "")
         }
       />
       <Description
         {...{ ...sdn.description, ...description }}
-        className={" sdn-description " + (description?.className ?? "")}
+        className={
+          "sdn-description" +
+          (description?.className ? " " + description.className : "")
+        }
       />
     </Frame>
   )

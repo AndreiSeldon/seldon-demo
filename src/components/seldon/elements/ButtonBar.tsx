@@ -15,8 +15,8 @@
 import { HTMLAttributes } from "react"
 import { Button, ButtonProps } from "../elements/Button"
 import { Frame } from "../frames/Frame"
-import { IconProps } from "../primitives/Icon"
-import { LabelProps } from "../primitives/Label"
+import { Icon, IconProps } from "../primitives/Icon"
+import { Label, LabelProps } from "../primitives/Label"
 
 export interface ButtonBarProps extends HTMLAttributes<HTMLElement> {
   className?: string
@@ -50,7 +50,8 @@ export function ButtonBar({
       <Button
         {...{ ...sdn.button, ...button }}
         className={
-          "sdn-button-2BBvyfaJ sdn-button " + (button?.className ?? "")
+          "sdn-button-2BBvyfaJ sdn-button" +
+          (button?.className ? " " + button.className : "")
         }
         icon={{ ...sdn.icon, ...icon }}
         label={{ ...sdn.label, ...label }}
@@ -58,7 +59,8 @@ export function ButtonBar({
       <Button
         {...{ ...sdn.button2, ...button2 }}
         className={
-          "sdn-button-2BBvyfaJ sdn-button " + (button2?.className ?? "")
+          "sdn-button-2BBvyfaJ sdn-button" +
+          (button2?.className ? " " + button2.className : "")
         }
         icon={{ ...sdn.icon2, ...icon2 }}
         label={{ ...sdn.label2, ...label2 }}
@@ -66,7 +68,8 @@ export function ButtonBar({
       <Button
         {...{ ...sdn.button3, ...button3 }}
         className={
-          "sdn-button-2BBvyfaJ sdn-button " + (button3?.className ?? "")
+          "sdn-button-2BBvyfaJ sdn-button" +
+          (button3?.className ? " " + button3.className : "")
         }
         icon={{ ...sdn.icon3, ...icon3 }}
         label={{ ...sdn.label3, ...label3 }}
