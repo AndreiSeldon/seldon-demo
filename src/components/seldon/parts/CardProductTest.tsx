@@ -138,7 +138,7 @@ const sdn: CardProductTestProps = {
     icon: "__default__",
   },
   label: {
-    children: "Label",
+    children: "Andrei!",
     htmlElement: "label",
   },
   textblockDetails: {},
