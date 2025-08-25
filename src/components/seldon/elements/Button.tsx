@@ -29,11 +29,11 @@ export function Button({ className = "", icon, label, ...props }: ButtonProps) {
     <HTMLButton className={"sdn-button " + className} {...props}>
       <Icon
         {...{ ...sdn.icon, ...icon }}
-        className={"sdn-icon-tNabBAnB sdn-icon " + (icon?.className ?? "")}
+        className={"sdn-icon-5qXzcl1T sdn-icon " + (icon?.className ?? "")}
       />
       <Label
         {...{ ...sdn.label, ...label }}
-        className={"sdn-label-LdEzZnWk sdn-label " + (label?.className ?? "")}
+        className={"sdn-label-RO2pofat sdn-label " + (label?.className ?? "")}
       />
     </HTMLButton>
   )
