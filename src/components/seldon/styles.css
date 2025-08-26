@@ -276,26 +276,81 @@ html {
  *                                          *
  ********************************************/
 
-.sdn-icon-cJldpFjJ {
-  color: hsl(0 0% 100%);
-}
-
-.sdn-label-BOyxJbm8 {
-  color: hsl(0 0% 100%);
-  font-size: 0.8rem;
-}
-
-.sdn-title-AWpEkwtT {
-  color: hsl(0 0% 0%);
-}
-
-.sdn-title-NxxLFPyV {
-  margin-bottom: 0.5rem;
+.sdn-button {
+  background-color: hsl(0 0% 0%);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  padding-right: 0.875rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 99999px;
+  border: 0.125rem solid hsl(0 0% 0%);
 }
 
 .sdn-icon {
   font-size: 1rem;
   color: hsl(0 0% 0%);
+}
+
+.sdn-label {
+  color: hsl(0 0% 0%);
+  width: fit-content;
+  height: fit-content;
+  font-family: Inter;
+  font-style: normal;
+  font-synthesis-style: none;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.15;
+  letter-spacing: 0.1px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.sdn-tagline {
+  color: hsl(0 0% 0%);
+  align-self: stretch;
+  height: fit-content;
+  font-family: Inter;
+  font-style: normal;
+  font-synthesis-style: none;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  webkit-line-clamp: 2;
+  line-clamp: 2;
+  webkit-box-orient: vertical;
+  box-orient: vertical;
+}
+
+.sdn-title {
+  color: hsl(0 0% 0%);
+  align-self: stretch;
+  height: fit-content;
+  font-family: Inter;
+  font-style: normal;
+  font-synthesis-style: none;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25;
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  webkit-line-clamp: 2;
+  line-clamp: 2;
+  webkit-box-orient: vertical;
+  box-orient: vertical;
 }
 
 .sdn-button-3D4pvOBS {
@@ -308,6 +363,14 @@ html {
 
 .sdn-button-4o13hVru {
   background-color: hsl(203 100% 62%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.sdn-button-JnRIw2cY {
+  background-color: hsl(135 76% 59%);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -331,76 +394,15 @@ html {
   margin: 1rem;
 }
 
-.sdn-label {
-  color: hsl(0 0% 0%);
-  width: fit-content;
-  height: fit-content;
-  font-family: Inter;
-  font-style: normal;
-  font-synthesis-style: none;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.15;
-  letter-spacing: 0.1px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.sdn-title {
-  color: hsl(0 0% 0%);
-  align-self: stretch;
-  height: fit-content;
-  font-family: Inter;
-  font-style: normal;
-  font-synthesis-style: none;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.25;
-  white-space: normal;
-  overflow: hidden;
-  display: -webkit-box;
-  webkit-line-clamp: 2;
-  line-clamp: 2;
-  webkit-box-orient: vertical;
-  box-orient: vertical;
-}
-
-.sdn-button {
-  background-color: hsl(0 0% 0%);
-  cursor: pointer;
+.sdn-buttonBar {
+  flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding-top: 0.5rem;
-  padding-right: 0.875rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.75rem;
-  width: fit-content;
+  justify-content: end;
+  gap: 1rem;
+  flex: 1 0 0;
   height: fit-content;
-  border-radius: 99999px;
-  border: 0.125rem solid hsl(0 0% 0%);
-}
-
-.sdn-tagline {
-  color: hsl(0 0% 0%);
-  align-self: stretch;
-  height: fit-content;
-  font-family: Inter;
-  font-style: normal;
-  font-synthesis-style: none;
-  font-weight: 500;
-  font-size: 0.75rem;
-  line-height: 1.25;
-  white-space: normal;
-  overflow: hidden;
-  display: -webkit-box;
-  webkit-line-clamp: 2;
-  line-clamp: 2;
-  webkit-box-orient: vertical;
-  box-orient: vertical;
 }
 
 .sdn-buttonBar-o7wdbl2Z {
@@ -421,17 +423,6 @@ html {
   justify-content: end;
 }
 
-.sdn-buttonBar {
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-  gap: 1rem;
-  flex: 1 0 0;
-  height: fit-content;
-}
-
 .sdn-cardProduct {
   background-color: hsl(0 0% 100%);
   background-image: url(https://static.seldon.app/background-default-light.jpg);
@@ -449,6 +440,18 @@ html {
   border: var(--hairline) solid hsl(0 0% 0%);
 }
 
+.sdn-cardProduct-glyJ5UUE {
+  background-color: hsl(0 0% 100%);
+  background-image: url(https://static.seldon.app/background-default-light.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
 .sdn-description {
   color: hsl(0 0% 0%);
   align-self: stretch;
@@ -462,29 +465,13 @@ html {
   white-space: normal;
 }
 
-.sdn-cardProduct-glyJ5UUE {
-  background-color: hsl(0 0% 100%);
-  background-image: url(https://static.seldon.app/background-default-light.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  flex-wrap: nowrap;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
+.sdn-icon-cJldpFjJ {
+  color: hsl(0 0% 100%);
 }
 
-.sdn-textblockDetails-Njjvy0sD {
-  flex-wrap: nowrap;
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
-}
-
-.sdn-textblockDetails-jRyRpai8 {
-  flex-wrap: nowrap;
-  display: flex;
-  flex-direction: column;
+.sdn-label-BOyxJbm8 {
+  color: hsl(0 0% 100%);
+  font-size: 0.8rem;
 }
 
 .sdn-textblockDetails {
@@ -496,12 +483,25 @@ html {
   height: fit-content;
 }
 
-.sdn-button-JnRIw2cY {
-  background-color: hsl(135 76% 59%);
+.sdn-textblockDetails-jRyRpai8 {
+  flex-wrap: nowrap;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.sdn-textblockDetails-Njjvy0sD {
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.sdn-title-AWpEkwtT {
+  color: hsl(0 0% 0%);
+}
+
+.sdn-title-NxxLFPyV {
+  margin-bottom: 0.5rem;
 }
 
 /* Theme Variables */
