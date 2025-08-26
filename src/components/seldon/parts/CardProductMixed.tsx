@@ -126,7 +126,7 @@ export function CardProductMixed({
 const sdn: CardProductMixedProps = {
   textblockDetails: {},
   tagline: {
-    children: "Tagline",
+    children: "Mixed Tagline",
     htmlElement: "p",
   },
   button: {},
@@ -138,12 +138,11 @@ const sdn: CardProductMixedProps = {
     htmlElement: "label",
   },
   titleProps: {
-    children: "Product Card Title",
+    children: "Mixed Card Title",
     htmlElement: "h4",
   },
   description: {
-    children:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus.",
+    children: "Special text for mixed case",
     htmlElement: "p",
   },
   buttonBar: {},
