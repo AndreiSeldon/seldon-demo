@@ -139,7 +139,7 @@ export function CardProductMixed({
           "sdn-buttonBar-MMcNZdBT" +
           (buttonBar?.className ? " " + buttonBar.className : "")
         }
-        button={{
+        button2={{
           ...sdn.button2,
           ...button2,
           className:
@@ -160,7 +160,7 @@ export function CardProductMixed({
             "sdn-label-1R07j0Td" +
             (label2?.className ? " " + label2.className : ""),
         }}
-        button2={{
+        button3={{
           ...sdn.button3,
           ...button3,
           className:
@@ -181,7 +181,7 @@ export function CardProductMixed({
             "sdn-label-1R07j0Td" +
             (label3?.className ? " " + label3.className : ""),
         }}
-        button3={{
+        button4={{
           ...sdn.button4,
           ...button4,
           className:
