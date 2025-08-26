@@ -66,24 +66,33 @@ export function CardProduct({
   return (
     <Frame className={"sdn-cardProduct " + className} {...props}>
       <TextblockDetails
-        {...{ ...sdn.textblockDetails, ...textblockDetails }}
+        {...{
+          ...sdn.textblockDetails,
+          ...(textblockDetails === true ? {} : textblockDetails),
+        }}
         className={
           "sdn-textblockDetails-Njjvy0sD sdn-textblockDetails" +
           (textblockDetails?.className ? " " + textblockDetails.className : "")
         }
-        tagline={{ ...sdn.tagline, ...tagline }}
-        titleProps={{ ...sdn.titleProps, ...titleProps }}
-        description={{ ...sdn.description, ...description }}
+        tagline={{ ...sdn.tagline, ...(tagline === true ? {} : tagline) }}
+        titleProps={{
+          ...sdn.titleProps,
+          ...(titleProps === true ? {} : titleProps),
+        }}
+        description={{
+          ...sdn.description,
+          ...(description === true ? {} : description),
+        }}
       />
       <ButtonBar
-        {...{ ...sdn.buttonBar, ...buttonBar }}
+        {...{ ...sdn.buttonBar, ...(buttonBar === true ? {} : buttonBar) }}
         className={
           "sdn-buttonBar-o7wdbl2Z sdn-buttonBar" +
           (buttonBar?.className ? " " + buttonBar.className : "")
         }
-        button={{ ...sdn.button, ...button }}
-        button2={{ ...sdn.button2, ...button2 }}
-        button3={{ ...sdn.button3, ...button3 }}
+        button={{ ...sdn.button, ...(button === true ? {} : button) }}
+        button2={{ ...sdn.button2, ...(button2 === true ? {} : button2) }}
+        button3={{ ...sdn.button3, ...(button3 === true ? {} : button3) }}
       />
     </Frame>
   )

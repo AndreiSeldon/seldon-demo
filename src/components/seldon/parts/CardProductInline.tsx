@@ -96,8 +96,8 @@ export function CardProductInline({
             "sdn-button-PZ55a4By sdn-button-3D4pvOBS sdn-button" +
             (button?.className ? " " + button.className : "")
           }
-          icon={{ ...sdn.icon, ...icon }}
-          label={{ ...sdn.label, ...label }}
+          icon={{ ...sdn.icon, ...(icon === true ? {} : icon) }}
+          label={{ ...sdn.label, ...(label === true ? {} : label) }}
         />
       )}
       <Frame
@@ -126,8 +126,8 @@ export function CardProductInline({
               "sdn-button-3D4pvOBS sdn-button" +
               (button2?.className ? " " + button2.className : "")
             }
-            icon={{ ...sdn.icon2, ...icon2 }}
-            label={{ ...sdn.label2, ...label2 }}
+            icon={{ ...sdn.icon2, ...(icon2 === true ? {} : icon2) }}
+            label={{ ...sdn.label2, ...(label2 === true ? {} : label2) }}
           />
         )}
         {button3 && (
@@ -137,8 +137,8 @@ export function CardProductInline({
               "sdn-button-3D4pvOBS sdn-button" +
               (button3?.className ? " " + button3.className : "")
             }
-            icon={{ ...sdn.icon3, ...icon3 }}
-            label={{ ...sdn.label3, ...label3 }}
+            icon={{ ...sdn.icon3, ...(icon3 === true ? {} : icon3) }}
+            label={{ ...sdn.label3, ...(label3 === true ? {} : label3) }}
           />
         )}
         <Description
@@ -164,8 +164,8 @@ export function CardProductInline({
             "sdn-button-4o13hVru sdn-button-3D4pvOBS sdn-button" +
             (button4?.className ? " " + button4.className : "")
           }
-          icon={{ ...sdn.icon4, ...icon4 }}
-          label={{ ...sdn.label4, ...label4 }}
+          icon={{ ...sdn.icon4, ...(icon4 === true ? {} : icon4) }}
+          label={{ ...sdn.label4, ...(label4 === true ? {} : label4) }}
         />
         <Button
           {...{ ...sdn.button5, ...(button5 === true ? {} : button5) }}
@@ -173,8 +173,8 @@ export function CardProductInline({
             "sdn-button-OPNTxNTH sdn-button-3D4pvOBS sdn-button" +
             (button5?.className ? " " + button5.className : "")
           }
-          icon={{ ...sdn.icon5, ...icon5 }}
-          label={{ ...sdn.label5, ...label5 }}
+          icon={{ ...sdn.icon5, ...(icon5 === true ? {} : icon5) }}
+          label={{ ...sdn.label5, ...(label5 === true ? {} : label5) }}
         />
         <Button
           {...{ ...sdn.button6, ...(button6 === true ? {} : button6) }}
@@ -182,8 +182,8 @@ export function CardProductInline({
             "sdn-button-3D4pvOBS sdn-button" +
             (button6?.className ? " " + button6.className : "")
           }
-          icon={{ ...sdn.icon6, ...icon6 }}
-          label={{ ...sdn.label6, ...label6 }}
+          icon={{ ...sdn.icon6, ...(icon6 === true ? {} : icon6) }}
+          label={{ ...sdn.label6, ...(label6 === true ? {} : label6) }}
         />
         {button7 && (
           <Button
@@ -192,8 +192,8 @@ export function CardProductInline({
               "sdn-button-3D4pvOBS sdn-button" +
               (button7?.className ? " " + button7.className : "")
             }
-            icon={{ ...sdn.icon7, ...icon7 }}
-            label={{ ...sdn.label7, ...label7 }}
+            icon={{ ...sdn.icon7, ...(icon7 === true ? {} : icon7) }}
+            label={{ ...sdn.label7, ...(label7 === true ? {} : label7) }}
           />
         )}
       </Frame>

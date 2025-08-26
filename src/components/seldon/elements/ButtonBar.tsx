@@ -48,31 +48,31 @@ export function ButtonBar({
   return (
     <Frame className={"sdn-buttonBar " + className} {...props}>
       <Button
-        {...{ ...sdn.button, ...button }}
+        {...{ ...sdn.button, ...(button === true ? {} : button) }}
         className={
           "sdn-button-3D4pvOBS sdn-button" +
           (button?.className ? " " + button.className : "")
         }
-        icon={{ ...sdn.icon, ...icon }}
-        label={{ ...sdn.label, ...label }}
+        icon={{ ...sdn.icon, ...(icon === true ? {} : icon) }}
+        label={{ ...sdn.label, ...(label === true ? {} : label) }}
       />
       <Button
-        {...{ ...sdn.button2, ...button2 }}
+        {...{ ...sdn.button2, ...(button2 === true ? {} : button2) }}
         className={
           "sdn-button-3D4pvOBS sdn-button" +
           (button2?.className ? " " + button2.className : "")
         }
-        icon={{ ...sdn.icon2, ...icon2 }}
-        label={{ ...sdn.label2, ...label2 }}
+        icon={{ ...sdn.icon2, ...(icon2 === true ? {} : icon2) }}
+        label={{ ...sdn.label2, ...(label2 === true ? {} : label2) }}
       />
       <Button
-        {...{ ...sdn.button3, ...button3 }}
+        {...{ ...sdn.button3, ...(button3 === true ? {} : button3) }}
         className={
           "sdn-button-3D4pvOBS sdn-button" +
           (button3?.className ? " " + button3.className : "")
         }
-        icon={{ ...sdn.icon3, ...icon3 }}
-        label={{ ...sdn.label3, ...label3 }}
+        icon={{ ...sdn.icon3, ...(icon3 === true ? {} : icon3) }}
+        label={{ ...sdn.label3, ...(label3 === true ? {} : label3) }}
       />
     </Frame>
   )
