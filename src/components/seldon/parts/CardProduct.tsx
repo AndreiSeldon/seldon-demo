@@ -71,9 +71,26 @@ export function CardProduct({
           "sdn-textblockDetails-Njjvy0sD" +
           (textblockDetails?.className ? " " + textblockDetails.className : "")
         }
-        tagline={{ ...sdn.tagline, ...tagline }}
-        titleProps={{ ...sdn.titleProps, ...titleProps }}
-        description={{ ...sdn.description, ...description }}
+        tagline={{
+          ...sdn.tagline,
+          ...tagline,
+          className:
+            "sdn-tagline" + (tagline?.className ? " " + tagline.className : ""),
+        }}
+        titleProps={{
+          ...sdn.titleProps,
+          ...titleProps,
+          className:
+            "sdn-title-AWpEkwtT" +
+            (titleProps?.className ? " " + titleProps.className : ""),
+        }}
+        description={{
+          ...sdn.description,
+          ...description,
+          className:
+            "sdn-description" +
+            (description?.className ? " " + description.className : ""),
+        }}
       />
       <ButtonBar
         {...{ ...sdn.buttonBar, ...buttonBar }}
@@ -81,9 +98,27 @@ export function CardProduct({
           "sdn-buttonBar-o7wdbl2Z" +
           (buttonBar?.className ? " " + buttonBar.className : "")
         }
-        button={{ ...sdn.button, ...button }}
-        button2={{ ...sdn.button2, ...button2 }}
-        button3={{ ...sdn.button3, ...button3 }}
+        button={{
+          ...sdn.button,
+          ...button,
+          className:
+            "sdn-button-4o13hVru" +
+            (button?.className ? " " + button.className : ""),
+        }}
+        button2={{
+          ...sdn.button2,
+          ...button2,
+          className:
+            "sdn-button-3D4pvOBS" +
+            (button2?.className ? " " + button2.className : ""),
+        }}
+        button3={{
+          ...sdn.button3,
+          ...button3,
+          className:
+            "sdn-button-3D4pvOBS" +
+            (button3?.className ? " " + button3.className : ""),
+        }}
       />
     </Frame>
   )

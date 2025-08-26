@@ -92,8 +92,20 @@ export function CardProductMixed({
               "sdn-button-3D4pvOBS" +
               (button?.className ? " " + button.className : "")
             }
-            icon={{ ...sdn.icon, ...icon }}
-            label={{ ...sdn.label, ...label }}
+            icon={{
+              ...sdn.icon,
+              ...icon,
+              className:
+                "sdn-icon-cJldpFjJ sdn-icon" +
+                (icon?.className ? " " + icon.className : ""),
+            }}
+            label={{
+              ...sdn.label,
+              ...label,
+              className:
+                "sdn-label-BOyxJbm8 sdn-label" +
+                (label?.className ? " " + label.className : ""),
+            }}
           />
         )}
         <Title
@@ -126,9 +138,27 @@ export function CardProductMixed({
           "sdn-buttonBar-rWRytCG8" +
           (buttonBar?.className ? " " + buttonBar.className : "")
         }
-        button={{ ...sdn.button2, ...button2 }}
-        button2={{ ...sdn.button3, ...button3 }}
-        button3={{ ...sdn.button4, ...button4 }}
+        button={{
+          ...sdn.button2,
+          ...button2,
+          className:
+            "sdn-button-JnRIw2cY" +
+            (button2?.className ? " " + button2.className : ""),
+        }}
+        button2={{
+          ...sdn.button3,
+          ...button3,
+          className:
+            "sdn-button-3D4pvOBS" +
+            (button3?.className ? " " + button3.className : ""),
+        }}
+        button3={{
+          ...sdn.button4,
+          ...button4,
+          className:
+            "sdn-button-3D4pvOBS" +
+            (button4?.className ? " " + button4.className : ""),
+        }}
       />
     </Frame>
   )
