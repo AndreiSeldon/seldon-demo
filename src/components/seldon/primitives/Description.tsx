@@ -23,6 +23,20 @@ export interface DescriptionProps
   htmlElement?: "p" | "span"
 }
 
+/**
+ * Description
+ * Level: Primitive
+ * Intent: Presents descriptive text content used for clarification or support.
+ * Tags: description, text, content, primitive, support, info
+ *
+ * @example
+ * ```tsx
+ * <Description
+ *   children="Description"
+ *   htmlElement="p"
+ * />
+ * ```
+ */
 export function Description({
   className = "",
   htmlElement,

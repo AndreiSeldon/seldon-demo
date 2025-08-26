@@ -34,6 +34,20 @@ export interface TitleProps
   htmlElement?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
 }
 
+/**
+ * Title
+ * Level: Primitive
+ * Intent: Prominent title text used at the top of sections or views.
+ * Tags: title, heading, top, section, primitive, UI
+ *
+ * @example
+ * ```tsx
+ * <Title
+ *   children="Title"
+ *   htmlElement="h4"
+ * />
+ * ```
+ */
 export function Title({ className = "", htmlElement, ...props }: TitleProps) {
   switch (htmlElement) {
     case "h1":

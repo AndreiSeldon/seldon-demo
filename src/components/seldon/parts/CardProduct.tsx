@@ -44,6 +44,19 @@ export interface CardProductProps extends HTMLAttributes<HTMLElement> {
   label3?: LabelProps
 }
 
+/**
+ * Product Card
+ * Level: Part
+ * Intent: Product card schema optimized for ecommerce use cases, supporting pricing, images, descriptions, and action triggers.
+ * Tags: card, product, ecommerce, ui, pricing, image, cta, catalog
+ * 
+ * @example
+ * ```tsx
+ * <CardProduct
+
+ * />
+ * ```
+ */
 export function CardProduct({
   className = "",
   textblockDetails = sdn.textblockDetails,

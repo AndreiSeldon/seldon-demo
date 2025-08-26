@@ -31,22 +31,23 @@ Seldon components follow a consistent pattern that makes them easy to use and cu
 
 ### Basic Usage
 
-Every Seldon component can be used in three ways:
+Every Seldon component can be used in these ways:
 
 ```tsx
-// 1. Default rendering (uses built-in content and styles)
+// 1. Minimal rendering (only container elements with defaults render)
 <CardProduct />
 
-// 2. Partial customization (override specific props)
+// 2. Partial customization (add specific content elements)
 <CardProduct 
   tagline={{ children: "New Product" }}
   titleProps={{ children: "Custom Title" }}
 />
 
-// 3. Full customization (provide all props)
+// 3. Full customization (provide all props including buttons and icons)
 <CardProduct
   tagline={{ children: "Featured", className: "custom-tagline" }}
   titleProps={{ children: "Premium Product" }}
+  description={{ children: "Product description here" }}
   button={{ onClick: () => alert("Clicked!") }}
   icon={{ icon: "material-star" }}
   label={{ children: "Buy Now" }}
@@ -58,29 +59,33 @@ Every Seldon component can be used in three ways:
 Components have two types of elements:
 
 #### Always-Rendered Elements
-These elements appear by default and get overridden when you provide props:
+These elements have default values and always appear in the component:
 
 ```tsx
-// These elements will always render with default content
-<CardProduct 
-  tagline={{ children: "Custom tagline" }}  // Overrides default
-  titleProps={{ children: "Custom title" }} // Overrides default
+// These elements always render because they have defaults in the function signature
+<CardProduct />  // textblockDetails and buttonBar will render with default content
+
+<CardProductInline 
+  // Only textblockDetails and buttonBar have defaults and always render
+  tagline={{ children: "Custom tagline" }}  // Will render with custom content
 />
 ```
 
 #### Conditionally-Rendered Elements
-These elements only appear when you explicitly provide them:
+These elements only appear when you explicitly provide them with meaningful content:
 
 ```tsx
-// These elements only render when provided
+// These elements only render when provided with content
 <CardProductInline
   button2={{ onClick: () => alert("Button 2!") }}  // Will render
   button3={{}}                                      // Will NOT render (empty object)
   button7={{ onClick: () => alert("Button 7!") }}  // Will render
+  tagline={{ children: "My Tagline" }}             // Will render
+  titleProps={{ children: "My Title" }}            // Will render
 />
 ```
 
-**Key Rule**: If an element has conditional rendering (`{propName && (...)}` in the JSX), it requires meaningful content to appear.
+**Key Rule**: Elements without defaults in the function signature require meaningful content to appear. Empty objects (`{}`) will not render anything.
 
 ## Function Signatures Guide
 
@@ -90,11 +95,23 @@ The function signature tells you which props are conditional:
 export function CardProductInline({
   textblockDetails = sdn.textblockDetails,  // ✅ Always rendered (has default)
   tagline,                                  // ⚠️  Conditional (no default)
-  button2,                                  // ⚠️  Conditional (no default) 
-  button4 = sdn.button4,                    // ✅ Always rendered (has default)
+  button2,                                  // ⚠️  Conditional (no default)
+  buttonBar = sdn.buttonBar,                // ✅ Always rendered (has default)
+  button4,                                  // ⚠️  Conditional (no default)
   // ...
 }: CardProductInlineProps)
+
+export function CardProduct({
+  textblockDetails = sdn.textblockDetails,  // ✅ Always rendered (has default) 
+  tagline,                                  // ⚠️  Conditional (no default)
+  titleProps,                               // ⚠️  Conditional (no default)
+  description,                              // ⚠️  Conditional (no default)
+  buttonBar = sdn.buttonBar,                // ✅ Always rendered (has default)
+  // ...
+}: CardProductProps)
 ```
+
+**Key Pattern**: Elements with `= sdn.something` have defaults and always render. Elements without defaults are conditional.
 
 ## Common Patterns
 
@@ -118,6 +135,8 @@ export function CardProductInline({
   button2={{ onClick: () => setFavorite(true) }}
   icon2={{ icon: "material-favorite" }}
   label2={{ children: "Save" }}
+  tagline={{ children: "Featured Product" }}
+  titleProps={{ children: "Product Name" }}
 />
 ```
 
@@ -149,6 +168,7 @@ function ProductCard({ showActions, isLoggedIn }) {
       {/* Only show actions if enabled */}
       {...(showActions && {
         button2: { onClick: () => addToCart() },
+        icon2: { icon: "material-shopping-cart" },
         label2: { children: "Add to Cart" }
       })}
       
@@ -245,20 +265,25 @@ function CustomProduct(props: CardProductProps) {
 ## Best Practices
 
 ### 1. Start Simple
-Begin with default components and gradually add customizations:
+Begin with minimal props and gradually add customizations:
 
 ```tsx
-// Start with this
+// Start with this (only default container elements render)
 <CardProduct />
 
-// Then customize
-<CardProduct tagline={{ children: "My Product" }} />
+// Then add content
+<CardProduct 
+  tagline={{ children: "My Product" }}
+  titleProps={{ children: "Custom Title" }}
+/>
 
 // Finally, full customization
 <CardProduct 
   tagline={{ children: "My Product" }}
+  titleProps={{ children: "Custom Title" }}
   button={{ onClick: handleClick }}
   icon={{ icon: "material-star" }}
+  label={{ children: "Buy Now" }}
 />
 ```
 
@@ -272,16 +297,20 @@ Only provide props for conditional elements when you want them to appear:
 // ✅ Do this (provide meaningful content)
 <CardProductInline 
   button2={{ onClick: handleAction }}
+  icon2={{ icon: "material-star" }}
   label2={{ children: "Action" }}
 />
 ```
 
-### 3. Leverage Default Content
-Take advantage of built-in content and only override what you need:
+### 3. Leverage Container Defaults
+Take advantage of the always-rendered containers (textblockDetails, buttonBar):
 
 ```tsx
-// This gets you a fully functional card with just title customization
-<CardProduct titleProps={{ children: "My Custom Title" }} />
+// This gets you the full layout structure with custom content
+<CardProduct 
+  tagline={{ children: "My Custom Title" }}
+  description={{ children: "My description" }}
+/>
 ```
 
 ### 4. Maintain Accessibility
@@ -301,19 +330,22 @@ Always provide meaningful labels and ARIA attributes:
 ## Troubleshooting
 
 ### Elements Not Rendering
-- Check if the element is conditional (no default in function signature)
-- Ensure you're providing meaningful content, not empty objects
-- Verify that required nested props are included (e.g., `icon` for buttons)
+- Check if the element has a default value in the function signature (look for `= sdn.something`)
+- Elements without defaults need meaningful props to render (not empty objects `{}`)
+- **Note**: You may see examples with empty objects like `tagline={{}}` - these are valid but won't display any content
+- For buttons, make sure to provide the button prop itself, plus icon and label if needed
+- Verify that required nested props are included (e.g., `children` for labels, `icon` for icons)
 
 ### Styling Issues
 - Import the `styles.css` file in your app
 - Check CSS class conflicts with your existing styles
-- Use browser dev tools to inspect generated class names
+- Use browser dev tools to inspect generated class names (they include unique IDs like `sdn-button-3D4pvOBS`)
 
 ### TypeScript Errors
 - Ensure you're importing the correct prop interfaces
 - Check that all required properties are provided
 - Use optional chaining for nested props: `button?.onClick`
+- Remember that empty objects `{}` are valid TypeScript but won't render content
 
 ## Getting Help
 

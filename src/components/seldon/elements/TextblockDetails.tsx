@@ -25,6 +25,19 @@ export interface TextblockDetailsProps extends HTMLAttributes<HTMLElement> {
   description?: DescriptionProps
 }
 
+/**
+ * Textblock Details
+ * Level: Element
+ * Intent: Displays detailed text content like descriptions or metadata.
+ * Tags: text, details, description, metadata, info, UI, content
+ * 
+ * @example
+ * ```tsx
+ * <TextblockDetails
+
+ * />
+ * ```
+ */
 export function TextblockDetails({
   className = "",
   tagline = sdn.tagline,

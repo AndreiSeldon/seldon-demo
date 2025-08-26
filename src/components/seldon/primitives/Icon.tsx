@@ -43,6 +43,19 @@ export interface IconProps extends SVGAttributes<SVGElement> {
     | "material-addComment"
 }
 
+/**
+ * Icon
+ * Level: Primitive
+ * Intent: Displays a vector or symbolic icon representing an action or concept.
+ * Tags: icon, symbol, graphic, primitive, UI, decoration
+ *
+ * @example
+ * ```tsx
+ * <Icon
+ *   icon="__default__"
+ * />
+ * ```
+ */
 export function Icon({
   className = "",
   icon = "__default__",

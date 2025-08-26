@@ -45,6 +45,19 @@ export interface CardProductMixedProps extends HTMLAttributes<HTMLElement> {
   label4?: LabelProps
 }
 
+/**
+ * Product Card
+ * Level: Part
+ * Intent: Product card schema optimized for ecommerce use cases, supporting pricing, images, descriptions, and action triggers.
+ * Tags: card, product, ecommerce, ui, pricing, image, cta, catalog
+ * 
+ * @example
+ * ```tsx
+ * <CardProductMixed
+
+ * />
+ * ```
+ */
 export function CardProductMixed({
   className = "",
   textblockDetails = sdn.textblockDetails,

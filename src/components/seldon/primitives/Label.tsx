@@ -21,6 +21,20 @@ export interface LabelProps extends HTMLAttributes<HTMLSpanElement> {
   htmlElement?: "span" | "label"
 }
 
+/**
+ * Label
+ * Level: Primitive
+ * Intent: Associates readable text with a form control for accessibility.
+ * Tags: label, form, input, text, accessibility, primitive, UI
+ *
+ * @example
+ * ```tsx
+ * <Label
+ *   children="Label"
+ *   htmlElement="label"
+ * />
+ * ```
+ */
 export function Label({ className = "", htmlElement, ...props }: LabelProps) {
   return <HTMLSpan className={"sdn-label " + className} {...props} />
 }

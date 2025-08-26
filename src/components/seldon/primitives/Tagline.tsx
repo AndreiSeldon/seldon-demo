@@ -26,6 +26,20 @@ export interface TaglineProps
   htmlElement?: "h5" | "h6" | "p"
 }
 
+/**
+ * Tagline
+ * Level: Primitive
+ * Intent: Brief descriptive or marketing phrase used in branding or headers.
+ * Tags: tagline, branding, message, description, text, primitive
+ *
+ * @example
+ * ```tsx
+ * <Tagline
+ *   children="Tagline"
+ *   htmlElement="p"
+ * />
+ * ```
+ */
 export function Tagline({
   className = "",
   htmlElement,
