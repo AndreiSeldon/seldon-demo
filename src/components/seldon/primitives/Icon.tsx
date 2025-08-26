@@ -45,8 +45,11 @@ export interface IconProps extends SVGAttributes<SVGElement> {
 
 /**
  * Icon
+ *
  * Level: Primitive
+ *
  * Intent: Displays a vector or symbolic icon representing an action or concept.
+ *
  * Tags: icon, symbol, graphic, primitive, UI, decoration
  *
  * @example

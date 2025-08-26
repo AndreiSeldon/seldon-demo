@@ -33,8 +33,11 @@ export interface ButtonBarProps extends HTMLAttributes<HTMLElement> {
 
 /**
  * Button Bar
+ *
  * Level: Element
+ *
  * Intent: Groups multiple buttons in a horizontal layout for related actions.
+ *
  * Tags: button group, bar, actions, UI, layout, controls, inline, cluster
  *
  * @example

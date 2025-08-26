@@ -25,8 +25,11 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 /**
  * Button
+ *
  * Level: Element
+ *
  * Intent: Standard button for triggering actions like submit, confirm, or cancel.
+ *
  * Tags: button, action, UI, primary, click, control, submit, call to action
  *
  * @example

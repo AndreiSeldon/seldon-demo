@@ -36,8 +36,11 @@ export interface TitleProps
 
 /**
  * Title
+ *
  * Level: Primitive
+ *
  * Intent: Prominent title text used at the top of sections or views.
+ *
  * Tags: title, heading, top, section, primitive, UI
  *
  * @example

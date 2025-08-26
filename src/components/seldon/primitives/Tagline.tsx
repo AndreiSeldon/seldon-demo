@@ -28,8 +28,11 @@ export interface TaglineProps
 
 /**
  * Tagline
+ *
  * Level: Primitive
+ *
  * Intent: Brief descriptive or marketing phrase used in branding or headers.
+ *
  * Tags: tagline, branding, message, description, text, primitive
  *
  * @example

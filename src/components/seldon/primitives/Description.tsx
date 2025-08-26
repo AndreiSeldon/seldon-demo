@@ -25,8 +25,11 @@ export interface DescriptionProps
 
 /**
  * Description
+ *
  * Level: Primitive
+ *
  * Intent: Presents descriptive text content used for clarification or support.
+ *
  * Tags: description, text, content, primitive, support, info
  *
  * @example

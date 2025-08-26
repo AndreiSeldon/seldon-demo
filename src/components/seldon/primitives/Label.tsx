@@ -23,8 +23,11 @@ export interface LabelProps extends HTMLAttributes<HTMLSpanElement> {
 
 /**
  * Label
+ *
  * Level: Primitive
+ *
  * Intent: Associates readable text with a form control for accessibility.
+ *
  * Tags: label, form, input, text, accessibility, primitive, UI
  *
  * @example

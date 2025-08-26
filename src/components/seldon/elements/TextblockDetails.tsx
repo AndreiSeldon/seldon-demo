@@ -27,8 +27,11 @@ export interface TextblockDetailsProps extends HTMLAttributes<HTMLElement> {
 
 /**
  * Textblock Details
+ *
  * Level: Element
+ *
  * Intent: Displays detailed text content like descriptions or metadata.
+ *
  * Tags: text, details, description, metadata, info, UI, content
  *
  * @example
