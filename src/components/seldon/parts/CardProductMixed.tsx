@@ -93,8 +93,20 @@ export function CardProductMixed({
               "sdn-button-3D4pvOBS" +
               (button?.className ? " " + button.className : "")
             }
-            icon={{ ...sdn.icon, ...icon }}
-            label={{ ...sdn.label, ...label }}
+            icon={{
+              ...sdn.icon,
+              ...icon,
+              className:
+                "sdn-icon-1ihZT8Ll" +
+                (icon?.className ? " " + icon.className : ""),
+            }}
+            label={{
+              ...sdn.label,
+              ...label,
+              className:
+                "sdn-label-1R07j0Td" +
+                (label?.className ? " " + label.className : ""),
+            }}
           />
         )}
         <Title
