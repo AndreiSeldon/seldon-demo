@@ -41,7 +41,7 @@ function Screen1() {
 
       {/* Customized Mixed Variant */}
       <CardProductMixed
-        style={{ marginTop: 20, width: 600 }}
+        style={{ marginTop: 20, width: 500 }}
         tagline2={{ children: "Is this thing on?" }}
         titleProps={{ children: "Customized Mixed Card" }}
         button={{ onClick: () => alert("Special mix button clicked!") }}
