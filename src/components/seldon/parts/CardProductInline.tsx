@@ -17,7 +17,6 @@ import { Button, ButtonProps } from "../elements/Button"
 import { ButtonBarProps } from "../elements/ButtonBar"
 import { TextblockDetailsProps } from "../elements/TextblockDetails"
 import { Frame } from "../frames/Frame"
-import { Description, DescriptionProps } from "../primitives/Description"
 import { Icon, IconProps } from "../primitives/Icon"
 import { Label, LabelProps } from "../primitives/Label"
 import { Tagline, TaglineProps } from "../primitives/Tagline"
@@ -38,7 +37,6 @@ export interface CardProductInlineProps extends HTMLAttributes<HTMLElement> {
   button3?: ButtonProps
   icon3?: IconProps
   label3?: LabelProps
-  description?: DescriptionProps
   buttonBar?: ButtonBarProps
   button4?: ButtonProps
   icon4?: IconProps
@@ -56,32 +54,31 @@ export interface CardProductInlineProps extends HTMLAttributes<HTMLElement> {
 
 export function CardProductInline({
   className = "",
-  textblockDetails = sdn.textblockDetails,
-  tagline = sdn.tagline,
-  titleProps = sdn.titleProps,
-  button2 = sdn.button2,
-  icon2 = sdn.icon2,
-  label2 = sdn.label2,
-  button3 = sdn.button3,
-  icon3 = sdn.icon3,
-  label3 = sdn.label3,
-  description = sdn.description,
-  buttonBar = sdn.buttonBar,
-  button4 = sdn.button4,
-  icon4 = sdn.icon4,
-  label4 = sdn.label4,
-  button5 = sdn.button5,
-  icon5 = sdn.icon5,
-  label5 = sdn.label5,
-  button6 = sdn.button6,
-  icon6 = sdn.icon6,
-  label6 = sdn.label6,
-  button7 = sdn.button7,
-  icon7 = sdn.icon7,
-  label7 = sdn.label7,
   button,
   icon,
   label,
+  textblockDetails = sdn.textblockDetails,
+  tagline,
+  titleProps,
+  button2,
+  icon2,
+  label2,
+  button3,
+  icon3,
+  label3,
+  buttonBar = sdn.buttonBar,
+  button4,
+  icon4,
+  label4,
+  button5,
+  icon5,
+  label5,
+  button6,
+  icon6,
+  label6,
+  button7,
+  icon7,
+  label7,
   ...props
 }: CardProductInlineProps) {
   return (
@@ -141,13 +138,6 @@ export function CardProductInline({
             label={{ ...sdn.label3, ...label3 }}
           />
         )}
-        <Description
-          {...{ ...sdn.description, ...description }}
-          className={
-            "sdn-description-rWA5n84C sdn-description" +
-            (description?.className ? " " + description.className : "")
-          }
-        />
       </Frame>
       <Frame
         className={
@@ -231,10 +221,6 @@ const sdn: CardProductInlineProps = {
   label3: {
     children: "Inline B",
     htmlElement: "label",
-  },
-  description: {
-    children: "Special inline text for testing.",
-    htmlElement: "p",
   },
   buttonBar: {},
   button4: {},

@@ -35,14 +35,14 @@ export interface ButtonBarProps extends HTMLAttributes<HTMLElement> {
 export function ButtonBar({
   className = "",
   button = sdn.button,
-  icon = sdn.icon,
-  label = sdn.label,
+  icon,
+  label,
   button2 = sdn.button2,
-  icon2 = sdn.icon2,
-  label2 = sdn.label2,
+  icon2,
+  label2,
   button3 = sdn.button3,
-  icon3 = sdn.icon3,
-  label3 = sdn.label3,
+  icon3,
+  label3,
   ...props
 }: ButtonBarProps) {
   return (
