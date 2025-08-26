@@ -14,28 +14,18 @@ function Screen1() {
       <h2>Screen 1 - CardProductInline Demo</h2>
 
       {/* Basic usage */}
-      <CardProduct style={{ marginTop: 20, width: 600 }} />
+      <CardProduct style={{ marginTop: 20, width: 500 }} />
 
       {/* Simple usage */}
       <CardProductInline
-        style={{ marginTop: 20, width: 600 }}
-        tagline={{}}
-        titleProps={{}}
-        button2={{}}
-        button3={{}}
-        button4={{}}
-        button7={{}}
+        style={{ marginTop: 20, width: 500 }}
       />
 
       {/* Customized version */}
       <CardProductInline
-        style={{ marginTop: 20, width: 600 }}
+        style={{ marginTop: 20, width: 500 }}
         tagline={{ children: "New Product" }}
         titleProps={{ children: "Local Product Card" }}
-        description={{
-          children:
-            "This is a detailed description of our amazing product with all its features.",
-        }}
         button={{ onClick: () => alert("Special button clicked!") }}
         label={{ children: "Featured" }}
         icon={{ icon: "material-addChart" }}
