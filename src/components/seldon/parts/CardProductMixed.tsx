@@ -160,60 +160,126 @@ export function CardProductMixed({
             "sdn-button-3D4pvOBS" +
             (button4?.className ? " " + button4.className : ""),
         }}
+        icon={{
+          ...sdn.icon2,
+          ...icon2,
+          className:
+            "sdn-icon-1ihZT8Ll" +
+            (icon2?.className ? " " + icon2.className : ""),
+        }}
+        label={{
+          ...sdn.label2,
+          ...label2,
+          className:
+            "sdn-label-1R07j0Td" +
+            (label2?.className ? " " + label2.className : ""),
+        }}
+        icon={{
+          ...sdn.icon3,
+          ...icon3,
+          className:
+            "sdn-icon-1ihZT8Ll" +
+            (icon3?.className ? " " + icon3.className : ""),
+        }}
+        label={{
+          ...sdn.label3,
+          ...label3,
+          className:
+            "sdn-label-1R07j0Td" +
+            (label3?.className ? " " + label3.className : ""),
+        }}
+        icon={{
+          ...sdn.icon4,
+          ...icon4,
+          className:
+            "sdn-icon-1ihZT8Ll" +
+            (icon4?.className ? " " + icon4.className : ""),
+        }}
+        label={{
+          ...sdn.label4,
+          ...label4,
+          className:
+            "sdn-label-1R07j0Td" +
+            (label4?.className ? " " + label4.className : ""),
+        }}
       />
     </Frame>
   )
 }
 
 const sdn: CardProductMixedProps = {
-  textblockDetails: {},
+  textblockDetails: {
+    className: "sdn-textblockDetails-XKYdln17",
+  },
   tagline: {
     children: "Mixed Tagline",
     htmlElement: "p",
+    className: "sdn-tagline-RYPEIO98",
   },
-  button: {},
+  button: {
+    className: "sdn-button-3D4pvOBS",
+  },
   icon: {
     icon: "material-addCircle",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label: {
     children: "Mixed",
     htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
   },
   titleProps: {
     children: "Mixed Card Title",
     htmlElement: "h4",
+    className: "sdn-title-83oQ44Bx",
   },
   tagline2: {
     children: "Additional Tagline",
     htmlElement: "p",
+    className: "sdn-tagline-RYPEIO98",
   },
   description: {
     children: "Special text for mixed case",
     htmlElement: "p",
+    className: "sdn-description-QJZ11zsK",
   },
-  buttonBar: {},
-  button2: {},
+  buttonBar: {
+    className: "sdn-buttonBar-MMcNZdBT",
+  },
+  button2: {
+    className: "sdn-button-JnRIw2cY",
+  },
   icon2: {
     icon: "material-dataset",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label2: {
     children: "Mixed X",
     htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
   },
-  button3: {},
+  button3: {
+    className: "sdn-button-3D4pvOBS",
+  },
   icon3: {
     icon: "material-cancel",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label3: {
     children: "Mixed Y",
     htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
   },
-  button4: {},
+  button4: {
+    className: "sdn-button-3D4pvOBS",
+  },
   icon4: {
     icon: "material-borderColor",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label4: {
     children: "Mixed Z",
     htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
   },
 }

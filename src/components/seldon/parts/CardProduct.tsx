@@ -120,49 +120,109 @@ export function CardProduct({
             "sdn-button-3D4pvOBS" +
             (button3?.className ? " " + button3.className : ""),
         }}
+        icon={{
+          ...sdn.icon,
+          ...icon,
+          className:
+            "sdn-icon-1ihZT8Ll" + (icon?.className ? " " + icon.className : ""),
+        }}
+        label={{
+          ...sdn.label,
+          ...label,
+          className:
+            "sdn-label-1R07j0Td" +
+            (label?.className ? " " + label.className : ""),
+        }}
+        icon={{
+          ...sdn.icon2,
+          ...icon2,
+          className:
+            "sdn-icon-1ihZT8Ll" +
+            (icon2?.className ? " " + icon2.className : ""),
+        }}
+        label={{
+          ...sdn.label2,
+          ...label2,
+          className:
+            "sdn-label-1R07j0Td" +
+            (label2?.className ? " " + label2.className : ""),
+        }}
+        icon={{
+          ...sdn.icon3,
+          ...icon3,
+          className:
+            "sdn-icon-1ihZT8Ll" +
+            (icon3?.className ? " " + icon3.className : ""),
+        }}
+        label={{
+          ...sdn.label3,
+          ...label3,
+          className:
+            "sdn-label-1R07j0Td" +
+            (label3?.className ? " " + label3.className : ""),
+        }}
       />
     </Frame>
   )
 }
 
 const sdn: CardProductProps = {
-  textblockDetails: {},
+  textblockDetails: {
+    className: "sdn-textblockDetails-Njjvy0sD",
+  },
   tagline: {
     children: "Tagline",
     htmlElement: "p",
+    className: "sdn-tagline-RYPEIO98",
   },
   titleProps: {
     children: "Product Card",
     htmlElement: "h4",
+    className: "sdn-title-83oQ44Bx",
   },
   description: {
     children:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus.",
     htmlElement: "p",
+    className: "sdn-description-QJZ11zsK",
   },
-  buttonBar: {},
-  button: {},
+  buttonBar: {
+    className: "sdn-buttonBar-MMcNZdBT",
+  },
+  button: {
+    className: "sdn-button-4o13hVru",
+  },
   icon: {
     icon: "__default__",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label: {
     children: "Default 1",
     htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
   },
-  button2: {},
+  button2: {
+    className: "sdn-button-3D4pvOBS",
+  },
   icon2: {
     icon: "__default__",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label2: {
     children: "Default 2",
     htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
   },
-  button3: {},
+  button3: {
+    className: "sdn-button-3D4pvOBS",
+  },
   icon3: {
     icon: "__default__",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label3: {
     children: "Default 3",
     htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
   },
 }
