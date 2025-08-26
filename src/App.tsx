@@ -7,6 +7,8 @@ import "./components/seldon/styles.css";
 import { CardProduct } from "./components/seldon/parts/CardProduct";
 import { CardProductInline } from "./components/seldon/parts/CardProductInline";
 import { CardProductMixed } from "./components/seldon/parts/CardProductMixed";
+import { ButtonBar } from "./components/seldon/elements/ButtonBar";
+import { Title } from "./components/seldon/primitives/Title";
 import { Fonts } from "./components/seldon/Fonts";
 
 function Screen1() {
@@ -15,6 +17,18 @@ function Screen1() {
       style={{ padding: 20, gap: 20, display: "flex", flexDirection: "column" }}
     >
       <h2>Screen 1 - CardProductInline Demo</h2>
+
+      {/* Default components with default theme */}
+      <div
+        style={{
+          padding: 20,
+          gap: 20,
+          display: "flex",
+        }}
+      >
+        <Title children="Testing Titles" />
+        <ButtonBar />
+      </div>
 
       {/* Default CardProduct */}
       <CardProduct />
