@@ -1,4 +1,5 @@
-/*
+/*****
+ *
  * This code was generated using Seldon (https://seldon.app)
  *
  * Licensed under the Terms of Use: https://seldon.digital/terms-of-service
@@ -8,7 +9,9 @@
  * in whole or in part, for the purposes of training, fine-tuning,
  * or otherwise improving (directly or indirectly) any machine learning
  * or artificial intelligence system.
- */
+ * 
+ *****/
+ 
 import { ButtonHTMLAttributes } from "react"
 import { HTMLButton } from "../native-react/HTML.Button"
 import { Icon, IconProps } from "../primitives/Icon"
@@ -17,37 +20,36 @@ import { Label, LabelProps } from "../primitives/Label"
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string
 
-  iconProps?: IconProps
-  labelProps?: LabelProps
+  icon?: IconProps
+  label?: LabelProps
 }
 
-export function Button({
-  className = "",
-  iconProps,
-  labelProps,
-  ...props
-}: ButtonProps) {
+export function Button({ className = "", icon, label, ...props }: ButtonProps) {
   return (
     <HTMLButton className={"sdn-button " + className} {...props}>
       <Icon
-        {...{ ...seldon.iconProps, ...iconProps }}
-        className={"sdn-icon-8LzCwctp sdn-icon " + (iconProps?.className ?? "")}
+        {...{ ...sdn.icon, ...icon }}
+        className={
+          "sdn-icon-cJldpFjJ sdn-icon" +
+          (icon?.className ? " " + icon.className : "")
+        }
       />
       <Label
-        {...{ ...seldon.labelProps, ...labelProps }}
+        {...{ ...sdn.label, ...label }}
         className={
-          "sdn-label-CWVJRuXi sdn-label " + (labelProps?.className ?? "")
+          "sdn-label-BOyxJbm8 sdn-label" +
+          (label?.className ? " " + label.className : "")
         }
       />
     </HTMLButton>
   )
 }
 
-const seldon: ButtonProps = {
-  iconProps: {
+const sdn: ButtonProps = {
+  icon: {
     icon: "__default__",
   },
-  labelProps: {
+  label: {
     children: "Label",
     htmlElement: "label",
   },

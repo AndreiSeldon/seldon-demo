@@ -1,4 +1,5 @@
-/*
+/*****
+ *
  * This code was generated using Seldon (https://seldon.app)
  *
  * Licensed under the Terms of Use: https://seldon.digital/terms-of-service
@@ -8,7 +9,9 @@
  * in whole or in part, for the purposes of training, fine-tuning,
  * or otherwise improving (directly or indirectly) any machine learning
  * or artificial intelligence system.
- */
+ * 
+ *****/
+ 
 import { HTMLAttributes } from "react"
 import { Frame } from "../frames/Frame"
 import { Description, DescriptionProps } from "../primitives/Description"
@@ -18,40 +21,46 @@ import { Title, TitleProps } from "../primitives/Title"
 export interface TextblockDetailsProps extends HTMLAttributes<HTMLElement> {
   className?: string
 
-  taglineProps?: TaglineProps
+  tagline?: TaglineProps
   titleProps?: TitleProps
-  descriptionProps?: DescriptionProps
+  description?: DescriptionProps
 }
 
 export function TextblockDetails({
   className = "",
-  taglineProps,
+  tagline,
   titleProps,
-  descriptionProps,
+  description,
   ...props
 }: TextblockDetailsProps) {
   return (
     <Frame className={"sdn-textblockDetails " + className} {...props}>
       <Tagline
-        {...{ ...seldon.taglineProps, ...taglineProps }}
-        className={" sdn-tagline " + (taglineProps?.className ?? "")}
+        {...{ ...sdn.tagline, ...tagline }}
+        className={
+          "sdn-tagline" + (tagline?.className ? " " + tagline.className : "")
+        }
       />
       <Title
-        {...{ ...seldon.titleProps, ...titleProps }}
+        {...{ ...sdn.titleProps, ...titleProps }}
         className={
-          "sdn-title-J3VG02iY sdn-title " + (titleProps?.className ?? "")
+          "sdn-title-NxxLFPyV sdn-title" +
+          (titleProps?.className ? " " + titleProps.className : "")
         }
       />
       <Description
-        {...{ ...seldon.descriptionProps, ...descriptionProps }}
-        className={" sdn-description " + (descriptionProps?.className ?? "")}
+        {...{ ...sdn.description, ...description }}
+        className={
+          "sdn-description" +
+          (description?.className ? " " + description.className : "")
+        }
       />
     </Frame>
   )
 }
 
-const seldon: TextblockDetailsProps = {
-  taglineProps: {
+const sdn: TextblockDetailsProps = {
+  tagline: {
     children: "Tagline",
     htmlElement: "p",
   },
@@ -59,7 +68,7 @@ const seldon: TextblockDetailsProps = {
     children: "Product Card Title",
     htmlElement: "h4",
   },
-  descriptionProps: {
+  description: {
     children:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus.",
     htmlElement: "p",
