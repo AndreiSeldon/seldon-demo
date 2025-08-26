@@ -29,27 +29,27 @@ export interface CardProductInlineProps extends HTMLAttributes<HTMLElement> {
   icon?: IconProps
   label?: LabelProps
   textblockDetails?: TextblockDetailsProps
-  button2?: ButtonProps
-  icon2?: IconProps
-  label2?: LabelProps
+  button?: ButtonProps
+  icon?: IconProps
+  label?: LabelProps
   button1?: ButtonProps
-  icon3?: IconProps
-  label3?: LabelProps
+  icon?: IconProps
+  label?: LabelProps
   tagline?: TaglineProps
   titleProps?: TitleProps
   buttonBar?: ButtonBarProps
-  button3?: ButtonProps
-  icon4?: IconProps
-  label4?: LabelProps
+  button?: ButtonProps
+  icon?: IconProps
+  label?: LabelProps
   button1?: ButtonProps
-  icon5?: IconProps
-  label5?: LabelProps
+  icon?: IconProps
+  label?: LabelProps
   button2?: ButtonProps
-  icon6?: IconProps
-  label6?: LabelProps
+  icon?: IconProps
+  label?: LabelProps
   button3?: ButtonProps
-  icon7?: IconProps
-  label7?: LabelProps
+  icon?: IconProps
+  label?: LabelProps
 }
 
 export function CardProductInline({
@@ -58,24 +58,12 @@ export function CardProductInline({
   icon,
   label,
   textblockDetails = sdn.textblockDetails,
-  button2,
-  icon2,
-  label2,
   button1,
-  icon3,
-  label3,
   tagline,
   titleProps,
   buttonBar = sdn.buttonBar,
+  button2,
   button3,
-  icon4,
-  label4,
-  icon5,
-  label5,
-  icon6,
-  label6,
-  icon7,
-  label7,
   ...props
 }: CardProductInlineProps) {
   return (
@@ -100,26 +88,26 @@ export function CardProductInline({
           (textblockDetails?.className ? " " + textblockDetails.className : "")
         }
       >
-        {button2 && (
+        {button && (
           <Button
-            {...{ ...sdn.button2, ...button2 }}
+            {...{ ...sdn.button, ...button }}
             className={
               "sdn-button-3D4pvOBS" +
-              (button2?.className ? " " + button2.className : "")
+              (button?.className ? " " + button.className : "")
             }
             icon={{
-              ...sdn.icon2,
-              ...icon2,
+              ...sdn.icon,
+              ...icon,
               className:
                 "sdn-icon-1ihZT8Ll" +
-                (icon2?.className ? " " + icon2.className : ""),
+                (icon?.className ? " " + icon.className : ""),
             }}
             label={{
-              ...sdn.label2,
-              ...label2,
+              ...sdn.label,
+              ...label,
               className:
                 "sdn-label-1R07j0Td" +
-                (label2?.className ? " " + label2.className : ""),
+                (label?.className ? " " + label.className : ""),
             }}
           />
         )}
@@ -131,18 +119,18 @@ export function CardProductInline({
               (button1?.className ? " " + button1.className : "")
             }
             icon={{
-              ...sdn.icon3,
-              ...icon3,
+              ...sdn.icon,
+              ...icon,
               className:
                 "sdn-icon-1ihZT8Ll" +
-                (icon3?.className ? " " + icon3.className : ""),
+                (icon?.className ? " " + icon.className : ""),
             }}
             label={{
-              ...sdn.label3,
-              ...label3,
+              ...sdn.label,
+              ...label,
               className:
                 "sdn-label-1R07j0Td" +
-                (label3?.className ? " " + label3.className : ""),
+                (label?.className ? " " + label.className : ""),
             }}
           />
         )}
@@ -168,24 +156,24 @@ export function CardProductInline({
         }
       >
         <Button
-          {...{ ...sdn.button3, ...button3 }}
+          {...{ ...sdn.button, ...button }}
           className={
             "sdn-button-4o13hVru" +
-            (button3?.className ? " " + button3.className : "")
+            (button?.className ? " " + button.className : "")
           }
           icon={{
-            ...sdn.icon4,
-            ...icon4,
+            ...sdn.icon,
+            ...icon,
             className:
               "sdn-icon-1ihZT8Ll" +
-              (icon4?.className ? " " + icon4.className : ""),
+              (icon?.className ? " " + icon.className : ""),
           }}
           label={{
-            ...sdn.label4,
-            ...label4,
+            ...sdn.label,
+            ...label,
             className:
               "sdn-label-1R07j0Td" +
-              (label4?.className ? " " + label4.className : ""),
+              (label?.className ? " " + label.className : ""),
           }}
         />
         <Button
@@ -195,18 +183,18 @@ export function CardProductInline({
             (button1?.className ? " " + button1.className : "")
           }
           icon={{
-            ...sdn.icon5,
-            ...icon5,
+            ...sdn.icon,
+            ...icon,
             className:
               "sdn-icon-1ihZT8Ll" +
-              (icon5?.className ? " " + icon5.className : ""),
+              (icon?.className ? " " + icon.className : ""),
           }}
           label={{
-            ...sdn.label5,
-            ...label5,
+            ...sdn.label,
+            ...label,
             className:
               "sdn-label-1R07j0Td" +
-              (label5?.className ? " " + label5.className : ""),
+              (label?.className ? " " + label.className : ""),
           }}
         />
         <Button
@@ -216,18 +204,18 @@ export function CardProductInline({
             (button2?.className ? " " + button2.className : "")
           }
           icon={{
-            ...sdn.icon6,
-            ...icon6,
+            ...sdn.icon,
+            ...icon,
             className:
               "sdn-icon-1ihZT8Ll" +
-              (icon6?.className ? " " + icon6.className : ""),
+              (icon?.className ? " " + icon.className : ""),
           }}
           label={{
-            ...sdn.label6,
-            ...label6,
+            ...sdn.label,
+            ...label,
             className:
               "sdn-label-1R07j0Td" +
-              (label6?.className ? " " + label6.className : ""),
+              (label?.className ? " " + label.className : ""),
           }}
         />
         {button3 && (
@@ -238,18 +226,18 @@ export function CardProductInline({
               (button3?.className ? " " + button3.className : "")
             }
             icon={{
-              ...sdn.icon7,
-              ...icon7,
+              ...sdn.icon,
+              ...icon,
               className:
                 "sdn-icon-1ihZT8Ll" +
-                (icon7?.className ? " " + icon7.className : ""),
+                (icon?.className ? " " + icon.className : ""),
             }}
             label={{
-              ...sdn.label7,
-              ...label7,
+              ...sdn.label,
+              ...label,
               className:
                 "sdn-label-1R07j0Td" +
-                (label7?.className ? " " + label7.className : ""),
+                (label?.className ? " " + label.className : ""),
             }}
           />
         )}
@@ -260,43 +248,22 @@ export function CardProductInline({
 
 const sdn: CardProductInlineProps = {
   button: {
-    className: "sdn-button-PZ55a4By",
+    className: "sdn-button-4o13hVru",
   },
   icon: {
-    icon: "material-bolt",
+    icon: "material-addBox",
     className: "sdn-icon-1ihZT8Ll",
   },
   label: {
-    children: "Special",
+    children: "Button D",
     htmlElement: "label",
     className: "sdn-label-1R07j0Td",
   },
   textblockDetails: {
     className: "sdn-textblockDetails-jRyRpai8",
   },
-  button2: {
-    className: "sdn-button-3D4pvOBS",
-  },
-  icon2: {
-    icon: "material-arrowDownward",
-    className: "sdn-icon-1ihZT8Ll",
-  },
-  label2: {
-    children: "Inline A",
-    htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
-  },
   button1: {
     className: "sdn-button-OPNTxNTH",
-  },
-  icon3: {
-    icon: "material-addChart",
-    className: "sdn-icon-1ihZT8Ll",
-  },
-  label3: {
-    children: "Inline B",
-    htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
   },
   tagline: {
     children: "Inline Tagline",
@@ -311,43 +278,10 @@ const sdn: CardProductInlineProps = {
   buttonBar: {
     className: "sdn-buttonBar-MMcNZdBT",
   },
-  button3: {
+  button2: {
     className: "sdn-button-3D4pvOBS",
   },
-  icon4: {
-    icon: "material-addComment",
-    className: "sdn-icon-1ihZT8Ll",
-  },
-  label4: {
-    children: "Button A",
-    htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
-  },
-  icon5: {
-    icon: "material-addLocation",
-    className: "sdn-icon-1ihZT8Ll",
-  },
-  label5: {
-    children: "Button B",
-    htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
-  },
-  icon6: {
-    icon: "material-accountCircle",
-    className: "sdn-icon-1ihZT8Ll",
-  },
-  label6: {
-    children: "Button C",
-    htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
-  },
-  icon7: {
-    icon: "material-addBox",
-    className: "sdn-icon-1ihZT8Ll",
-  },
-  label7: {
-    children: "Button D",
-    htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
+  button3: {
+    className: "sdn-button-3D4pvOBS",
   },
 }

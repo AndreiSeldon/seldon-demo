@@ -25,11 +25,11 @@ export interface ButtonBarProps extends HTMLAttributes<HTMLElement> {
   icon?: IconProps
   label?: LabelProps
   button1?: ButtonProps
-  icon2?: IconProps
-  label2?: LabelProps
+  icon?: IconProps
+  label?: LabelProps
   button2?: ButtonProps
-  icon3?: IconProps
-  label3?: LabelProps
+  icon?: IconProps
+  label?: LabelProps
 }
 
 export function ButtonBar({
@@ -38,11 +38,7 @@ export function ButtonBar({
   icon,
   label,
   button1 = sdn.button1,
-  icon2,
-  label2,
   button2 = sdn.button2,
-  icon3,
-  label3,
   ...props
 }: ButtonBarProps) {
   return (
@@ -74,18 +70,17 @@ export function ButtonBar({
           (button1?.className ? " " + button1.className : "")
         }
         icon={{
-          ...sdn.icon2,
-          ...icon2,
+          ...sdn.icon,
+          ...icon,
           className:
-            "sdn-icon-1ihZT8Ll" +
-            (icon2?.className ? " " + icon2.className : ""),
+            "sdn-icon-1ihZT8Ll" + (icon?.className ? " " + icon.className : ""),
         }}
         label={{
-          ...sdn.label2,
-          ...label2,
+          ...sdn.label,
+          ...label,
           className:
             "sdn-label-BOyxJbm8" +
-            (label2?.className ? " " + label2.className : ""),
+            (label?.className ? " " + label.className : ""),
         }}
       />
       <Button
@@ -95,18 +90,17 @@ export function ButtonBar({
           (button2?.className ? " " + button2.className : "")
         }
         icon={{
-          ...sdn.icon3,
-          ...icon3,
+          ...sdn.icon,
+          ...icon,
           className:
-            "sdn-icon-1ihZT8Ll" +
-            (icon3?.className ? " " + icon3.className : ""),
+            "sdn-icon-1ihZT8Ll" + (icon?.className ? " " + icon.className : ""),
         }}
         label={{
-          ...sdn.label3,
-          ...label3,
+          ...sdn.label,
+          ...label,
           className:
             "sdn-label-BOyxJbm8" +
-            (label3?.className ? " " + label3.className : ""),
+            (label?.className ? " " + label.className : ""),
         }}
       />
     </Frame>
@@ -129,25 +123,7 @@ const sdn: ButtonBarProps = {
   button1: {
     className: "sdn-button-7k7U4i3x",
   },
-  icon2: {
-    icon: "__default__",
-    className: "sdn-icon-1ihZT8Ll",
-  },
-  label2: {
-    children: "Label",
-    htmlElement: "label",
-    className: "sdn-label-BOyxJbm8",
-  },
   button2: {
     className: "sdn-button-7k7U4i3x",
-  },
-  icon3: {
-    icon: "__default__",
-    className: "sdn-icon-1ihZT8Ll",
-  },
-  label3: {
-    children: "Label",
-    htmlElement: "label",
-    className: "sdn-label-BOyxJbm8",
   },
 }
