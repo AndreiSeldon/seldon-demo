@@ -106,6 +106,20 @@ export function CardProduct({
             "sdn-button-4o13hVru" +
             (button?.className ? " " + button.className : ""),
         }}
+        button2={{
+          ...sdn.button2,
+          ...button2,
+          className:
+            "sdn-button-3D4pvOBS" +
+            (button2?.className ? " " + button2.className : ""),
+        }}
+        button3={{
+          ...sdn.button3,
+          ...button3,
+          className:
+            "sdn-button-3D4pvOBS" +
+            (button3?.className ? " " + button3.className : ""),
+        }}
         icon={{
           ...sdn.icon,
           ...icon,
@@ -118,13 +132,6 @@ export function CardProduct({
           className:
             "sdn-label-1R07j0Td" +
             (label?.className ? " " + label.className : ""),
-        }}
-        button2={{
-          ...sdn.button2,
-          ...button2,
-          className:
-            "sdn-button-3D4pvOBS" +
-            (button2?.className ? " " + button2.className : ""),
         }}
         icon2={{
           ...sdn.icon2,
@@ -139,13 +146,6 @@ export function CardProduct({
           className:
             "sdn-label-1R07j0Td" +
             (label2?.className ? " " + label2.className : ""),
-        }}
-        button3={{
-          ...sdn.button3,
-          ...button3,
-          className:
-            "sdn-button-3D4pvOBS" +
-            (button3?.className ? " " + button3.className : ""),
         }}
         icon3={{
           ...sdn.icon3,
