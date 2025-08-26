@@ -18,7 +18,7 @@ function Screen1() {
       {/* Basic usage with default values */}
       <CardProductInline
         style={{ marginTop: 20, width: 600 }}
-        titleProps={{ children: "Local Product Card" }}
+        titleProps={{ children: "Product Card Inline" }}
       />
 
       {/* Customized version */}
