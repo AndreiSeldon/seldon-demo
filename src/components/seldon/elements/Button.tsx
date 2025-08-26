@@ -35,7 +35,7 @@ export function Button({
       <Icon
         {...{ ...sdn.icon, ...icon }}
         className={
-          "sdn-icon-9N9vH4yn" + (icon?.className ? " " + icon.className : "")
+          "sdn-icon-1ihZT8Ll" + (icon?.className ? " " + icon.className : "")
         }
       />
       <Label
@@ -51,7 +51,7 @@ export function Button({
 const sdn: ButtonProps = {
   icon: {
     icon: "__default__",
-    className: "sdn-icon-9N9vH4yn",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label: {
     children: "Label",
