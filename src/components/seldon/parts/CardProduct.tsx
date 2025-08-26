@@ -29,70 +29,61 @@ import { Title, TitleProps } from "../primitives/Title"
 export interface CardProductProps extends HTMLAttributes<HTMLElement> {
   className?: string
 
-  textblockDetails?: boolean | TextblockDetailsProps
-  tagline?: boolean | TaglineProps
-  titleProps?: boolean | TitleProps
-  description?: boolean | DescriptionProps
-  buttonBar?: boolean | ButtonBarProps
-  button?: boolean | ButtonProps
-  icon?: boolean | IconProps
-  label?: boolean | LabelProps
-  button2?: boolean | ButtonProps
-  icon2?: boolean | IconProps
-  label2?: boolean | LabelProps
-  button3?: boolean | ButtonProps
-  icon3?: boolean | IconProps
-  label3?: boolean | LabelProps
+  textblockDetails?: TextblockDetailsProps
+  tagline?: TaglineProps
+  titleProps?: TitleProps
+  description?: DescriptionProps
+  buttonBar?: ButtonBarProps
+  button?: ButtonProps
+  icon?: IconProps
+  label?: LabelProps
+  button2?: ButtonProps
+  icon2?: IconProps
+  label2?: LabelProps
+  button3?: ButtonProps
+  icon3?: IconProps
+  label3?: LabelProps
 }
 
 export function CardProduct({
   className = "",
-  textblockDetails,
-  tagline,
-  titleProps,
-  description,
-  buttonBar,
-  button,
-  icon,
-  label,
-  button2,
-  icon2,
-  label2,
-  button3,
-  icon3,
-  label3,
+  textblockDetails = sdn.textblockDetails,
+  tagline = sdn.tagline,
+  titleProps = sdn.titleProps,
+  description = sdn.description,
+  buttonBar = sdn.buttonBar,
+  button = sdn.button,
+  icon = sdn.icon,
+  label = sdn.label,
+  button2 = sdn.button2,
+  icon2 = sdn.icon2,
+  label2 = sdn.label2,
+  button3 = sdn.button3,
+  icon3 = sdn.icon3,
+  label3 = sdn.label3,
   ...props
 }: CardProductProps) {
   return (
     <Frame className={"sdn-cardProduct " + className} {...props}>
       <TextblockDetails
-        {...{
-          ...sdn.textblockDetails,
-          ...(textblockDetails === true ? {} : textblockDetails),
-        }}
+        {...{ ...sdn.textblockDetails, ...textblockDetails }}
         className={
           "sdn-textblockDetails-Njjvy0sD sdn-textblockDetails" +
           (textblockDetails?.className ? " " + textblockDetails.className : "")
         }
-        tagline={{ ...sdn.tagline, ...(tagline === true ? {} : tagline) }}
-        titleProps={{
-          ...sdn.titleProps,
-          ...(titleProps === true ? {} : titleProps),
-        }}
-        description={{
-          ...sdn.description,
-          ...(description === true ? {} : description),
-        }}
+        tagline={{ ...sdn.tagline, ...tagline }}
+        titleProps={{ ...sdn.titleProps, ...titleProps }}
+        description={{ ...sdn.description, ...description }}
       />
       <ButtonBar
-        {...{ ...sdn.buttonBar, ...(buttonBar === true ? {} : buttonBar) }}
+        {...{ ...sdn.buttonBar, ...buttonBar }}
         className={
           "sdn-buttonBar-o7wdbl2Z sdn-buttonBar" +
           (buttonBar?.className ? " " + buttonBar.className : "")
         }
-        button={{ ...sdn.button, ...(button === true ? {} : button) }}
-        button2={{ ...sdn.button2, ...(button2 === true ? {} : button2) }}
-        button3={{ ...sdn.button3, ...(button3 === true ? {} : button3) }}
+        button={{ ...sdn.button, ...button }}
+        button2={{ ...sdn.button2, ...button2 }}
+        button3={{ ...sdn.button3, ...button3 }}
       />
     </Frame>
   )

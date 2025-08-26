@@ -26,62 +26,62 @@ import { Title, TitleProps } from "../primitives/Title"
 export interface CardProductInlineProps extends HTMLAttributes<HTMLElement> {
   className?: string
 
-  button?: boolean | ButtonProps
-  icon?: boolean | IconProps
-  label?: boolean | LabelProps
-  textblockDetails?: boolean | TextblockDetailsProps
-  tagline?: boolean | TaglineProps
-  titleProps?: boolean | TitleProps
-  button2?: boolean | ButtonProps
-  icon2?: boolean | IconProps
-  label2?: boolean | LabelProps
-  button3?: boolean | ButtonProps
-  icon3?: boolean | IconProps
-  label3?: boolean | LabelProps
-  description?: boolean | DescriptionProps
-  buttonBar?: boolean | ButtonBarProps
-  button4?: boolean | ButtonProps
-  icon4?: boolean | IconProps
-  label4?: boolean | LabelProps
-  button5?: boolean | ButtonProps
-  icon5?: boolean | IconProps
-  label5?: boolean | LabelProps
-  button6?: boolean | ButtonProps
-  icon6?: boolean | IconProps
-  label6?: boolean | LabelProps
-  button7?: boolean | ButtonProps
-  icon7?: boolean | IconProps
-  label7?: boolean | LabelProps
+  button?: ButtonProps
+  icon?: IconProps
+  label?: LabelProps
+  textblockDetails?: TextblockDetailsProps
+  tagline?: TaglineProps
+  titleProps?: TitleProps
+  button2?: ButtonProps
+  icon2?: IconProps
+  label2?: LabelProps
+  button3?: ButtonProps
+  icon3?: IconProps
+  label3?: LabelProps
+  description?: DescriptionProps
+  buttonBar?: ButtonBarProps
+  button4?: ButtonProps
+  icon4?: IconProps
+  label4?: LabelProps
+  button5?: ButtonProps
+  icon5?: IconProps
+  label5?: LabelProps
+  button6?: ButtonProps
+  icon6?: IconProps
+  label6?: LabelProps
+  button7?: ButtonProps
+  icon7?: IconProps
+  label7?: LabelProps
 }
 
 export function CardProductInline({
   className = "",
-  button,
-  icon,
-  label,
-  textblockDetails,
-  tagline,
-  titleProps,
-  button2,
-  icon2,
-  label2,
-  button3,
-  icon3,
-  label3,
-  description,
-  buttonBar,
-  button4,
-  icon4,
-  label4,
-  button5,
-  icon5,
-  label5,
-  button6,
-  icon6,
-  label6,
-  button7,
-  icon7,
-  label7,
+  button = sdn.button,
+  icon = sdn.icon,
+  label = sdn.label,
+  textblockDetails = sdn.textblockDetails,
+  tagline = sdn.tagline,
+  titleProps = sdn.titleProps,
+  button2 = sdn.button2,
+  icon2 = sdn.icon2,
+  label2 = sdn.label2,
+  button3 = sdn.button3,
+  icon3 = sdn.icon3,
+  label3 = sdn.label3,
+  description = sdn.description,
+  buttonBar = sdn.buttonBar,
+  button4 = sdn.button4,
+  icon4 = sdn.icon4,
+  label4 = sdn.label4,
+  button5 = sdn.button5,
+  icon5 = sdn.icon5,
+  label5 = sdn.label5,
+  button6 = sdn.button6,
+  icon6 = sdn.icon6,
+  label6 = sdn.label6,
+  button7 = sdn.button7,
+  icon7 = sdn.icon7,
+  label7 = sdn.label7,
   ...props
 }: CardProductInlineProps) {
   return (
@@ -91,13 +91,13 @@ export function CardProductInline({
     >
       {button && (
         <Button
-          {...{ ...sdn.button, ...(button === true ? {} : button) }}
+          {...{ ...sdn.button, ...button }}
           className={
             "sdn-button-PZ55a4By sdn-button-3D4pvOBS sdn-button" +
             (button?.className ? " " + button.className : "")
           }
-          icon={{ ...sdn.icon, ...(icon === true ? {} : icon) }}
-          label={{ ...sdn.label, ...(label === true ? {} : label) }}
+          icon={{ ...sdn.icon, ...icon }}
+          label={{ ...sdn.label, ...label }}
         />
       )}
       <Frame
@@ -107,13 +107,13 @@ export function CardProductInline({
         }
       >
         <Tagline
-          {...{ ...sdn.tagline, ...(tagline === true ? {} : tagline) }}
+          {...{ ...sdn.tagline, ...tagline }}
           className={
             "sdn-tagline" + (tagline?.className ? " " + tagline.className : "")
           }
         />
         <Title
-          {...{ ...sdn.titleProps, ...(titleProps === true ? {} : titleProps) }}
+          {...{ ...sdn.titleProps, ...titleProps }}
           className={
             "sdn-title-AWpEkwtT sdn-title-NxxLFPyV sdn-title" +
             (titleProps?.className ? " " + titleProps.className : "")
@@ -121,31 +121,28 @@ export function CardProductInline({
         />
         {button2 && (
           <Button
-            {...{ ...sdn.button2, ...(button2 === true ? {} : button2) }}
+            {...{ ...sdn.button2, ...button2 }}
             className={
               "sdn-button-3D4pvOBS sdn-button" +
               (button2?.className ? " " + button2.className : "")
             }
-            icon={{ ...sdn.icon2, ...(icon2 === true ? {} : icon2) }}
-            label={{ ...sdn.label2, ...(label2 === true ? {} : label2) }}
+            icon={{ ...sdn.icon2, ...icon2 }}
+            label={{ ...sdn.label2, ...label2 }}
           />
         )}
         {button3 && (
           <Button
-            {...{ ...sdn.button3, ...(button3 === true ? {} : button3) }}
+            {...{ ...sdn.button3, ...button3 }}
             className={
               "sdn-button-3D4pvOBS sdn-button" +
               (button3?.className ? " " + button3.className : "")
             }
-            icon={{ ...sdn.icon3, ...(icon3 === true ? {} : icon3) }}
-            label={{ ...sdn.label3, ...(label3 === true ? {} : label3) }}
+            icon={{ ...sdn.icon3, ...icon3 }}
+            label={{ ...sdn.label3, ...label3 }}
           />
         )}
         <Description
-          {...{
-            ...sdn.description,
-            ...(description === true ? {} : description),
-          }}
+          {...{ ...sdn.description, ...description }}
           className={
             "sdn-description-rWA5n84C sdn-description" +
             (description?.className ? " " + description.className : "")
@@ -159,41 +156,41 @@ export function CardProductInline({
         }
       >
         <Button
-          {...{ ...sdn.button4, ...(button4 === true ? {} : button4) }}
+          {...{ ...sdn.button4, ...button4 }}
           className={
             "sdn-button-4o13hVru sdn-button-3D4pvOBS sdn-button" +
             (button4?.className ? " " + button4.className : "")
           }
-          icon={{ ...sdn.icon4, ...(icon4 === true ? {} : icon4) }}
-          label={{ ...sdn.label4, ...(label4 === true ? {} : label4) }}
+          icon={{ ...sdn.icon4, ...icon4 }}
+          label={{ ...sdn.label4, ...label4 }}
         />
         <Button
-          {...{ ...sdn.button5, ...(button5 === true ? {} : button5) }}
+          {...{ ...sdn.button5, ...button5 }}
           className={
             "sdn-button-OPNTxNTH sdn-button-3D4pvOBS sdn-button" +
             (button5?.className ? " " + button5.className : "")
           }
-          icon={{ ...sdn.icon5, ...(icon5 === true ? {} : icon5) }}
-          label={{ ...sdn.label5, ...(label5 === true ? {} : label5) }}
+          icon={{ ...sdn.icon5, ...icon5 }}
+          label={{ ...sdn.label5, ...label5 }}
         />
         <Button
-          {...{ ...sdn.button6, ...(button6 === true ? {} : button6) }}
+          {...{ ...sdn.button6, ...button6 }}
           className={
             "sdn-button-3D4pvOBS sdn-button" +
             (button6?.className ? " " + button6.className : "")
           }
-          icon={{ ...sdn.icon6, ...(icon6 === true ? {} : icon6) }}
-          label={{ ...sdn.label6, ...(label6 === true ? {} : label6) }}
+          icon={{ ...sdn.icon6, ...icon6 }}
+          label={{ ...sdn.label6, ...label6 }}
         />
         {button7 && (
           <Button
-            {...{ ...sdn.button7, ...(button7 === true ? {} : button7) }}
+            {...{ ...sdn.button7, ...button7 }}
             className={
               "sdn-button-3D4pvOBS sdn-button" +
               (button7?.className ? " " + button7.className : "")
             }
-            icon={{ ...sdn.icon7, ...(icon7 === true ? {} : icon7) }}
-            label={{ ...sdn.label7, ...(label7 === true ? {} : label7) }}
+            icon={{ ...sdn.icon7, ...icon7 }}
+            label={{ ...sdn.label7, ...label7 }}
           />
         )}
       </Frame>

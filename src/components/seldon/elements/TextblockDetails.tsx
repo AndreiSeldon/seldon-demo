@@ -21,38 +21,35 @@ import { Title, TitleProps } from "../primitives/Title"
 export interface TextblockDetailsProps extends HTMLAttributes<HTMLElement> {
   className?: string
 
-  tagline?: boolean | TaglineProps
-  titleProps?: boolean | TitleProps
-  description?: boolean | DescriptionProps
+  tagline?: TaglineProps
+  titleProps?: TitleProps
+  description?: DescriptionProps
 }
 
 export function TextblockDetails({
   className = "",
-  tagline,
-  titleProps,
-  description,
+  tagline = sdn.tagline,
+  titleProps = sdn.titleProps,
+  description = sdn.description,
   ...props
 }: TextblockDetailsProps) {
   return (
     <Frame className={"sdn-textblockDetails " + className} {...props}>
       <Tagline
-        {...{ ...sdn.tagline, ...(tagline === true ? {} : tagline) }}
+        {...{ ...sdn.tagline, ...tagline }}
         className={
           "sdn-tagline" + (tagline?.className ? " " + tagline.className : "")
         }
       />
       <Title
-        {...{ ...sdn.titleProps, ...(titleProps === true ? {} : titleProps) }}
+        {...{ ...sdn.titleProps, ...titleProps }}
         className={
           "sdn-title-NxxLFPyV sdn-title" +
           (titleProps?.className ? " " + titleProps.className : "")
         }
       />
       <Description
-        {...{
-          ...sdn.description,
-          ...(description === true ? {} : description),
-        }}
+        {...{ ...sdn.description, ...description }}
         className={
           "sdn-description" +
           (description?.className ? " " + description.className : "")

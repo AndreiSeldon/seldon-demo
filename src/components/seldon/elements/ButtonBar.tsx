@@ -21,58 +21,58 @@ import { Label, LabelProps } from "../primitives/Label"
 export interface ButtonBarProps extends HTMLAttributes<HTMLElement> {
   className?: string
 
-  button?: boolean | ButtonProps
-  icon?: boolean | IconProps
-  label?: boolean | LabelProps
-  button2?: boolean | ButtonProps
-  icon2?: boolean | IconProps
-  label2?: boolean | LabelProps
-  button3?: boolean | ButtonProps
-  icon3?: boolean | IconProps
-  label3?: boolean | LabelProps
+  button?: ButtonProps
+  icon?: IconProps
+  label?: LabelProps
+  button2?: ButtonProps
+  icon2?: IconProps
+  label2?: LabelProps
+  button3?: ButtonProps
+  icon3?: IconProps
+  label3?: LabelProps
 }
 
 export function ButtonBar({
   className = "",
-  button,
-  icon,
-  label,
-  button2,
-  icon2,
-  label2,
-  button3,
-  icon3,
-  label3,
+  button = sdn.button,
+  icon = sdn.icon,
+  label = sdn.label,
+  button2 = sdn.button2,
+  icon2 = sdn.icon2,
+  label2 = sdn.label2,
+  button3 = sdn.button3,
+  icon3 = sdn.icon3,
+  label3 = sdn.label3,
   ...props
 }: ButtonBarProps) {
   return (
     <Frame className={"sdn-buttonBar " + className} {...props}>
       <Button
-        {...{ ...sdn.button, ...(button === true ? {} : button) }}
+        {...{ ...sdn.button, ...button }}
         className={
           "sdn-button-3D4pvOBS sdn-button" +
           (button?.className ? " " + button.className : "")
         }
-        icon={{ ...sdn.icon, ...(icon === true ? {} : icon) }}
-        label={{ ...sdn.label, ...(label === true ? {} : label) }}
+        icon={{ ...sdn.icon, ...icon }}
+        label={{ ...sdn.label, ...label }}
       />
       <Button
-        {...{ ...sdn.button2, ...(button2 === true ? {} : button2) }}
+        {...{ ...sdn.button2, ...button2 }}
         className={
           "sdn-button-3D4pvOBS sdn-button" +
           (button2?.className ? " " + button2.className : "")
         }
-        icon={{ ...sdn.icon2, ...(icon2 === true ? {} : icon2) }}
-        label={{ ...sdn.label2, ...(label2 === true ? {} : label2) }}
+        icon={{ ...sdn.icon2, ...icon2 }}
+        label={{ ...sdn.label2, ...label2 }}
       />
       <Button
-        {...{ ...sdn.button3, ...(button3 === true ? {} : button3) }}
+        {...{ ...sdn.button3, ...button3 }}
         className={
           "sdn-button-3D4pvOBS sdn-button" +
           (button3?.className ? " " + button3.className : "")
         }
-        icon={{ ...sdn.icon3, ...(icon3 === true ? {} : icon3) }}
-        label={{ ...sdn.label3, ...(label3 === true ? {} : label3) }}
+        icon={{ ...sdn.icon3, ...icon3 }}
+        label={{ ...sdn.label3, ...label3 }}
       />
     </Frame>
   )
