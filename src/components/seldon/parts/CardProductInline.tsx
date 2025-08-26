@@ -112,7 +112,7 @@ export function CardProductInline({
         <Title
           {...{ ...sdn.titleProps, ...titleProps }}
           className={
-            "sdn-title-AWpEkwtT sdn-title-NxxLFPyV sdn-title" +
+            "sdn-title" +
             (titleProps?.className ? " " + titleProps.className : "")
           }
         />
@@ -127,15 +127,13 @@ export function CardProductInline({
               ...sdn.icon2,
               ...icon2,
               className:
-                "sdn-icon-cJldpFjJ sdn-icon" +
-                (icon2?.className ? " " + icon2.className : ""),
+                "sdn-icon" + (icon2?.className ? " " + icon2.className : ""),
             }}
             label={{
               ...sdn.label2,
               ...label2,
               className:
-                "sdn-label-BOyxJbm8 sdn-label" +
-                (label2?.className ? " " + label2.className : ""),
+                "sdn-label" + (label2?.className ? " " + label2.className : ""),
             }}
           />
         )}
@@ -150,15 +148,13 @@ export function CardProductInline({
               ...sdn.icon3,
               ...icon3,
               className:
-                "sdn-icon-cJldpFjJ sdn-icon" +
-                (icon3?.className ? " " + icon3.className : ""),
+                "sdn-icon" + (icon3?.className ? " " + icon3.className : ""),
             }}
             label={{
               ...sdn.label3,
               ...label3,
               className:
-                "sdn-label-BOyxJbm8 sdn-label" +
-                (label3?.className ? " " + label3.className : ""),
+                "sdn-label" + (label3?.className ? " " + label3.className : ""),
             }}
           />
         )}
@@ -179,15 +175,13 @@ export function CardProductInline({
             ...sdn.icon4,
             ...icon4,
             className:
-              "sdn-icon-cJldpFjJ sdn-icon" +
-              (icon4?.className ? " " + icon4.className : ""),
+              "sdn-icon" + (icon4?.className ? " " + icon4.className : ""),
           }}
           label={{
             ...sdn.label4,
             ...label4,
             className:
-              "sdn-label-BOyxJbm8 sdn-label" +
-              (label4?.className ? " " + label4.className : ""),
+              "sdn-label" + (label4?.className ? " " + label4.className : ""),
           }}
         />
         <Button
@@ -200,15 +194,13 @@ export function CardProductInline({
             ...sdn.icon5,
             ...icon5,
             className:
-              "sdn-icon-cJldpFjJ sdn-icon" +
-              (icon5?.className ? " " + icon5.className : ""),
+              "sdn-icon" + (icon5?.className ? " " + icon5.className : ""),
           }}
           label={{
             ...sdn.label5,
             ...label5,
             className:
-              "sdn-label-BOyxJbm8 sdn-label" +
-              (label5?.className ? " " + label5.className : ""),
+              "sdn-label" + (label5?.className ? " " + label5.className : ""),
           }}
         />
         <Button
@@ -221,15 +213,13 @@ export function CardProductInline({
             ...sdn.icon6,
             ...icon6,
             className:
-              "sdn-icon-cJldpFjJ sdn-icon" +
-              (icon6?.className ? " " + icon6.className : ""),
+              "sdn-icon" + (icon6?.className ? " " + icon6.className : ""),
           }}
           label={{
             ...sdn.label6,
             ...label6,
             className:
-              "sdn-label-BOyxJbm8 sdn-label" +
-              (label6?.className ? " " + label6.className : ""),
+              "sdn-label" + (label6?.className ? " " + label6.className : ""),
           }}
         />
         {button7 && (
@@ -243,15 +233,13 @@ export function CardProductInline({
               ...sdn.icon7,
               ...icon7,
               className:
-                "sdn-icon-cJldpFjJ sdn-icon" +
-                (icon7?.className ? " " + icon7.className : ""),
+                "sdn-icon" + (icon7?.className ? " " + icon7.className : ""),
             }}
             label={{
               ...sdn.label7,
               ...label7,
               className:
-                "sdn-label-BOyxJbm8 sdn-label" +
-                (label7?.className ? " " + label7.className : ""),
+                "sdn-label" + (label7?.className ? " " + label7.className : ""),
             }}
           />
         )}

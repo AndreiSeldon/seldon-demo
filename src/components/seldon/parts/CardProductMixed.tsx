@@ -96,22 +96,20 @@ export function CardProductMixed({
               ...sdn.icon,
               ...icon,
               className:
-                "sdn-icon-cJldpFjJ sdn-icon" +
-                (icon?.className ? " " + icon.className : ""),
+                "sdn-icon" + (icon?.className ? " " + icon.className : ""),
             }}
             label={{
               ...sdn.label,
               ...label,
               className:
-                "sdn-label-BOyxJbm8 sdn-label" +
-                (label?.className ? " " + label.className : ""),
+                "sdn-label" + (label?.className ? " " + label.className : ""),
             }}
           />
         )}
         <Title
           {...{ ...sdn.titleProps, ...titleProps }}
           className={
-            "sdn-title-AWpEkwtT sdn-title-NxxLFPyV sdn-title" +
+            "sdn-title" +
             (titleProps?.className ? " " + titleProps.className : "")
           }
         />
