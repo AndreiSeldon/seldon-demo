@@ -6,6 +6,7 @@ import "./App.css";
 import "./components/seldon/styles.css";
 import { CardProduct } from "./components/seldon/parts/CardProduct";
 import { CardProductInline } from "./components/seldon/parts/CardProductInline";
+import { CardProductMixed } from "./components/seldon/parts/CardProductMixed";
 import { Fonts } from "./components/seldon/Fonts";
 
 function Screen1() {
@@ -13,20 +14,18 @@ function Screen1() {
     <div style={{ padding: 20 }}>
       <h2>Screen 1 - CardProductInline Demo</h2>
 
-      {/* Basic usage */}
+      {/* Default CardProduct */}
       <CardProduct style={{ marginTop: 20, width: 500 }} />
 
-      {/* Simple usage */}
-      <CardProductInline
-        style={{ marginTop: 20, width: 500 }}
-      />
+      {/* Default Inline */}
+      <CardProductInline style={{ marginTop: 20, width: 500 }} />
 
-      {/* Customized version */}
+      {/* Customized Inline */}
       <CardProductInline
         style={{ marginTop: 20, width: 500 }}
         tagline={{ children: "New Product" }}
         titleProps={{ children: "Local Product Card" }}
-        button={{ onClick: () => alert("Special button clicked!") }}
+        button={{ onClick: () => alert("Special inline button clicked!") }}
         label={{ children: "Featured" }}
         icon={{ icon: "material-addChart" }}
         button4={{ onClick: () => alert("Action A clicked!") }}
@@ -35,6 +34,22 @@ function Screen1() {
         button5={{ onClick: () => alert("Action B clicked!") }}
         label5={{ children: "Learn More" }}
         icon5={{ icon: "material-addLocation" }}
+      />
+
+      {/* Default Mixed */}
+      <CardProductMixed style={{ marginTop: 20, width: 500 }} />
+
+      {/* Customized Mixed */}
+      <CardProductMixed
+        style={{ marginTop: 20, width: 500 }}
+        tagline={{ children: "New Product" }}
+        titleProps={{ children: "Local Product Card" }}
+        button={{ onClick: () => alert("Special mix button clicked!") }}
+        label={{ children: "Test Me" }}
+        icon={{ icon: "material-addChart" }}
+        button4={{ onClick: () => alert("Action A clicked!") }}
+        label4={{ children: "Shopping" }}
+        icon4={{ icon: "material-addBox" }}
       />
     </div>
   );
