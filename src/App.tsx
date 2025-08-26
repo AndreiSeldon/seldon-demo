@@ -29,7 +29,7 @@ function Screen1() {
         button2={{}}
         label2={{}}
         icon2={{}}
-        button3={{}} 
+        button3={{}}
         label3={{}}
         icon3={{}}
         button4={{}}
@@ -43,11 +43,11 @@ function Screen1() {
         icon6={{}}
         button7={{}}
         label7={{}}
-        icon7={{}} 
+        icon7={{}}
       />
 
       {/* Customized Inline Variant */}
-      <CardProductInline
+      {/* <CardProductInline
         style={{ marginTop: 20, width: 500 }}
         tagline={{ children: "New Product" }}
         titleProps={{ children: "Customized Inline Card" }}
@@ -60,13 +60,20 @@ function Screen1() {
         button5={{ onClick: () => alert("Action B clicked!") }}
         label5={{ children: "Learn More" }}
         icon5={{ icon: "material-addLocation" }}
-      />
+      /> */}
 
       {/* Default Mixed Variant */}
-      <CardProductMixed />
+      <CardProductMixed 
+        tagline={{}} 
+        titleProps={{}}
+        description={{}}
+        button={{}} 
+        label={{}} 
+        icon={{}}
+      />
 
       {/* Customized Mixed Variant */}
-      <CardProductMixed
+      {/* <CardProductMixed
         style={{ marginTop: 20, width: 500 }}
         tagline2={{ children: "Is this thing on?" }}
         titleProps={{ children: "Customized Mixed Card" }}
@@ -76,7 +83,7 @@ function Screen1() {
         button4={{ onClick: () => alert("Action A clicked!") }}
         label4={{ children: "Shopping" }}
         icon4={{ icon: "material-addBox" }}
-      />
+      /> */}
     </div>
   );
 }
