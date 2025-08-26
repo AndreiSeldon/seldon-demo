@@ -75,7 +75,7 @@ export function CardProductMixed({
     >
       <Frame
         className={
-          "sdn-textblockDetails-jRyRpai8" +
+          "sdn-textblockDetails-XKYdln17" +
           (textblockDetails?.className ? " " + textblockDetails.className : "")
         }
       >
