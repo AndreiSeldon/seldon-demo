@@ -182,7 +182,7 @@ const sdn: CardProductMixedProps = {
   buttonBar: {},
   button2: {},
   icon2: {
-    icon: "__default__",
+    icon: "material-dataset",
   },
   label2: {
     children: "Mixed X",
@@ -190,7 +190,7 @@ const sdn: CardProductMixedProps = {
   },
   button3: {},
   icon3: {
-    icon: "__default__",
+    icon: "material-cancel",
   },
   label3: {
     children: "Mixed Y",
@@ -198,7 +198,7 @@ const sdn: CardProductMixedProps = {
   },
   button4: {},
   icon4: {
-    icon: "__default__",
+    icon: "material-borderColor",
   },
   label4: {
     children: "Mixed Z",

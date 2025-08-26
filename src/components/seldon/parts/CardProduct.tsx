@@ -146,7 +146,7 @@ const sdn: CardProductProps = {
     icon: "__default__",
   },
   label: {
-    children: "Label",
+    children: "Default 1",
     htmlElement: "label",
   },
   button2: {},
@@ -154,7 +154,7 @@ const sdn: CardProductProps = {
     icon: "__default__",
   },
   label2: {
-    children: "Label",
+    children: "Default 2",
     htmlElement: "label",
   },
   button3: {},
@@ -162,7 +162,7 @@ const sdn: CardProductProps = {
     icon: "__default__",
   },
   label3: {
-    children: "Label",
+    children: "Default 3",
     htmlElement: "label",
   },
 }

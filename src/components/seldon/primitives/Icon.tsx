@@ -22,13 +22,19 @@ import { IconMaterialAddComment } from "../icons/IconMaterialAddComment"
 import { IconMaterialAddLocation } from "../icons/IconMaterialAddLocation"
 import { IconMaterialArrowDownward } from "../icons/IconMaterialArrowDownward"
 import { IconMaterialBolt } from "../icons/IconMaterialBolt"
+import { IconMaterialBorderColor } from "../icons/IconMaterialBorderColor"
+import { IconMaterialCancel } from "../icons/IconMaterialCancel"
+import { IconMaterialDataset } from "../icons/IconMaterialDataset"
 
 export interface IconProps extends SVGAttributes<SVGElement> {
   className?: string
   icon?:
     | "__default__"
     | "material-addCircle"
+    | "material-cancel"
     | "material-arrowDownward"
+    | "material-borderColor"
+    | "material-dataset"
     | "material-accountCircle"
     | "material-addChart"
     | "material-addLocation"
@@ -52,7 +58,10 @@ export function Icon({
 const iconMap = {
   __default__: IconDefault,
   "material-addCircle": IconMaterialAddCircle,
+  "material-cancel": IconMaterialCancel,
   "material-arrowDownward": IconMaterialArrowDownward,
+  "material-borderColor": IconMaterialBorderColor,
+  "material-dataset": IconMaterialDataset,
   "material-accountCircle": IconMaterialAccountCircle,
   "material-addChart": IconMaterialAddChart,
   "material-addLocation": IconMaterialAddLocation,
