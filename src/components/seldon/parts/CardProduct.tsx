@@ -38,11 +38,11 @@ export interface CardProductProps extends HTMLAttributes<HTMLElement> {
   icon?: IconProps
   label?: LabelProps
   button1?: ButtonProps
-  icon?: IconProps
-  label?: LabelProps
+  icon2?: IconProps
+  label2?: LabelProps
   button2?: ButtonProps
-  icon?: IconProps
-  label?: LabelProps
+  icon3?: IconProps
+  label3?: LabelProps
 }
 
 export function CardProduct({
@@ -56,7 +56,11 @@ export function CardProduct({
   icon,
   label,
   button1,
+  icon2,
+  label2,
   button2,
+  icon3,
+  label3,
   ...props
 }: CardProductProps) {
   return (
@@ -130,30 +134,32 @@ export function CardProduct({
             (label?.className ? " " + label.className : ""),
         }}
         icon2={{
-          ...sdn.icon,
-          ...icon,
+          ...sdn.icon2,
+          ...icon2,
           className:
-            "sdn-icon-1ihZT8Ll" + (icon?.className ? " " + icon.className : ""),
+            "sdn-icon-1ihZT8Ll" +
+            (icon2?.className ? " " + icon2.className : ""),
         }}
         label2={{
-          ...sdn.label,
-          ...label,
+          ...sdn.label2,
+          ...label2,
           className:
             "sdn-label-1R07j0Td" +
-            (label?.className ? " " + label.className : ""),
+            (label2?.className ? " " + label2.className : ""),
         }}
         icon3={{
-          ...sdn.icon,
-          ...icon,
+          ...sdn.icon3,
+          ...icon3,
           className:
-            "sdn-icon-1ihZT8Ll" + (icon?.className ? " " + icon.className : ""),
+            "sdn-icon-1ihZT8Ll" +
+            (icon3?.className ? " " + icon3.className : ""),
         }}
         label3={{
-          ...sdn.label,
-          ...label,
+          ...sdn.label3,
+          ...label3,
           className:
             "sdn-label-1R07j0Td" +
-            (label?.className ? " " + label.className : ""),
+            (label3?.className ? " " + label3.className : ""),
         }}
       />
     </Frame>
@@ -191,14 +197,32 @@ const sdn: CardProductProps = {
     className: "sdn-icon-1ihZT8Ll",
   },
   label: {
-    children: "Default 3",
+    children: "Default 1",
     htmlElement: "label",
     className: "sdn-label-1R07j0Td",
   },
   button1: {
     className: "sdn-button-3D4pvOBS",
   },
+  icon2: {
+    icon: "__default__",
+    className: "sdn-icon-1ihZT8Ll",
+  },
+  label2: {
+    children: "Default 2",
+    htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
+  },
   button2: {
     className: "sdn-button-3D4pvOBS",
+  },
+  icon3: {
+    icon: "__default__",
+    className: "sdn-icon-1ihZT8Ll",
+  },
+  label3: {
+    children: "Default 3",
+    htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
   },
 }

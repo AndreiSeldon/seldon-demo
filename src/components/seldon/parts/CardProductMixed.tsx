@@ -35,15 +35,15 @@ export interface CardProductMixedProps extends HTMLAttributes<HTMLElement> {
   tagline1?: TaglineProps
   description?: DescriptionProps
   buttonBar?: ButtonBarProps
-  button?: ButtonProps
-  icon?: IconProps
-  label?: LabelProps
-  button1?: ButtonProps
-  icon?: IconProps
-  label?: LabelProps
   button2?: ButtonProps
-  icon?: IconProps
-  label?: LabelProps
+  icon2?: IconProps
+  label2?: LabelProps
+  button1?: ButtonProps
+  icon3?: IconProps
+  label3?: LabelProps
+  button2?: ButtonProps
+  icon4?: IconProps
+  label4?: LabelProps
 }
 
 export function CardProductMixed({
@@ -57,8 +57,14 @@ export function CardProductMixed({
   tagline1,
   description,
   buttonBar = sdn.buttonBar,
-  button1,
   button2,
+  icon2,
+  label2,
+  button1,
+  icon3,
+  label3,
+  icon4,
+  label4,
   ...props
 }: CardProductMixedProps) {
   return (
@@ -133,11 +139,11 @@ export function CardProductMixed({
           (buttonBar?.className ? " " + buttonBar.className : "")
         }
         button={{
-          ...sdn.button,
-          ...button,
+          ...sdn.button2,
+          ...button2,
           className:
             "sdn-button-JnRIw2cY" +
-            (button?.className ? " " + button.className : ""),
+            (button2?.className ? " " + button2.className : ""),
         }}
         button2={{
           ...sdn.button1,
@@ -154,43 +160,46 @@ export function CardProductMixed({
             (button2?.className ? " " + button2.className : ""),
         }}
         icon={{
-          ...sdn.icon,
-          ...icon,
+          ...sdn.icon2,
+          ...icon2,
           className:
-            "sdn-icon-1ihZT8Ll" + (icon?.className ? " " + icon.className : ""),
+            "sdn-icon-1ihZT8Ll" +
+            (icon2?.className ? " " + icon2.className : ""),
         }}
         label={{
-          ...sdn.label,
-          ...label,
+          ...sdn.label2,
+          ...label2,
           className:
             "sdn-label-1R07j0Td" +
-            (label?.className ? " " + label.className : ""),
+            (label2?.className ? " " + label2.className : ""),
         }}
         icon2={{
-          ...sdn.icon,
-          ...icon,
+          ...sdn.icon3,
+          ...icon3,
           className:
-            "sdn-icon-1ihZT8Ll" + (icon?.className ? " " + icon.className : ""),
+            "sdn-icon-1ihZT8Ll" +
+            (icon3?.className ? " " + icon3.className : ""),
         }}
         label2={{
-          ...sdn.label,
-          ...label,
+          ...sdn.label3,
+          ...label3,
           className:
             "sdn-label-1R07j0Td" +
-            (label?.className ? " " + label.className : ""),
+            (label3?.className ? " " + label3.className : ""),
         }}
         icon3={{
-          ...sdn.icon,
-          ...icon,
+          ...sdn.icon4,
+          ...icon4,
           className:
-            "sdn-icon-1ihZT8Ll" + (icon?.className ? " " + icon.className : ""),
+            "sdn-icon-1ihZT8Ll" +
+            (icon4?.className ? " " + icon4.className : ""),
         }}
         label3={{
-          ...sdn.label,
-          ...label,
+          ...sdn.label4,
+          ...label4,
           className:
             "sdn-label-1R07j0Td" +
-            (label?.className ? " " + label.className : ""),
+            (label4?.className ? " " + label4.className : ""),
         }}
       />
     </Frame>
@@ -207,14 +216,14 @@ const sdn: CardProductMixedProps = {
     className: "sdn-tagline-RYPEIO98",
   },
   button: {
-    className: "sdn-button-JnRIw2cY",
+    className: "sdn-button-3D4pvOBS",
   },
   icon: {
-    icon: "material-borderColor",
+    icon: "material-addCircle",
     className: "sdn-icon-1ihZT8Ll",
   },
   label: {
-    children: "Mixed Z",
+    children: "Mixed",
     htmlElement: "label",
     className: "sdn-label-1R07j0Td",
   },
@@ -236,10 +245,37 @@ const sdn: CardProductMixedProps = {
   buttonBar: {
     className: "sdn-buttonBar-MMcNZdBT",
   },
+  button2: {
+    className: "sdn-button-3D4pvOBS",
+  },
+  icon2: {
+    icon: "material-dataset",
+    className: "sdn-icon-1ihZT8Ll",
+  },
+  label2: {
+    children: "Mixed X",
+    htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
+  },
   button1: {
     className: "sdn-button-3D4pvOBS",
   },
-  button2: {
-    className: "sdn-button-3D4pvOBS",
+  icon3: {
+    icon: "material-cancel",
+    className: "sdn-icon-1ihZT8Ll",
+  },
+  label3: {
+    children: "Mixed Y",
+    htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
+  },
+  icon4: {
+    icon: "material-borderColor",
+    className: "sdn-icon-1ihZT8Ll",
+  },
+  label4: {
+    children: "Mixed Z",
+    htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
   },
 }
