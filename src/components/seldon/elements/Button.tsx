@@ -35,15 +35,13 @@ export function Button({
       <Icon
         {...{ ...sdn.icon, ...icon }}
         className={
-          "sdn-icon-cJldpFjJ sdn-icon" +
-          (icon?.className ? " " + icon.className : "")
+          "sdn-icon-cJldpFjJ" + (icon?.className ? " " + icon.className : "")
         }
       />
       <Label
         {...{ ...sdn.label, ...label }}
         className={
-          "sdn-label-BOyxJbm8 sdn-label" +
-          (label?.className ? " " + label.className : "")
+          "sdn-label-BOyxJbm8" + (label?.className ? " " + label.className : "")
         }
       />
     </HTMLButton>

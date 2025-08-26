@@ -75,7 +75,7 @@ export function CardProductMixed({
     >
       <Frame
         className={
-          "sdn-textblockDetails-jRyRpai8 sdn-textblockDetails-Njjvy0sD sdn-textblockDetails" +
+          "sdn-textblockDetails-jRyRpai8" +
           (textblockDetails?.className ? " " + textblockDetails.className : "")
         }
       >
@@ -89,7 +89,7 @@ export function CardProductMixed({
           <Button
             {...{ ...sdn.button, ...button }}
             className={
-              "sdn-button-3D4pvOBS sdn-button-4o13hVru sdn-button" +
+              "sdn-button-3D4pvOBS" +
               (button?.className ? " " + button.className : "")
             }
             icon={{ ...sdn.icon, ...icon }}
@@ -123,7 +123,7 @@ export function CardProductMixed({
       <ButtonBar
         {...{ ...sdn.buttonBar, ...buttonBar }}
         className={
-          "sdn-buttonBar-rWRytCG8 sdn-buttonBar-o7wdbl2Z sdn-buttonBar" +
+          "sdn-buttonBar-rWRytCG8" +
           (buttonBar?.className ? " " + buttonBar.className : "")
         }
         button={{ ...sdn.button2, ...button2 }}

@@ -14,7 +14,9 @@
  
 # Seldon Components
 
-Welcome to your exported Seldon components! This guide will help you understand how to use these components in your React application.
+version: Public Alpha
+
+This guide will help you understand how to use these components in your React application.
 
 ## Overview
 

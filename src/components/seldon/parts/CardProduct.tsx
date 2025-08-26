@@ -68,7 +68,7 @@ export function CardProduct({
       <TextblockDetails
         {...{ ...sdn.textblockDetails, ...textblockDetails }}
         className={
-          "sdn-textblockDetails-Njjvy0sD sdn-textblockDetails" +
+          "sdn-textblockDetails-Njjvy0sD" +
           (textblockDetails?.className ? " " + textblockDetails.className : "")
         }
         tagline={{ ...sdn.tagline, ...tagline }}
@@ -78,7 +78,7 @@ export function CardProduct({
       <ButtonBar
         {...{ ...sdn.buttonBar, ...buttonBar }}
         className={
-          "sdn-buttonBar-o7wdbl2Z sdn-buttonBar" +
+          "sdn-buttonBar-o7wdbl2Z" +
           (buttonBar?.className ? " " + buttonBar.className : "")
         }
         button={{ ...sdn.button, ...button }}
