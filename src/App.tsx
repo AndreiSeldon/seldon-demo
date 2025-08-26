@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import "./App.css";
 import "./components/seldon/styles.css";
+import { CardProduct } from "./components/seldon/parts/CardProduct";
 import { CardProductInline } from "./components/seldon/parts/CardProductInline";
 import { Fonts } from "./components/seldon/Fonts";
 
@@ -11,16 +12,24 @@ function Screen1() {
   return (
     <div style={{ padding: 20 }}>
       <h2>Screen 1 - CardProductInline Demo</h2>
-      
+
+      <CardProduct style={{ marginTop: 20, width: 600 }} />
+
       {/* Basic usage with default values */}
-      <CardProductInline />
-      
+      <CardProductInline
+        style={{ marginTop: 20, width: 600 }}
+        titleProps={{ children: "Local Product Card" }}
+      />
+
       {/* Customized version */}
       <CardProductInline
         style={{ marginTop: 20, width: 600 }}
         tagline={{ children: "New Product" }}
-        titleProps={{ children: "Amazing Product Title" }}
-        description={{ children: "This is a detailed description of our amazing product with all its features." }}
+        titleProps={{ children: "Local Product Card" }}
+        description={{
+          children:
+            "This is a detailed description of our amazing product with all its features.",
+        }}
         button={{ onClick: () => alert("Special button clicked!") }}
         label={{ children: "Featured" }}
         icon={{ icon: "material-addChart" }}
