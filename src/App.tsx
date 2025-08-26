@@ -27,7 +27,11 @@ function Screen1() {
         }}
       >
         <Title children="Testing Titles" />
-        <ButtonBar />
+        <ButtonBar
+          button2={{ onClick: () => alert("Yoohoo clicked!") }}
+          icon2={{ icon: "material-addBox" }}
+          label2={{ children: "Yoohoo!" }}
+        />
       </div>
 
       {/* Default CardProduct */}
