@@ -135,7 +135,7 @@ const sdn: CardProductProps = {
     className: "sdn-tagline-te1Ofq0F",
   },
   titleProps: {
-    children: "Product Card Title",
+    children: "Product Card",
     htmlElement: "h4",
     className: "sdn-title-83oQ44Bx",
   },
