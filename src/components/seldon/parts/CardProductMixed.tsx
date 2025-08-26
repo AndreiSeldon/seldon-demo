@@ -32,6 +32,7 @@ export interface CardProductMixedProps extends HTMLAttributes<HTMLElement> {
   icon?: IconProps
   label?: LabelProps
   titleProps?: TitleProps
+  tagline2?: TaglineProps
   description?: DescriptionProps
   buttonBar?: ButtonBarProps
   button2?: ButtonProps
@@ -53,6 +54,7 @@ export function CardProductMixed({
   icon,
   label,
   titleProps,
+  tagline2,
   description,
   buttonBar = sdn.buttonBar,
   button2,
@@ -101,6 +103,15 @@ export function CardProductMixed({
             (titleProps?.className ? " " + titleProps.className : "")
           }
         />
+        {tagline2 && (
+          <Tagline
+            {...{ ...sdn.tagline2, ...tagline2 }}
+            className={
+              "sdn-tagline" +
+              (tagline2?.className ? " " + tagline2.className : "")
+            }
+          />
+        )}
         <Description
           {...{ ...sdn.description, ...description }}
           className={
@@ -140,6 +151,10 @@ const sdn: CardProductMixedProps = {
   titleProps: {
     children: "Mixed Card Title",
     htmlElement: "h4",
+  },
+  tagline2: {
+    children: "Additional Tagline",
+    htmlElement: "p",
   },
   description: {
     children: "Special text for mixed case",
