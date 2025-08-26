@@ -11,16 +11,16 @@ import { Fonts } from "./components/seldon/Fonts";
 
 function Screen1() {
   return (
-    <div style={{ padding: 20 }}>
+    <div style={{ padding: 20, gap: 20, display: "flex", flexDirection: "column" }}>
       <h2>Screen 1 - CardProductInline Demo</h2>
 
       {/* Default CardProduct */}
-      <CardProduct style={{ marginTop: 20, width: 500 }} />
+      <CardProduct />
 
-      {/* Default Inline */}
-      <CardProductInline style={{ marginTop: 20, width: 500 }} />
+      {/* Default Inline Variant */}
+      <CardProductInline />
 
-      {/* Customized Inline */}
+      {/* Customized Inline Variant */}
       <CardProductInline
         style={{ marginTop: 20, width: 500 }}
         tagline={{ children: "New Product" }}
@@ -36,12 +36,12 @@ function Screen1() {
         icon5={{ icon: "material-addLocation" }}
       />
 
-      {/* Default Mixed */}
-      <CardProductMixed style={{ marginTop: 20, width: 500 }} />
+      {/* Default Mixed Variant */}
+      <CardProductMixed />
 
-      {/* Customized Mixed */}
+      {/* Customized Mixed Variant */}
       <CardProductMixed
-        style={{ marginTop: 20, width: 500 }}
+        style={{ marginTop: 20, width: 600 }}
         tagline2={{ children: "Is this thing on?" }}
         titleProps={{ children: "Customized Mixed Card" }}
         button={{ onClick: () => alert("Special mix button clicked!") }}
