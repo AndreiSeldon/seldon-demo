@@ -63,13 +63,22 @@ function Screen1() {
       /> */}
 
       {/* Default Mixed Variant */}
-      <CardProductMixed 
-        tagline={{}} 
+      <CardProductMixed
+        tagline={{}}
         titleProps={{}}
         description={{}}
-        button={{}} 
-        label={{}} 
+        button={{}}
+        label={{}}
         icon={{}}
+        button2={{}}
+        label2={{}}
+        icon2={{}}
+        button3={{}}
+        label3={{}}
+        icon3={{}}
+        button4={{}}
+        label4={{}}
+        icon4={{}}
       />
 
       {/* Customized Mixed Variant */}
