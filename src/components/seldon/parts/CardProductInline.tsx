@@ -99,7 +99,7 @@ export function CardProductInline({
       )}
       <Frame
         className={
-          "sdn-textblockDetails-jRyRpai8" +
+          "sdn-textblockDetails sdn-textblockDetails-jRyRpai8" +
           (textblockDetails?.className ? " " + textblockDetails.className : "")
         }
       >
@@ -161,7 +161,7 @@ export function CardProductInline({
       </Frame>
       <Frame
         className={
-          "sdn-buttonBar-rWRytCG8" +
+          "sdn-buttonBar sdn-buttonBar-rWRytCG8" +
           (buttonBar?.className ? " " + buttonBar.className : "")
         }
       >
