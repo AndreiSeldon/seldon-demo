@@ -107,7 +107,7 @@ export function CardProductInline({
 }: CardProductInlineProps) {
   return (
     <Frame
-      className={"sdn-cardProduct sdn-cardProduct-glyJ5UUE " + className}
+      className={"sdn-cardProduct sdn-cardProduct-0IbtAwmQ " + className}
       {...props}
     >
       {button && (
@@ -131,7 +131,7 @@ export function CardProductInline({
           <Button
             {...{ ...sdn.button2, ...button2 }}
             className={
-              "sdn-button-J2DfCnrP" +
+              "sdn-button-3D4pvOBS" +
               (button2?.className ? " " + button2.className : "")
             }
             icon={{
@@ -154,7 +154,7 @@ export function CardProductInline({
           <Button
             {...{ ...sdn.button3, ...button3 }}
             className={
-              "sdn-button-J2DfCnrP" +
+              "sdn-button-3D4pvOBS" +
               (button3?.className ? " " + button3.className : "")
             }
             icon={{
@@ -176,7 +176,7 @@ export function CardProductInline({
         <Tagline
           {...{ ...sdn.tagline, ...tagline }}
           className={
-            "sdn-tagline-zNcn9k28" +
+            "sdn-tagline-RYPEIO98" +
             (tagline?.className ? " " + tagline.className : "")
           }
         />
@@ -239,7 +239,7 @@ export function CardProductInline({
         <Button
           {...{ ...sdn.button6, ...button6 }}
           className={
-            "sdn-button-J2DfCnrP" +
+            "sdn-button-3D4pvOBS" +
             (button6?.className ? " " + button6.className : "")
           }
           icon={{
@@ -261,7 +261,7 @@ export function CardProductInline({
           <Button
             {...{ ...sdn.button7, ...button7 }}
             className={
-              "sdn-button-J2DfCnrP" +
+              "sdn-button-3D4pvOBS" +
               (button7?.className ? " " + button7.className : "")
             }
             icon={{
@@ -302,7 +302,7 @@ const sdn: CardProductInlineProps = {
     className: "sdn-textblockDetails-jRyRpai8",
   },
   button2: {
-    className: "sdn-button-J2DfCnrP",
+    className: "sdn-button-3D4pvOBS",
   },
   icon2: {
     icon: "material-arrowDownward",
@@ -314,7 +314,7 @@ const sdn: CardProductInlineProps = {
     className: "sdn-label-1R07j0Td",
   },
   button3: {
-    className: "sdn-button-J2DfCnrP",
+    className: "sdn-button-3D4pvOBS",
   },
   icon3: {
     icon: "material-addChart",
@@ -328,7 +328,7 @@ const sdn: CardProductInlineProps = {
   tagline: {
     children: "Inline Tagline",
     htmlElement: "p",
-    className: "sdn-tagline-zNcn9k28",
+    className: "sdn-tagline-RYPEIO98",
   },
   titleProps: {
     children: "Inline Card Title",
@@ -363,7 +363,7 @@ const sdn: CardProductInlineProps = {
     className: "sdn-label-1R07j0Td",
   },
   button6: {
-    className: "sdn-button-J2DfCnrP",
+    className: "sdn-button-3D4pvOBS",
   },
   icon6: {
     icon: "material-accountCircle",
@@ -375,7 +375,7 @@ const sdn: CardProductInlineProps = {
     className: "sdn-label-1R07j0Td",
   },
   button7: {
-    className: "sdn-button-J2DfCnrP",
+    className: "sdn-button-3D4pvOBS",
   },
   icon7: {
     icon: "material-addBox",

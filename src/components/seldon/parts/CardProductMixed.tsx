@@ -107,7 +107,7 @@ export function CardProductMixed({
         <Tagline
           {...{ ...sdn.tagline, ...tagline }}
           className={
-            "sdn-tagline-57ug71iC" +
+            "sdn-tagline-RYPEIO98" +
             (tagline?.className ? " " + tagline.className : "")
           }
         />
@@ -129,7 +129,7 @@ export function CardProductMixed({
               ...sdn.label,
               ...label,
               className:
-                "sdn-label-2kukIhXa" +
+                "sdn-label-1R07j0Td" +
                 (label?.className ? " " + label.className : ""),
             }}
           />
@@ -137,7 +137,7 @@ export function CardProductMixed({
         <Title
           {...{ ...sdn.titleProps, ...titleProps }}
           className={
-            "sdn-title-AWpEkwtT" +
+            "sdn-title-83oQ44Bx" +
             (titleProps?.className ? " " + titleProps.className : "")
           }
         />
@@ -145,7 +145,7 @@ export function CardProductMixed({
           <Tagline
             {...{ ...sdn.tagline2, ...tagline2 }}
             className={
-              "sdn-tagline-57ug71iC" +
+              "sdn-tagline-RYPEIO98" +
               (tagline2?.className ? " " + tagline2.className : "")
             }
           />
@@ -153,7 +153,7 @@ export function CardProductMixed({
         <Description
           {...{ ...sdn.description, ...description }}
           className={
-            "sdn-description-8Y5lFu0w" +
+            "sdn-description-QJZ11zsK" +
             (description?.className ? " " + description.className : "")
           }
         />
@@ -182,7 +182,7 @@ export function CardProductMixed({
           ...sdn.label2,
           ...label2,
           className:
-            "sdn-label-2kukIhXa" +
+            "sdn-label-1R07j0Td" +
             (label2?.className ? " " + label2.className : ""),
         }}
         button2={{
@@ -203,7 +203,7 @@ export function CardProductMixed({
           ...sdn.label3,
           ...label3,
           className:
-            "sdn-label-2kukIhXa" +
+            "sdn-label-1R07j0Td" +
             (label3?.className ? " " + label3.className : ""),
         }}
         button3={{
@@ -224,7 +224,7 @@ export function CardProductMixed({
           ...sdn.label4,
           ...label4,
           className:
-            "sdn-label-2kukIhXa" +
+            "sdn-label-1R07j0Td" +
             (label4?.className ? " " + label4.className : ""),
         }}
       />
@@ -239,7 +239,7 @@ const sdn: CardProductMixedProps = {
   tagline: {
     children: "Mixed Tagline",
     htmlElement: "p",
-    className: "sdn-tagline-57ug71iC",
+    className: "sdn-tagline-RYPEIO98",
   },
   button: {
     className: "sdn-button-3D4pvOBS",
@@ -251,22 +251,22 @@ const sdn: CardProductMixedProps = {
   label: {
     children: "Mixed",
     htmlElement: "label",
-    className: "sdn-label-2kukIhXa",
+    className: "sdn-label-1R07j0Td",
   },
   titleProps: {
     children: "Mixed Card Title",
     htmlElement: "h4",
-    className: "sdn-title-AWpEkwtT",
+    className: "sdn-title-83oQ44Bx",
   },
   tagline2: {
     children: "Additional Tagline",
     htmlElement: "p",
-    className: "sdn-tagline-57ug71iC",
+    className: "sdn-tagline-RYPEIO98",
   },
   description: {
     children: "Special text for mixed case",
     htmlElement: "p",
-    className: "sdn-description-8Y5lFu0w",
+    className: "sdn-description-QJZ11zsK",
   },
   buttonBar: {
     className: "sdn-buttonBar-MMcNZdBT",
@@ -281,7 +281,7 @@ const sdn: CardProductMixedProps = {
   label2: {
     children: "Mixed X",
     htmlElement: "label",
-    className: "sdn-label-2kukIhXa",
+    className: "sdn-label-1R07j0Td",
   },
   button3: {
     className: "sdn-button-3D4pvOBS",
@@ -293,7 +293,7 @@ const sdn: CardProductMixedProps = {
   label3: {
     children: "Mixed Y",
     htmlElement: "label",
-    className: "sdn-label-2kukIhXa",
+    className: "sdn-label-1R07j0Td",
   },
   button4: {
     className: "sdn-button-3D4pvOBS",
@@ -305,6 +305,6 @@ const sdn: CardProductMixedProps = {
   label4: {
     children: "Mixed Z",
     htmlElement: "label",
-    className: "sdn-label-2kukIhXa",
+    className: "sdn-label-1R07j0Td",
   },
 }
