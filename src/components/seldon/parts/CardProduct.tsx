@@ -99,7 +99,7 @@ export function CardProduct({
           ...sdn.tagline,
           ...tagline,
           className:
-            "sdn-tagline-RYPEIO98" +
+            "sdn-tagline-57ug71iC" +
             (tagline?.className ? " " + tagline.className : ""),
         }}
         titleProps={{
@@ -113,7 +113,7 @@ export function CardProduct({
           ...sdn.description,
           ...description,
           className:
-            "sdn-description-QJZ11zsK" +
+            "sdn-description-8Y5lFu0w" +
             (description?.className ? " " + description.className : ""),
         }}
       />
@@ -127,7 +127,7 @@ export function CardProduct({
           ...sdn.button,
           ...button,
           className:
-            "sdn-button-4o13hVru" +
+            "sdn-button-EOkV8PVa" +
             (button?.className ? " " + button.className : ""),
         }}
         icon={{
@@ -197,7 +197,7 @@ const sdn: CardProductProps = {
   tagline: {
     children: "Tagline",
     htmlElement: "p",
-    className: "sdn-tagline-RYPEIO98",
+    className: "sdn-tagline-57ug71iC",
   },
   titleProps: {
     children: "Product Card",
@@ -208,13 +208,13 @@ const sdn: CardProductProps = {
     children:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus.",
     htmlElement: "p",
-    className: "sdn-description-QJZ11zsK",
+    className: "sdn-description-8Y5lFu0w",
   },
   buttonBar: {
     className: "sdn-buttonBar-MMcNZdBT",
   },
   button: {
-    className: "sdn-button-4o13hVru",
+    className: "sdn-button-EOkV8PVa",
   },
   icon: {
     icon: "__default__",

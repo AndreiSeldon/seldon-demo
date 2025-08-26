@@ -62,7 +62,7 @@ export function TextblockDetails({
       <Title
         {...{ ...sdn.titleProps, ...titleProps }}
         className={
-          "sdn-title-NxxLFPyV" +
+          "sdn-title-AWpEkwtT" +
           (titleProps?.className ? " " + titleProps.className : "")
         }
       />
@@ -86,7 +86,7 @@ const sdn: TextblockDetailsProps = {
   titleProps: {
     children: "Product Card Title",
     htmlElement: "h4",
-    className: "sdn-title-NxxLFPyV",
+    className: "sdn-title-AWpEkwtT",
   },
   description: {
     children:
