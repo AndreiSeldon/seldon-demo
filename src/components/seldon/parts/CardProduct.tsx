@@ -75,14 +75,14 @@ export function CardProduct({
           ...sdn.tagline,
           ...tagline,
           className:
-            "sdn-tagline-te1Ofq0F" +
+            "sdn-tagline-RYPEIO98" +
             (tagline?.className ? " " + tagline.className : ""),
         }}
         titleProps={{
           ...sdn.titleProps,
           ...titleProps,
           className:
-            "sdn-title-AWpEkwtT" +
+            "sdn-title-83oQ44Bx" +
             (titleProps?.className ? " " + titleProps.className : ""),
         }}
         description={{
@@ -96,14 +96,14 @@ export function CardProduct({
       <ButtonBar
         {...{ ...sdn.buttonBar, ...buttonBar }}
         className={
-          "sdn-buttonBar-o7wdbl2Z" +
+          "sdn-buttonBar-MMcNZdBT" +
           (buttonBar?.className ? " " + buttonBar.className : "")
         }
         button={{
           ...sdn.button,
           ...button,
           className:
-            "sdn-button-EOkV8PVa" +
+            "sdn-button-4o13hVru" +
             (button?.className ? " " + button.className : ""),
         }}
         button2={{
@@ -117,7 +117,7 @@ export function CardProduct({
           ...sdn.button3,
           ...button3,
           className:
-            "sdn-button-P6RA6Ykr" +
+            "sdn-button-3D4pvOBS" +
             (button3?.className ? " " + button3.className : ""),
         }}
       />

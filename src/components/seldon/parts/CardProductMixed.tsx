@@ -82,7 +82,7 @@ export function CardProductMixed({
         <Tagline
           {...{ ...sdn.tagline, ...tagline }}
           className={
-            "sdn-tagline-johuxc4q" +
+            "sdn-tagline-RYPEIO98" +
             (tagline?.className ? " " + tagline.className : "")
           }
         />
@@ -90,29 +90,17 @@ export function CardProductMixed({
           <Button
             {...{ ...sdn.button, ...button }}
             className={
-              "sdn-button-nxqwzA8x" +
+              "sdn-button-3D4pvOBS" +
               (button?.className ? " " + button.className : "")
             }
-            icon={{
-              ...sdn.icon,
-              ...icon,
-              className:
-                "sdn-icon-92RIo1HR" +
-                (icon?.className ? " " + icon.className : ""),
-            }}
-            label={{
-              ...sdn.label,
-              ...label,
-              className:
-                "sdn-label-NLPzmaz5" +
-                (label?.className ? " " + label.className : ""),
-            }}
+            icon={{ ...sdn.icon, ...icon }}
+            label={{ ...sdn.label, ...label }}
           />
         )}
         <Title
           {...{ ...sdn.titleProps, ...titleProps }}
           className={
-            "sdn-title-ootJGEUg" +
+            "sdn-title-83oQ44Bx" +
             (titleProps?.className ? " " + titleProps.className : "")
           }
         />
@@ -128,7 +116,7 @@ export function CardProductMixed({
         <Description
           {...{ ...sdn.description, ...description }}
           className={
-            "sdn-description-ho1zVT2E" +
+            "sdn-description-QJZ11zsK" +
             (description?.className ? " " + description.className : "")
           }
         />
@@ -150,14 +138,14 @@ export function CardProductMixed({
           ...sdn.button3,
           ...button3,
           className:
-            "sdn-button-gGjRwMix" +
+            "sdn-button-3D4pvOBS" +
             (button3?.className ? " " + button3.className : ""),
         }}
         button3={{
           ...sdn.button4,
           ...button4,
           className:
-            "sdn-button-w9crQPqN" +
+            "sdn-button-3D4pvOBS" +
             (button4?.className ? " " + button4.className : ""),
         }}
       />
