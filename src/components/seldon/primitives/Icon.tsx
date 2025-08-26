@@ -27,6 +27,7 @@ export interface IconProps extends SVGAttributes<SVGElement> {
   className?: string
   icon?:
     | "__default__"
+    | "material-addCircle"
     | "material-arrowDownward"
     | "material-accountCircle"
     | "material-addChart"
@@ -34,7 +35,6 @@ export interface IconProps extends SVGAttributes<SVGElement> {
     | "material-addBox"
     | "material-bolt"
     | "material-addComment"
-    | "material-addCircle"
 }
 
 export function Icon({
@@ -51,6 +51,7 @@ export function Icon({
 }
 const iconMap = {
   __default__: IconDefault,
+  "material-addCircle": IconMaterialAddCircle,
   "material-arrowDownward": IconMaterialArrowDownward,
   "material-accountCircle": IconMaterialAccountCircle,
   "material-addChart": IconMaterialAddChart,
@@ -58,5 +59,4 @@ const iconMap = {
   "material-addBox": IconMaterialAddBox,
   "material-bolt": IconMaterialBolt,
   "material-addComment": IconMaterialAddComment,
-  "material-addCircle": IconMaterialAddCircle,
 }

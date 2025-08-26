@@ -70,7 +70,7 @@ export function CardProductMixed({
 }: CardProductMixedProps) {
   return (
     <Frame
-      className={"sdn-cardProduct sdn-cardProduct-glyJ5UUE " + className}
+      className={"sdn-cardProduct sdn-cardProduct-0IbtAwmQ " + className}
       {...props}
     >
       <Frame

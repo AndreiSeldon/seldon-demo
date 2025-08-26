@@ -83,7 +83,7 @@ export function CardProductInline({
 }: CardProductInlineProps) {
   return (
     <Frame
-      className={"sdn-cardProduct sdn-cardProduct-glyJ5UUE " + className}
+      className={"sdn-cardProduct sdn-cardProduct-0IbtAwmQ " + className}
       {...props}
     >
       {button && (
