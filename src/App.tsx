@@ -19,9 +19,12 @@ function Screen1() {
       {/* Simple usage */}
       <CardProductInline
         style={{ marginTop: 20, width: 600 }}
+        tagline={{}}
         titleProps={{}}
         button2={{}}
         button3={{}}
+        button4={{}}
+        button7={{}}
       />
 
       {/* Customized version */}
