@@ -11,14 +11,40 @@ import { Fonts } from "./components/seldon/Fonts";
 
 function Screen1() {
   return (
-    <div style={{ padding: 20, gap: 20, display: "flex", flexDirection: "column" }}>
+    <div
+      style={{ padding: 20, gap: 20, display: "flex", flexDirection: "column" }}
+    >
       <h2>Screen 1 - CardProductInline Demo</h2>
 
       {/* Default CardProduct */}
       <CardProduct />
 
       {/* Default Inline Variant */}
-      <CardProductInline />
+      <CardProductInline
+        tagline={{}}
+        titleProps={{}}
+        button={{}}
+        label={{}}
+        icon={{}}
+        button2={{}}
+        label2={{}}
+        icon2={{}}
+        button3={{}} 
+        label3={{}}
+        icon3={{}}
+        button4={{}}
+        label4={{}}
+        icon4={{}}
+        button5={{}}
+        label5={{}}
+        icon5={{}}
+        button6={{}}
+        label6={{}}
+        icon6={{}}
+        button7={{}}
+        label7={{}}
+        icon7={{}} 
+      />
 
       {/* Customized Inline Variant */}
       <CardProductInline
