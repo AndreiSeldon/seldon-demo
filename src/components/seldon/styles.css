@@ -420,6 +420,23 @@ html {
   border: var(--hairline) solid hsl(203 100% 62%);
 }
 
+.sdn-cardProduct-glyJ5UUE {
+  background-color: hsl(257 10% 100%);
+  background-image: url(https://static.seldon.app/background-default-light.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: auto;
+  align-self: stretch;
+  height: fit-content;
+  border-radius: 0.5rem;
+  border: var(--hairline) solid hsl(257 25% 45%);
+}
+
 .sdn-button-7k7U4i3x {
   background-color: hsl(0 0% 0%);
   cursor: pointer;
@@ -439,7 +456,7 @@ html {
 }
 
 .sdn-button-PZ55a4By {
-  background-color: hsl(203 100% 62%);
+  background-color: hsl(257 25% 45%);
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -454,7 +471,7 @@ html {
   height: fit-content;
   margin: 1rem;
   border-radius: 99999px;
-  border: 0.125rem solid hsl(203 100% 62%);
+  border: 0.125rem solid hsl(257 25% 45%);
 }
 
 .sdn-buttonBar-MMcNZdBT {
@@ -587,6 +604,24 @@ html {
   border: 0.125rem solid hsl(0 100% 65%);
 }
 
+.sdn-button-J2DfCnrP {
+  background-color: hsl(257 25% 45%);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  padding-right: 0.875rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 99999px;
+  border: 0.125rem solid hsl(257 25% 45%);
+}
+
 .sdn-button-JnRIw2cY {
   background-color: hsl(135 76% 59%);
   cursor: pointer;
@@ -671,7 +706,46 @@ html {
   box-orient: vertical;
 }
 
+.sdn-tagline-zNcn9k28 {
+  color: hsl(257 10% 1%);
+  align-self: stretch;
+  height: fit-content;
+  font-family: Roboto;
+  font-style: normal;
+  font-synthesis-style: none;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  webkit-line-clamp: 2;
+  line-clamp: 2;
+  webkit-box-orient: vertical;
+  box-orient: vertical;
+}
+
 .sdn-title-83oQ44Bx {
+  color: hsl(257 25% 45%);
+  margin-bottom: 0.5rem;
+  align-self: stretch;
+  height: fit-content;
+  font-family: Roboto;
+  font-style: normal;
+  font-synthesis-style: none;
+  font-weight: 500;
+  font-size: 2.002rem;
+  line-height: 1.25;
+  white-space: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  webkit-line-clamp: 2;
+  line-clamp: 2;
+  webkit-box-orient: vertical;
+  box-orient: vertical;
+}
+
+.sdn-title-AWpEkwtT {
   color: hsl(203 100% 62%);
   margin-bottom: 0.5rem;
   align-self: stretch;
@@ -697,6 +771,22 @@ html {
 }
 
 .sdn-label-1R07j0Td {
+  color: hsl(0 0% 100%);
+  width: fit-content;
+  height: fit-content;
+  font-family: Roboto;
+  font-style: normal;
+  font-synthesis-style: none;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.15;
+  letter-spacing: 0.1px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.sdn-label-2kukIhXa {
   color: hsl(0 0% 100%);
   width: fit-content;
   height: fit-content;
@@ -924,4 +1014,104 @@ html {
   --sdn-seldon-border-width-medium: 0.125rem;
   --sdn-seldon-border-width-large: 0.25rem;
   --sdn-seldon-border-width-xlarge: 0.5rem;
+  /* Core */
+  --sdn-material-ratio: 1.25;
+  --sdn-material-font-size: 16px;
+  --sdn-material-size: 1;
+  /* Font Families */
+  --sdn-material-font-family-primary: "Roboto";
+  --sdn-material-font-family-secondary: "Roboto";
+  /* Colors */
+  --sdn-material-color-base-hue: 257;
+  --sdn-material-color-base-saturation: 25%;
+  --sdn-material-color-base-lightness: 45%;
+  --sdn-material-color-harmony: 5;
+  --sdn-material-color-angle: 0deg;
+  --sdn-material-color-step: 10;
+  --sdn-material-color-white-point: 100%;
+  --sdn-material-color-gray-point: 47%;
+  --sdn-material-color-black-point: 1%;
+  --sdn-material-color-bleed: 10;
+  --sdn-material-color-contrast-ratio: 2.5;
+  /* Swatches */
+  --sdn-material-swatch-background: hsl(18 12% 8%);
+  --sdn-material-swatch-custom1: hsl(259 11% 40%);
+  --sdn-material-swatch-custom2: hsl(340 21% 41%);
+  --sdn-material-swatch-custom3: hsl(3 71% 41%);
+  --sdn-material-swatch-white: hsl(257 10% 100%);
+  --sdn-material-swatch-gray: hsl(257 10% 47%);
+  --sdn-material-swatch-black: hsl(257 10% 1%);
+  --sdn-material-swatch-primary: hsl(257 25% 45%);
+  --sdn-material-swatch-swatch1: hsl(257 25% 55%);
+  --sdn-material-swatch-swatch2: hsl(257 25% 65%);
+  --sdn-material-swatch-swatch3: hsl(257 25% 75%);
+  --sdn-material-swatch-swatch4: hsl(257 25% 85%);
+  /* Sizes */
+  --sdn-material-size-tiny: 0.125rem;
+  --sdn-material-size-xxsmall: 0.25rem;
+  --sdn-material-size-xsmall: 0.5rem;
+  --sdn-material-size-small: 0.75rem;
+  --sdn-material-size-medium: 1rem;
+  --sdn-material-size-large: 1.501rem;
+  --sdn-material-size-xlarge: 2.002rem;
+  --sdn-material-size-xxlarge: 2.998rem;
+  --sdn-material-size-huge: 3.998rem;
+  /* Margins */
+  --sdn-material-margin-tight: 0.25rem;
+  --sdn-material-margin-compact: 0.5rem;
+  --sdn-material-margin-cozy: 1rem;
+  --sdn-material-margin-comfortable: 2.002rem;
+  --sdn-material-margin-open: 3.998rem;
+  /* Paddings */
+  --sdn-material-padding-tight: 0.25rem;
+  --sdn-material-padding-compact: 0.5rem;
+  --sdn-material-padding-cozy: 1rem;
+  --sdn-material-padding-comfortable: 2.002rem;
+  --sdn-material-padding-open: 3.998rem;
+  /* Gaps */
+  --sdn-material-gap-tight: 0.25rem;
+  --sdn-material-gap-compact: 0.5rem;
+  --sdn-material-gap-cozy: 1rem;
+  --sdn-material-gap-comfortable: 2.002rem;
+  --sdn-material-gap-open: 3.998rem;
+  /* Corners */
+  --sdn-material-corners-tight: 0.25rem;
+  --sdn-material-corners-compact: 0.5rem;
+  --sdn-material-corners-cozy: 1rem;
+  --sdn-material-corners-comfortable: 1.501rem;
+  --sdn-material-corners-open: 2.002rem;
+  /* Font Sizes */
+  --sdn-material-font-size-tiny: 0.5rem;
+  --sdn-material-font-size-xxsmall: 0.624rem;
+  --sdn-material-font-size-xsmall: 0.75rem;
+  --sdn-material-font-size-small: 0.875rem;
+  --sdn-material-font-size-medium: 1rem;
+  --sdn-material-font-size-large: 1.376rem;
+  --sdn-material-font-size-xlarge: 2.002rem;
+  --sdn-material-font-size-xxlarge: 3.56rem;
+  --sdn-material-font-size-huge: 4.5rem;
+  /* Font Weights */
+  --sdn-material-font-weight-thin: 100;
+  --sdn-material-font-weight-xlight: 200;
+  --sdn-material-font-weight-light: 300;
+  --sdn-material-font-weight-normal: 400;
+  --sdn-material-font-weight-medium: 500;
+  --sdn-material-font-weight-semibold: 600;
+  --sdn-material-font-weight-bold: 700;
+  --sdn-material-font-weight-xbold: 800;
+  --sdn-material-font-weight-black: 900;
+  /* Line Heights */
+  --sdn-material-line-height-none: 1;
+  --sdn-material-line-height-solid: 1.15;
+  --sdn-material-line-height-tight: 1.25;
+  --sdn-material-line-height-compact: 1.33;
+  --sdn-material-line-height-cozy: 1.5;
+  --sdn-material-line-height-comfortable: 2;
+  --sdn-material-line-height-open: 2.5;
+  /* Border Widths */
+  --sdn-material-border-width-xsmall: 0.031rem;
+  --sdn-material-border-width-small: 0.069rem;
+  --sdn-material-border-width-medium: 0.125rem;
+  --sdn-material-border-width-large: 0.25rem;
+  --sdn-material-border-width-xlarge: 0.5rem;
 }

@@ -129,7 +129,7 @@ export function CardProductMixed({
               ...sdn.label,
               ...label,
               className:
-                "sdn-label-1R07j0Td" +
+                "sdn-label-2kukIhXa" +
                 (label?.className ? " " + label.className : ""),
             }}
           />
@@ -137,7 +137,7 @@ export function CardProductMixed({
         <Title
           {...{ ...sdn.titleProps, ...titleProps }}
           className={
-            "sdn-title-83oQ44Bx" +
+            "sdn-title-AWpEkwtT" +
             (titleProps?.className ? " " + titleProps.className : "")
           }
         />
@@ -182,7 +182,7 @@ export function CardProductMixed({
           ...sdn.label2,
           ...label2,
           className:
-            "sdn-label-1R07j0Td" +
+            "sdn-label-2kukIhXa" +
             (label2?.className ? " " + label2.className : ""),
         }}
         button2={{
@@ -203,7 +203,7 @@ export function CardProductMixed({
           ...sdn.label3,
           ...label3,
           className:
-            "sdn-label-1R07j0Td" +
+            "sdn-label-2kukIhXa" +
             (label3?.className ? " " + label3.className : ""),
         }}
         button3={{
@@ -224,7 +224,7 @@ export function CardProductMixed({
           ...sdn.label4,
           ...label4,
           className:
-            "sdn-label-1R07j0Td" +
+            "sdn-label-2kukIhXa" +
             (label4?.className ? " " + label4.className : ""),
         }}
       />
@@ -251,12 +251,12 @@ const sdn: CardProductMixedProps = {
   label: {
     children: "Mixed",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
+    className: "sdn-label-2kukIhXa",
   },
   titleProps: {
     children: "Mixed Card Title",
     htmlElement: "h4",
-    className: "sdn-title-83oQ44Bx",
+    className: "sdn-title-AWpEkwtT",
   },
   tagline2: {
     children: "Additional Tagline",
@@ -281,7 +281,7 @@ const sdn: CardProductMixedProps = {
   label2: {
     children: "Mixed X",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
+    className: "sdn-label-2kukIhXa",
   },
   button3: {
     className: "sdn-button-3D4pvOBS",
@@ -293,7 +293,7 @@ const sdn: CardProductMixedProps = {
   label3: {
     children: "Mixed Y",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
+    className: "sdn-label-2kukIhXa",
   },
   button4: {
     className: "sdn-button-3D4pvOBS",
@@ -305,6 +305,6 @@ const sdn: CardProductMixedProps = {
   label4: {
     children: "Mixed Z",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
+    className: "sdn-label-2kukIhXa",
   },
 }

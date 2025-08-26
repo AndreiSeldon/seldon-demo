@@ -106,7 +106,7 @@ export function CardProduct({
           ...sdn.titleProps,
           ...titleProps,
           className:
-            "sdn-title-83oQ44Bx" +
+            "sdn-title-AWpEkwtT" +
             (titleProps?.className ? " " + titleProps.className : ""),
         }}
         description={{
@@ -140,7 +140,7 @@ export function CardProduct({
           ...sdn.label,
           ...label,
           className:
-            "sdn-label-1R07j0Td" +
+            "sdn-label-2kukIhXa" +
             (label?.className ? " " + label.className : ""),
         }}
         button2={{
@@ -161,7 +161,7 @@ export function CardProduct({
           ...sdn.label2,
           ...label2,
           className:
-            "sdn-label-1R07j0Td" +
+            "sdn-label-2kukIhXa" +
             (label2?.className ? " " + label2.className : ""),
         }}
         button3={{
@@ -182,7 +182,7 @@ export function CardProduct({
           ...sdn.label3,
           ...label3,
           className:
-            "sdn-label-1R07j0Td" +
+            "sdn-label-2kukIhXa" +
             (label3?.className ? " " + label3.className : ""),
         }}
       />
@@ -202,7 +202,7 @@ const sdn: CardProductProps = {
   titleProps: {
     children: "Product Card",
     htmlElement: "h4",
-    className: "sdn-title-83oQ44Bx",
+    className: "sdn-title-AWpEkwtT",
   },
   description: {
     children:
@@ -223,7 +223,7 @@ const sdn: CardProductProps = {
   label: {
     children: "Default 1",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
+    className: "sdn-label-2kukIhXa",
   },
   button2: {
     className: "sdn-button-3D4pvOBS",
@@ -235,7 +235,7 @@ const sdn: CardProductProps = {
   label2: {
     children: "Default 2",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
+    className: "sdn-label-2kukIhXa",
   },
   button3: {
     className: "sdn-button-3D4pvOBS",
@@ -247,6 +247,6 @@ const sdn: CardProductProps = {
   label3: {
     children: "Default 3",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
+    className: "sdn-label-2kukIhXa",
   },
 }
