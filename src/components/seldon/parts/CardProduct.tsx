@@ -82,7 +82,7 @@ export function CardProduct({
           ...sdn.titleProps,
           ...titleProps,
           className:
-            "sdn-title-83oQ44Bx" +
+            "sdn-title-AWpEkwtT" +
             (titleProps?.className ? " " + titleProps.className : ""),
         }}
         description={{
@@ -103,7 +103,7 @@ export function CardProduct({
           ...sdn.button,
           ...button,
           className:
-            "sdn-button-4o13hVru" +
+            "sdn-button-EOkV8PVa" +
             (button?.className ? " " + button.className : ""),
         }}
         button2={{
@@ -117,7 +117,7 @@ export function CardProduct({
           ...sdn.button3,
           ...button3,
           className:
-            "sdn-button-3D4pvOBS" +
+            "sdn-button-P6RA6Ykr" +
             (button3?.className ? " " + button3.className : ""),
         }}
       />

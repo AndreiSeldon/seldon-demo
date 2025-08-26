@@ -82,7 +82,7 @@ export function CardProductMixed({
         <Tagline
           {...{ ...sdn.tagline, ...tagline }}
           className={
-            "sdn-tagline-te1Ofq0F" +
+            "sdn-tagline-johuxc4q" +
             (tagline?.className ? " " + tagline.className : "")
           }
         />
@@ -90,21 +90,21 @@ export function CardProductMixed({
           <Button
             {...{ ...sdn.button, ...button }}
             className={
-              "sdn-button-3D4pvOBS" +
+              "sdn-button-nxqwzA8x" +
               (button?.className ? " " + button.className : "")
             }
             icon={{
               ...sdn.icon,
               ...icon,
               className:
-                "sdn-icon-1ihZT8Ll" +
+                "sdn-icon-92RIo1HR" +
                 (icon?.className ? " " + icon.className : ""),
             }}
             label={{
               ...sdn.label,
               ...label,
               className:
-                "sdn-label-1R07j0Td" +
+                "sdn-label-NLPzmaz5" +
                 (label?.className ? " " + label.className : ""),
             }}
           />
@@ -112,7 +112,7 @@ export function CardProductMixed({
         <Title
           {...{ ...sdn.titleProps, ...titleProps }}
           className={
-            "sdn-title-83oQ44Bx" +
+            "sdn-title-ootJGEUg" +
             (titleProps?.className ? " " + titleProps.className : "")
           }
         />
@@ -120,7 +120,7 @@ export function CardProductMixed({
           <Tagline
             {...{ ...sdn.tagline2, ...tagline2 }}
             className={
-              "sdn-tagline-te1Ofq0F" +
+              "sdn-tagline-RYPEIO98" +
               (tagline2?.className ? " " + tagline2.className : "")
             }
           />
@@ -128,7 +128,7 @@ export function CardProductMixed({
         <Description
           {...{ ...sdn.description, ...description }}
           className={
-            "sdn-description-QJZ11zsK" +
+            "sdn-description-ho1zVT2E" +
             (description?.className ? " " + description.className : "")
           }
         />
@@ -136,7 +136,7 @@ export function CardProductMixed({
       <ButtonBar
         {...{ ...sdn.buttonBar, ...buttonBar }}
         className={
-          "sdn-buttonBar-o7wdbl2Z" +
+          "sdn-buttonBar-MMcNZdBT" +
           (buttonBar?.className ? " " + buttonBar.className : "")
         }
         button={{
@@ -150,14 +150,14 @@ export function CardProductMixed({
           ...sdn.button3,
           ...button3,
           className:
-            "sdn-button-3D4pvOBS" +
+            "sdn-button-gGjRwMix" +
             (button3?.className ? " " + button3.className : ""),
         }}
         button3={{
           ...sdn.button4,
           ...button4,
           className:
-            "sdn-button-3D4pvOBS" +
+            "sdn-button-w9crQPqN" +
             (button4?.className ? " " + button4.className : ""),
         }}
       />
