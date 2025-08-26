@@ -1,5 +1,4 @@
-/*****
- *
+/*
  * This code was generated using Seldon (https://seldon.app)
  *
  * Licensed under the Terms of Use: https://seldon.digital/terms-of-service
@@ -9,97 +8,92 @@
  * in whole or in part, for the purposes of training, fine-tuning,
  * or otherwise improving (directly or indirectly) any machine learning
  * or artificial intelligence system.
- * 
- *****/
- 
+ */
 import { HTMLAttributes } from "react"
 import { Button, ButtonProps } from "../elements/Button"
 import { Frame } from "../frames/Frame"
-import { Icon, IconProps } from "../primitives/Icon"
-import { Label, LabelProps } from "../primitives/Label"
+import { IconProps } from "../primitives/Icon"
+import { LabelProps } from "../primitives/Label"
 
 export interface ButtonBarProps extends HTMLAttributes<HTMLElement> {
   className?: string
 
-  button?: ButtonProps
-  icon?: IconProps
-  label?: LabelProps
-  button2?: ButtonProps
-  icon2?: IconProps
-  label2?: LabelProps
-  button3?: ButtonProps
-  icon3?: IconProps
-  label3?: LabelProps
+  buttonProps?: ButtonProps
+  buttonIconProps?: IconProps
+  buttonLabelProps?: LabelProps
+  button1Props?: ButtonProps
+  button1IconProps?: IconProps
+  button1LabelProps?: LabelProps
+  button2Props?: ButtonProps
+  button2IconProps?: IconProps
+  button2LabelProps?: LabelProps
 }
 
 export function ButtonBar({
   className = "",
-  button,
-  icon,
-  label,
-  button2,
-  icon2,
-  label2,
-  button3,
-  icon3,
-  label3,
+  buttonProps,
+  buttonIconProps,
+  buttonLabelProps,
+  button1Props,
+  button1IconProps,
+  button1LabelProps,
+  button2Props,
+  button2IconProps,
+  button2LabelProps,
   ...props
 }: ButtonBarProps) {
   return (
     <Frame className={"sdn-buttonBar " + className} {...props}>
       <Button
-        {...{ ...sdn.button, ...button }}
+        {...{ ...seldon.buttonProps, ...buttonProps }}
         className={
-          "sdn-button-3D4pvOBS sdn-button" +
-          (button?.className ? " " + button.className : "")
+          "sdn-button-B5lWh7TZ sdn-button " + (buttonProps?.className ?? "")
         }
-        icon={{ ...sdn.icon, ...icon }}
-        label={{ ...sdn.label, ...label }}
+        iconProps={{ ...seldon.buttonIconProps, ...buttonIconProps }}
+        labelProps={{ ...seldon.buttonLabelProps, ...buttonLabelProps }}
       />
       <Button
-        {...{ ...sdn.button2, ...button2 }}
+        {...{ ...seldon.button1Props, ...button1Props }}
         className={
-          "sdn-button-3D4pvOBS sdn-button" +
-          (button2?.className ? " " + button2.className : "")
+          "sdn-button-B5lWh7TZ sdn-button " + (button1Props?.className ?? "")
         }
-        icon={{ ...sdn.icon2, ...icon2 }}
-        label={{ ...sdn.label2, ...label2 }}
+        iconProps={{ ...seldon.button1IconProps, ...button1IconProps }}
+        labelProps={{ ...seldon.button1LabelProps, ...button1LabelProps }}
       />
       <Button
-        {...{ ...sdn.button3, ...button3 }}
+        {...{ ...seldon.button2Props, ...button2Props }}
         className={
-          "sdn-button-3D4pvOBS sdn-button" +
-          (button3?.className ? " " + button3.className : "")
+          "sdn-button-B5lWh7TZ sdn-button " + (button2Props?.className ?? "")
         }
-        icon={{ ...sdn.icon3, ...icon3 }}
-        label={{ ...sdn.label3, ...label3 }}
+        iconProps={{ ...seldon.button2IconProps, ...button2IconProps }}
+        labelProps={{ ...seldon.button2LabelProps, ...button2LabelProps }}
       />
     </Frame>
   )
 }
 
-const sdn: ButtonBarProps = {
-  button: {},
-  icon: {
+const seldon: ButtonBarProps = {
+  buttonProps: {},
+  buttonIconProps: {
     icon: "__default__",
   },
-  label: {
+  buttonLabelProps: {
     children: "Label",
     htmlElement: "label",
   },
-  button2: {},
-  icon2: {
+  button1Props: {},
+  button1IconProps: {
     icon: "__default__",
   },
-  label2: {
+  button1LabelProps: {
     children: "Label",
     htmlElement: "label",
   },
-  button3: {},
-  icon3: {
+  button2Props: {},
+  button2IconProps: {
     icon: "__default__",
   },
-  label3: {
+  button2LabelProps: {
     children: "Label",
     htmlElement: "label",
   },
