@@ -174,28 +174,28 @@ export function CardProductMixed({
             "sdn-label-1R07j0Td" +
             (label2?.className ? " " + label2.className : ""),
         }}
-        icon={{
+        icon2={{
           ...sdn.icon3,
           ...icon3,
           className:
             "sdn-icon-1ihZT8Ll" +
             (icon3?.className ? " " + icon3.className : ""),
         }}
-        label={{
+        label2={{
           ...sdn.label3,
           ...label3,
           className:
             "sdn-label-1R07j0Td" +
             (label3?.className ? " " + label3.className : ""),
         }}
-        icon={{
+        icon3={{
           ...sdn.icon4,
           ...icon4,
           className:
             "sdn-icon-1ihZT8Ll" +
             (icon4?.className ? " " + icon4.className : ""),
         }}
-        label={{
+        label3={{
           ...sdn.label4,
           ...label4,
           className:
