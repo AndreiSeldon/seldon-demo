@@ -45,7 +45,7 @@ export function TextblockDetails({
       <Title
         {...{ ...sdn.titleProps, ...titleProps }}
         className={
-          "sdn-title-83oQ44Bx" +
+          "sdn-title-NxxLFPyV" +
           (titleProps?.className ? " " + titleProps.className : "")
         }
       />

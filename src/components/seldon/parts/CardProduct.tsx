@@ -75,7 +75,7 @@ export function CardProduct({
           ...sdn.tagline,
           ...tagline,
           className:
-            "sdn-tagline-57ug71iC" +
+            "sdn-tagline-te1Ofq0F" +
             (tagline?.className ? " " + tagline.className : ""),
         }}
         titleProps={{
@@ -89,7 +89,7 @@ export function CardProduct({
           ...sdn.description,
           ...description,
           className:
-            "sdn-description-8Y5lFu0w" +
+            "sdn-description-QJZ11zsK" +
             (description?.className ? " " + description.className : ""),
         }}
       />

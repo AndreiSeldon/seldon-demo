@@ -82,7 +82,7 @@ export function CardProductMixed({
         <Tagline
           {...{ ...sdn.tagline, ...tagline }}
           className={
-            "sdn-tagline-57ug71iC" +
+            "sdn-tagline-te1Ofq0F" +
             (tagline?.className ? " " + tagline.className : "")
           }
         />
@@ -120,7 +120,7 @@ export function CardProductMixed({
           <Tagline
             {...{ ...sdn.tagline2, ...tagline2 }}
             className={
-              "sdn-tagline-57ug71iC" +
+              "sdn-tagline-te1Ofq0F" +
               (tagline2?.className ? " " + tagline2.className : "")
             }
           />
@@ -128,7 +128,7 @@ export function CardProductMixed({
         <Description
           {...{ ...sdn.description, ...description }}
           className={
-            "sdn-description-8Y5lFu0w" +
+            "sdn-description-QJZ11zsK" +
             (description?.className ? " " + description.className : "")
           }
         />

@@ -129,7 +129,7 @@ export function CardProductInline({
         <Tagline
           {...{ ...sdn.tagline, ...tagline }}
           className={
-            "sdn-tagline-57ug71iC" +
+            "sdn-tagline-te1Ofq0F" +
             (tagline?.className ? " " + tagline.className : "")
           }
         />
