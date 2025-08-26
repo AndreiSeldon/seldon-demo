@@ -26,32 +26,32 @@ import { Title, TitleProps } from "../primitives/Title"
 export interface CardProductInlineProps extends HTMLAttributes<HTMLElement> {
   className?: string
 
-  button?: ButtonProps
-  icon?: IconProps
-  label?: LabelProps
-  textblockDetails?: TextblockDetailsProps
-  tagline?: TaglineProps
-  titleProps?: TitleProps
-  button2?: ButtonProps
-  icon2?: IconProps
-  label2?: LabelProps
-  button3?: ButtonProps
-  icon3?: IconProps
-  label3?: LabelProps
-  description?: DescriptionProps
-  buttonBar?: ButtonBarProps
-  button4?: ButtonProps
-  icon4?: IconProps
-  label4?: LabelProps
-  button5?: ButtonProps
-  icon5?: IconProps
-  label5?: LabelProps
-  button6?: ButtonProps
-  icon6?: IconProps
-  label6?: LabelProps
-  button7?: ButtonProps
-  icon7?: IconProps
-  label7?: LabelProps
+  button?: boolean | ButtonProps
+  icon?: boolean | IconProps
+  label?: boolean | LabelProps
+  textblockDetails?: boolean | TextblockDetailsProps
+  tagline?: boolean | TaglineProps
+  titleProps?: boolean | TitleProps
+  button2?: boolean | ButtonProps
+  icon2?: boolean | IconProps
+  label2?: boolean | LabelProps
+  button3?: boolean | ButtonProps
+  icon3?: boolean | IconProps
+  label3?: boolean | LabelProps
+  description?: boolean | DescriptionProps
+  buttonBar?: boolean | ButtonBarProps
+  button4?: boolean | ButtonProps
+  icon4?: boolean | IconProps
+  label4?: boolean | LabelProps
+  button5?: boolean | ButtonProps
+  icon5?: boolean | IconProps
+  label5?: boolean | LabelProps
+  button6?: boolean | ButtonProps
+  icon6?: boolean | IconProps
+  label6?: boolean | LabelProps
+  button7?: boolean | ButtonProps
+  icon7?: boolean | IconProps
+  label7?: boolean | LabelProps
 }
 
 export function CardProductInline({
@@ -89,9 +89,9 @@ export function CardProductInline({
       className={"sdn-cardProduct sdn-cardProduct-glyJ5UUE " + className}
       {...props}
     >
-      {(button || sdn.button) && (
+      {button && (
         <Button
-          {...{ ...sdn.button, ...button }}
+          {...{ ...sdn.button, ...(button === true ? {} : button) }}
           className={
             "sdn-button-PZ55a4By sdn-button-3D4pvOBS sdn-button" +
             (button?.className ? " " + button.className : "")
@@ -107,21 +107,21 @@ export function CardProductInline({
         }
       >
         <Tagline
-          {...{ ...sdn.tagline, ...tagline }}
+          {...{ ...sdn.tagline, ...(tagline === true ? {} : tagline) }}
           className={
             "sdn-tagline" + (tagline?.className ? " " + tagline.className : "")
           }
         />
         <Title
-          {...{ ...sdn.titleProps, ...titleProps }}
+          {...{ ...sdn.titleProps, ...(titleProps === true ? {} : titleProps) }}
           className={
             "sdn-title-AWpEkwtT sdn-title-NxxLFPyV sdn-title" +
             (titleProps?.className ? " " + titleProps.className : "")
           }
         />
-        {(button2 || sdn.button2) && (
+        {button2 && (
           <Button
-            {...{ ...sdn.button2, ...button2 }}
+            {...{ ...sdn.button2, ...(button2 === true ? {} : button2) }}
             className={
               "sdn-button-3D4pvOBS sdn-button" +
               (button2?.className ? " " + button2.className : "")
@@ -130,9 +130,9 @@ export function CardProductInline({
             label={{ ...sdn.label2, ...label2 }}
           />
         )}
-        {(button3 || sdn.button3) && (
+        {button3 && (
           <Button
-            {...{ ...sdn.button3, ...button3 }}
+            {...{ ...sdn.button3, ...(button3 === true ? {} : button3) }}
             className={
               "sdn-button-3D4pvOBS sdn-button" +
               (button3?.className ? " " + button3.className : "")
@@ -142,7 +142,10 @@ export function CardProductInline({
           />
         )}
         <Description
-          {...{ ...sdn.description, ...description }}
+          {...{
+            ...sdn.description,
+            ...(description === true ? {} : description),
+          }}
           className={
             "sdn-description-rWA5n84C sdn-description" +
             (description?.className ? " " + description.className : "")
@@ -156,7 +159,7 @@ export function CardProductInline({
         }
       >
         <Button
-          {...{ ...sdn.button4, ...button4 }}
+          {...{ ...sdn.button4, ...(button4 === true ? {} : button4) }}
           className={
             "sdn-button-4o13hVru sdn-button-3D4pvOBS sdn-button" +
             (button4?.className ? " " + button4.className : "")
@@ -165,7 +168,7 @@ export function CardProductInline({
           label={{ ...sdn.label4, ...label4 }}
         />
         <Button
-          {...{ ...sdn.button5, ...button5 }}
+          {...{ ...sdn.button5, ...(button5 === true ? {} : button5) }}
           className={
             "sdn-button-OPNTxNTH sdn-button-3D4pvOBS sdn-button" +
             (button5?.className ? " " + button5.className : "")
@@ -174,7 +177,7 @@ export function CardProductInline({
           label={{ ...sdn.label5, ...label5 }}
         />
         <Button
-          {...{ ...sdn.button6, ...button6 }}
+          {...{ ...sdn.button6, ...(button6 === true ? {} : button6) }}
           className={
             "sdn-button-3D4pvOBS sdn-button" +
             (button6?.className ? " " + button6.className : "")
@@ -182,9 +185,9 @@ export function CardProductInline({
           icon={{ ...sdn.icon6, ...icon6 }}
           label={{ ...sdn.label6, ...label6 }}
         />
-        {(button7 || sdn.button7) && (
+        {button7 && (
           <Button
-            {...{ ...sdn.button7, ...button7 }}
+            {...{ ...sdn.button7, ...(button7 === true ? {} : button7) }}
             className={
               "sdn-button-3D4pvOBS sdn-button" +
               (button7?.className ? " " + button7.className : "")

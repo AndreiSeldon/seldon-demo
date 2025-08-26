@@ -21,9 +21,9 @@ import { Title, TitleProps } from "../primitives/Title"
 export interface TextblockDetailsProps extends HTMLAttributes<HTMLElement> {
   className?: string
 
-  tagline?: TaglineProps
-  titleProps?: TitleProps
-  description?: DescriptionProps
+  tagline?: boolean | TaglineProps
+  titleProps?: boolean | TitleProps
+  description?: boolean | DescriptionProps
 }
 
 export function TextblockDetails({

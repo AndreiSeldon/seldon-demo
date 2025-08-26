@@ -20,8 +20,8 @@ import { Label, LabelProps } from "../primitives/Label"
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string
 
-  icon?: IconProps
-  label?: LabelProps
+  icon?: boolean | IconProps
+  label?: boolean | LabelProps
 }
 
 export function Button({ className = "", icon, label, ...props }: ButtonProps) {

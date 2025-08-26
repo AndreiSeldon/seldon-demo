@@ -29,20 +29,20 @@ import { Title, TitleProps } from "../primitives/Title"
 export interface CardProductProps extends HTMLAttributes<HTMLElement> {
   className?: string
 
-  textblockDetails?: TextblockDetailsProps
-  tagline?: TaglineProps
-  titleProps?: TitleProps
-  description?: DescriptionProps
-  buttonBar?: ButtonBarProps
-  button?: ButtonProps
-  icon?: IconProps
-  label?: LabelProps
-  button2?: ButtonProps
-  icon2?: IconProps
-  label2?: LabelProps
-  button3?: ButtonProps
-  icon3?: IconProps
-  label3?: LabelProps
+  textblockDetails?: boolean | TextblockDetailsProps
+  tagline?: boolean | TaglineProps
+  titleProps?: boolean | TitleProps
+  description?: boolean | DescriptionProps
+  buttonBar?: boolean | ButtonBarProps
+  button?: boolean | ButtonProps
+  icon?: boolean | IconProps
+  label?: boolean | LabelProps
+  button2?: boolean | ButtonProps
+  icon2?: boolean | IconProps
+  label2?: boolean | LabelProps
+  button3?: boolean | ButtonProps
+  icon3?: boolean | IconProps
+  label3?: boolean | LabelProps
 }
 
 export function CardProduct({
