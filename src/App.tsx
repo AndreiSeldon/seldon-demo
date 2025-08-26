@@ -24,7 +24,7 @@ function Screen1() {
       <CardProductInline
         style={{ marginTop: 20, width: 500 }}
         tagline={{ children: "New Product" }}
-        titleProps={{ children: "Local Product Card" }}
+        titleProps={{ children: "Customized Inline Card" }}
         button={{ onClick: () => alert("Special inline button clicked!") }}
         label={{ children: "Featured" }}
         icon={{ icon: "material-addChart" }}
@@ -42,8 +42,8 @@ function Screen1() {
       {/* Customized Mixed */}
       <CardProductMixed
         style={{ marginTop: 20, width: 500 }}
-        tagline={{ children: "New Product" }}
-        titleProps={{ children: "Local Product Card" }}
+        tagline={{ children: "Is this thing on?" }}
+        titleProps={{ children: "Customized Mixed Card" }}
         button={{ onClick: () => alert("Special mix button clicked!") }}
         label={{ children: "Test Me" }}
         icon={{ icon: "material-addChart" }}
