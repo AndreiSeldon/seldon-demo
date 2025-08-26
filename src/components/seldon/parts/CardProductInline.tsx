@@ -56,9 +56,6 @@ export interface CardProductInlineProps extends HTMLAttributes<HTMLElement> {
 
 export function CardProductInline({
   className = "",
-  button = sdn.button,
-  icon = sdn.icon,
-  label = sdn.label,
   textblockDetails = sdn.textblockDetails,
   tagline = sdn.tagline,
   titleProps = sdn.titleProps,
@@ -82,6 +79,9 @@ export function CardProductInline({
   button7 = sdn.button7,
   icon7 = sdn.icon7,
   label7 = sdn.label7,
+  button,
+  icon,
+  label,
   ...props
 }: CardProductInlineProps) {
   return (
