@@ -15,7 +15,7 @@ function Screen1() {
 
       <CardProduct style={{ marginTop: 20, width: 600 }} />
 
-      {/* Basic usage with default values */}
+      {/* Basic usage */}
       <CardProductInline
         style={{ marginTop: 20, width: 600 }}
         titleProps={{ children: "Product Card Inline" }}
