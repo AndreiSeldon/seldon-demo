@@ -49,11 +49,20 @@ export interface CardProductProps extends HTMLAttributes<HTMLElement> {
  * Level: Part
  * Intent: Product card schema optimized for ecommerce use cases, supporting pricing, images, descriptions, and action triggers.
  * Tags: card, product, ecommerce, ui, pricing, image, cta, catalog
- * 
+ *
  * @example
  * ```tsx
  * <CardProduct
-
+ *   textblockDetails="{}"
+ *   tagline="Featured Product"
+ *   title="Product Title"
+ *   description="Product description text"
+ *   buttonBar="{}"
+ *   button={() => {}}
+ *   icon="material-star"
+ *   label="Button Label"
+ *   button1={() => {}}
+ *   button2={() => {}}
  * />
  * ```
  */

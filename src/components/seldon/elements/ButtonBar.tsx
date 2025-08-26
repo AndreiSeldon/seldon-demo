@@ -36,11 +36,15 @@ export interface ButtonBarProps extends HTMLAttributes<HTMLElement> {
  * Level: Element
  * Intent: Groups multiple buttons in a horizontal layout for related actions.
  * Tags: button group, bar, actions, UI, layout, controls, inline, cluster
- * 
+ *
  * @example
  * ```tsx
  * <ButtonBar
-
+ *   button={() => {}}
+ *   icon="material-star"
+ *   label="Button Label"
+ *   button1={() => {}}
+ *   button2={() => {}}
  * />
  * ```
  */
