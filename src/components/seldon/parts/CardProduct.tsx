@@ -71,12 +71,7 @@ export function CardProduct({
           "sdn-textblockDetails-Njjvy0sD" +
           (textblockDetails?.className ? " " + textblockDetails.className : "")
         }
-        tagline={{
-          ...sdn.tagline,
-          ...tagline,
-          className:
-            "sdn-tagline" + (tagline?.className ? " " + tagline.className : ""),
-        }}
+        tagline={{ ...sdn.tagline, ...tagline }}
         titleProps={{
           ...sdn.titleProps,
           ...titleProps,
@@ -84,13 +79,7 @@ export function CardProduct({
             "sdn-title-AWpEkwtT" +
             (titleProps?.className ? " " + titleProps.className : ""),
         }}
-        description={{
-          ...sdn.description,
-          ...description,
-          className:
-            "sdn-description" +
-            (description?.className ? " " + description.className : ""),
-        }}
+        description={{ ...sdn.description, ...description }}
       />
       <ButtonBar
         {...{ ...sdn.buttonBar, ...buttonBar }}

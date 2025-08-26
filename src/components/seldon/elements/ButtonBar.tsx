@@ -53,20 +53,8 @@ export function ButtonBar({
           "sdn-button-3D4pvOBS" +
           (button?.className ? " " + button.className : "")
         }
-        icon={{
-          ...sdn.icon,
-          ...icon,
-          className:
-            "sdn-icon-cJldpFjJ sdn-icon" +
-            (icon?.className ? " " + icon.className : ""),
-        }}
-        label={{
-          ...sdn.label,
-          ...label,
-          className:
-            "sdn-label-BOyxJbm8 sdn-label" +
-            (label?.className ? " " + label.className : ""),
-        }}
+        icon={{ ...sdn.icon, ...icon }}
+        label={{ ...sdn.label, ...label }}
       />
       <Button
         {...{ ...sdn.button2, ...button2 }}
@@ -74,20 +62,8 @@ export function ButtonBar({
           "sdn-button-3D4pvOBS" +
           (button2?.className ? " " + button2.className : "")
         }
-        icon={{
-          ...sdn.icon2,
-          ...icon2,
-          className:
-            "sdn-icon-cJldpFjJ sdn-icon" +
-            (icon2?.className ? " " + icon2.className : ""),
-        }}
-        label={{
-          ...sdn.label2,
-          ...label2,
-          className:
-            "sdn-label-BOyxJbm8 sdn-label" +
-            (label2?.className ? " " + label2.className : ""),
-        }}
+        icon={{ ...sdn.icon2, ...icon2 }}
+        label={{ ...sdn.label2, ...label2 }}
       />
       <Button
         {...{ ...sdn.button3, ...button3 }}
@@ -95,20 +71,8 @@ export function ButtonBar({
           "sdn-button-3D4pvOBS" +
           (button3?.className ? " " + button3.className : "")
         }
-        icon={{
-          ...sdn.icon3,
-          ...icon3,
-          className:
-            "sdn-icon-cJldpFjJ sdn-icon" +
-            (icon3?.className ? " " + icon3.className : ""),
-        }}
-        label={{
-          ...sdn.label3,
-          ...label3,
-          className:
-            "sdn-label-BOyxJbm8 sdn-label" +
-            (label3?.className ? " " + label3.className : ""),
-        }}
+        icon={{ ...sdn.icon3, ...icon3 }}
+        label={{ ...sdn.label3, ...label3 }}
       />
     </Frame>
   )
