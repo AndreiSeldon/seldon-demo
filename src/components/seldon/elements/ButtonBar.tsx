@@ -114,28 +114,40 @@ export function ButtonBar({
 }
 
 const sdn: ButtonBarProps = {
-  button: {},
+  button: {
+    className: "sdn-button-7k7U4i3x",
+  },
   icon: {
     icon: "__default__",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label: {
     children: "Label",
     htmlElement: "label",
+    className: "sdn-label-BOyxJbm8",
   },
-  button2: {},
+  button2: {
+    className: "sdn-button-7k7U4i3x",
+  },
   icon2: {
     icon: "__default__",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label2: {
     children: "Label",
     htmlElement: "label",
+    className: "sdn-label-BOyxJbm8",
   },
-  button3: {},
+  button3: {
+    className: "sdn-button-7k7U4i3x",
+  },
   icon3: {
     icon: "__default__",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label3: {
     children: "Label",
     htmlElement: "label",
+    className: "sdn-label-BOyxJbm8",
   },
 }

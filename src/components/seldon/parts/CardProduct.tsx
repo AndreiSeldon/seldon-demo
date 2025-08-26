@@ -126,43 +126,62 @@ export function CardProduct({
 }
 
 const sdn: CardProductProps = {
-  textblockDetails: {},
+  textblockDetails: {
+    className: "sdn-textblockDetails-Njjvy0sD",
+  },
   tagline: {
     children: "Tagline",
     htmlElement: "p",
+    className: "sdn-tagline-te1Ofq0F",
   },
   titleProps: {
     children: "Product Card Title",
     htmlElement: "h4",
+    className: "sdn-title-83oQ44Bx",
   },
   description: {
     children:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus.",
     htmlElement: "p",
+    className: "sdn-description-QJZ11zsK",
   },
-  buttonBar: {},
-  button: {},
+  buttonBar: {
+    className: "sdn-buttonBar-o7wdbl2Z",
+  },
+  button: {
+    className: "sdn-button-4o13hVru",
+  },
   icon: {
     icon: "__default__",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label: {
     children: "Label",
     htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
   },
-  button2: {},
+  button2: {
+    className: "sdn-button-3D4pvOBS",
+  },
   icon2: {
     icon: "__default__",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label2: {
     children: "Label",
     htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
   },
-  button3: {},
+  button3: {
+    className: "sdn-button-3D4pvOBS",
+  },
   icon3: {
     icon: "__default__",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label3: {
     children: "Label",
     htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
   },
 }
