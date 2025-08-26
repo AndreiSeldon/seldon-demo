@@ -56,13 +56,15 @@ export function ButtonBar({
         icon={{
           ...sdn.icon,
           ...icon,
-          className: "sdn-icon" + (icon?.className ? " " + icon.className : ""),
+          className:
+            "sdn-icon-1ihZT8Ll" + (icon?.className ? " " + icon.className : ""),
         }}
         label={{
           ...sdn.label,
           ...label,
           className:
-            "sdn-label" + (label?.className ? " " + label.className : ""),
+            "sdn-label-1R07j0Td" +
+            (label?.className ? " " + label.className : ""),
         }}
       />
       <Button
@@ -75,13 +77,15 @@ export function ButtonBar({
           ...sdn.icon2,
           ...icon2,
           className:
-            "sdn-icon" + (icon2?.className ? " " + icon2.className : ""),
+            "sdn-icon-1ihZT8Ll" +
+            (icon2?.className ? " " + icon2.className : ""),
         }}
         label={{
           ...sdn.label2,
           ...label2,
           className:
-            "sdn-label" + (label2?.className ? " " + label2.className : ""),
+            "sdn-label-1R07j0Td" +
+            (label2?.className ? " " + label2.className : ""),
         }}
       />
       <Button
@@ -94,13 +98,15 @@ export function ButtonBar({
           ...sdn.icon3,
           ...icon3,
           className:
-            "sdn-icon" + (icon3?.className ? " " + icon3.className : ""),
+            "sdn-icon-1ihZT8Ll" +
+            (icon3?.className ? " " + icon3.className : ""),
         }}
         label={{
           ...sdn.label3,
           ...label3,
           className:
-            "sdn-label" + (label3?.className ? " " + label3.className : ""),
+            "sdn-label-1R07j0Td" +
+            (label3?.className ? " " + label3.className : ""),
         }}
       />
     </Frame>

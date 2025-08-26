@@ -82,7 +82,8 @@ export function CardProductMixed({
         <Tagline
           {...{ ...sdn.tagline, ...tagline }}
           className={
-            "sdn-tagline" + (tagline?.className ? " " + tagline.className : "")
+            "sdn-tagline-57ug71iC" +
+            (tagline?.className ? " " + tagline.className : "")
           }
         />
         {button && (
@@ -96,20 +97,22 @@ export function CardProductMixed({
               ...sdn.icon,
               ...icon,
               className:
-                "sdn-icon" + (icon?.className ? " " + icon.className : ""),
+                "sdn-icon-1ihZT8Ll" +
+                (icon?.className ? " " + icon.className : ""),
             }}
             label={{
               ...sdn.label,
               ...label,
               className:
-                "sdn-label" + (label?.className ? " " + label.className : ""),
+                "sdn-label-1R07j0Td" +
+                (label?.className ? " " + label.className : ""),
             }}
           />
         )}
         <Title
           {...{ ...sdn.titleProps, ...titleProps }}
           className={
-            "sdn-title" +
+            "sdn-title-83oQ44Bx" +
             (titleProps?.className ? " " + titleProps.className : "")
           }
         />
@@ -117,7 +120,7 @@ export function CardProductMixed({
           <Tagline
             {...{ ...sdn.tagline2, ...tagline2 }}
             className={
-              "sdn-tagline" +
+              "sdn-tagline-57ug71iC" +
               (tagline2?.className ? " " + tagline2.className : "")
             }
           />
@@ -125,7 +128,7 @@ export function CardProductMixed({
         <Description
           {...{ ...sdn.description, ...description }}
           className={
-            "sdn-description" +
+            "sdn-description-8Y5lFu0w" +
             (description?.className ? " " + description.className : "")
           }
         />
@@ -133,7 +136,7 @@ export function CardProductMixed({
       <ButtonBar
         {...{ ...sdn.buttonBar, ...buttonBar }}
         className={
-          "sdn-buttonBar-rWRytCG8" +
+          "sdn-buttonBar-o7wdbl2Z" +
           (buttonBar?.className ? " " + buttonBar.className : "")
         }
         button={{

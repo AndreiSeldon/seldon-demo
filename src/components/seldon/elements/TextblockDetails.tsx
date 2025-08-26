@@ -38,20 +38,21 @@ export function TextblockDetails({
       <Tagline
         {...{ ...sdn.tagline, ...tagline }}
         className={
-          "sdn-tagline" + (tagline?.className ? " " + tagline.className : "")
+          "sdn-tagline-57ug71iC" +
+          (tagline?.className ? " " + tagline.className : "")
         }
       />
       <Title
         {...{ ...sdn.titleProps, ...titleProps }}
         className={
-          "sdn-title-NxxLFPyV" +
+          "sdn-title-83oQ44Bx" +
           (titleProps?.className ? " " + titleProps.className : "")
         }
       />
       <Description
         {...{ ...sdn.description, ...description }}
         className={
-          "sdn-description" +
+          "sdn-description-8Y5lFu0w" +
           (description?.className ? " " + description.className : "")
         }
       />
