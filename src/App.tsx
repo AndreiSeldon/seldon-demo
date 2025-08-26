@@ -6,9 +6,6 @@ import "./App.css";
 import "./components/seldon/styles.css";
 import { CardProduct } from "./components/seldon/parts/CardProduct";
 import { CardProductInline } from "./components/seldon/parts/CardProductInline";
-import "./baseline/seldon/styles.css";
-import { CardProduct as CardBaseline } from "./baseline/seldon/parts/CardProduct";
-import { CardProductInline as CardProductBaseline } from "./baseline/seldon/parts/CardProductInline";
 import { Fonts } from "./components/seldon/Fonts";
 
 function Screen1() {
@@ -42,18 +39,6 @@ function Screen1() {
         button5={{ onClick: () => alert("Action B clicked!") }}
         label5={{ children: "Learn More" }}
         icon5={{ icon: "material-addLocation" }}
-      />
-
-      <CardBaseline style={{ marginTop: 20, width: 600 }} />
-
-      {/* Basic usage with default values */}
-      <CardProductBaseline
-        style={{ marginTop: 20, width: 600 }}
-      />
-
-      {/* Customized version */}
-      <CardProductBaseline
-        style={{ marginTop: 20, width: 600 }}
       />
     </div>
   );
