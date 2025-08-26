@@ -28,7 +28,6 @@ import { IconMaterialDataset } from "../icons/IconMaterialDataset"
 
 export interface IconProps extends SVGAttributes<SVGElement> {
   className?: string
-
   icon?:
     | "__default__"
     | "material-addCircle"

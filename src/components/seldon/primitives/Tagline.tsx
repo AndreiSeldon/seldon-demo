@@ -22,7 +22,6 @@ export interface TaglineProps
     HTMLHeadingElement | HTMLHeadingElement | HTMLParagraphElement
   > {
   className?: string
-
   children?: string
   htmlElement?: "h5" | "h6" | "p"
 }

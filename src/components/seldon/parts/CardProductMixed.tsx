@@ -25,7 +25,6 @@ import { Title, TitleProps } from "../primitives/Title"
 
 export interface CardProductMixedProps extends HTMLAttributes<HTMLElement> {
   className?: string
-
   textblockDetails?: TextblockDetailsProps
   tagline?: TaglineProps
   button?: ButtonProps

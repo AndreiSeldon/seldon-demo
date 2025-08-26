@@ -20,7 +20,6 @@ import { Label, LabelProps } from "../primitives/Label"
 
 export interface ButtonBarProps extends HTMLAttributes<HTMLElement> {
   className?: string
-
   button?: ButtonProps
   icon?: IconProps
   label?: LabelProps

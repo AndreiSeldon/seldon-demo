@@ -24,7 +24,6 @@ import { Title, TitleProps } from "../primitives/Title"
 
 export interface CardProductInlineProps extends HTMLAttributes<HTMLElement> {
   className?: string
-
   button?: ButtonProps
   icon?: IconProps
   label?: LabelProps
