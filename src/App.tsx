@@ -19,7 +19,9 @@ function Screen1() {
       {/* Simple usage */}
       <CardProductInline
         style={{ marginTop: 20, width: 600 }}
-        titleProps={{ children: "Product Card Inline" }}
+        titleProps={{}}
+        button2={{}}
+        button3={{}}
       />
 
       {/* Customized version */}
