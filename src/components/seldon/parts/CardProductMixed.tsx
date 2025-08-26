@@ -139,63 +139,63 @@ export function CardProductMixed({
           "sdn-buttonBar-MMcNZdBT" +
           (buttonBar?.className ? " " + buttonBar.className : "")
         }
-        button2={{
+        button={{
           ...sdn.button2,
           ...button2,
           className:
             "sdn-button-JnRIw2cY" +
             (button2?.className ? " " + button2.className : ""),
         }}
-        icon2={{
-          ...sdn.icon2,
-          ...icon2,
-          className:
-            "sdn-icon-1ihZT8Ll" +
-            (icon2?.className ? " " + icon2.className : ""),
-        }}
-        label2={{
-          ...sdn.label2,
-          ...label2,
-          className:
-            "sdn-label-1R07j0Td" +
-            (label2?.className ? " " + label2.className : ""),
-        }}
-        button3={{
+        button2={{
           ...sdn.button3,
           ...button3,
           className:
             "sdn-button-3D4pvOBS" +
             (button3?.className ? " " + button3.className : ""),
         }}
-        icon3={{
-          ...sdn.icon3,
-          ...icon3,
-          className:
-            "sdn-icon-1ihZT8Ll" +
-            (icon3?.className ? " " + icon3.className : ""),
-        }}
-        label3={{
-          ...sdn.label3,
-          ...label3,
-          className:
-            "sdn-label-1R07j0Td" +
-            (label3?.className ? " " + label3.className : ""),
-        }}
-        button4={{
+        button3={{
           ...sdn.button4,
           ...button4,
           className:
             "sdn-button-3D4pvOBS" +
             (button4?.className ? " " + button4.className : ""),
         }}
-        icon4={{
+        icon={{
+          ...sdn.icon2,
+          ...icon2,
+          className:
+            "sdn-icon-1ihZT8Ll" +
+            (icon2?.className ? " " + icon2.className : ""),
+        }}
+        label={{
+          ...sdn.label2,
+          ...label2,
+          className:
+            "sdn-label-1R07j0Td" +
+            (label2?.className ? " " + label2.className : ""),
+        }}
+        icon2={{
+          ...sdn.icon3,
+          ...icon3,
+          className:
+            "sdn-icon-1ihZT8Ll" +
+            (icon3?.className ? " " + icon3.className : ""),
+        }}
+        label2={{
+          ...sdn.label3,
+          ...label3,
+          className:
+            "sdn-label-1R07j0Td" +
+            (label3?.className ? " " + label3.className : ""),
+        }}
+        icon3={{
           ...sdn.icon4,
           ...icon4,
           className:
             "sdn-icon-1ihZT8Ll" +
             (icon4?.className ? " " + icon4.className : ""),
         }}
-        label4={{
+        label3={{
           ...sdn.label4,
           ...label4,
           className:

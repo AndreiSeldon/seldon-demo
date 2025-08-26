@@ -73,14 +73,14 @@ export function ButtonBar({
           "sdn-button-7k7U4i3x" +
           (button2?.className ? " " + button2.className : "")
         }
-        icon2={{
+        icon={{
           ...sdn.icon2,
           ...icon2,
           className:
             "sdn-icon-1ihZT8Ll" +
             (icon2?.className ? " " + icon2.className : ""),
         }}
-        label2={{
+        label={{
           ...sdn.label2,
           ...label2,
           className:
@@ -94,14 +94,14 @@ export function ButtonBar({
           "sdn-button-7k7U4i3x" +
           (button3?.className ? " " + button3.className : "")
         }
-        icon3={{
+        icon={{
           ...sdn.icon3,
           ...icon3,
           className:
             "sdn-icon-1ihZT8Ll" +
             (icon3?.className ? " " + icon3.className : ""),
         }}
-        label3={{
+        label={{
           ...sdn.label3,
           ...label3,
           className:
