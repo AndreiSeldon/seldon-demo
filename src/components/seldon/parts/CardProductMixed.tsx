@@ -146,20 +146,6 @@ export function CardProductMixed({
             "sdn-button-JnRIw2cY" +
             (button2?.className ? " " + button2.className : ""),
         }}
-        button2={{
-          ...sdn.button3,
-          ...button3,
-          className:
-            "sdn-button-3D4pvOBS" +
-            (button3?.className ? " " + button3.className : ""),
-        }}
-        button3={{
-          ...sdn.button4,
-          ...button4,
-          className:
-            "sdn-button-3D4pvOBS" +
-            (button4?.className ? " " + button4.className : ""),
-        }}
         icon={{
           ...sdn.icon2,
           ...icon2,
@@ -174,28 +160,42 @@ export function CardProductMixed({
             "sdn-label-1R07j0Td" +
             (label2?.className ? " " + label2.className : ""),
         }}
-        icon2={{
+        button2={{
+          ...sdn.button3,
+          ...button3,
+          className:
+            "sdn-button-3D4pvOBS" +
+            (button3?.className ? " " + button3.className : ""),
+        }}
+        icon={{
           ...sdn.icon3,
           ...icon3,
           className:
             "sdn-icon-1ihZT8Ll" +
             (icon3?.className ? " " + icon3.className : ""),
         }}
-        label2={{
+        label={{
           ...sdn.label3,
           ...label3,
           className:
             "sdn-label-1R07j0Td" +
             (label3?.className ? " " + label3.className : ""),
         }}
-        icon3={{
+        button3={{
+          ...sdn.button4,
+          ...button4,
+          className:
+            "sdn-button-3D4pvOBS" +
+            (button4?.className ? " " + button4.className : ""),
+        }}
+        icon={{
           ...sdn.icon4,
           ...icon4,
           className:
             "sdn-icon-1ihZT8Ll" +
             (icon4?.className ? " " + icon4.className : ""),
         }}
-        label3={{
+        label={{
           ...sdn.label4,
           ...label4,
           className:
