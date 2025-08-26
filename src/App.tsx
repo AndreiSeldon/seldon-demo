@@ -13,9 +13,10 @@ function Screen1() {
     <div style={{ padding: 20 }}>
       <h2>Screen 1 - CardProductInline Demo</h2>
 
+      {/* Basic usage */}
       <CardProduct style={{ marginTop: 20, width: 600 }} />
 
-      {/* Basic usage */}
+      {/* Simple usage */}
       <CardProductInline
         style={{ marginTop: 20, width: 600 }}
         titleProps={{ children: "Product Card Inline" }}
