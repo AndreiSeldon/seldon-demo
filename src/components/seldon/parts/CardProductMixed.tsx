@@ -1,0 +1,174 @@
+/*****
+ *
+ * This code was generated using Seldon (https://seldon.app)
+ *
+ * Licensed under the Terms of Use: https://seldon.digital/terms-of-service
+ * Do not redistribute or sublicense without permission.
+ *
+ * You may not use this software, or any derivative works of it,
+ * in whole or in part, for the purposes of training, fine-tuning,
+ * or otherwise improving (directly or indirectly) any machine learning
+ * or artificial intelligence system.
+ * 
+ *****/
+ 
+import { HTMLAttributes } from "react"
+import { Button, ButtonProps } from "../elements/Button"
+import { ButtonBar, ButtonBarProps } from "../elements/ButtonBar"
+import { TextblockDetailsProps } from "../elements/TextblockDetails"
+import { Frame } from "../frames/Frame"
+import { Description, DescriptionProps } from "../primitives/Description"
+import { Icon, IconProps } from "../primitives/Icon"
+import { Label, LabelProps } from "../primitives/Label"
+import { Tagline, TaglineProps } from "../primitives/Tagline"
+import { Title, TitleProps } from "../primitives/Title"
+
+export interface CardProductMixedProps extends HTMLAttributes<HTMLElement> {
+  className?: string
+
+  textblockDetails?: TextblockDetailsProps
+  tagline?: TaglineProps
+  button?: ButtonProps
+  icon?: IconProps
+  label?: LabelProps
+  titleProps?: TitleProps
+  description?: DescriptionProps
+  buttonBar?: ButtonBarProps
+  button2?: ButtonProps
+  icon2?: IconProps
+  label2?: LabelProps
+  button3?: ButtonProps
+  icon3?: IconProps
+  label3?: LabelProps
+  button4?: ButtonProps
+  icon4?: IconProps
+  label4?: LabelProps
+}
+
+export function CardProductMixed({
+  className = "",
+  textblockDetails = sdn.textblockDetails,
+  tagline,
+  button,
+  icon,
+  label,
+  titleProps,
+  description,
+  buttonBar = sdn.buttonBar,
+  button2,
+  icon2,
+  label2,
+  button3,
+  icon3,
+  label3,
+  button4,
+  icon4,
+  label4,
+  ...props
+}: CardProductMixedProps) {
+  return (
+    <Frame
+      className={"sdn-cardProduct sdn-cardProduct-glyJ5UUE " + className}
+      {...props}
+    >
+      <Frame
+        className={
+          "sdn-textblockDetails-jRyRpai8 sdn-textblockDetails-Njjvy0sD sdn-textblockDetails" +
+          (textblockDetails?.className ? " " + textblockDetails.className : "")
+        }
+      >
+        <Tagline
+          {...{ ...sdn.tagline, ...tagline }}
+          className={
+            "sdn-tagline" + (tagline?.className ? " " + tagline.className : "")
+          }
+        />
+        {button && (
+          <Button
+            {...{ ...sdn.button, ...button }}
+            className={
+              "sdn-button-3D4pvOBS sdn-button-4o13hVru sdn-button" +
+              (button?.className ? " " + button.className : "")
+            }
+            icon={{ ...sdn.icon, ...icon }}
+            label={{ ...sdn.label, ...label }}
+          />
+        )}
+        <Title
+          {...{ ...sdn.titleProps, ...titleProps }}
+          className={
+            "sdn-title-AWpEkwtT sdn-title-NxxLFPyV sdn-title" +
+            (titleProps?.className ? " " + titleProps.className : "")
+          }
+        />
+        <Description
+          {...{ ...sdn.description, ...description }}
+          className={
+            "sdn-description" +
+            (description?.className ? " " + description.className : "")
+          }
+        />
+      </Frame>
+      <ButtonBar
+        {...{ ...sdn.buttonBar, ...buttonBar }}
+        className={
+          "sdn-buttonBar-rWRytCG8 sdn-buttonBar-o7wdbl2Z sdn-buttonBar" +
+          (buttonBar?.className ? " " + buttonBar.className : "")
+        }
+        button={{ ...sdn.button2, ...button2 }}
+        button2={{ ...sdn.button3, ...button3 }}
+        button3={{ ...sdn.button4, ...button4 }}
+      />
+    </Frame>
+  )
+}
+
+const sdn: CardProductMixedProps = {
+  textblockDetails: {},
+  tagline: {
+    children: "Tagline",
+    htmlElement: "p",
+  },
+  button: {},
+  icon: {
+    icon: "material-addCircle",
+  },
+  label: {
+    children: "Mixed",
+    htmlElement: "label",
+  },
+  titleProps: {
+    children: "Product Card Title",
+    htmlElement: "h4",
+  },
+  description: {
+    children:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus.",
+    htmlElement: "p",
+  },
+  buttonBar: {},
+  button2: {},
+  icon2: {
+    icon: "__default__",
+  },
+  label2: {
+    children: "Mixed X",
+    htmlElement: "label",
+  },
+  button3: {},
+  icon3: {
+    icon: "__default__",
+  },
+  label3: {
+    children: "Mixed Y",
+    htmlElement: "label",
+  },
+  button4: {},
+  icon4: {
+    icon: "__default__",
+  },
+  label4: {
+    children: "Mixed Z",
+    htmlElement: "label",
+  },
+}

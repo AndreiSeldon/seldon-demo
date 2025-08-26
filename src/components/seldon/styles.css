@@ -496,6 +496,14 @@ html {
   height: fit-content;
 }
 
+.sdn-button-JnRIw2cY {
+  background-color: hsl(135 76% 59%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Theme Variables */
 :root {
   /********************************************

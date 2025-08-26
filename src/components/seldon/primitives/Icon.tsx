@@ -17,6 +17,7 @@ import { IconDefault } from "../icons/IconDefault"
 import { IconMaterialAccountCircle } from "../icons/IconMaterialAccountCircle"
 import { IconMaterialAddBox } from "../icons/IconMaterialAddBox"
 import { IconMaterialAddChart } from "../icons/IconMaterialAddChart"
+import { IconMaterialAddCircle } from "../icons/IconMaterialAddCircle"
 import { IconMaterialAddComment } from "../icons/IconMaterialAddComment"
 import { IconMaterialAddLocation } from "../icons/IconMaterialAddLocation"
 import { IconMaterialArrowDownward } from "../icons/IconMaterialArrowDownward"
@@ -33,6 +34,7 @@ export interface IconProps extends SVGAttributes<SVGElement> {
     | "material-addBox"
     | "material-bolt"
     | "material-addComment"
+    | "material-addCircle"
 }
 
 export function Icon({
@@ -56,4 +58,5 @@ const iconMap = {
   "material-addBox": IconMaterialAddBox,
   "material-bolt": IconMaterialBolt,
   "material-addComment": IconMaterialAddComment,
+  "material-addCircle": IconMaterialAddCircle,
 }
