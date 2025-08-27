@@ -107,7 +107,7 @@ export function CardProductMixed({
         <Tagline
           {...{ ...sdn.tagline, ...tagline }}
           className={
-            "sdn-tagline-57ug71iC" +
+            "sdn-tagline-RYPEIO98" +
             (tagline?.className ? " " + tagline.className : "")
           }
         />
@@ -145,7 +145,7 @@ export function CardProductMixed({
           <Tagline
             {...{ ...sdn.tagline2, ...tagline2 }}
             className={
-              "sdn-tagline-57ug71iC" +
+              "sdn-tagline-RYPEIO98" +
               (tagline2?.className ? " " + tagline2.className : "")
             }
           />
@@ -153,7 +153,7 @@ export function CardProductMixed({
         <Description
           {...{ ...sdn.description, ...description }}
           className={
-            "sdn-description-8Y5lFu0w" +
+            "sdn-description-QJZ11zsK" +
             (description?.className ? " " + description.className : "")
           }
         />
@@ -239,7 +239,7 @@ const sdn: CardProductMixedProps = {
   tagline: {
     children: "Mixed Tagline",
     htmlElement: "p",
-    className: "sdn-tagline-57ug71iC",
+    className: "sdn-tagline-RYPEIO98",
   },
   button: {
     className: "sdn-button-3D4pvOBS",
@@ -261,12 +261,12 @@ const sdn: CardProductMixedProps = {
   tagline2: {
     children: "Additional Tagline",
     htmlElement: "p",
-    className: "sdn-tagline-57ug71iC",
+    className: "sdn-tagline-RYPEIO98",
   },
   description: {
     children: "Special text for mixed case",
     htmlElement: "p",
-    className: "sdn-description-8Y5lFu0w",
+    className: "sdn-description-QJZ11zsK",
   },
   buttonBar: {
     className: "sdn-buttonBar-MMcNZdBT",

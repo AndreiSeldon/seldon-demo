@@ -99,7 +99,7 @@ export function CardProduct({
           ...sdn.tagline,
           ...tagline,
           className:
-            "sdn-tagline-57ug71iC" +
+            "sdn-tagline-RYPEIO98" +
             (tagline?.className ? " " + tagline.className : ""),
         }}
         titleProps={{
@@ -113,7 +113,7 @@ export function CardProduct({
           ...sdn.description,
           ...description,
           className:
-            "sdn-description-8Y5lFu0w" +
+            "sdn-description-QJZ11zsK" +
             (description?.className ? " " + description.className : ""),
         }}
       />
@@ -197,7 +197,7 @@ const sdn: CardProductProps = {
   tagline: {
     children: "Tagline",
     htmlElement: "p",
-    className: "sdn-tagline-57ug71iC",
+    className: "sdn-tagline-RYPEIO98",
   },
   titleProps: {
     children: "Product Card",
@@ -208,7 +208,7 @@ const sdn: CardProductProps = {
     children:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus.",
     htmlElement: "p",
-    className: "sdn-description-8Y5lFu0w",
+    className: "sdn-description-QJZ11zsK",
   },
   buttonBar: {
     className: "sdn-buttonBar-MMcNZdBT",

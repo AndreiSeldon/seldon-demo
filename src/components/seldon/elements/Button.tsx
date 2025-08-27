@@ -57,7 +57,7 @@ export function Button({
       <Label
         {...{ ...sdn.label, ...label }}
         className={
-          "sdn-label-1R07j0Td" + (label?.className ? " " + label.className : "")
+          "sdn-label-BOyxJbm8" + (label?.className ? " " + label.className : "")
         }
       />
     </HTMLButton>
@@ -72,6 +72,6 @@ const sdn: ButtonProps = {
   label: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
+    className: "sdn-label-BOyxJbm8",
   },
 }
