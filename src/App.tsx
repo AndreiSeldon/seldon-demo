@@ -37,6 +37,21 @@ function Screen1() {
       {/* Default CardProduct */}
       <CardProduct />
 
+      {/* Customized CardProduct */}
+      <CardProduct 
+        tagline={{ children: "New Product" }}
+        titleProps={{ children: "Customized Card" }}
+        button={{ onClick: () => alert("Special button clicked!") }}
+        label={{ children: "Featured" }}
+        icon={{ icon: "material-addChart" }}
+        button2={{ onClick: () => alert("Action A clicked!") }}
+        label2={{ children: "Buy Now" }}
+        icon2={{ icon: "material-addBox" }}
+        button3={{ onClick: () => alert("Action B clicked!") }}
+        label3={{ children: "Learn More" }}
+        icon3={{ icon: "material-addLocation" }}
+      />
+
       {/* Default Inline Variant */}
       <CardProductInline
         tagline={{}}
@@ -84,6 +99,7 @@ function Screen1() {
       <CardProductMixed
         tagline={{}}
         titleProps={{}}
+        tagline2={{}}
         description={{}}
         button={{}}
         label={{}}
@@ -102,7 +118,6 @@ function Screen1() {
       {/* Customized Mixed Variant */}
       <CardProductMixed
         style={{ marginTop: 20, width: 500 }}
-        tagline2={{ children: "Is this thing on?" }}
         titleProps={{ children: "Customized Mixed Card" }}
         button={{ onClick: () => alert("Special mix button clicked!") }}
         label={{ children: "Test Me" }}
