@@ -176,7 +176,7 @@ export function CardProductInline({
         <Tagline
           {...{ ...sdn.tagline, ...tagline }}
           className={
-            "sdn-tagline-RYPEIO98" +
+            "sdn-tagline-57ug71iC" +
             (tagline?.className ? " " + tagline.className : "")
           }
         />
@@ -328,7 +328,7 @@ const sdn: CardProductInlineProps = {
   tagline: {
     children: "Inline Tagline",
     htmlElement: "p",
-    className: "sdn-tagline-RYPEIO98",
+    className: "sdn-tagline-57ug71iC",
   },
   titleProps: {
     children: "Inline Card Title",
