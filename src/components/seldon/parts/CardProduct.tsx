@@ -140,7 +140,7 @@ export function CardProduct({
           ...sdn.label,
           ...label,
           className:
-            "sdn-label-byNtHFSq" +
+            "sdn-label-1R07j0Td" +
             (label?.className ? " " + label.className : ""),
         }}
         button2={{
@@ -161,7 +161,7 @@ export function CardProduct({
           ...sdn.label2,
           ...label2,
           className:
-            "sdn-label-2kukIhXa" +
+            "sdn-label-1R07j0Td" +
             (label2?.className ? " " + label2.className : ""),
         }}
         button3={{
@@ -182,7 +182,7 @@ export function CardProduct({
           ...sdn.label3,
           ...label3,
           className:
-            "sdn-label-PSKwAIwD" +
+            "sdn-label-1R07j0Td" +
             (label3?.className ? " " + label3.className : ""),
         }}
       />
@@ -223,7 +223,7 @@ const sdn: CardProductProps = {
   label: {
     children: "Default 1",
     htmlElement: "label",
-    className: "sdn-label-byNtHFSq",
+    className: "sdn-label-1R07j0Td",
   },
   button2: {
     className: "sdn-button-3D4pvOBS",
@@ -235,7 +235,7 @@ const sdn: CardProductProps = {
   label2: {
     children: "Default 2",
     htmlElement: "label",
-    className: "sdn-label-2kukIhXa",
+    className: "sdn-label-1R07j0Td",
   },
   button3: {
     className: "sdn-button-3D4pvOBS",
@@ -247,6 +247,6 @@ const sdn: CardProductProps = {
   label3: {
     children: "Default 3",
     htmlElement: "label",
-    className: "sdn-label-PSKwAIwD",
+    className: "sdn-label-1R07j0Td",
   },
 }
