@@ -283,10 +283,10 @@ const sdn: CardProductInlineProps = {
   label: {
     children: "Special",
     htmlElement: "label",
-    className: "sdn-label-de3bBKo4",
+    className: "sdn-label-1R07j0Td",
   },
   textblockDetails: {
-    className: "sdn-textblockDetails-jRyRpai8",
+    className: "sdn-textblockDetails-Njjvy0sD",
   },
   button2: {
     className: "sdn-button-3D4pvOBS",
@@ -298,7 +298,7 @@ const sdn: CardProductInlineProps = {
   label2: {
     children: "Inline A",
     htmlElement: "label",
-    className: "sdn-label-QaMDLetL",
+    className: "sdn-label-1R07j0Td",
   },
   button3: {
     className: "sdn-button-3D4pvOBS",
@@ -310,7 +310,7 @@ const sdn: CardProductInlineProps = {
   label3: {
     children: "Inline B",
     htmlElement: "label",
-    className: "sdn-label-TmJjvGa3",
+    className: "sdn-label-1R07j0Td",
   },
   tagline: {
     children: "Inline Tagline",
@@ -347,7 +347,7 @@ const sdn: CardProductInlineProps = {
   label5: {
     children: "Button B",
     htmlElement: "label",
-    className: "sdn-label-DR2XhXUT",
+    className: "sdn-label-1R07j0Td",
   },
   button6: {
     className: "sdn-button-3D4pvOBS",
@@ -359,7 +359,7 @@ const sdn: CardProductInlineProps = {
   label6: {
     children: "Button C",
     htmlElement: "label",
-    className: "sdn-label-xH4agy0Q",
+    className: "sdn-label-1R07j0Td",
   },
   button7: {
     className: "sdn-button-3D4pvOBS",
@@ -371,6 +371,6 @@ const sdn: CardProductInlineProps = {
   label7: {
     children: "Button D",
     htmlElement: "label",
-    className: "sdn-label-2dXH0cYj",
+    className: "sdn-label-1R07j0Td",
   },
 }

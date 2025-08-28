@@ -230,7 +230,7 @@ export function CardProductMixed({
 
 const sdn: CardProductMixedProps = {
   textblockDetails: {
-    className: "sdn-textblockDetails-XKYdln17",
+    className: "sdn-textblockDetails-Njjvy0sD",
   },
   tagline: {
     children: "Mixed Tagline",
@@ -247,7 +247,7 @@ const sdn: CardProductMixedProps = {
   label: {
     children: "Mixed",
     htmlElement: "label",
-    className: "sdn-label-NLPzmaz5",
+    className: "sdn-label-1R07j0Td",
   },
   titleProps: {
     children: "Mixed Card Title",
@@ -277,7 +277,7 @@ const sdn: CardProductMixedProps = {
   label2: {
     children: "Mixed X",
     htmlElement: "label",
-    className: "sdn-label-oC60J50R",
+    className: "sdn-label-1R07j0Td",
   },
   button3: {
     className: "sdn-button-3D4pvOBS",
@@ -289,7 +289,7 @@ const sdn: CardProductMixedProps = {
   label3: {
     children: "Mixed Y",
     htmlElement: "label",
-    className: "sdn-label-glrA4YTk",
+    className: "sdn-label-1R07j0Td",
   },
   button4: {
     className: "sdn-button-3D4pvOBS",
@@ -301,6 +301,6 @@ const sdn: CardProductMixedProps = {
   label4: {
     children: "Mixed Z",
     htmlElement: "label",
-    className: "sdn-label-Q0MgQnq0",
+    className: "sdn-label-1R07j0Td",
   },
 }
