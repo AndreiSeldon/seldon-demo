@@ -51,7 +51,15 @@ export function TextblockDetails({
   ...props
 }: TextblockDetailsProps) {
   return (
-    <Frame className={"sdn-textblockDetails " + className} {...props}>
+    <Frame
+      className={
+        "sdn-textblockDetails " +
+        (className && !className.includes("sdn-textblockDetails")
+          ? className
+          : "")
+      }
+      {...props}
+    >
       <Tagline
         {...{ ...sdn.tagline, ...tagline }}
         className={

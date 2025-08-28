@@ -47,7 +47,13 @@ export function Button({
   ...props
 }: ButtonProps) {
   return (
-    <HTMLButton className={"sdn-button " + className} {...props}>
+    <HTMLButton
+      className={
+        "sdn-button " +
+        (className && !className.includes("sdn-button") ? className : "")
+      }
+      {...props}
+    >
       <Icon
         {...{ ...sdn.icon, ...icon }}
         className={

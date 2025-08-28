@@ -95,7 +95,13 @@ export function CardProductMixed({
 }: CardProductMixedProps) {
   return (
     <Frame
-      className={"sdn-cardProduct sdn-cardProduct-0IbtAwmQ " + className}
+      className={
+        "sdn-cardProduct sdn-cardProduct-0IbtAwmQ " +
+        (className &&
+        !className.includes("sdn-cardProduct sdn-cardProduct-0IbtAwmQ")
+          ? className
+          : "")
+      }
       {...props}
     >
       <Frame
@@ -108,7 +114,10 @@ export function CardProductMixed({
           {...{ ...sdn.tagline, ...tagline }}
           className={
             "sdn-tagline-57ug71iC" +
-            (tagline?.className ? " " + tagline.className : "")
+            (tagline?.className &&
+            !tagline.className.includes("sdn-tagline-57ug71iC")
+              ? " " + tagline.className
+              : "")
           }
         />
         {button && (
@@ -116,21 +125,30 @@ export function CardProductMixed({
             {...{ ...sdn.button, ...button }}
             className={
               "sdn-button-3D4pvOBS" +
-              (button?.className ? " " + button.className : "")
+              (button?.className &&
+              !button.className.includes("sdn-button-3D4pvOBS")
+                ? " " + button.className
+                : "")
             }
             icon={{
               ...sdn.icon,
               ...icon,
               className:
                 "sdn-icon-1ihZT8Ll" +
-                (icon?.className ? " " + icon.className : ""),
+                (icon?.className &&
+                !icon.className.includes("sdn-icon-1ihZT8Ll")
+                  ? " " + icon.className
+                  : ""),
             }}
             label={{
               ...sdn.label,
               ...label,
               className:
                 "sdn-label-1R07j0Td" +
-                (label?.className ? " " + label.className : ""),
+                (label?.className &&
+                !label.className.includes("sdn-label-1R07j0Td")
+                  ? " " + label.className
+                  : ""),
             }}
           />
         )}
@@ -138,7 +156,10 @@ export function CardProductMixed({
           {...{ ...sdn.titleProps, ...titleProps }}
           className={
             "sdn-title-83oQ44Bx" +
-            (titleProps?.className ? " " + titleProps.className : "")
+            (titleProps?.className &&
+            !titleProps.className.includes("sdn-title-83oQ44Bx")
+              ? " " + titleProps.className
+              : "")
           }
         />
         {tagline2 && (
@@ -146,7 +167,10 @@ export function CardProductMixed({
             {...{ ...sdn.tagline2, ...tagline2 }}
             className={
               "sdn-tagline-57ug71iC" +
-              (tagline2?.className ? " " + tagline2.className : "")
+              (tagline2?.className &&
+              !tagline2.className.includes("sdn-tagline-57ug71iC")
+                ? " " + tagline2.className
+                : "")
             }
           />
         )}
@@ -154,7 +178,10 @@ export function CardProductMixed({
           {...{ ...sdn.description, ...description }}
           className={
             "sdn-description-8Y5lFu0w" +
-            (description?.className ? " " + description.className : "")
+            (description?.className &&
+            !description.className.includes("sdn-description-8Y5lFu0w")
+              ? " " + description.className
+              : "")
           }
         />
       </Frame>
@@ -162,70 +189,97 @@ export function CardProductMixed({
         {...{ ...sdn.buttonBar, ...buttonBar }}
         className={
           "sdn-buttonBar-MMcNZdBT" +
-          (buttonBar?.className ? " " + buttonBar.className : "")
+          (buttonBar?.className &&
+          !buttonBar.className.includes("sdn-buttonBar-MMcNZdBT")
+            ? " " + buttonBar.className
+            : "")
         }
         button={{
           ...sdn.button2,
           ...button2,
           className:
             "sdn-button-JnRIw2cY" +
-            (button2?.className ? " " + button2.className : ""),
+            (button2?.className &&
+            !button2.className.includes("sdn-button-JnRIw2cY")
+              ? " " + button2.className
+              : ""),
         }}
         icon={{
           ...sdn.icon2,
           ...icon2,
           className:
             "sdn-icon-1ihZT8Ll" +
-            (icon2?.className ? " " + icon2.className : ""),
+            (icon2?.className && !icon2.className.includes("sdn-icon-1ihZT8Ll")
+              ? " " + icon2.className
+              : ""),
         }}
         label={{
           ...sdn.label2,
           ...label2,
           className:
             "sdn-label-1R07j0Td" +
-            (label2?.className ? " " + label2.className : ""),
+            (label2?.className &&
+            !label2.className.includes("sdn-label-1R07j0Td")
+              ? " " + label2.className
+              : ""),
         }}
         button2={{
           ...sdn.button3,
           ...button3,
           className:
             "sdn-button-3D4pvOBS" +
-            (button3?.className ? " " + button3.className : ""),
+            (button3?.className &&
+            !button3.className.includes("sdn-button-3D4pvOBS")
+              ? " " + button3.className
+              : ""),
         }}
         icon2={{
           ...sdn.icon3,
           ...icon3,
           className:
             "sdn-icon-1ihZT8Ll" +
-            (icon3?.className ? " " + icon3.className : ""),
+            (icon3?.className && !icon3.className.includes("sdn-icon-1ihZT8Ll")
+              ? " " + icon3.className
+              : ""),
         }}
         label2={{
           ...sdn.label3,
           ...label3,
           className:
             "sdn-label-1R07j0Td" +
-            (label3?.className ? " " + label3.className : ""),
+            (label3?.className &&
+            !label3.className.includes("sdn-label-1R07j0Td")
+              ? " " + label3.className
+              : ""),
         }}
         button3={{
           ...sdn.button4,
           ...button4,
           className:
             "sdn-button-3D4pvOBS" +
-            (button4?.className ? " " + button4.className : ""),
+            (button4?.className &&
+            !button4.className.includes("sdn-button-3D4pvOBS")
+              ? " " + button4.className
+              : ""),
         }}
         icon3={{
           ...sdn.icon4,
           ...icon4,
           className:
             "sdn-icon-1ihZT8Ll" +
-            (icon4?.className ? " " + icon4.className : ""),
+            (icon4?.className && !icon4.className.includes("sdn-icon-1ihZT8Ll")
+              ? " " + icon4.className
+              : ""),
         }}
         label3={{
           ...sdn.label4,
           ...label4,
           className:
             "sdn-label-1R07j0Td" +
-            (label4?.className ? " " + label4.className : ""),
+            (label4?.className &&
+            !label4.className.includes("sdn-label-1R07j0Td")
+              ? " " + label4.className
+              : ""),
         }}
       />
     </Frame>
