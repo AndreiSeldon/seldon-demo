@@ -13,34 +13,6 @@
  *****/
  
 /**
- * Get the variant class names for a component
- */
-export function getVariantClassNames(
-  component: any,
-  nodeIdToClass: Record<string, string>,
-): string {
-  const { defaultVariantId, variantId } = component
-  const map = (id: string) => nodeIdToClass[id as string]
-
-  if (defaultVariantId === variantId) return map(variantId)
-
-  return `${map(defaultVariantId)} ${map(variantId)}`
-}
-
-/**
- * Normalize class names by removing duplicates and empty values
- */
-export function normalizeClassNames(classNames?: string[]): string {
-  return (
-    classNames
-      ?.filter(Boolean)
-      .filter((className, index, array) => array.indexOf(className) === index) // Remove duplicates
-      .join(" ")
-      .trim() ?? ""
-  )
-}
-
-/**
  * Utility function to combine default and custom classNames while removing duplicates
  * 
  * @param defaultClassName - The base className(s)
