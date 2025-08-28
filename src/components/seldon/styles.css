@@ -360,7 +360,7 @@ html {
   align-items: center;
   justify-content: end;
   gap: 1rem;
-  flex: 1 0 0;
+  align-self: stretch;
   height: fit-content;
 }
 
