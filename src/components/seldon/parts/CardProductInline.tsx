@@ -137,16 +137,18 @@ export function CardProductInline({
             icon={{
               ...sdn.icon2,
               ...icon2,
-              className:
-                "sdn-icon-1ihZT8Ll" +
-                (icon2?.className ? " " + icon2.className : ""),
+              className: combineClassNames(
+                "sdn-icon-1ihZT8Ll",
+                icon2?.className,
+              ),
             }}
             label={{
               ...sdn.label2,
               ...label2,
-              className:
-                "sdn-label-1R07j0Td" +
-                (label2?.className ? " " + label2.className : ""),
+              className: combineClassNames(
+                "sdn-label-1R07j0Td",
+                label2?.className,
+              ),
             }}
           />
         )}
@@ -160,16 +162,18 @@ export function CardProductInline({
             icon={{
               ...sdn.icon3,
               ...icon3,
-              className:
-                "sdn-icon-1ihZT8Ll" +
-                (icon3?.className ? " " + icon3.className : ""),
+              className: combineClassNames(
+                "sdn-icon-1ihZT8Ll",
+                icon3?.className,
+              ),
             }}
             label={{
               ...sdn.label3,
               ...label3,
-              className:
-                "sdn-label-1R07j0Td" +
-                (label3?.className ? " " + label3.className : ""),
+              className: combineClassNames(
+                "sdn-label-1R07j0Td",
+                label3?.className,
+              ),
             }}
           />
         )}
@@ -203,16 +207,15 @@ export function CardProductInline({
           icon={{
             ...sdn.icon4,
             ...icon4,
-            className:
-              "sdn-icon-1ihZT8Ll" +
-              (icon4?.className ? " " + icon4.className : ""),
+            className: combineClassNames("sdn-icon-1ihZT8Ll", icon4?.className),
           }}
           label={{
             ...sdn.label4,
             ...label4,
-            className:
-              "sdn-label-1R07j0Td" +
-              (label4?.className ? " " + label4.className : ""),
+            className: combineClassNames(
+              "sdn-label-1R07j0Td",
+              label4?.className,
+            ),
           }}
         />
         <Button
@@ -224,16 +227,15 @@ export function CardProductInline({
           icon={{
             ...sdn.icon5,
             ...icon5,
-            className:
-              "sdn-icon-1ihZT8Ll" +
-              (icon5?.className ? " " + icon5.className : ""),
+            className: combineClassNames("sdn-icon-1ihZT8Ll", icon5?.className),
           }}
           label={{
             ...sdn.label5,
             ...label5,
-            className:
-              "sdn-label-1R07j0Td" +
-              (label5?.className ? " " + label5.className : ""),
+            className: combineClassNames(
+              "sdn-label-1R07j0Td",
+              label5?.className,
+            ),
           }}
         />
         <Button
@@ -245,16 +247,15 @@ export function CardProductInline({
           icon={{
             ...sdn.icon6,
             ...icon6,
-            className:
-              "sdn-icon-1ihZT8Ll" +
-              (icon6?.className ? " " + icon6.className : ""),
+            className: combineClassNames("sdn-icon-1ihZT8Ll", icon6?.className),
           }}
           label={{
             ...sdn.label6,
             ...label6,
-            className:
-              "sdn-label-1R07j0Td" +
-              (label6?.className ? " " + label6.className : ""),
+            className: combineClassNames(
+              "sdn-label-1R07j0Td",
+              label6?.className,
+            ),
           }}
         />
         {button7 && (
@@ -267,16 +268,18 @@ export function CardProductInline({
             icon={{
               ...sdn.icon7,
               ...icon7,
-              className:
-                "sdn-icon-1ihZT8Ll" +
-                (icon7?.className ? " " + icon7.className : ""),
+              className: combineClassNames(
+                "sdn-icon-1ihZT8Ll",
+                icon7?.className,
+              ),
             }}
             label={{
               ...sdn.label7,
               ...label7,
-              className:
-                "sdn-label-1R07j0Td" +
-                (label7?.className ? " " + label7.className : ""),
+              className: combineClassNames(
+                "sdn-label-1R07j0Td",
+                label7?.className,
+              ),
             }}
           />
         )}
