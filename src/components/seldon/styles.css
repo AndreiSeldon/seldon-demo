@@ -365,7 +365,7 @@ html {
 }
 
 .sdn-cardProduct {
-  background-color: hsl(18 12% 98%);
+  background-color: hsl(0 0% 100%);
   background-image: url(https://static.seldon.app/background-default-light.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -378,7 +378,7 @@ html {
   align-self: stretch;
   height: fit-content;
   border-radius: 0.5rem;
-  border: var(--hairline) solid hsl(18 60% 45%);
+  border: var(--hairline) solid hsl(0 0% 0%);
 }
 
 .sdn-description {
@@ -404,7 +404,7 @@ html {
 }
 
 .sdn-cardProduct-0IbtAwmQ {
-  background-color: hsl(18 12% 98%);
+  background-color: hsl(0 0% 100%);
   background-image: url(https://static.seldon.app/background-default-light.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -417,10 +417,71 @@ html {
   align-self: stretch;
   height: fit-content;
   border-radius: 0.5rem;
-  border: var(--hairline) solid hsl(18 60% 45%);
+  border: var(--hairline) solid hsl(0 0% 0%);
 }
 
-.sdn-button-7k7U4i3x {
+.sdn-button-PZ55a4By {
+  background-color: hsl(0 0% 0%);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  padding-right: 0.875rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  width: fit-content;
+  height: fit-content;
+  margin: 1rem;
+  border-radius: 99999px;
+  border: 0.125rem solid hsl(0 0% 0%);
+}
+
+.sdn-buttonBar-MMcNZdBT {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+  width: fit-content;
+  height: fit-content;
+  margin: 1rem;
+}
+
+.sdn-textblockDetails-jRyRpai8 {
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-self: stretch;
+  height: fit-content;
+  margin: 1rem;
+}
+
+.sdn-textblockDetails-Njjvy0sD {
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-self: stretch;
+  height: fit-content;
+  margin: 1rem;
+}
+
+.sdn-textblockDetails-XKYdln17 {
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-self: stretch;
+  height: fit-content;
+  margin: 1rem;
+}
+
+.sdn-button-3D4pvOBS {
   background-color: hsl(0 0% 0%);
   cursor: pointer;
   display: flex;
@@ -438,8 +499,8 @@ html {
   border: 0.125rem solid hsl(0 0% 0%);
 }
 
-.sdn-button-PZ55a4By {
-  background-color: hsl(18 60% 45%);
+.sdn-button-4o13hVru {
+  background-color: hsl(0 100% 65%);
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -452,21 +513,62 @@ html {
   padding-left: 0.75rem;
   width: fit-content;
   height: fit-content;
-  margin: 1rem;
   border-radius: 99999px;
-  border: 0.125rem solid hsl(18 60% 45%);
+  border: 0.125rem solid hsl(0 100% 65%);
 }
 
-.sdn-buttonBar-MMcNZdBT {
-  flex-wrap: wrap;
+.sdn-button-EOkV8PVa {
+  background-color: hsl(203 100% 62%);
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: end;
-  gap: 1rem;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  padding-right: 0.875rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
   width: fit-content;
   height: fit-content;
-  margin: 1rem;
+  border-radius: 99999px;
+  border: 0.125rem solid hsl(203 100% 62%);
+}
+
+.sdn-button-JnRIw2cY {
+  background-color: hsl(135 76% 59%);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  padding-right: 0.875rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 99999px;
+  border: 0.125rem solid hsl(135 76% 59%);
+}
+
+.sdn-button-OPNTxNTH {
+  background-color: hsl(20 95% 60%);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  padding-right: 0.875rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 99999px;
+  border: 0.125rem solid hsl(20 95% 60%);
 }
 
 .sdn-description-8Y5lFu0w {
@@ -501,200 +603,12 @@ html {
   box-orient: vertical;
 }
 
-.sdn-textblockDetails-jRyRpai8 {
-  flex-wrap: nowrap;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  align-self: stretch;
-  height: fit-content;
-  margin: 1rem;
-}
-
-.sdn-textblockDetails-Njjvy0sD {
-  flex-wrap: nowrap;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  align-self: stretch;
-  height: fit-content;
-  margin: 1rem;
-}
-
-.sdn-textblockDetails-XKYdln17 {
-  flex-wrap: nowrap;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  align-self: stretch;
-  height: fit-content;
-  margin: 1rem;
-}
-
-.sdn-title-NxxLFPyV {
+.sdn-title-83oQ44Bx {
   color: hsl(0 0% 0%);
   margin-bottom: 0.5rem;
   align-self: stretch;
   height: fit-content;
   font-family: Inter;
-  font-style: normal;
-  font-synthesis-style: none;
-  font-weight: 600;
-  font-size: 2.002rem;
-  line-height: 1.25;
-  white-space: normal;
-  overflow: hidden;
-  display: -webkit-box;
-  webkit-line-clamp: 2;
-  line-clamp: 2;
-  webkit-box-orient: vertical;
-  box-orient: vertical;
-}
-
-.sdn-button-3D4pvOBS {
-  background-color: hsl(18 60% 45%);
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding-top: 0.5rem;
-  padding-right: 0.875rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.75rem;
-  width: fit-content;
-  height: fit-content;
-  border-radius: 99999px;
-  border: 0.125rem solid hsl(18 60% 45%);
-}
-
-.sdn-button-4o13hVru {
-  background-color: hsl(0 100% 65%);
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding-top: 0.5rem;
-  padding-right: 0.875rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.75rem;
-  width: fit-content;
-  height: fit-content;
-  border-radius: 99999px;
-  border: 0.125rem solid hsl(0 100% 65%);
-}
-
-.sdn-button-EOkV8PVa {
-  background-color: hsl(158 18% 37%);
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding-top: 0.5rem;
-  padding-right: 0.875rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.75rem;
-  width: fit-content;
-  height: fit-content;
-  border-radius: 99999px;
-  border: 0.125rem solid hsl(158 18% 37%);
-}
-
-.sdn-button-JnRIw2cY {
-  background-color: hsl(72 18% 55%);
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding-top: 0.5rem;
-  padding-right: 0.875rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.75rem;
-  width: fit-content;
-  height: fit-content;
-  border-radius: 99999px;
-  border: 0.125rem solid hsl(72 18% 55%);
-}
-
-.sdn-button-OPNTxNTH {
-  background-color: hsl(20 95% 60%);
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding-top: 0.5rem;
-  padding-right: 0.875rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.75rem;
-  width: fit-content;
-  height: fit-content;
-  border-radius: 99999px;
-  border: 0.125rem solid hsl(20 95% 60%);
-}
-
-.sdn-description-QJZ11zsK {
-  color: hsl(18 12% 8%);
-  align-self: stretch;
-  height: fit-content;
-  font-family: Raleway;
-  font-style: normal;
-  font-synthesis-style: none;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25;
-  white-space: normal;
-}
-
-.sdn-label-BOyxJbm8 {
-  color: hsl(0 0% 100%);
-  width: fit-content;
-  height: fit-content;
-  font-family: Inter;
-  font-style: normal;
-  font-synthesis-style: none;
-  font-weight: 500;
-  font-size: 0.8rem;
-  line-height: 1.15;
-  letter-spacing: 0.1px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.sdn-tagline-RYPEIO98 {
-  color: hsl(18 12% 8%);
-  align-self: stretch;
-  height: fit-content;
-  font-family: Raleway;
-  font-style: normal;
-  font-synthesis-style: none;
-  font-weight: 500;
-  font-size: 0.75rem;
-  line-height: 1.25;
-  white-space: normal;
-  overflow: hidden;
-  display: -webkit-box;
-  webkit-line-clamp: 2;
-  line-clamp: 2;
-  webkit-box-orient: vertical;
-  box-orient: vertical;
-}
-
-.sdn-title-83oQ44Bx {
-  color: hsl(18 60% 45%);
-  margin-bottom: 0.5rem;
-  align-self: stretch;
-  height: fit-content;
-  font-family: Raleway;
   font-style: normal;
   font-synthesis-style: none;
   font-weight: 600;
@@ -718,7 +632,7 @@ html {
   color: hsl(0 0% 100%);
   width: fit-content;
   height: fit-content;
-  font-family: Raleway;
+  font-family: Inter;
   font-style: normal;
   font-synthesis-style: none;
   font-weight: 500;
@@ -840,106 +754,4 @@ html {
   --sdn-border-width-medium: 0.125rem;
   --sdn-border-width-large: 0.25rem;
   --sdn-border-width-xlarge: 0.5rem;
-
-  /* Theme: Earth */
-  /* Core */
-  --sdn-earth-ratio: 1.25;
-  --sdn-earth-font-size: 16px;
-  --sdn-earth-size: 1;
-  /* Font Families */
-  --sdn-earth-font-family-primary: "Raleway";
-  --sdn-earth-font-family-secondary: "Raleway";
-  /* Colors */
-  --sdn-earth-color-base-hue: 18;
-  --sdn-earth-color-base-saturation: 60%;
-  --sdn-earth-color-base-lightness: 45%;
-  --sdn-earth-color-harmony: 3;
-  --sdn-earth-color-angle: 9deg;
-  --sdn-earth-color-step: 12;
-  --sdn-earth-color-white-point: 98%;
-  --sdn-earth-color-gray-point: 56%;
-  --sdn-earth-color-black-point: 8%;
-  --sdn-earth-color-bleed: 12;
-  --sdn-earth-color-contrast-ratio: 2.5;
-  /* Swatches */
-  --sdn-earth-swatch-background: hsl(18 12% 8%);
-  --sdn-earth-swatch-soft-green: hsl(38 18% 76%);
-  --sdn-earth-swatch-green: hsl(72 18% 55%);
-  --sdn-earth-swatch-pure-green: hsl(158 18% 37%);
-  --sdn-earth-swatch-white: hsl(18 12% 98%);
-  --sdn-earth-swatch-gray: hsl(18 12% 56%);
-  --sdn-earth-swatch-black: hsl(18 12% 8%);
-  --sdn-earth-swatch-primary: hsl(18 60% 45%);
-  --sdn-earth-swatch-complement-1: hsl(27 60% 45%);
-  --sdn-earth-swatch-complement-2: hsl(36 60% 45%);
-  --sdn-earth-swatch-complement-3: hsl(9 60% 45%);
-  --sdn-earth-swatch-complement-4: hsl(0 60% 45%);
-  /* Sizes */
-  --sdn-earth-size-tiny: 0.125rem;
-  --sdn-earth-size-xxsmall: 0.25rem;
-  --sdn-earth-size-xsmall: 0.5rem;
-  --sdn-earth-size-small: 0.75rem;
-  --sdn-earth-size-medium: 1rem;
-  --sdn-earth-size-large: 1.501rem;
-  --sdn-earth-size-xlarge: 2.002rem;
-  --sdn-earth-size-xxlarge: 2.998rem;
-  --sdn-earth-size-huge: 3.998rem;
-  /* Margins */
-  --sdn-earth-margin-tight: 0.25rem;
-  --sdn-earth-margin-compact: 0.5rem;
-  --sdn-earth-margin-cozy: 1rem;
-  --sdn-earth-margin-comfortable: 2.002rem;
-  --sdn-earth-margin-open: 3.998rem;
-  /* Paddings */
-  --sdn-earth-padding-tight: 0.25rem;
-  --sdn-earth-padding-compact: 0.5rem;
-  --sdn-earth-padding-cozy: 1rem;
-  --sdn-earth-padding-comfortable: 2.002rem;
-  --sdn-earth-padding-open: 3.998rem;
-  /* Gaps */
-  --sdn-earth-gap-tight: 0.25rem;
-  --sdn-earth-gap-compact: 0.5rem;
-  --sdn-earth-gap-cozy: 1rem;
-  --sdn-earth-gap-comfortable: 2.002rem;
-  --sdn-earth-gap-open: 3.998rem;
-  /* Corners */
-  --sdn-earth-corners-tight: 0.25rem;
-  --sdn-earth-corners-compact: 0.5rem;
-  --sdn-earth-corners-cozy: 1rem;
-  --sdn-earth-corners-comfortable: 1.501rem;
-  --sdn-earth-corners-open: 2.002rem;
-  /* Font Sizes */
-  --sdn-earth-font-size-tiny: 0.5rem;
-  --sdn-earth-font-size-xxsmall: 0.624rem;
-  --sdn-earth-font-size-xsmall: 0.75rem;
-  --sdn-earth-font-size-small: 0.875rem;
-  --sdn-earth-font-size-medium: 1rem;
-  --sdn-earth-font-size-large: 1.501rem;
-  --sdn-earth-font-size-xlarge: 2.002rem;
-  --sdn-earth-font-size-xxlarge: 2.998rem;
-  --sdn-earth-font-size-huge: 3.998rem;
-  /* Font Weights */
-  --sdn-earth-font-weight-thin: 100;
-  --sdn-earth-font-weight-xlight: 200;
-  --sdn-earth-font-weight-light: 300;
-  --sdn-earth-font-weight-normal: 400;
-  --sdn-earth-font-weight-medium: 500;
-  --sdn-earth-font-weight-semibold: 600;
-  --sdn-earth-font-weight-bold: 700;
-  --sdn-earth-font-weight-xbold: 800;
-  --sdn-earth-font-weight-black: 900;
-  /* Line Heights */
-  --sdn-earth-line-height-none: 1;
-  --sdn-earth-line-height-solid: 1.15;
-  --sdn-earth-line-height-tight: 1.25;
-  --sdn-earth-line-height-compact: 1.33;
-  --sdn-earth-line-height-cozy: 1.5;
-  --sdn-earth-line-height-comfortable: 2;
-  --sdn-earth-line-height-open: 2.5;
-  /* Border Widths */
-  --sdn-earth-border-width-xsmall: 0.031rem;
-  --sdn-earth-border-width-small: 0.069rem;
-  --sdn-earth-border-width-medium: 0.125rem;
-  --sdn-earth-border-width-large: 0.25rem;
-  --sdn-earth-border-width-xlarge: 0.5rem;
 }
