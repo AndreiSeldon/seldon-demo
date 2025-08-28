@@ -68,44 +68,64 @@ export function ButtonBar({
     <Frame className={"sdn-buttonBar " + className} {...props}>
       <Button
         {...{ ...sdn.button, ...button }}
-        className={combineClassNames("sdn-button-3D4pvOBS", button?.className)}
+        className={
+          "sdn-button-3D4pvOBS" +
+          (button?.className ? " " + button.className : "")
+        }
         icon={{
           ...sdn.icon,
           ...icon,
-          className: combineClassNames("sdn-icon-1ihZT8Ll", icon?.className),
+          className:
+            "sdn-icon-1ihZT8Ll" + (icon?.className ? " " + icon.className : ""),
         }}
         label={{
           ...sdn.label,
           ...label,
-          className: combineClassNames("sdn-label-1R07j0Td", label?.className),
+          className:
+            "sdn-label-1R07j0Td" +
+            (label?.className ? " " + label.className : ""),
         }}
       />
       <Button
         {...{ ...sdn.button2, ...button2 }}
-        className={combineClassNames("sdn-button-3D4pvOBS", button2?.className)}
+        className={
+          "sdn-button-3D4pvOBS" +
+          (button2?.className ? " " + button2.className : "")
+        }
         icon={{
           ...sdn.icon2,
           ...icon2,
-          className: combineClassNames("sdn-icon-1ihZT8Ll", icon2?.className),
+          className:
+            "sdn-icon-1ihZT8Ll" +
+            (icon2?.className ? " " + icon2.className : ""),
         }}
         label={{
           ...sdn.label2,
           ...label2,
-          className: combineClassNames("sdn-label-1R07j0Td", label2?.className),
+          className:
+            "sdn-label-1R07j0Td" +
+            (label2?.className ? " " + label2.className : ""),
         }}
       />
       <Button
         {...{ ...sdn.button3, ...button3 }}
-        className={combineClassNames("sdn-button-3D4pvOBS", button3?.className)}
+        className={
+          "sdn-button-3D4pvOBS" +
+          (button3?.className ? " " + button3.className : "")
+        }
         icon={{
           ...sdn.icon3,
           ...icon3,
-          className: combineClassNames("sdn-icon-1ihZT8Ll", icon3?.className),
+          className:
+            "sdn-icon-1ihZT8Ll" +
+            (icon3?.className ? " " + icon3.className : ""),
         }}
         label={{
           ...sdn.label3,
           ...label3,
-          className: combineClassNames("sdn-label-1R07j0Td", label3?.className),
+          className:
+            "sdn-label-1R07j0Td" +
+            (label3?.className ? " " + label3.className : ""),
         }}
       />
     </Frame>
