@@ -365,7 +365,7 @@ html {
 }
 
 .sdn-cardProduct {
-  background-color: hsl(197 12% 98%);
+  background-color: hsl(270 12% 98%);
   background-image: url(https://static.seldon.app/background-default-light.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -377,8 +377,8 @@ html {
   gap: auto;
   align-self: stretch;
   height: fit-content;
-  border-radius: 0.5rem;
-  border: var(--hairline) solid hsl(197 100% 63%);
+  border-radius: 0.409rem;
+  border: var(--hairline) solid hsl(270 100% 70%);
 }
 
 .sdn-description {
@@ -404,7 +404,7 @@ html {
 }
 
 .sdn-cardProduct-0IbtAwmQ {
-  background-color: hsl(197 12% 98%);
+  background-color: hsl(270 12% 98%);
   background-image: url(https://static.seldon.app/background-default-light.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -416,8 +416,8 @@ html {
   gap: auto;
   align-self: stretch;
   height: fit-content;
-  border-radius: 0.5rem;
-  border: var(--hairline) solid hsl(197 100% 63%);
+  border-radius: 0.409rem;
+  border: var(--hairline) solid hsl(270 100% 70%);
 }
 
 .sdn-button-7k7U4i3x {
@@ -439,7 +439,7 @@ html {
 }
 
 .sdn-button-PZ55a4By {
-  background-color: hsl(197 100% 63%);
+  background-color: hsl(18 60% 45%);
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -454,7 +454,7 @@ html {
   height: fit-content;
   margin: 1rem;
   border-radius: 99999px;
-  border: 0.125rem solid hsl(197 100% 63%);
+  border: 0.125rem solid hsl(18 60% 45%);
 }
 
 .sdn-buttonBar-MMcNZdBT {
@@ -505,7 +505,7 @@ html {
   flex-wrap: nowrap;
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.168rem;
   align-self: stretch;
   height: fit-content;
   margin: 1rem;
@@ -515,7 +515,7 @@ html {
   flex-wrap: nowrap;
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.168rem;
   align-self: stretch;
   height: fit-content;
   margin: 1rem;
@@ -525,7 +525,7 @@ html {
   flex-wrap: nowrap;
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.168rem;
   align-self: stretch;
   height: fit-content;
   margin: 1rem;
@@ -552,7 +552,7 @@ html {
 }
 
 .sdn-button-3D4pvOBS {
-  background-color: hsl(197 100% 63%);
+  background-color: hsl(270 100% 70%);
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -566,7 +566,7 @@ html {
   width: fit-content;
   height: fit-content;
   border-radius: 99999px;
-  border: 0.125rem solid hsl(197 100% 63%);
+  border: 0.069rem solid hsl(270 100% 70%);
 }
 
 .sdn-button-4o13hVru {
@@ -584,7 +584,7 @@ html {
   width: fit-content;
   height: fit-content;
   border-radius: 99999px;
-  border: 0.125rem solid hsl(0 100% 65%);
+  border: 0.069rem solid hsl(0 100% 65%);
 }
 
 .sdn-button-EOkV8PVa {
@@ -602,7 +602,25 @@ html {
   width: fit-content;
   height: fit-content;
   border-radius: 99999px;
-  border: 0.125rem solid hsl(203 100% 62%);
+  border: 0.069rem solid hsl(203 100% 62%);
+}
+
+.sdn-button-J2DfCnrP {
+  background-color: hsl(18 60% 45%);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  padding-right: 0.875rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 99999px;
+  border: 0.125rem solid hsl(18 60% 45%);
 }
 
 .sdn-button-JnRIw2cY {
@@ -620,7 +638,7 @@ html {
   width: fit-content;
   height: fit-content;
   border-radius: 99999px;
-  border: 0.125rem solid hsl(135 100% 35%);
+  border: 0.069rem solid hsl(135 100% 35%);
 }
 
 .sdn-button-OPNTxNTH {
@@ -638,14 +656,14 @@ html {
   width: fit-content;
   height: fit-content;
   border-radius: 99999px;
-  border: 0.125rem solid hsl(20 95% 60%);
+  border: 0.069rem solid hsl(20 95% 60%);
 }
 
 .sdn-description-QJZ11zsK {
-  color: hsl(197 12% 8%);
+  color: hsl(270 12% 8%);
   align-self: stretch;
   height: fit-content;
-  font-family: Inter;
+  font-family: DM Sans;
   font-style: normal;
   font-synthesis-style: none;
   font-weight: 400;
@@ -671,14 +689,14 @@ html {
 }
 
 .sdn-tagline-RYPEIO98 {
-  color: hsl(197 12% 8%);
+  color: hsl(270 12% 8%);
   align-self: stretch;
   height: fit-content;
-  font-family: Inter;
+  font-family: DM Sans;
   font-style: normal;
   font-synthesis-style: none;
   font-weight: 500;
-  font-size: 0.75rem;
+  font-size: 0.69rem;
   line-height: 1.25;
   white-space: normal;
   overflow: hidden;
@@ -690,15 +708,15 @@ html {
 }
 
 .sdn-title-83oQ44Bx {
-  color: hsl(197 100% 63%);
-  margin-bottom: 0.5rem;
+  color: hsl(270 100% 70%);
+  margin-bottom: 0.409rem;
   align-self: stretch;
   height: fit-content;
-  font-family: Outfit;
+  font-family: DM Sans;
   font-style: normal;
   font-synthesis-style: none;
-  font-weight: 500;
-  font-size: 2.998rem;
+  font-weight: 600;
+  font-size: 2.445rem;
   line-height: 1.25;
   white-space: normal;
   overflow: hidden;
@@ -718,10 +736,26 @@ html {
   color: hsl(0 0% 100%);
   width: fit-content;
   height: fit-content;
-  font-family: Outfit;
+  font-family: DM Sans;
   font-style: normal;
   font-synthesis-style: none;
   font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.15;
+  letter-spacing: 0.1px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.sdn-label-2dXH0cYj {
+  color: hsl(0 0% 100%);
+  width: fit-content;
+  height: fit-content;
+  font-family: Raleway;
+  font-style: normal;
+  font-synthesis-style: none;
+  font-weight: 500;
   font-size: 0.8rem;
   line-height: 1.15;
   letter-spacing: 0.1px;
@@ -841,108 +875,210 @@ html {
   --sdn-border-width-large: 0.25rem;
   --sdn-border-width-xlarge: 0.5rem;
 
-  /* Theme: Sunset Blue */
+  /* Theme: Wildberry */
   /* Core */
-  --sdn-sunset-blue-ratio: 1.25;
-  --sdn-sunset-blue-font-size: 16px;
-  --sdn-sunset-blue-size: 1;
+  --sdn-wildberry-ratio: 1.333;
+  --sdn-wildberry-font-size: 16px;
+  --sdn-wildberry-size: 1;
   /* Font Families */
-  --sdn-sunset-blue-font-family-primary: "Inter";
-  --sdn-sunset-blue-font-family-secondary: "Outfit";
+  --sdn-wildberry-font-family-primary: "DM Sans";
+  --sdn-wildberry-font-family-secondary: "DM Sans";
   /* Colors */
-  --sdn-sunset-blue-color-base-hue: 197;
-  --sdn-sunset-blue-color-base-saturation: 100%;
-  --sdn-sunset-blue-color-base-lightness: 63%;
-  --sdn-sunset-blue-color-harmony: 1;
-  --sdn-sunset-blue-color-angle: 25deg;
-  --sdn-sunset-blue-color-step: 15;
-  --sdn-sunset-blue-color-white-point: 98%;
-  --sdn-sunset-blue-color-gray-point: 56%;
-  --sdn-sunset-blue-color-black-point: 8%;
-  --sdn-sunset-blue-color-bleed: 12;
-  --sdn-sunset-blue-color-contrast-ratio: 2;
+  --sdn-wildberry-color-base-hue: 270;
+  --sdn-wildberry-color-base-saturation: 100%;
+  --sdn-wildberry-color-base-lightness: 70%;
+  --sdn-wildberry-color-harmony: 4;
+  --sdn-wildberry-color-angle: 30deg;
+  --sdn-wildberry-color-step: 10;
+  --sdn-wildberry-color-white-point: 98%;
+  --sdn-wildberry-color-gray-point: 56%;
+  --sdn-wildberry-color-black-point: 8%;
+  --sdn-wildberry-color-bleed: 12;
+  --sdn-wildberry-color-contrast-ratio: 2;
   /* Swatches */
-  --sdn-sunset-blue-swatch-background: hsl(0 4% 98%);
-  --sdn-sunset-blue-swatch-grey-1: hsl(0 0% 25%);
-  --sdn-sunset-blue-swatch-seldon-green: hsl(135 100% 35%);
-  --sdn-sunset-blue-swatch-seldon-blue: hsl(203 100% 62%);
-  --sdn-sunset-blue-swatch-seldon-yellow: hsl(60 100% 46%);
-  --sdn-sunset-blue-swatch-seldon-purple: hsl(300 76% 48%);
-  --sdn-sunset-blue-swatch-gray93: hsl(0 0% 93%);
-  --sdn-sunset-blue-swatch-white: hsl(197 12% 98%);
-  --sdn-sunset-blue-swatch-gray: hsl(197 12% 56%);
-  --sdn-sunset-blue-swatch-black: hsl(197 12% 8%);
-  --sdn-sunset-blue-swatch-primary: hsl(197 100% 63%);
-  --sdn-sunset-blue-swatch-complement1: hsl(42 100% 63%);
-  --sdn-sunset-blue-swatch-complement-tint1: hsl(42 100% 78%);
-  --sdn-sunset-blue-swatch-complement2: hsl(352 100% 63%);
-  --sdn-sunset-blue-swatch-complement-tint2: hsl(352 100% 78%);
+  --sdn-wildberry-swatch-background: hsl(0 4% 8%);
+  --sdn-wildberry-swatch-grey-1: hsl(0 0% 25%);
+  --sdn-wildberry-swatch-seldon-green: hsl(135 100% 35%);
+  --sdn-wildberry-swatch-seldon-blue: hsl(203 100% 62%);
+  --sdn-wildberry-swatch-seldon-yellow: hsl(60 100% 46%);
+  --sdn-wildberry-swatch-seldon-purple: hsl(300 76% 48%);
+  --sdn-wildberry-swatch-gray93: hsl(0 0% 93%);
+  --sdn-wildberry-swatch-white: hsl(270 12% 98%);
+  --sdn-wildberry-swatch-gray: hsl(270 12% 56%);
+  --sdn-wildberry-swatch-black: hsl(270 12% 8%);
+  --sdn-wildberry-swatch-primary: hsl(270 100% 70%);
+  --sdn-wildberry-swatch-tint: hsl(270 100% 80%);
+  --sdn-wildberry-swatch-direct-complement: hsl(90 100% 70%);
+  --sdn-wildberry-swatch-right-complement: hsl(0 100% 70%);
+  --sdn-wildberry-swatch-left-complement: hsl(180 100% 70%);
   /* Sizes */
-  --sdn-sunset-blue-size-tiny: 0.125rem;
-  --sdn-sunset-blue-size-xxsmall: 0.25rem;
-  --sdn-sunset-blue-size-xsmall: 0.5rem;
-  --sdn-sunset-blue-size-small: 0.75rem;
-  --sdn-sunset-blue-size-medium: 1rem;
-  --sdn-sunset-blue-size-large: 1.501rem;
-  --sdn-sunset-blue-size-xlarge: 2.002rem;
-  --sdn-sunset-blue-size-xxlarge: 2.998rem;
-  --sdn-sunset-blue-size-huge: 3.998rem;
+  --sdn-wildberry-size-tiny: 0.069rem;
+  --sdn-wildberry-size-xxsmall: 0.168rem;
+  --sdn-wildberry-size-xsmall: 0.409rem;
+  --sdn-wildberry-size-small: 0.69rem;
+  --sdn-wildberry-size-medium: 1rem;
+  --sdn-wildberry-size-large: 1.687rem;
+  --sdn-wildberry-size-xlarge: 2.445rem;
+  --sdn-wildberry-size-xxlarge: 4.113rem;
+  --sdn-wildberry-size-huge: 5.959rem;
   /* Margins */
-  --sdn-sunset-blue-margin-tight: 0.25rem;
-  --sdn-sunset-blue-margin-compact: 0.5rem;
-  --sdn-sunset-blue-margin-cozy: 1rem;
-  --sdn-sunset-blue-margin-comfortable: 2.002rem;
-  --sdn-sunset-blue-margin-open: 3.998rem;
+  --sdn-wildberry-margin-tight: 0.168rem;
+  --sdn-wildberry-margin-compact: 0.409rem;
+  --sdn-wildberry-margin-cozy: 1rem;
+  --sdn-wildberry-margin-comfortable: 2.445rem;
+  --sdn-wildberry-margin-open: 5.959rem;
   /* Paddings */
-  --sdn-sunset-blue-padding-tight: 0.25rem;
-  --sdn-sunset-blue-padding-compact: 0.5rem;
-  --sdn-sunset-blue-padding-cozy: 1rem;
-  --sdn-sunset-blue-padding-comfortable: 2.002rem;
-  --sdn-sunset-blue-padding-open: 3.998rem;
+  --sdn-wildberry-padding-tight: 0.168rem;
+  --sdn-wildberry-padding-compact: 0.409rem;
+  --sdn-wildberry-padding-cozy: 1rem;
+  --sdn-wildberry-padding-comfortable: 2.445rem;
+  --sdn-wildberry-padding-open: 5.959rem;
   /* Gaps */
-  --sdn-sunset-blue-gap-tight: 0.25rem;
-  --sdn-sunset-blue-gap-compact: 0.5rem;
-  --sdn-sunset-blue-gap-cozy: 1rem;
-  --sdn-sunset-blue-gap-comfortable: 2.002rem;
-  --sdn-sunset-blue-gap-open: 3.998rem;
+  --sdn-wildberry-gap-tight: 0.168rem;
+  --sdn-wildberry-gap-compact: 0.409rem;
+  --sdn-wildberry-gap-cozy: 1rem;
+  --sdn-wildberry-gap-comfortable: 2.445rem;
+  --sdn-wildberry-gap-open: 5.959rem;
   /* Corners */
-  --sdn-sunset-blue-corners-tight: 0.25rem;
-  --sdn-sunset-blue-corners-compact: 0.5rem;
-  --sdn-sunset-blue-corners-cozy: 1rem;
-  --sdn-sunset-blue-corners-comfortable: 1.501rem;
-  --sdn-sunset-blue-corners-open: 3.815rem;
+  --sdn-wildberry-corners-tight: 0.168rem;
+  --sdn-wildberry-corners-compact: 0.409rem;
+  --sdn-wildberry-corners-cozy: 1rem;
+  --sdn-wildberry-corners-comfortable: 1.687rem;
+  --sdn-wildberry-corners-open: 5.61rem;
   /* Font Sizes */
-  --sdn-sunset-blue-font-size-tiny: 0.5rem;
-  --sdn-sunset-blue-font-size-xxsmall: 0.624rem;
-  --sdn-sunset-blue-font-size-xsmall: 0.75rem;
-  --sdn-sunset-blue-font-size-small: 0.875rem;
-  --sdn-sunset-blue-font-size-medium: 1rem;
-  --sdn-sunset-blue-font-size-large: 1.563rem;
-  --sdn-sunset-blue-font-size-xlarge: 2.002rem;
-  --sdn-sunset-blue-font-size-xxlarge: 2.998rem;
-  --sdn-sunset-blue-font-size-huge: 3.998rem;
+  --sdn-wildberry-font-size-tiny: 0.409rem;
+  --sdn-wildberry-font-size-xxsmall: 0.545rem;
+  --sdn-wildberry-font-size-xsmall: 0.69rem;
+  --sdn-wildberry-font-size-small: 0.842rem;
+  --sdn-wildberry-font-size-medium: 1rem;
+  --sdn-wildberry-font-size-large: 1.777rem;
+  --sdn-wildberry-font-size-xlarge: 2.445rem;
+  --sdn-wildberry-font-size-xxlarge: 4.113rem;
+  --sdn-wildberry-font-size-huge: 5.959rem;
   /* Font Weights */
-  --sdn-sunset-blue-font-weight-thin: 100;
-  --sdn-sunset-blue-font-weight-xlight: 200;
-  --sdn-sunset-blue-font-weight-light: 300;
-  --sdn-sunset-blue-font-weight-normal: 400;
-  --sdn-sunset-blue-font-weight-medium: 500;
-  --sdn-sunset-blue-font-weight-semibold: 600;
-  --sdn-sunset-blue-font-weight-bold: 700;
-  --sdn-sunset-blue-font-weight-xbold: 800;
-  --sdn-sunset-blue-font-weight-black: 900;
+  --sdn-wildberry-font-weight-thin: 100;
+  --sdn-wildberry-font-weight-xlight: 200;
+  --sdn-wildberry-font-weight-light: 300;
+  --sdn-wildberry-font-weight-normal: 400;
+  --sdn-wildberry-font-weight-medium: 500;
+  --sdn-wildberry-font-weight-semibold: 600;
+  --sdn-wildberry-font-weight-bold: 700;
+  --sdn-wildberry-font-weight-xbold: 800;
+  --sdn-wildberry-font-weight-black: 900;
   /* Line Heights */
-  --sdn-sunset-blue-line-height-none: 1;
-  --sdn-sunset-blue-line-height-solid: 1.15;
-  --sdn-sunset-blue-line-height-tight: 1.25;
-  --sdn-sunset-blue-line-height-compact: 1.33;
-  --sdn-sunset-blue-line-height-cozy: 1.5;
-  --sdn-sunset-blue-line-height-comfortable: 2;
-  --sdn-sunset-blue-line-height-open: 2.5;
+  --sdn-wildberry-line-height-none: 1;
+  --sdn-wildberry-line-height-solid: 1.15;
+  --sdn-wildberry-line-height-tight: 1.25;
+  --sdn-wildberry-line-height-compact: 1.33;
+  --sdn-wildberry-line-height-cozy: 1.5;
+  --sdn-wildberry-line-height-comfortable: 2;
+  --sdn-wildberry-line-height-open: 2.5;
   /* Border Widths */
-  --sdn-sunset-blue-border-width-xsmall: 0.031rem;
-  --sdn-sunset-blue-border-width-small: 0.069rem;
-  --sdn-sunset-blue-border-width-medium: 0.125rem;
-  --sdn-sunset-blue-border-width-large: 0.25rem;
-  --sdn-sunset-blue-border-width-xlarge: 0.5rem;
+  --sdn-wildberry-border-width-xsmall: 0.012rem;
+  --sdn-wildberry-border-width-small: 0.032rem;
+  --sdn-wildberry-border-width-medium: 0.069rem;
+  --sdn-wildberry-border-width-large: 0.168rem;
+  --sdn-wildberry-border-width-xlarge: 0.409rem;
+
+  /* Theme: Earth */
+  /* Core */
+  --sdn-earth-ratio: 1.25;
+  --sdn-earth-font-size: 16px;
+  --sdn-earth-size: 1;
+  /* Font Families */
+  --sdn-earth-font-family-primary: "Raleway";
+  --sdn-earth-font-family-secondary: "Raleway";
+  /* Colors */
+  --sdn-earth-color-base-hue: 18;
+  --sdn-earth-color-base-saturation: 60%;
+  --sdn-earth-color-base-lightness: 45%;
+  --sdn-earth-color-harmony: 3;
+  --sdn-earth-color-angle: 9deg;
+  --sdn-earth-color-step: 12;
+  --sdn-earth-color-white-point: 98%;
+  --sdn-earth-color-gray-point: 56%;
+  --sdn-earth-color-black-point: 8%;
+  --sdn-earth-color-bleed: 12;
+  --sdn-earth-color-contrast-ratio: 2.5;
+  /* Swatches */
+  --sdn-earth-swatch-background: hsl(18 12% 8%);
+  --sdn-earth-swatch-soft-green: hsl(38 18% 76%);
+  --sdn-earth-swatch-green: hsl(72 18% 55%);
+  --sdn-earth-swatch-pure-green: hsl(158 18% 37%);
+  --sdn-earth-swatch-white: hsl(18 12% 98%);
+  --sdn-earth-swatch-gray: hsl(18 12% 56%);
+  --sdn-earth-swatch-black: hsl(18 12% 8%);
+  --sdn-earth-swatch-primary: hsl(18 60% 45%);
+  --sdn-earth-swatch-complement-1: hsl(27 60% 45%);
+  --sdn-earth-swatch-complement-2: hsl(36 60% 45%);
+  --sdn-earth-swatch-complement-3: hsl(9 60% 45%);
+  --sdn-earth-swatch-complement-4: hsl(0 60% 45%);
+  /* Sizes */
+  --sdn-earth-size-tiny: 0.125rem;
+  --sdn-earth-size-xxsmall: 0.25rem;
+  --sdn-earth-size-xsmall: 0.5rem;
+  --sdn-earth-size-small: 0.75rem;
+  --sdn-earth-size-medium: 1rem;
+  --sdn-earth-size-large: 1.501rem;
+  --sdn-earth-size-xlarge: 2.002rem;
+  --sdn-earth-size-xxlarge: 2.998rem;
+  --sdn-earth-size-huge: 3.998rem;
+  /* Margins */
+  --sdn-earth-margin-tight: 0.25rem;
+  --sdn-earth-margin-compact: 0.5rem;
+  --sdn-earth-margin-cozy: 1rem;
+  --sdn-earth-margin-comfortable: 2.002rem;
+  --sdn-earth-margin-open: 3.998rem;
+  /* Paddings */
+  --sdn-earth-padding-tight: 0.25rem;
+  --sdn-earth-padding-compact: 0.5rem;
+  --sdn-earth-padding-cozy: 1rem;
+  --sdn-earth-padding-comfortable: 2.002rem;
+  --sdn-earth-padding-open: 3.998rem;
+  /* Gaps */
+  --sdn-earth-gap-tight: 0.25rem;
+  --sdn-earth-gap-compact: 0.5rem;
+  --sdn-earth-gap-cozy: 1rem;
+  --sdn-earth-gap-comfortable: 2.002rem;
+  --sdn-earth-gap-open: 3.998rem;
+  /* Corners */
+  --sdn-earth-corners-tight: 0.25rem;
+  --sdn-earth-corners-compact: 0.5rem;
+  --sdn-earth-corners-cozy: 1rem;
+  --sdn-earth-corners-comfortable: 1.501rem;
+  --sdn-earth-corners-open: 2.002rem;
+  /* Font Sizes */
+  --sdn-earth-font-size-tiny: 0.5rem;
+  --sdn-earth-font-size-xxsmall: 0.624rem;
+  --sdn-earth-font-size-xsmall: 0.75rem;
+  --sdn-earth-font-size-small: 0.875rem;
+  --sdn-earth-font-size-medium: 1rem;
+  --sdn-earth-font-size-large: 1.501rem;
+  --sdn-earth-font-size-xlarge: 2.002rem;
+  --sdn-earth-font-size-xxlarge: 2.998rem;
+  --sdn-earth-font-size-huge: 3.998rem;
+  /* Font Weights */
+  --sdn-earth-font-weight-thin: 100;
+  --sdn-earth-font-weight-xlight: 200;
+  --sdn-earth-font-weight-light: 300;
+  --sdn-earth-font-weight-normal: 400;
+  --sdn-earth-font-weight-medium: 500;
+  --sdn-earth-font-weight-semibold: 600;
+  --sdn-earth-font-weight-bold: 700;
+  --sdn-earth-font-weight-xbold: 800;
+  --sdn-earth-font-weight-black: 900;
+  /* Line Heights */
+  --sdn-earth-line-height-none: 1;
+  --sdn-earth-line-height-solid: 1.15;
+  --sdn-earth-line-height-tight: 1.25;
+  --sdn-earth-line-height-compact: 1.33;
+  --sdn-earth-line-height-cozy: 1.5;
+  --sdn-earth-line-height-comfortable: 2;
+  --sdn-earth-line-height-open: 2.5;
+  /* Border Widths */
+  --sdn-earth-border-width-xsmall: 0.031rem;
+  --sdn-earth-border-width-small: 0.069rem;
+  --sdn-earth-border-width-medium: 0.125rem;
+  --sdn-earth-border-width-large: 0.25rem;
+  --sdn-earth-border-width-xlarge: 0.5rem;
 }

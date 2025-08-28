@@ -243,7 +243,81 @@ You can override styles in several ways:
     style: { color: "red", fontWeight: "bold" }
   }}
 />
+
+// 4. Using theme variables for consistent styling
+<CardProduct 
+  style={{ 
+    backgroundColor: "hsl(var(--sdn-swatch-background))",
+    border: "1px solid hsl(var(--sdn-swatch-seldon-blue))"
+  }}
+  tagline={{
+    children: "Themed Content",
+    style: { 
+      color: "hsl(var(--sdn-swatch-seldon-red))",
+      fontSize: "var(--sdn-font-size-medium)"
+    }
+  }}
+/>
 ```
+
+#### Design Tokens via Theme Variables
+
+The exported stylesheet includes CSS design tokens (theme variables) that you can use for consistent theming across your application. This can be useful for integrating Seldon components with existing components:
+
+```css
+/* Available theme variables include: */
+:root {
+  /* Colors */
+  --sdn-swatch-background: /* Dynamic background color */
+  --sdn-swatch-primary: /* Primary brand color */
+  --sdn-swatch-seldon-red: /* Custom brand colors */
+  --sdn-swatch-seldon-blue: /* Custom brand colors */
+  --sdn-swatch-tint-1: /* Harmony-based palette colors */
+  --sdn-swatch-complement1: /* Harmony-based palette colors */
+  
+  /* Typography */
+  --sdn-font-size-small: /* Consistent font sizes */
+  --sdn-font-size-medium: /* Consistent font sizes */
+  --sdn-font-family-primary: /* Brand typography */
+  
+  /* Spacing */
+  --sdn-margin-tight: /* Consistent spacing */
+  --sdn-padding-cozy: /* Consistent spacing */
+  --sdn-gap-comfortable: /* Consistent spacing */
+}
+```
+
+```tsx
+// Use theme variables in your existing components for consistency
+function MyExistingButton({ children, ...props }) {
+  return (
+    <button 
+      style={{
+        backgroundColor: "hsl(var(--sdn-swatch-primary))",
+        color: "hsl(var(--sdn-swatch-background))",
+        fontSize: "var(--sdn-font-size-medium)",
+        padding: "var(--sdn-padding-cozy)",
+        fontFamily: "var(--sdn-font-family-primary)"
+      }}
+      {...props}
+    >
+      {children}
+    </button>
+  )
+}
+
+// Your existing components will now match Seldon component styling
+<div>
+  <CardProduct tagline={{ children: "Seldon Card" }} />
+  <MyExistingButton>Matching Button</MyExistingButton>
+</div>
+```
+
+**Benefits of using theme variables:**
+- Consistent visual design across all components
+- Automatic updates when themes change
+- Easy integration with existing component libraries
+- Responsive design support with dynamic color harmonies
 
 ## TypeScript Support
 
