@@ -107,13 +107,7 @@ export function CardProductInline({
 }: CardProductInlineProps) {
   return (
     <Frame
-      className={
-        "sdn-cardProduct sdn-cardProduct-0IbtAwmQ " +
-        (className &&
-        !className.includes("sdn-cardProduct sdn-cardProduct-0IbtAwmQ")
-          ? className
-          : "")
-      }
+      className={"sdn-cardProduct sdn-cardProduct-0IbtAwmQ " + className}
       {...props}
     >
       {button && (
@@ -138,30 +132,21 @@ export function CardProductInline({
             {...{ ...sdn.button2, ...button2 }}
             className={
               "sdn-button-3D4pvOBS" +
-              (button2?.className &&
-              !button2.className.includes("sdn-button-3D4pvOBS")
-                ? " " + button2.className
-                : "")
+              (button2?.className ? " " + button2.className : "")
             }
             icon={{
               ...sdn.icon2,
               ...icon2,
               className:
                 "sdn-icon-1ihZT8Ll" +
-                (icon2?.className &&
-                !icon2.className.includes("sdn-icon-1ihZT8Ll")
-                  ? " " + icon2.className
-                  : ""),
+                (icon2?.className ? " " + icon2.className : ""),
             }}
             label={{
               ...sdn.label2,
               ...label2,
               className:
                 "sdn-label-1R07j0Td" +
-                (label2?.className &&
-                !label2.className.includes("sdn-label-1R07j0Td")
-                  ? " " + label2.className
-                  : ""),
+                (label2?.className ? " " + label2.className : ""),
             }}
           />
         )}
@@ -170,30 +155,21 @@ export function CardProductInline({
             {...{ ...sdn.button3, ...button3 }}
             className={
               "sdn-button-3D4pvOBS" +
-              (button3?.className &&
-              !button3.className.includes("sdn-button-3D4pvOBS")
-                ? " " + button3.className
-                : "")
+              (button3?.className ? " " + button3.className : "")
             }
             icon={{
               ...sdn.icon3,
               ...icon3,
               className:
                 "sdn-icon-1ihZT8Ll" +
-                (icon3?.className &&
-                !icon3.className.includes("sdn-icon-1ihZT8Ll")
-                  ? " " + icon3.className
-                  : ""),
+                (icon3?.className ? " " + icon3.className : ""),
             }}
             label={{
               ...sdn.label3,
               ...label3,
               className:
                 "sdn-label-1R07j0Td" +
-                (label3?.className &&
-                !label3.className.includes("sdn-label-1R07j0Td")
-                  ? " " + label3.className
-                  : ""),
+                (label3?.className ? " " + label3.className : ""),
             }}
           />
         )}
@@ -201,20 +177,14 @@ export function CardProductInline({
           {...{ ...sdn.tagline, ...tagline }}
           className={
             "sdn-tagline-57ug71iC" +
-            (tagline?.className &&
-            !tagline.className.includes("sdn-tagline-57ug71iC")
-              ? " " + tagline.className
-              : "")
+            (tagline?.className ? " " + tagline.className : "")
           }
         />
         <Title
           {...{ ...sdn.titleProps, ...titleProps }}
           className={
             "sdn-title-83oQ44Bx" +
-            (titleProps?.className &&
-            !titleProps.className.includes("sdn-title-83oQ44Bx")
-              ? " " + titleProps.className
-              : "")
+            (titleProps?.className ? " " + titleProps.className : "")
           }
         />
       </Frame>
@@ -228,90 +198,63 @@ export function CardProductInline({
           {...{ ...sdn.button4, ...button4 }}
           className={
             "sdn-button-4o13hVru" +
-            (button4?.className &&
-            !button4.className.includes("sdn-button-4o13hVru")
-              ? " " + button4.className
-              : "")
+            (button4?.className ? " " + button4.className : "")
           }
           icon={{
             ...sdn.icon4,
             ...icon4,
             className:
               "sdn-icon-1ihZT8Ll" +
-              (icon4?.className &&
-              !icon4.className.includes("sdn-icon-1ihZT8Ll")
-                ? " " + icon4.className
-                : ""),
+              (icon4?.className ? " " + icon4.className : ""),
           }}
           label={{
             ...sdn.label4,
             ...label4,
             className:
               "sdn-label-1R07j0Td" +
-              (label4?.className &&
-              !label4.className.includes("sdn-label-1R07j0Td")
-                ? " " + label4.className
-                : ""),
+              (label4?.className ? " " + label4.className : ""),
           }}
         />
         <Button
           {...{ ...sdn.button5, ...button5 }}
           className={
             "sdn-button-OPNTxNTH" +
-            (button5?.className &&
-            !button5.className.includes("sdn-button-OPNTxNTH")
-              ? " " + button5.className
-              : "")
+            (button5?.className ? " " + button5.className : "")
           }
           icon={{
             ...sdn.icon5,
             ...icon5,
             className:
               "sdn-icon-1ihZT8Ll" +
-              (icon5?.className &&
-              !icon5.className.includes("sdn-icon-1ihZT8Ll")
-                ? " " + icon5.className
-                : ""),
+              (icon5?.className ? " " + icon5.className : ""),
           }}
           label={{
             ...sdn.label5,
             ...label5,
             className:
               "sdn-label-1R07j0Td" +
-              (label5?.className &&
-              !label5.className.includes("sdn-label-1R07j0Td")
-                ? " " + label5.className
-                : ""),
+              (label5?.className ? " " + label5.className : ""),
           }}
         />
         <Button
           {...{ ...sdn.button6, ...button6 }}
           className={
             "sdn-button-3D4pvOBS" +
-            (button6?.className &&
-            !button6.className.includes("sdn-button-3D4pvOBS")
-              ? " " + button6.className
-              : "")
+            (button6?.className ? " " + button6.className : "")
           }
           icon={{
             ...sdn.icon6,
             ...icon6,
             className:
               "sdn-icon-1ihZT8Ll" +
-              (icon6?.className &&
-              !icon6.className.includes("sdn-icon-1ihZT8Ll")
-                ? " " + icon6.className
-                : ""),
+              (icon6?.className ? " " + icon6.className : ""),
           }}
           label={{
             ...sdn.label6,
             ...label6,
             className:
               "sdn-label-1R07j0Td" +
-              (label6?.className &&
-              !label6.className.includes("sdn-label-1R07j0Td")
-                ? " " + label6.className
-                : ""),
+              (label6?.className ? " " + label6.className : ""),
           }}
         />
         {button7 && (
@@ -319,30 +262,21 @@ export function CardProductInline({
             {...{ ...sdn.button7, ...button7 }}
             className={
               "sdn-button-3D4pvOBS" +
-              (button7?.className &&
-              !button7.className.includes("sdn-button-3D4pvOBS")
-                ? " " + button7.className
-                : "")
+              (button7?.className ? " " + button7.className : "")
             }
             icon={{
               ...sdn.icon7,
               ...icon7,
               className:
                 "sdn-icon-1ihZT8Ll" +
-                (icon7?.className &&
-                !icon7.className.includes("sdn-icon-1ihZT8Ll")
-                  ? " " + icon7.className
-                  : ""),
+                (icon7?.className ? " " + icon7.className : ""),
             }}
             label={{
               ...sdn.label7,
               ...label7,
               className:
                 "sdn-label-1R07j0Td" +
-                (label7?.className &&
-                !label7.className.includes("sdn-label-1R07j0Td")
-                  ? " " + label7.className
-                  : ""),
+                (label7?.className ? " " + label7.className : ""),
             }}
           />
         )}
@@ -352,70 +286,104 @@ export function CardProductInline({
 }
 
 const sdn: CardProductInlineProps = {
-  button: {},
+  button: {
+    className: "sdn-button-PZ55a4By",
+  },
   icon: {
     icon: "material-bolt",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label: {
     children: "Special",
     htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
   },
-  textblockDetails: {},
-  button2: {},
+  textblockDetails: {
+    className: "sdn-textblockDetails-jRyRpai8",
+  },
+  button2: {
+    className: "sdn-button-3D4pvOBS",
+  },
   icon2: {
     icon: "material-arrowDownward",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label2: {
     children: "Inline A",
     htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
   },
-  button3: {},
+  button3: {
+    className: "sdn-button-3D4pvOBS",
+  },
   icon3: {
     icon: "material-addChart",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label3: {
     children: "Inline B",
     htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
   },
   tagline: {
     children: "Inline Tagline",
     htmlElement: "p",
+    className: "sdn-tagline-57ug71iC",
   },
   titleProps: {
     children: "Inline Card Title",
     htmlElement: "h4",
+    className: "sdn-title-83oQ44Bx",
   },
-  buttonBar: {},
-  button4: {},
+  buttonBar: {
+    className: "sdn-buttonBar-MMcNZdBT",
+  },
+  button4: {
+    className: "sdn-button-4o13hVru",
+  },
   icon4: {
     icon: "material-addComment",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label4: {
     children: "Button A",
     htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
   },
-  button5: {},
+  button5: {
+    className: "sdn-button-OPNTxNTH",
+  },
   icon5: {
     icon: "material-addLocation",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label5: {
     children: "Button B",
     htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
   },
-  button6: {},
+  button6: {
+    className: "sdn-button-3D4pvOBS",
+  },
   icon6: {
     icon: "material-accountCircle",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label6: {
     children: "Button C",
     htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
   },
-  button7: {},
+  button7: {
+    className: "sdn-button-3D4pvOBS",
+  },
   icon7: {
     icon: "material-addBox",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label7: {
     children: "Button D",
     htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
   },
 }

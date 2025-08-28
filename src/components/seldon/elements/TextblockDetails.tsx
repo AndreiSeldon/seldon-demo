@@ -51,15 +51,7 @@ export function TextblockDetails({
   ...props
 }: TextblockDetailsProps) {
   return (
-    <Frame
-      className={
-        "sdn-textblockDetails " +
-        (className && !className.includes("sdn-textblockDetails")
-          ? className
-          : "")
-      }
-      {...props}
-    >
+    <Frame className={"sdn-textblockDetails " + className} {...props}>
       <Tagline
         {...{ ...sdn.tagline, ...tagline }}
         className={
@@ -89,14 +81,17 @@ const sdn: TextblockDetailsProps = {
   tagline: {
     children: "Tagline",
     htmlElement: "p",
+    className: "sdn-tagline-57ug71iC",
   },
   titleProps: {
     children: "Product Card Title",
     htmlElement: "h4",
+    className: "sdn-title-83oQ44Bx",
   },
   description: {
     children:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus.",
     htmlElement: "p",
+    className: "sdn-description-8Y5lFu0w",
   },
 }

@@ -47,13 +47,7 @@ export function Button({
   ...props
 }: ButtonProps) {
   return (
-    <HTMLButton
-      className={
-        "sdn-button " +
-        (className && !className.includes("sdn-button") ? className : "")
-      }
-      {...props}
-    >
+    <HTMLButton className={"sdn-button " + className} {...props}>
       <Icon
         {...{ ...sdn.icon, ...icon }}
         className={
@@ -73,9 +67,11 @@ export function Button({
 const sdn: ButtonProps = {
   icon: {
     icon: "__default__",
+    className: "sdn-icon-1ihZT8Ll",
   },
   label: {
     children: "Label",
     htmlElement: "label",
+    className: "sdn-label-1R07j0Td",
   },
 }
