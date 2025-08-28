@@ -16,6 +16,7 @@ import { ButtonHTMLAttributes } from "react"
 import { HTMLButton } from "../native-react/HTML.Button"
 import { Icon, IconProps } from "../primitives/Icon"
 import { Label, LabelProps } from "../primitives/Label"
+import { combineClassNames } from "../utils/classNames"
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string
@@ -46,20 +47,22 @@ export function Button({
   label = sdn.label,
   ...props
 }: ButtonProps) {
+  const frameClassName = combineClassNames("sdn-button", className)
+  const iconProps = {
+    ...sdn.icon,
+    ...icon,
+    className: combineClassNames(sdn.icon?.className, icon?.className),
+  }
+  const labelProps = {
+    ...sdn.label,
+    ...label,
+    className: combineClassNames(sdn.label?.className, label?.className),
+  }
+
   return (
-    <HTMLButton className={"sdn-button " + className} {...props}>
-      <Icon
-        {...{ ...sdn.icon, ...icon }}
-        className={
-          "sdn-icon-1ihZT8Ll" + (icon?.className ? " " + icon.className : "")
-        }
-      />
-      <Label
-        {...{ ...sdn.label, ...label }}
-        className={
-          "sdn-label-1R07j0Td" + (label?.className ? " " + label.className : "")
-        }
-      />
+    <HTMLButton className={frameClassName} {...props}>
+      <Icon {...iconProps} />
+      <Label {...labelProps} />
     </HTMLButton>
   )
 }

@@ -22,6 +22,7 @@ import { Icon, IconProps } from "../primitives/Icon"
 import { Label, LabelProps } from "../primitives/Label"
 import { Tagline, TaglineProps } from "../primitives/Tagline"
 import { Title, TitleProps } from "../primitives/Title"
+import { combineClassNames } from "../utils/classNames"
 
 export interface CardProductMixedProps extends HTMLAttributes<HTMLElement> {
   className?: string
@@ -93,140 +94,135 @@ export function CardProductMixed({
   label4,
   ...props
 }: CardProductMixedProps) {
+  const frameClassName = combineClassNames(
+    "sdn-cardProduct sdn-cardProduct-0IbtAwmQ",
+    className,
+  )
+  const textblockDetailsProps = {
+    ...sdn.textblockDetails,
+    ...textblockDetails,
+    className: combineClassNames(
+      sdn.textblockDetails?.className,
+      textblockDetails?.className,
+    ),
+  }
+  const taglineProps = {
+    ...sdn.tagline,
+    ...tagline,
+    className: combineClassNames(sdn.tagline?.className, tagline?.className),
+  }
+  const buttonProps = {
+    ...sdn.button,
+    ...button,
+    className: combineClassNames(sdn.button?.className, button?.className),
+  }
+  const iconProps = {
+    ...sdn.icon,
+    ...icon,
+    className: combineClassNames(sdn.icon?.className, icon?.className),
+  }
+  const labelProps = {
+    ...sdn.label,
+    ...label,
+    className: combineClassNames(sdn.label?.className, label?.className),
+  }
+  const titlePropsProps = {
+    ...sdn.titleProps,
+    ...titleProps,
+    className: combineClassNames(
+      sdn.titleProps?.className,
+      titleProps?.className,
+    ),
+  }
+  const tagline2Props = {
+    ...sdn.tagline2,
+    ...tagline2,
+    className: combineClassNames(sdn.tagline2?.className, tagline2?.className),
+  }
+  const descriptionProps = {
+    ...sdn.description,
+    ...description,
+    className: combineClassNames(
+      sdn.description?.className,
+      description?.className,
+    ),
+  }
+  const buttonBarProps = {
+    ...sdn.buttonBar,
+    ...buttonBar,
+    className: combineClassNames(
+      sdn.buttonBar?.className,
+      buttonBar?.className,
+    ),
+  }
+  const button2Props = {
+    ...sdn.button2,
+    ...button2,
+    className: combineClassNames(sdn.button2?.className, button2?.className),
+  }
+  const icon2Props = {
+    ...sdn.icon2,
+    ...icon2,
+    className: combineClassNames(sdn.icon2?.className, icon2?.className),
+  }
+  const label2Props = {
+    ...sdn.label2,
+    ...label2,
+    className: combineClassNames(sdn.label2?.className, label2?.className),
+  }
+  const button3Props = {
+    ...sdn.button3,
+    ...button3,
+    className: combineClassNames(sdn.button3?.className, button3?.className),
+  }
+  const icon3Props = {
+    ...sdn.icon3,
+    ...icon3,
+    className: combineClassNames(sdn.icon3?.className, icon3?.className),
+  }
+  const label3Props = {
+    ...sdn.label3,
+    ...label3,
+    className: combineClassNames(sdn.label3?.className, label3?.className),
+  }
+  const button4Props = {
+    ...sdn.button4,
+    ...button4,
+    className: combineClassNames(sdn.button4?.className, button4?.className),
+  }
+  const icon4Props = {
+    ...sdn.icon4,
+    ...icon4,
+    className: combineClassNames(sdn.icon4?.className, icon4?.className),
+  }
+  const label4Props = {
+    ...sdn.label4,
+    ...label4,
+    className: combineClassNames(sdn.label4?.className, label4?.className),
+  }
+
   return (
-    <Frame
-      className={"sdn-cardProduct sdn-cardProduct-0IbtAwmQ " + className}
-      {...props}
-    >
-      <Frame
-        className={
-          "sdn-textblockDetails-XKYdln17" +
-          (textblockDetails?.className ? " " + textblockDetails.className : "")
-        }
-      >
-        <Tagline
-          {...{ ...sdn.tagline, ...tagline }}
-          className={
-            "sdn-tagline-57ug71iC" +
-            (tagline?.className ? " " + tagline.className : "")
-          }
-        />
+    <Frame className={frameClassName} {...props}>
+      <Frame {...textblockDetailsProps}>
+        <Tagline {...taglineProps} />
         {button && (
-          <Button
-            {...{ ...sdn.button, ...button }}
-            className={
-              "sdn-button-3D4pvOBS" +
-              (button?.className ? " " + button.className : "")
-            }
-            icon={{
-              ...sdn.icon,
-              ...icon,
-              className:
-                "sdn-icon-1ihZT8Ll" +
-                (icon?.className ? " " + icon.className : ""),
-            }}
-            label={{
-              ...sdn.label,
-              ...label,
-              className:
-                "sdn-label-1R07j0Td" +
-                (label?.className ? " " + label.className : ""),
-            }}
-          />
+          <Button {...buttonProps} icon={iconProps} label={labelProps} />
         )}
-        <Title
-          {...{ ...sdn.titleProps, ...titleProps }}
-          className={
-            "sdn-title-83oQ44Bx" +
-            (titleProps?.className ? " " + titleProps.className : "")
-          }
-        />
-        {tagline2 && (
-          <Tagline
-            {...{ ...sdn.tagline2, ...tagline2 }}
-            className={
-              "sdn-tagline-57ug71iC" +
-              (tagline2?.className ? " " + tagline2.className : "")
-            }
-          />
-        )}
-        <Description
-          {...{ ...sdn.description, ...description }}
-          className={
-            "sdn-description-8Y5lFu0w" +
-            (description?.className ? " " + description.className : "")
-          }
-        />
+        <Title {...titlePropsProps} />
+        {tagline2 && <Tagline {...tagline2Props} />}
+        <Description {...descriptionProps} />
       </Frame>
       <ButtonBar
-        {...{ ...sdn.buttonBar, ...buttonBar }}
-        className={
-          "sdn-buttonBar-MMcNZdBT" +
-          (buttonBar?.className ? " " + buttonBar.className : "")
-        }
-        button={{
-          ...sdn.button2,
-          ...button2,
-          className:
-            "sdn-button-JnRIw2cY" +
-            (button2?.className ? " " + button2.className : ""),
-        }}
-        icon={{
-          ...sdn.icon2,
-          ...icon2,
-          className:
-            "sdn-icon-1ihZT8Ll" +
-            (icon2?.className ? " " + icon2.className : ""),
-        }}
-        label={{
-          ...sdn.label2,
-          ...label2,
-          className:
-            "sdn-label-1R07j0Td" +
-            (label2?.className ? " " + label2.className : ""),
-        }}
-        button2={{
-          ...sdn.button3,
-          ...button3,
-          className:
-            "sdn-button-3D4pvOBS" +
-            (button3?.className ? " " + button3.className : ""),
-        }}
-        icon2={{
-          ...sdn.icon3,
-          ...icon3,
-          className:
-            "sdn-icon-1ihZT8Ll" +
-            (icon3?.className ? " " + icon3.className : ""),
-        }}
-        label2={{
-          ...sdn.label3,
-          ...label3,
-          className:
-            "sdn-label-1R07j0Td" +
-            (label3?.className ? " " + label3.className : ""),
-        }}
-        button3={{
-          ...sdn.button4,
-          ...button4,
-          className:
-            "sdn-button-3D4pvOBS" +
-            (button4?.className ? " " + button4.className : ""),
-        }}
-        icon3={{
-          ...sdn.icon4,
-          ...icon4,
-          className:
-            "sdn-icon-1ihZT8Ll" +
-            (icon4?.className ? " " + icon4.className : ""),
-        }}
-        label3={{
-          ...sdn.label4,
-          ...label4,
-          className:
-            "sdn-label-1R07j0Td" +
-            (label4?.className ? " " + label4.className : ""),
-        }}
+        {...buttonBarProps}
+        button={button2Props}
+        icon={icon2Props}
+        label={label2Props}
+        button2={button3Props}
+        icon2={icon3Props}
+        label2={label3Props}
+        button3={button4Props}
+        icon3={icon4Props}
+        label3={label4Props}
       />
     </Frame>
   )

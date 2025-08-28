@@ -17,6 +17,7 @@ import { Frame } from "../frames/Frame"
 import { Description, DescriptionProps } from "../primitives/Description"
 import { Tagline, TaglineProps } from "../primitives/Tagline"
 import { Title, TitleProps } from "../primitives/Title"
+import { combineClassNames } from "../utils/classNames"
 
 export interface TextblockDetailsProps extends HTMLAttributes<HTMLElement> {
   className?: string
@@ -50,29 +51,34 @@ export function TextblockDetails({
   description = sdn.description,
   ...props
 }: TextblockDetailsProps) {
+  const frameClassName = combineClassNames("sdn-textblockDetails", className)
+  const taglineProps = {
+    ...sdn.tagline,
+    ...tagline,
+    className: combineClassNames(sdn.tagline?.className, tagline?.className),
+  }
+  const titlePropsProps = {
+    ...sdn.titleProps,
+    ...titleProps,
+    className: combineClassNames(
+      sdn.titleProps?.className,
+      titleProps?.className,
+    ),
+  }
+  const descriptionProps = {
+    ...sdn.description,
+    ...description,
+    className: combineClassNames(
+      sdn.description?.className,
+      description?.className,
+    ),
+  }
+
   return (
-    <Frame className={"sdn-textblockDetails " + className} {...props}>
-      <Tagline
-        {...{ ...sdn.tagline, ...tagline }}
-        className={
-          "sdn-tagline-57ug71iC" +
-          (tagline?.className ? " " + tagline.className : "")
-        }
-      />
-      <Title
-        {...{ ...sdn.titleProps, ...titleProps }}
-        className={
-          "sdn-title-83oQ44Bx" +
-          (titleProps?.className ? " " + titleProps.className : "")
-        }
-      />
-      <Description
-        {...{ ...sdn.description, ...description }}
-        className={
-          "sdn-description-8Y5lFu0w" +
-          (description?.className ? " " + description.className : "")
-        }
-      />
+    <Frame className={frameClassName} {...props}>
+      <Tagline {...taglineProps} />
+      <Title {...titlePropsProps} />
+      <Description {...descriptionProps} />
     </Frame>
   )
 }
