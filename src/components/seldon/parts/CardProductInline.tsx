@@ -286,104 +286,70 @@ export function CardProductInline({
 }
 
 const sdn: CardProductInlineProps = {
-  button: {
-    className: "sdn-button-PZ55a4By",
-  },
+  button: {},
   icon: {
     icon: "material-bolt",
-    className: "sdn-icon-1ihZT8Ll",
   },
   label: {
     children: "Special",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
   },
-  textblockDetails: {
-    className: "sdn-textblockDetails-jRyRpai8",
-  },
-  button2: {
-    className: "sdn-button-3D4pvOBS",
-  },
+  textblockDetails: {},
+  button2: {},
   icon2: {
     icon: "material-arrowDownward",
-    className: "sdn-icon-1ihZT8Ll",
   },
   label2: {
     children: "Inline A",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
   },
-  button3: {
-    className: "sdn-button-3D4pvOBS",
-  },
+  button3: {},
   icon3: {
     icon: "material-addChart",
-    className: "sdn-icon-1ihZT8Ll",
   },
   label3: {
     children: "Inline B",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
   },
   tagline: {
     children: "Inline Tagline",
     htmlElement: "p",
-    className: "sdn-tagline-57ug71iC",
   },
   titleProps: {
     children: "Inline Card Title",
     htmlElement: "h4",
-    className: "sdn-title-83oQ44Bx",
   },
-  buttonBar: {
-    className: "sdn-buttonBar-MMcNZdBT",
-  },
-  button4: {
-    className: "sdn-button-4o13hVru",
-  },
+  buttonBar: {},
+  button4: {},
   icon4: {
     icon: "material-addComment",
-    className: "sdn-icon-1ihZT8Ll",
   },
   label4: {
     children: "Button A",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
   },
-  button5: {
-    className: "sdn-button-OPNTxNTH",
-  },
+  button5: {},
   icon5: {
     icon: "material-addLocation",
-    className: "sdn-icon-1ihZT8Ll",
   },
   label5: {
     children: "Button B",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
   },
-  button6: {
-    className: "sdn-button-3D4pvOBS",
-  },
+  button6: {},
   icon6: {
     icon: "material-accountCircle",
-    className: "sdn-icon-1ihZT8Ll",
   },
   label6: {
     children: "Button C",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
   },
-  button7: {
-    className: "sdn-button-3D4pvOBS",
-  },
+  button7: {},
   icon7: {
     icon: "material-addBox",
-    className: "sdn-icon-1ihZT8Ll",
   },
   label7: {
     children: "Button D",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
   },
 }

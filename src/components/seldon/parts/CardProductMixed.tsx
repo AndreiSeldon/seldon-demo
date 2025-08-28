@@ -233,78 +233,54 @@ export function CardProductMixed({
 }
 
 const sdn: CardProductMixedProps = {
-  textblockDetails: {
-    className: "sdn-textblockDetails-XKYdln17",
-  },
+  textblockDetails: {},
   tagline: {
     children: "Mixed Tagline",
     htmlElement: "p",
-    className: "sdn-tagline-57ug71iC",
   },
-  button: {
-    className: "sdn-button-3D4pvOBS",
-  },
+  button: {},
   icon: {
     icon: "material-addCircle",
-    className: "sdn-icon-1ihZT8Ll",
   },
   label: {
     children: "Mixed",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
   },
   titleProps: {
     children: "Mixed Card Title",
     htmlElement: "h4",
-    className: "sdn-title-83oQ44Bx",
   },
   tagline2: {
     children: "Additional Tagline",
     htmlElement: "p",
-    className: "sdn-tagline-57ug71iC",
   },
   description: {
     children: "Special text for mixed case",
     htmlElement: "p",
-    className: "sdn-description-8Y5lFu0w",
   },
-  buttonBar: {
-    className: "sdn-buttonBar-MMcNZdBT",
-  },
-  button2: {
-    className: "sdn-button-JnRIw2cY",
-  },
+  buttonBar: {},
+  button2: {},
   icon2: {
     icon: "material-dataset",
-    className: "sdn-icon-1ihZT8Ll",
   },
   label2: {
     children: "Mixed X",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
   },
-  button3: {
-    className: "sdn-button-3D4pvOBS",
-  },
+  button3: {},
   icon3: {
     icon: "material-cancel",
-    className: "sdn-icon-1ihZT8Ll",
   },
   label3: {
     children: "Mixed Y",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
   },
-  button4: {
-    className: "sdn-button-3D4pvOBS",
-  },
+  button4: {},
   icon4: {
     icon: "material-borderColor",
-    className: "sdn-icon-1ihZT8Ll",
   },
   label4: {
     children: "Mixed Z",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
   },
 }
