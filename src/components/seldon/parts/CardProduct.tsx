@@ -168,7 +168,7 @@ export function CardProduct({
           ...sdn.button3,
           ...button3,
           className:
-            "sdn-button-J2DfCnrP" +
+            "sdn-button-3D4pvOBS" +
             (button3?.className ? " " + button3.className : ""),
         }}
         icon3={{
@@ -182,7 +182,7 @@ export function CardProduct({
           ...sdn.label3,
           ...label3,
           className:
-            "sdn-label-2dXH0cYj" +
+            "sdn-label-1R07j0Td" +
             (label3?.className ? " " + label3.className : ""),
         }}
       />
@@ -238,7 +238,7 @@ const sdn: CardProductProps = {
     className: "sdn-label-1R07j0Td",
   },
   button3: {
-    className: "sdn-button-J2DfCnrP",
+    className: "sdn-button-3D4pvOBS",
   },
   icon3: {
     icon: "__default__",
@@ -247,6 +247,6 @@ const sdn: CardProductProps = {
   label3: {
     children: "Default 3",
     htmlElement: "label",
-    className: "sdn-label-2dXH0cYj",
+    className: "sdn-label-1R07j0Td",
   },
 }
