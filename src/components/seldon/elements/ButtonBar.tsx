@@ -132,7 +132,7 @@ const sdn: ButtonBarProps = {
   label: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
+    className: "sdn-label-cEIaSO4y",
   },
   button2: {
     className: "sdn-button-3D4pvOBS",
@@ -144,7 +144,7 @@ const sdn: ButtonBarProps = {
   label2: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
+    className: "sdn-label-Th89aGIc",
   },
   button3: {
     className: "sdn-button-3D4pvOBS",
@@ -156,6 +156,6 @@ const sdn: ButtonBarProps = {
   label3: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
+    className: "sdn-label-CWgG9JsQ",
   },
 }
