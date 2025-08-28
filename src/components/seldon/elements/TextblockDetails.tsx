@@ -17,7 +17,7 @@ import { Frame } from "../frames/Frame"
 import { Description, DescriptionProps } from "../primitives/Description"
 import { Tagline, TaglineProps } from "../primitives/Tagline"
 import { Title, TitleProps } from "../primitives/Title"
-import { combineClassNames } from "../utils/classNames"
+import { combineClassNames } from "../utils/class-name-utils"
 
 export interface TextblockDetailsProps extends HTMLAttributes<HTMLElement> {
   className?: string

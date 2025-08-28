@@ -21,7 +21,7 @@ import { Icon, IconProps } from "../primitives/Icon"
 import { Label, LabelProps } from "../primitives/Label"
 import { Tagline, TaglineProps } from "../primitives/Tagline"
 import { Title, TitleProps } from "../primitives/Title"
-import { combineClassNames } from "../utils/classNames"
+import { combineClassNames } from "../utils/class-name-utils"
 
 export interface CardProductInlineProps extends HTMLAttributes<HTMLElement> {
   className?: string
