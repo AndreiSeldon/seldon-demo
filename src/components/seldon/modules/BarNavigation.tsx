@@ -83,7 +83,7 @@ export function BarNavigation({
       <Button
         {...{ ...sdn.button, ...button }}
         className={
-          "sdn-button-PxYh739i" +
+          "sdn-button-4L86kr5w" +
           (button?.className ? " " + button.className : "")
         }
         icon={{
@@ -103,7 +103,7 @@ export function BarNavigation({
       <Button
         {...{ ...sdn.button2, ...button2 }}
         className={
-          "sdn-button-G8vyYXTc" +
+          "sdn-button-4L86kr5w" +
           (button2?.className ? " " + button2.className : "")
         }
         icon={{
@@ -124,7 +124,7 @@ export function BarNavigation({
       <Button
         {...{ ...sdn.button3, ...button3 }}
         className={
-          "sdn-button-ZZC9Eo5L" +
+          "sdn-button-4L86kr5w" +
           (button3?.className ? " " + button3.className : "")
         }
         icon={{
@@ -145,7 +145,7 @@ export function BarNavigation({
       <Button
         {...{ ...sdn.button4, ...button4 }}
         className={
-          "sdn-button-Ylb7nvPP" +
+          "sdn-button-4L86kr5w" +
           (button4?.className ? " " + button4.className : "")
         }
         icon={{
@@ -166,7 +166,7 @@ export function BarNavigation({
       <Button
         {...{ ...sdn.button5, ...button5 }}
         className={
-          "sdn-button-WeyRS2on" +
+          "sdn-button-4L86kr5w" +
           (button5?.className ? " " + button5.className : "")
         }
         icon={{
@@ -190,7 +190,7 @@ export function BarNavigation({
 
 const sdn: BarNavigationProps = {
   button: {
-    className: "sdn-button-PxYh739i",
+    className: "sdn-button-4L86kr5w",
   },
   icon: {
     icon: "seldon-component",
@@ -202,7 +202,7 @@ const sdn: BarNavigationProps = {
     className: "sdn-label-00aBAay1",
   },
   button2: {
-    className: "sdn-button-G8vyYXTc",
+    className: "sdn-button-4L86kr5w",
   },
   icon2: {
     icon: "seldon-image",
@@ -214,7 +214,7 @@ const sdn: BarNavigationProps = {
     className: "sdn-label-00aBAay1",
   },
   button3: {
-    className: "sdn-button-ZZC9Eo5L",
+    className: "sdn-button-4L86kr5w",
   },
   icon3: {
     icon: "material-accountCircle",
@@ -226,7 +226,7 @@ const sdn: BarNavigationProps = {
     className: "sdn-label-00aBAay1",
   },
   button4: {
-    className: "sdn-button-Ylb7nvPP",
+    className: "sdn-button-4L86kr5w",
   },
   icon4: {
     icon: "seldon-frameColumns",
@@ -238,7 +238,7 @@ const sdn: BarNavigationProps = {
     className: "sdn-label-00aBAay1",
   },
   button5: {
-    className: "sdn-button-WeyRS2on",
+    className: "sdn-button-4L86kr5w",
   },
   icon5: {
     icon: "seldon-input",

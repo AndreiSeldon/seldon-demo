@@ -69,7 +69,7 @@ export function ButtonBar({
       <Button
         {...{ ...sdn.button, ...button }}
         className={
-          "sdn-button-U1rpy2gN" +
+          "sdn-button-3D4pvOBS" +
           (button?.className ? " " + button.className : "")
         }
         icon={{
@@ -89,7 +89,7 @@ export function ButtonBar({
       <Button
         {...{ ...sdn.button2, ...button2 }}
         className={
-          "sdn-button-7k7U4i3x" +
+          "sdn-button-3D4pvOBS" +
           (button2?.className ? " " + button2.className : "")
         }
         icon={{
@@ -110,7 +110,7 @@ export function ButtonBar({
       <Button
         {...{ ...sdn.button3, ...button3 }}
         className={
-          "sdn-button-fugpTcqJ" +
+          "sdn-button-3D4pvOBS" +
           (button3?.className ? " " + button3.className : "")
         }
         icon={{
@@ -134,7 +134,7 @@ export function ButtonBar({
 
 const sdn: ButtonBarProps = {
   button: {
-    className: "sdn-button-U1rpy2gN",
+    className: "sdn-button-3D4pvOBS",
   },
   icon: {
     icon: "__default__",
@@ -146,7 +146,7 @@ const sdn: ButtonBarProps = {
     className: "sdn-label-1R07j0Td",
   },
   button2: {
-    className: "sdn-button-7k7U4i3x",
+    className: "sdn-button-3D4pvOBS",
   },
   icon2: {
     icon: "__default__",
@@ -158,7 +158,7 @@ const sdn: ButtonBarProps = {
     className: "sdn-label-1R07j0Td",
   },
   button3: {
-    className: "sdn-button-fugpTcqJ",
+    className: "sdn-button-3D4pvOBS",
   },
   icon3: {
     icon: "__default__",
