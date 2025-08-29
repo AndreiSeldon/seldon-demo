@@ -168,7 +168,7 @@ export function CardProduct({
           ...sdn.button3,
           ...button3,
           className:
-            "sdn-button-3D4pvOBS" +
+            "sdn-button-P6RA6Ykr" +
             (button3?.className ? " " + button3.className : ""),
         }}
         icon3={{
@@ -238,7 +238,7 @@ const sdn: CardProductProps = {
     className: "sdn-label-1R07j0Td",
   },
   button3: {
-    className: "sdn-button-3D4pvOBS",
+    className: "sdn-button-P6RA6Ykr",
   },
   icon3: {
     icon: "__default__",

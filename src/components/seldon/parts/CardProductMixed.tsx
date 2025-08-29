@@ -115,7 +115,7 @@ export function CardProductMixed({
           <Button
             {...{ ...sdn.button, ...button }}
             className={
-              "sdn-button-3D4pvOBS" +
+              "sdn-button-nxqwzA8x" +
               (button?.className ? " " + button.className : "")
             }
             icon={{
@@ -189,7 +189,7 @@ export function CardProductMixed({
           ...sdn.button3,
           ...button3,
           className:
-            "sdn-button-3D4pvOBS" +
+            "sdn-button-gGjRwMix" +
             (button3?.className ? " " + button3.className : ""),
         }}
         icon2={{
@@ -210,7 +210,7 @@ export function CardProductMixed({
           ...sdn.button4,
           ...button4,
           className:
-            "sdn-button-3D4pvOBS" +
+            "sdn-button-w9crQPqN" +
             (button4?.className ? " " + button4.className : ""),
         }}
         icon3={{
@@ -242,7 +242,7 @@ const sdn: CardProductMixedProps = {
     className: "sdn-tagline-57ug71iC",
   },
   button: {
-    className: "sdn-button-3D4pvOBS",
+    className: "sdn-button-nxqwzA8x",
   },
   icon: {
     icon: "material-addCircle",
@@ -284,7 +284,7 @@ const sdn: CardProductMixedProps = {
     className: "sdn-label-1R07j0Td",
   },
   button3: {
-    className: "sdn-button-3D4pvOBS",
+    className: "sdn-button-gGjRwMix",
   },
   icon3: {
     icon: "material-cancel",
@@ -296,7 +296,7 @@ const sdn: CardProductMixedProps = {
     className: "sdn-label-1R07j0Td",
   },
   button4: {
-    className: "sdn-button-3D4pvOBS",
+    className: "sdn-button-w9crQPqN",
   },
   icon4: {
     icon: "material-borderColor",

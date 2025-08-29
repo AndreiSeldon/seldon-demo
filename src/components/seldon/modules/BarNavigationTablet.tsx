@@ -86,7 +86,7 @@ export function BarNavigationTablet({
       <Button
         {...{ ...sdn.button, ...button }}
         className={
-          "sdn-button-1Tl24Q4e" +
+          "sdn-button-c9CiHQLp" +
           (button?.className ? " " + button.className : "")
         }
         icon={{
@@ -106,7 +106,7 @@ export function BarNavigationTablet({
       <Button
         {...{ ...sdn.button2, ...button2 }}
         className={
-          "sdn-button-1Tl24Q4e" +
+          "sdn-button-yTTs1aUM" +
           (button2?.className ? " " + button2.className : "")
         }
         icon={{
@@ -127,7 +127,7 @@ export function BarNavigationTablet({
       <Button
         {...{ ...sdn.button3, ...button3 }}
         className={
-          "sdn-button-1Tl24Q4e" +
+          "sdn-button-Bla1UhHC" +
           (button3?.className ? " " + button3.className : "")
         }
         icon={{
@@ -169,7 +169,7 @@ export function BarNavigationTablet({
       <Button
         {...{ ...sdn.button5, ...button5 }}
         className={
-          "sdn-button-1Tl24Q4e" +
+          "sdn-button-wHuA7R5G" +
           (button5?.className ? " " + button5.className : "")
         }
         icon={{
@@ -193,7 +193,7 @@ export function BarNavigationTablet({
 
 const sdn: BarNavigationTabletProps = {
   button: {
-    className: "sdn-button-1Tl24Q4e",
+    className: "sdn-button-c9CiHQLp",
   },
   icon: {
     icon: "seldon-component",
@@ -205,7 +205,7 @@ const sdn: BarNavigationTabletProps = {
     className: "sdn-label-00aBAay1",
   },
   button2: {
-    className: "sdn-button-1Tl24Q4e",
+    className: "sdn-button-yTTs1aUM",
   },
   icon2: {
     icon: "seldon-image",
@@ -217,7 +217,7 @@ const sdn: BarNavigationTabletProps = {
     className: "sdn-label-00aBAay1",
   },
   button3: {
-    className: "sdn-button-1Tl24Q4e",
+    className: "sdn-button-Bla1UhHC",
   },
   icon3: {
     icon: "material-accountCircle",
@@ -241,7 +241,7 @@ const sdn: BarNavigationTabletProps = {
     className: "sdn-label-00aBAay1",
   },
   button5: {
-    className: "sdn-button-1Tl24Q4e",
+    className: "sdn-button-wHuA7R5G",
   },
   icon5: {
     icon: "seldon-input",
