@@ -354,7 +354,7 @@ html {
 }
 
 .sdn-barNavigation {
-  background-color: hsl(197 12% 56%);
+  background-color: hsl(197 100% 63%);
   flex-wrap: nowrap;
   display: flex;
   flex-direction: row;
@@ -429,6 +429,38 @@ html {
   gap: 1rem;
   width: fit-content;
   top: 0px;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  padding: 0.5rem;
+  border-color: hsl(197 12% 77%);
+}
+
+.sdn-barNavigation-UHcxIcbs {
+  background-color: hsl(352 100% 63%);
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  padding: 0.5rem;
+  border-color: hsl(197 12% 77%);
+}
+
+.sdn-barNavigation-yAQPDoP0 {
+  background-color: hsl(42 100% 63%);
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  right: 0px;
   bottom: 0px;
   left: 0px;
   position: absolute;
@@ -634,6 +666,16 @@ html {
 
 .sdn-icon-1ihZT8Ll {
   font-size: 0.8rem;
+  color: hsl(0 0% 100%);
+}
+
+.sdn-icon-quwG9edJ {
+  font-size: 1rem;
+  color: hsl(0 0% 100%);
+}
+
+.sdn-icon-Rl3DrbNg {
+  font-size: 1.501rem;
   color: hsl(0 0% 100%);
 }
 
