@@ -122,7 +122,7 @@ export function CardProductMixed({
               ...sdn.icon,
               ...icon,
               className:
-                "sdn-icon-1ihZT8Ll" +
+                "sdn-icon-1OIuOePg" +
                 (icon?.className ? " " + icon.className : ""),
             }}
             label={{
@@ -175,7 +175,7 @@ export function CardProductMixed({
           ...sdn.icon2,
           ...icon2,
           className:
-            "sdn-icon-1ihZT8Ll" +
+            "sdn-icon-1OIuOePg" +
             (icon2?.className ? " " + icon2.className : ""),
         }}
         label={{
@@ -196,7 +196,7 @@ export function CardProductMixed({
           ...sdn.icon3,
           ...icon3,
           className:
-            "sdn-icon-1ihZT8Ll" +
+            "sdn-icon-1OIuOePg" +
             (icon3?.className ? " " + icon3.className : ""),
         }}
         label2={{
@@ -217,7 +217,7 @@ export function CardProductMixed({
           ...sdn.icon4,
           ...icon4,
           className:
-            "sdn-icon-1ihZT8Ll" +
+            "sdn-icon-1OIuOePg" +
             (icon4?.className ? " " + icon4.className : ""),
         }}
         label3={{
@@ -246,7 +246,7 @@ const sdn: CardProductMixedProps = {
   },
   icon: {
     icon: "material-addCircle",
-    className: "sdn-icon-1ihZT8Ll",
+    className: "sdn-icon-1OIuOePg",
   },
   label: {
     children: "Mixed",
@@ -276,7 +276,7 @@ const sdn: CardProductMixedProps = {
   },
   icon2: {
     icon: "material-dataset",
-    className: "sdn-icon-1ihZT8Ll",
+    className: "sdn-icon-1OIuOePg",
   },
   label2: {
     children: "Mixed X",
@@ -288,7 +288,7 @@ const sdn: CardProductMixedProps = {
   },
   icon3: {
     icon: "material-cancel",
-    className: "sdn-icon-1ihZT8Ll",
+    className: "sdn-icon-1OIuOePg",
   },
   label3: {
     children: "Mixed Y",
@@ -300,7 +300,7 @@ const sdn: CardProductMixedProps = {
   },
   icon4: {
     icon: "material-borderColor",
-    className: "sdn-icon-1ihZT8Ll",
+    className: "sdn-icon-1OIuOePg",
   },
   label4: {
     children: "Mixed Z",

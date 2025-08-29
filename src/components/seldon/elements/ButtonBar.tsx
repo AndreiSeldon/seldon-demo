@@ -76,7 +76,7 @@ export function ButtonBar({
           ...sdn.icon,
           ...icon,
           className:
-            "sdn-icon-1ihZT8Ll" + (icon?.className ? " " + icon.className : ""),
+            "sdn-icon-1OIuOePg" + (icon?.className ? " " + icon.className : ""),
         }}
         label={{
           ...sdn.label,
@@ -96,7 +96,7 @@ export function ButtonBar({
           ...sdn.icon2,
           ...icon2,
           className:
-            "sdn-icon-1ihZT8Ll" +
+            "sdn-icon-1OIuOePg" +
             (icon2?.className ? " " + icon2.className : ""),
         }}
         label={{
@@ -117,7 +117,7 @@ export function ButtonBar({
           ...sdn.icon3,
           ...icon3,
           className:
-            "sdn-icon-1ihZT8Ll" +
+            "sdn-icon-1OIuOePg" +
             (icon3?.className ? " " + icon3.className : ""),
         }}
         label={{
@@ -138,7 +138,7 @@ const sdn: ButtonBarProps = {
   },
   icon: {
     icon: "__default__",
-    className: "sdn-icon-1ihZT8Ll",
+    className: "sdn-icon-1OIuOePg",
   },
   label: {
     children: "Label",
@@ -150,7 +150,7 @@ const sdn: ButtonBarProps = {
   },
   icon2: {
     icon: "__default__",
-    className: "sdn-icon-1ihZT8Ll",
+    className: "sdn-icon-1OIuOePg",
   },
   label2: {
     children: "Label",
@@ -162,7 +162,7 @@ const sdn: ButtonBarProps = {
   },
   icon3: {
     icon: "__default__",
-    className: "sdn-icon-1ihZT8Ll",
+    className: "sdn-icon-1OIuOePg",
   },
   label3: {
     children: "Label",

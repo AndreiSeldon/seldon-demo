@@ -93,13 +93,13 @@ export function BarNavigationMobile({
           ...sdn.icon,
           ...icon,
           className:
-            "sdn-icon-1ihZT8Ll" + (icon?.className ? " " + icon.className : ""),
+            "sdn-icon-1OIuOePg" + (icon?.className ? " " + icon.className : ""),
         }}
         label={{
           ...sdn.label,
           ...label,
           className:
-            "sdn-label-1WuqrUuH" +
+            "sdn-label-00aBAay1" +
             (label?.className ? " " + label.className : ""),
         }}
       />
@@ -113,14 +113,14 @@ export function BarNavigationMobile({
           ...sdn.icon2,
           ...icon2,
           className:
-            "sdn-icon-1ihZT8Ll" +
+            "sdn-icon-1OIuOePg" +
             (icon2?.className ? " " + icon2.className : ""),
         }}
         label={{
           ...sdn.label2,
           ...label2,
           className:
-            "sdn-label-1WuqrUuH" +
+            "sdn-label-00aBAay1" +
             (label2?.className ? " " + label2.className : ""),
         }}
       />
@@ -134,14 +134,14 @@ export function BarNavigationMobile({
           ...sdn.icon3,
           ...icon3,
           className:
-            "sdn-icon-1ihZT8Ll" +
+            "sdn-icon-1OIuOePg" +
             (icon3?.className ? " " + icon3.className : ""),
         }}
         label={{
           ...sdn.label3,
           ...label3,
           className:
-            "sdn-label-1WuqrUuH" +
+            "sdn-label-00aBAay1" +
             (label3?.className ? " " + label3.className : ""),
         }}
       />
@@ -155,14 +155,14 @@ export function BarNavigationMobile({
           ...sdn.icon4,
           ...icon4,
           className:
-            "sdn-icon-1ihZT8Ll" +
+            "sdn-icon-1OIuOePg" +
             (icon4?.className ? " " + icon4.className : ""),
         }}
         label={{
           ...sdn.label4,
           ...label4,
           className:
-            "sdn-label-1WuqrUuH" +
+            "sdn-label-00aBAay1" +
             (label4?.className ? " " + label4.className : ""),
         }}
       />
@@ -176,14 +176,14 @@ export function BarNavigationMobile({
           ...sdn.icon5,
           ...icon5,
           className:
-            "sdn-icon-1ihZT8Ll" +
+            "sdn-icon-1OIuOePg" +
             (icon5?.className ? " " + icon5.className : ""),
         }}
         label={{
           ...sdn.label5,
           ...label5,
           className:
-            "sdn-label-1WuqrUuH" +
+            "sdn-label-00aBAay1" +
             (label5?.className ? " " + label5.className : ""),
         }}
       />
@@ -197,59 +197,59 @@ const sdn: BarNavigationMobileProps = {
   },
   icon: {
     icon: "seldon-component",
-    className: "sdn-icon-1ihZT8Ll",
+    className: "sdn-icon-1OIuOePg",
   },
   label: {
     children: "General",
     htmlElement: "label",
-    className: "sdn-label-1WuqrUuH",
+    className: "sdn-label-00aBAay1",
   },
   button2: {
     className: "sdn-button-H2MS2kSo",
   },
   icon2: {
     icon: "seldon-image",
-    className: "sdn-icon-1ihZT8Ll",
+    className: "sdn-icon-1OIuOePg",
   },
   label2: {
     children: "Cards",
     htmlElement: "label",
-    className: "sdn-label-1WuqrUuH",
+    className: "sdn-label-00aBAay1",
   },
   button3: {
     className: "sdn-button-H2MS2kSo",
   },
   icon3: {
     icon: "material-accountCircle",
-    className: "sdn-icon-1ihZT8Ll",
+    className: "sdn-icon-1OIuOePg",
   },
   label3: {
     children: "Avatars",
     htmlElement: "label",
-    className: "sdn-label-1WuqrUuH",
+    className: "sdn-label-00aBAay1",
   },
   button4: {
     className: "sdn-button-H2MS2kSo",
   },
   icon4: {
     icon: "seldon-frameColumns",
-    className: "sdn-icon-1ihZT8Ll",
+    className: "sdn-icon-1OIuOePg",
   },
   label4: {
     children: "Calendars",
     htmlElement: "label",
-    className: "sdn-label-1WuqrUuH",
+    className: "sdn-label-00aBAay1",
   },
   button5: {
     className: "sdn-button-H2MS2kSo",
   },
   icon5: {
     icon: "seldon-input",
-    className: "sdn-icon-1ihZT8Ll",
+    className: "sdn-icon-1OIuOePg",
   },
   label5: {
     children: "Forms",
     htmlElement: "label",
-    className: "sdn-label-1WuqrUuH",
+    className: "sdn-label-00aBAay1",
   },
 }

@@ -34,20 +34,20 @@ export interface IconProps extends SVGAttributes<SVGElement> {
   className?: string
   icon?:
     | "__default__"
-    | "seldon-component"
     | "seldon-input"
+    | "seldon-image"
+    | "seldon-component"
     | "material-addCircle"
     | "material-cancel"
+    | "seldon-frameColumns"
     | "material-arrowDownward"
     | "material-borderColor"
     | "material-dataset"
-    | "seldon-image"
     | "material-accountCircle"
     | "material-addChart"
     | "material-addLocation"
     | "material-addBox"
     | "material-bolt"
-    | "seldon-frameColumns"
     | "material-addComment"
 }
 
@@ -81,19 +81,19 @@ export function Icon({
 }
 const iconMap = {
   __default__: IconDefault,
-  "seldon-component": IconSeldonComponent,
   "seldon-input": IconSeldonInput,
+  "seldon-image": IconSeldonImage,
+  "seldon-component": IconSeldonComponent,
   "material-addCircle": IconMaterialAddCircle,
   "material-cancel": IconMaterialCancel,
+  "seldon-frameColumns": IconSeldonFrameColumns,
   "material-arrowDownward": IconMaterialArrowDownward,
   "material-borderColor": IconMaterialBorderColor,
   "material-dataset": IconMaterialDataset,
-  "seldon-image": IconSeldonImage,
   "material-accountCircle": IconMaterialAccountCircle,
   "material-addChart": IconMaterialAddChart,
   "material-addLocation": IconMaterialAddLocation,
   "material-addBox": IconMaterialAddBox,
   "material-bolt": IconMaterialBolt,
-  "seldon-frameColumns": IconSeldonFrameColumns,
   "material-addComment": IconMaterialAddComment,
 }

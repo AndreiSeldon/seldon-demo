@@ -478,23 +478,8 @@ html {
   gap: 0.5rem;
   width: fit-content;
   height: fit-content;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 99999px;
-  border: 0.125rem solid hsl(0 0% 0%);
-}
-
-.sdn-button-qPLMMLM3 {
-  background-color: hsl(0 0% 0%);
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  width: fit-content;
-  height: fit-content;
-  padding: 1rem;
-  border-radius: 0.25rem;
   border: 0.125rem solid hsl(0 0% 0%);
 }
 
@@ -515,7 +500,7 @@ html {
   border: var(--hairline) solid hsl(0 0% 0%);
 }
 
-.sdn-button-c9CiHQLp {
+.sdn-button-1Tl24Q4e {
   background-color: transparent;
   cursor: pointer;
   display: flex;
@@ -530,7 +515,7 @@ html {
   border: 0.125rem solid transparent;
 }
 
-.sdn-button-G8vyYXTc {
+.sdn-button-4L86kr5w {
   background-color: transparent;
   cursor: pointer;
   display: flex;
@@ -589,22 +574,6 @@ html {
   width: fit-content;
   height: fit-content;
   margin: 1rem;
-}
-
-.sdn-label-1R07j0Td {
-  color: hsl(0 0% 100%);
-  width: fit-content;
-  height: fit-content;
-  font-family: Inter;
-  font-style: normal;
-  font-synthesis-style: none;
-  font-weight: 500;
-  font-size: 0.8rem;
-  line-height: 1.15;
-  letter-spacing: 0.1px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 .sdn-textblockDetails-jRyRpai8 {
@@ -740,12 +709,12 @@ html {
   white-space: normal;
 }
 
-.sdn-icon-1ihZT8Ll {
+.sdn-icon-1OIuOePg {
   font-size: 0.8rem;
   color: hsl(0 0% 100%);
 }
 
-.sdn-label-1WuqrUuH {
+.sdn-label-00aBAay1 {
   color: hsl(0 0% 100%);
   width: fit-content;
   height: fit-content;
@@ -798,6 +767,22 @@ html {
   line-clamp: 2;
   webkit-box-orient: vertical;
   box-orient: vertical;
+}
+
+.sdn-label-1R07j0Td {
+  color: hsl(0 0% 100%);
+  width: fit-content;
+  height: fit-content;
+  font-family: Inter;
+  font-style: normal;
+  font-synthesis-style: none;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.15;
+  letter-spacing: 0.1px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 /* Theme Variables */

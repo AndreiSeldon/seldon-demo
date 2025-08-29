@@ -51,7 +51,7 @@ export function ButtonIconic({
       <Icon
         {...{ ...sdn.icon, ...icon }}
         className={
-          "sdn-icon-1ihZT8Ll" + (icon?.className ? " " + icon.className : "")
+          "sdn-icon-1OIuOePg" + (icon?.className ? " " + icon.className : "")
         }
       />
     </HTMLButton>
@@ -61,6 +61,6 @@ export function ButtonIconic({
 const sdn: ButtonIconicProps = {
   icon: {
     icon: "__default__",
-    className: "sdn-icon-1ihZT8Ll",
+    className: "sdn-icon-1OIuOePg",
   },
 }
