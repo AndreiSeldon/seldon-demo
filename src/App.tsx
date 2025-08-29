@@ -5,6 +5,7 @@ import { useMediaQuery } from "react-responsive";
 import "./App.css";
 import "./components/seldon/styles.css";
 import { BarNavigation } from "./components/seldon/modules/BarNavigation";
+import { BarNavigationDesktop } from "./components/seldon/modules/BarNavigationDesktop";
 import { CardProduct } from "./components/seldon/parts/CardProduct";
 import { CardProductInline } from "./components/seldon/parts/CardProductInline";
 import { CardProductMixed } from "./components/seldon/parts/CardProductMixed";
@@ -12,10 +13,10 @@ import { ButtonBar } from "./components/seldon/elements/ButtonBar";
 import { Title } from "./components/seldon/primitives/Title";
 import { Fonts } from "./components/seldon/Fonts";
 
-function Screen1() {
+function Screen1({ screenStyle }: { screenStyle: React.CSSProperties }) {
   return (
     <div
-      style={{ padding: 20, gap: 20, display: "flex", flexDirection: "column" }}
+      style={{ padding: 20, gap: 20, display: "flex", flexDirection: "column", ...screenStyle }}
     >
       <h2>Screen 1 - General Components</h2>
       {/* Default components with default theme */}
@@ -36,10 +37,10 @@ function Screen1() {
     </div>
   );
 }
-function Screen2() {
+function Screen2({ screenStyle }: { screenStyle: React.CSSProperties }) {
   return (
     <div
-      style={{ padding: 20, gap: 20, display: "flex", flexDirection: "column" }}
+      style={{ padding: 20, gap: 20, display: "flex", flexDirection: "column", ...screenStyle }}
     >
       <h2>Screen 2 - Product Cards</h2>
       {/* Default CardProduct */}
@@ -60,33 +61,6 @@ function Screen2() {
         icon3={{ icon: "material-addLocation" }}
       />
 
-      {/* Default Inline Variant */}
-      <CardProductInline
-        tagline={{}}
-        titleProps={{}}
-        button={{}}
-        label={{}}
-        icon={{}}
-        button2={{}}
-        label2={{}}
-        icon2={{}}
-        button3={{}}
-        label3={{}}
-        icon3={{}}
-        button4={{}}
-        label4={{}}
-        icon4={{}}
-        button5={{}}
-        label5={{}}
-        icon5={{}}
-        button6={{}}
-        label6={{}}
-        icon6={{}}
-        button7={{}}
-        label7={{}}
-        icon7={{}}
-      />
-
       {/* Customized Inline Variant */}
       <CardProductInline
         style={{ marginTop: 20, width: 500 }}
@@ -103,26 +77,6 @@ function Screen2() {
         icon5={{ icon: "material-addLocation" }}
       />
 
-      {/* Default Mixed Variant */}
-      <CardProductMixed
-        tagline={{}}
-        titleProps={{}}
-        tagline2={{}}
-        description={{}}
-        button={{}}
-        label={{}}
-        icon={{}}
-        button2={{}}
-        label2={{}}
-        icon2={{}}
-        button3={{}}
-        label3={{}}
-        icon3={{}}
-        button4={{}}
-        label4={{}}
-        icon4={{}}
-      />
-
       {/* Customized Mixed Variant */}
       <CardProductMixed
         style={{ marginTop: 20, width: 500 }}
@@ -137,14 +91,14 @@ function Screen2() {
     </div>
   );
 }
-function Screen3() {
-  return <div style={{ padding: 20 }}>Screen 3</div>;
+function Screen3({ screenStyle }: { screenStyle: React.CSSProperties }) {
+  return <div style={{ padding: 20, ...screenStyle }}>Screen 3</div>;
 }
-function Screen4() {
-  return <div style={{ padding: 20 }}>Screen 4</div>;
+function Screen4({ screenStyle }: { screenStyle: React.CSSProperties }) {
+  return <div style={{ padding: 20, ...screenStyle }}>Screen 4</div>;
 }
-function Screen5() {
-  return <div style={{ padding: 20 }}>Screen 5</div>;
+function Screen5({ screenStyle }: { screenStyle: React.CSSProperties }) {
+  return <div style={{ padding: 20, ...screenStyle }}>Screen 5</div>;
 }
 
 function AppWithNav() {
@@ -163,41 +117,57 @@ function AppWithNav() {
   const isActive = (path: string) => location.pathname === path;
 
   let nav;
-  nav = (
-    <BarNavigation
-      button={{
-        onClick: () => navigate("/"),
-        style: isActive("/") ? { backgroundColor: SELECTED_TAB } : undefined,
-      }}
-      button2={{
-        onClick: () => navigate("/screen2"),
-        style: isActive("/screen2") ? { backgroundColor: SELECTED_TAB } : undefined,
-      }}
-      button3={{
-        onClick: () => navigate("/screen3"),
-        style: isActive("/screen3") ? { backgroundColor: SELECTED_TAB } : undefined,
-      }}
-      button4={{
-        onClick: () => navigate("/screen4"),
-        style: isActive("/screen4") ? { backgroundColor: SELECTED_TAB } : undefined,
-      }}
-      button5={{
-        onClick: () => navigate("/screen5"),
-        style: isActive("/screen5") ? { backgroundColor: SELECTED_TAB } : undefined,
-      }}
-    />
-  );
+
+  // Define styles for each device type for screens
+  const screenStyle = mobile
+    ? { minWidth: 0, maxWidth: 600 }
+    : tablet
+    ? { minWidth: 601, maxWidth: 900 }
+    : laptop
+    ? { minWidth: 901, maxWidth: 1200 }
+    : desktop
+    ? { minWidth: 1201 }
+    : {};
+
+  const navProps = {
+    button: {
+      onClick: () => navigate("/"),
+      style: isActive("/") ? { backgroundColor: SELECTED_TAB } : undefined,
+    },
+    button2: {
+      onClick: () => navigate("/screen2"),
+      style: isActive("/screen2") ? { backgroundColor: SELECTED_TAB } : undefined,
+    },
+    button3: {
+      onClick: () => navigate("/screen3"),
+      style: isActive("/screen3") ? { backgroundColor: SELECTED_TAB } : undefined,
+    },
+    button4: {
+      onClick: () => navigate("/screen4"),
+      style: isActive("/screen4") ? { backgroundColor: SELECTED_TAB } : undefined,
+    },
+    button5: {
+      onClick: () => navigate("/screen5"),
+      style: isActive("/screen5") ? { backgroundColor: SELECTED_TAB } : undefined,
+    },
+  };
+
+  if (desktop) {
+    nav = <BarNavigationDesktop {...navProps} />;
+  } else {
+    nav = <BarNavigation {...navProps} />;
+  }
 
   return (
     <>
       <Fonts />
       {nav}
       <Routes>
-        <Route path="/" element={<Screen1 />} />
-        <Route path="/screen2" element={<Screen2 />} />
-        <Route path="/screen3" element={<Screen3 />} />
-        <Route path="/screen4" element={<Screen4 />} />
-        <Route path="/screen5" element={<Screen5 />} />
+        <Route path="/" element={<Screen1 screenStyle={screenStyle} />} />
+        <Route path="/screen2" element={<Screen2 screenStyle={screenStyle} />} />
+        <Route path="/screen3" element={<Screen3 screenStyle={screenStyle} />} />
+        <Route path="/screen4" element={<Screen4 screenStyle={screenStyle} />} />
+        <Route path="/screen5" element={<Screen5 screenStyle={screenStyle} />} />
       </Routes>
     </>
   );
