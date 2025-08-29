@@ -1,6 +1,5 @@
-
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import "./App.css";
@@ -149,75 +148,45 @@ function Screen5() {
 }
 
 function AppWithNav() {
+
   const mobile = useMediaQuery({ maxWidth: 600 });
   const tablet = useMediaQuery({ minWidth: 601, maxWidth: 900 });
   const laptop = useMediaQuery({ minWidth: 901, maxWidth: 1200 });
   const desktop = useMediaQuery({ minWidth: 1201 });
+  const general = { minWidth: 1201 };
   const navigate = useNavigate();
+  const location = useLocation();
+
+  const SELECTED_TAB = "var(--sdn-swatch-seldon-blue)";
+
+  // Helper to determine if a route is active
+  const isActive = (path: string) => location.pathname === path;
 
   let nav;
-  if (mobile) {
-    nav = (
-      <BarNavigation
-        button={{ onClick: () => navigate("/") }}
-        button2={{ onClick: () => navigate("/screen2") }}
-        button3={{ onClick: () => navigate("/screen3") }}
-        button4={{ onClick: () => navigate("/screen4") }}
-        button5={{ onClick: () => navigate("/screen5") }}
-      />
-    );
-  } else if (tablet) {
-    nav = (
-      <nav
-        style={{
-          background: "#cce",
-          padding: 16,
-          display: "flex",
-          flexDirection: "column",
-          gap: 8,
-        }}
-      >
-        <div>Tablet Navigation</div>
-        <Link to="/">Screen 1</Link>
-        <Link to="/screen2">Screen 2</Link>
-        <Link to="/screen3">Screen 3</Link>
-        <Link to="/screen4">Screen 4</Link>
-        <Link to="/screen5">Screen 5</Link>
-      </nav>
-    );
-  } else if (laptop) {
-    nav = (
-      <nav
-        style={{ background: "#cec", padding: 16, display: "flex", gap: 24 }}
-      >
-        <div>Laptop Navigation</div>
-        <Link to="/">Screen 1</Link>
-        <Link to="/screen2">Screen 2</Link>
-        <Link to="/screen3">Screen 3</Link>
-        <Link to="/screen4">Screen 4</Link>
-        <Link to="/screen5">Screen 5</Link>
-      </nav>
-    );
-  } else if (desktop) {
-    nav = (
-      <nav
-        style={{
-          background: "#ecc",
-          padding: 16,
-          display: "flex",
-          gap: 32,
-          justifyContent: "center",
-        }}
-      >
-        <div>Desktop Navigation</div>
-        <Link to="/">Screen 1</Link>
-        <Link to="/screen2">Screen 2</Link>
-        <Link to="/screen3">Screen 3</Link>
-        <Link to="/screen4">Screen 4</Link>
-        <Link to="/screen5">Screen 5</Link>
-      </nav>
-    );
-  }
+  nav = (
+    <BarNavigation
+      button={{
+        onClick: () => navigate("/"),
+        style: isActive("/") ? { backgroundColor: SELECTED_TAB } : undefined,
+      }}
+      button2={{
+        onClick: () => navigate("/screen2"),
+        style: isActive("/screen2") ? { backgroundColor: SELECTED_TAB } : undefined,
+      }}
+      button3={{
+        onClick: () => navigate("/screen3"),
+        style: isActive("/screen3") ? { backgroundColor: SELECTED_TAB } : undefined,
+      }}
+      button4={{
+        onClick: () => navigate("/screen4"),
+        style: isActive("/screen4") ? { backgroundColor: SELECTED_TAB } : undefined,
+      }}
+      button5={{
+        onClick: () => navigate("/screen5"),
+        style: isActive("/screen5") ? { backgroundColor: SELECTED_TAB } : undefined,
+      }}
+    />
+  );
 
   return (
     <>
