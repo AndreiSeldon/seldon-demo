@@ -468,6 +468,21 @@ html {
   border-color: hsl(197 12% 77%);
 }
 
+.sdn-button-qPLMMLM3 {
+  background-color: hsl(0 0% 0%);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 0.125rem solid hsl(0 0% 0%);
+}
+
 .sdn-cardProduct-0IbtAwmQ {
   background-color: hsl(0 0% 100%);
   background-image: url(https://static.seldon.app/background-default-light.jpg);
@@ -529,6 +544,22 @@ html {
   width: fit-content;
   height: fit-content;
   margin: 1rem;
+}
+
+.sdn-label-1R07j0Td {
+  color: hsl(0 0% 100%);
+  width: fit-content;
+  height: fit-content;
+  font-family: Inter;
+  font-style: normal;
+  font-synthesis-style: none;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 1.15;
+  letter-spacing: 0.1px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .sdn-textblockDetails-jRyRpai8 {
@@ -739,22 +770,6 @@ html {
   line-clamp: 2;
   webkit-box-orient: vertical;
   box-orient: vertical;
-}
-
-.sdn-label-1R07j0Td {
-  color: hsl(0 0% 100%);
-  width: fit-content;
-  height: fit-content;
-  font-family: Inter;
-  font-style: normal;
-  font-synthesis-style: none;
-  font-weight: 500;
-  font-size: 0.8rem;
-  line-height: 1.15;
-  letter-spacing: 0.1px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 /* Theme Variables */
