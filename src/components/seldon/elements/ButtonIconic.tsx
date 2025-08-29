@@ -15,6 +15,7 @@
 import { ButtonHTMLAttributes } from "react"
 import { HTMLButton } from "../native-react/HTML.Button"
 import { Icon, IconProps } from "../primitives/Icon"
+import { combineClassNames } from "../utils/class-name-utils"
 
 export interface ButtonIconicProps
   extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -43,17 +44,19 @@ export function ButtonIconic({
   icon = sdn.icon,
   ...props
 }: ButtonIconicProps) {
+  const frameClassName = combineClassNames(
+    "sdn-button sdn-button-jDaoMHTT",
+    className,
+  )
+  const iconProps = {
+    ...sdn.icon,
+    ...icon,
+    className: combineClassNames(sdn.icon?.className, icon?.className),
+  }
+
   return (
-    <HTMLButton
-      className={"sdn-button sdn-button-jDaoMHTT " + className}
-      {...props}
-    >
-      <Icon
-        {...{ ...sdn.icon, ...icon }}
-        className={
-          "sdn-icon-1OIuOePg" + (icon?.className ? " " + icon.className : "")
-        }
-      />
+    <HTMLButton className={frameClassName} {...props}>
+      <Icon {...iconProps} />
     </HTMLButton>
   )
 }
