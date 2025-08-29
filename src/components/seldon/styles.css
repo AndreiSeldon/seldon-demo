@@ -354,6 +354,7 @@ html {
 }
 
 .sdn-barNavigation {
+  background-color: hsl(197 12% 56%);
   flex-wrap: nowrap;
   display: flex;
   flex-direction: row;
@@ -364,6 +365,7 @@ html {
   height: fit-content;
   bottom: 0px;
   position: absolute;
+  padding: 0.5rem;
   border-color: hsl(197 12% 77%);
 }
 
