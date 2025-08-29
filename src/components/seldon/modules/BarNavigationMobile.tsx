@@ -13,16 +13,18 @@
  *****/
  
 import { HTMLAttributes } from "react"
-import { ButtonNav, ButtonNavProps } from "../elements/ButtonNav"
+import { ButtonIconic, ButtonIconicProps } from "../elements/ButtonIconic"
 import { Frame } from "../frames/Frame"
 import { Icon, IconProps } from "../primitives/Icon"
 
 export interface BarNavigationMobileProps extends HTMLAttributes<HTMLElement> {
   className?: string
-  buttonNav?: ButtonNavProps
+  buttonIconic?: ButtonIconicProps
   icon?: IconProps
-  buttonNav2?: ButtonNavProps
+  buttonIconic2?: ButtonIconicProps
   icon2?: IconProps
+  buttonIconic3?: ButtonIconicProps
+  icon3?: IconProps
 }
 
 /**
@@ -37,18 +39,21 @@ export interface BarNavigationMobileProps extends HTMLAttributes<HTMLElement> {
  * @example
  * ```tsx
  * <BarNavigationMobile
- *   buttonNav={() => {}}
+ *   buttonIconic={() => {}}
  *   icon="material-star"
- *   buttonNav1={() => {}}
+ *   buttonIconic1={() => {}}
+ *   buttonIconic2={() => {}}
  * />
  * ```
  */
 export function BarNavigationMobile({
   className = "",
-  buttonNav,
+  buttonIconic,
   icon,
-  buttonNav2,
+  buttonIconic2,
   icon2,
+  buttonIconic3,
+  icon3,
   ...props
 }: BarNavigationMobileProps) {
   return (
@@ -56,24 +61,34 @@ export function BarNavigationMobile({
       className={"sdn-barNavigation sdn-barNavigation-3LOEMAIz " + className}
       {...props}
     >
-      {buttonNav && (
-        <ButtonNav
-          {...{ ...sdn.buttonNav, ...buttonNav }}
+      {buttonIconic && (
+        <ButtonIconic
+          {...{ ...sdn.buttonIconic, ...buttonIconic }}
           className={
-            "sdn-button-G8vyYXTc" +
-            (buttonNav?.className ? " " + buttonNav.className : "")
+            "sdn-button-GZMXBjbU" +
+            (buttonIconic?.className ? " " + buttonIconic.className : "")
           }
           icon={{ ...sdn.icon, ...icon }}
         />
       )}
-      {buttonNav2 && (
-        <ButtonNav
-          {...{ ...sdn.buttonNav2, ...buttonNav2 }}
+      {buttonIconic2 && (
+        <ButtonIconic
+          {...{ ...sdn.buttonIconic2, ...buttonIconic2 }}
           className={
-            "sdn-button-G8vyYXTc" +
-            (buttonNav2?.className ? " " + buttonNav2.className : "")
+            "sdn-button-GZMXBjbU" +
+            (buttonIconic2?.className ? " " + buttonIconic2.className : "")
           }
           icon={{ ...sdn.icon2, ...icon2 }}
+        />
+      )}
+      {buttonIconic3 && (
+        <ButtonIconic
+          {...{ ...sdn.buttonIconic3, ...buttonIconic3 }}
+          className={
+            "sdn-button-GZMXBjbU" +
+            (buttonIconic3?.className ? " " + buttonIconic3.className : "")
+          }
+          icon={{ ...sdn.icon3, ...icon3 }}
         />
       )}
     </Frame>
@@ -81,18 +96,25 @@ export function BarNavigationMobile({
 }
 
 const sdn: BarNavigationMobileProps = {
-  buttonNav: {
-    className: "sdn-button-G8vyYXTc",
+  buttonIconic: {
+    className: "sdn-button-GZMXBjbU",
   },
   icon: {
     icon: "seldon-component",
     className: "sdn-icon-1ihZT8Ll",
   },
-  buttonNav2: {
-    className: "sdn-button-G8vyYXTc",
+  buttonIconic2: {
+    className: "sdn-button-GZMXBjbU",
   },
   icon2: {
-    icon: "seldon-component",
+    icon: "seldon-image",
+    className: "sdn-icon-1ihZT8Ll",
+  },
+  buttonIconic3: {
+    className: "sdn-button-GZMXBjbU",
+  },
+  icon3: {
+    icon: "material-accountCircle",
     className: "sdn-icon-1ihZT8Ll",
   },
 }

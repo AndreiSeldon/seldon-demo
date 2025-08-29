@@ -452,6 +452,21 @@ html {
   border-color: hsl(197 12% 77%);
 }
 
+.sdn-button-jDaoMHTT {
+  background-color: hsl(0 0% 0%);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+  border-radius: 99999px;
+  border: 0.125rem solid hsl(0 0% 0%);
+}
+
 .sdn-button-qPLMMLM3 {
   background-color: hsl(0 0% 0%);
   cursor: pointer;
@@ -489,6 +504,21 @@ html {
   background-color: transparent;
   cursor: pointer;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 0.125rem solid transparent;
+}
+
+.sdn-button-GZMXBjbU {
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;

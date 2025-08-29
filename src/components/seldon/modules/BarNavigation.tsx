@@ -26,6 +26,9 @@ export interface BarNavigationProps extends HTMLAttributes<HTMLElement> {
   buttonNav2?: ButtonNavProps
   icon2?: IconProps
   label2?: LabelProps
+  buttonNav3?: ButtonNavProps
+  icon3?: IconProps
+  label3?: LabelProps
 }
 
 /**
@@ -44,6 +47,7 @@ export interface BarNavigationProps extends HTMLAttributes<HTMLElement> {
  *   icon="material-star"
  *   label="Button Label"
  *   buttonNav1={() => {}}
+ *   buttonNav2={() => {}}
  * />
  * ```
  */
@@ -55,6 +59,9 @@ export function BarNavigation({
   buttonNav2,
   icon2,
   label2,
+  buttonNav3,
+  icon3,
+  label3,
   ...props
 }: BarNavigationProps) {
   return (
@@ -81,6 +88,17 @@ export function BarNavigation({
           label={{ ...sdn.label2, ...label2 }}
         />
       )}
+      {buttonNav3 && (
+        <ButtonNav
+          {...{ ...sdn.buttonNav3, ...buttonNav3 }}
+          className={
+            "sdn-button-G8vyYXTc" +
+            (buttonNav3?.className ? " " + buttonNav3.className : "")
+          }
+          icon={{ ...sdn.icon3, ...icon3 }}
+          label={{ ...sdn.label3, ...label3 }}
+        />
+      )}
     </Frame>
   )
 }
@@ -102,11 +120,23 @@ const sdn: BarNavigationProps = {
     className: "sdn-button-G8vyYXTc",
   },
   icon2: {
-    icon: "seldon-component",
+    icon: "seldon-image",
     className: "sdn-icon-1ihZT8Ll",
   },
   label2: {
     children: "Cards",
+    htmlElement: "label",
+    className: "sdn-label-1WuqrUuH",
+  },
+  buttonNav3: {
+    className: "sdn-button-G8vyYXTc",
+  },
+  icon3: {
+    icon: "material-accountCircle",
+    className: "sdn-icon-1ihZT8Ll",
+  },
+  label3: {
+    children: "Avatars",
     htmlElement: "label",
     className: "sdn-label-1WuqrUuH",
   },
