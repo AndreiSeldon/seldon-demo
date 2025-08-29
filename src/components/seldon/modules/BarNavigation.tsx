@@ -83,7 +83,7 @@ export function BarNavigation({
       <Button
         {...{ ...sdn.button, ...button }}
         className={
-          "sdn-button-PxYh739i" +
+          "sdn-button-G8vyYXTc" +
           (button?.className ? " " + button.className : "")
         }
         icon={{
@@ -190,7 +190,7 @@ export function BarNavigation({
 
 const sdn: BarNavigationProps = {
   button: {
-    className: "sdn-button-PxYh739i",
+    className: "sdn-button-G8vyYXTc",
   },
   icon: {
     icon: "material-deviceMobile",
