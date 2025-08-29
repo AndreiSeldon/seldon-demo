@@ -123,7 +123,7 @@ export function ButtonBar({
 
 const sdn: ButtonBarProps = {
   button: {
-    className: "sdn-button-3D4pvOBS",
+    className: "sdn-button-7k7U4i3x",
   },
   icon: {
     icon: "__default__",
@@ -132,10 +132,10 @@ const sdn: ButtonBarProps = {
   label: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
+    className: "sdn-label-BOyxJbm8",
   },
   button2: {
-    className: "sdn-button-3D4pvOBS",
+    className: "sdn-button-7k7U4i3x",
   },
   icon2: {
     icon: "__default__",
@@ -144,10 +144,10 @@ const sdn: ButtonBarProps = {
   label2: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
+    className: "sdn-label-BOyxJbm8",
   },
   button3: {
-    className: "sdn-button-3D4pvOBS",
+    className: "sdn-button-7k7U4i3x",
   },
   icon3: {
     icon: "__default__",
@@ -156,6 +156,6 @@ const sdn: ButtonBarProps = {
   label3: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
+    className: "sdn-label-BOyxJbm8",
   },
 }

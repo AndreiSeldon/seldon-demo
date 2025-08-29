@@ -75,6 +75,6 @@ const sdn: ButtonProps = {
   label: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-1R07j0Td",
+    className: "sdn-label-BOyxJbm8",
   },
 }

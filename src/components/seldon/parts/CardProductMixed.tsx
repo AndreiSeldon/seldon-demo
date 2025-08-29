@@ -235,7 +235,7 @@ const sdn: CardProductMixedProps = {
   tagline: {
     children: "Mixed Tagline",
     htmlElement: "p",
-    className: "sdn-tagline-57ug71iC",
+    className: "sdn-tagline-RYPEIO98",
   },
   button: {
     className: "sdn-button-3D4pvOBS",
@@ -257,12 +257,12 @@ const sdn: CardProductMixedProps = {
   tagline2: {
     children: "Additional Tagline",
     htmlElement: "p",
-    className: "sdn-tagline-57ug71iC",
+    className: "sdn-tagline-RYPEIO98",
   },
   description: {
     children: "Special text for mixed case",
     htmlElement: "p",
-    className: "sdn-description-8Y5lFu0w",
+    className: "sdn-description-QJZ11zsK",
   },
   buttonBar: {
     className: "sdn-buttonBar-MMcNZdBT",

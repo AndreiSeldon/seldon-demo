@@ -203,7 +203,7 @@ const sdn: CardProductProps = {
   tagline: {
     children: "Tagline",
     htmlElement: "p",
-    className: "sdn-tagline-57ug71iC",
+    className: "sdn-tagline-RYPEIO98",
   },
   titleProps: {
     children: "Product Card",
@@ -214,7 +214,7 @@ const sdn: CardProductProps = {
     children:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus.",
     htmlElement: "p",
-    className: "sdn-description-8Y5lFu0w",
+    className: "sdn-description-QJZ11zsK",
   },
   buttonBar: {
     className: "sdn-buttonBar-MMcNZdBT",

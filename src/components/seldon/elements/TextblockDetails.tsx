@@ -92,7 +92,7 @@ const sdn: TextblockDetailsProps = {
   titleProps: {
     children: "Product Card Title",
     htmlElement: "h4",
-    className: "sdn-title-83oQ44Bx",
+    className: "sdn-title-NxxLFPyV",
   },
   description: {
     children:
