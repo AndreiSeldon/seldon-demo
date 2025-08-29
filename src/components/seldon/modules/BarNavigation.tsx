@@ -96,7 +96,7 @@ export function BarNavigation({
           ...sdn.label,
           ...label,
           className:
-            "sdn-label-rqsM33MP" +
+            "sdn-label-1WuqrUuH" +
             (label?.className ? " " + label.className : ""),
         }}
       />
@@ -117,7 +117,7 @@ export function BarNavigation({
           ...sdn.label2,
           ...label2,
           className:
-            "sdn-label-rqsM33MP" +
+            "sdn-label-1WuqrUuH" +
             (label2?.className ? " " + label2.className : ""),
         }}
       />
@@ -138,7 +138,7 @@ export function BarNavigation({
           ...sdn.label3,
           ...label3,
           className:
-            "sdn-label-rqsM33MP" +
+            "sdn-label-1WuqrUuH" +
             (label3?.className ? " " + label3.className : ""),
         }}
       />
@@ -159,7 +159,7 @@ export function BarNavigation({
           ...sdn.label4,
           ...label4,
           className:
-            "sdn-label-rqsM33MP" +
+            "sdn-label-1WuqrUuH" +
             (label4?.className ? " " + label4.className : ""),
         }}
       />
@@ -180,7 +180,7 @@ export function BarNavigation({
           ...sdn.label5,
           ...label5,
           className:
-            "sdn-label-rqsM33MP" +
+            "sdn-label-1WuqrUuH" +
             (label5?.className ? " " + label5.className : ""),
         }}
       />
@@ -199,7 +199,7 @@ const sdn: BarNavigationProps = {
   label: {
     children: "Mobile",
     htmlElement: "label",
-    className: "sdn-label-rqsM33MP",
+    className: "sdn-label-1WuqrUuH",
   },
   button2: {
     className: "sdn-button-G8vyYXTc",
@@ -211,7 +211,7 @@ const sdn: BarNavigationProps = {
   label2: {
     children: "Tablet",
     htmlElement: "label",
-    className: "sdn-label-rqsM33MP",
+    className: "sdn-label-1WuqrUuH",
   },
   button3: {
     className: "sdn-button-G8vyYXTc",
@@ -223,7 +223,7 @@ const sdn: BarNavigationProps = {
   label3: {
     children: "Laptop",
     htmlElement: "label",
-    className: "sdn-label-rqsM33MP",
+    className: "sdn-label-1WuqrUuH",
   },
   button4: {
     className: "sdn-button-G8vyYXTc",
@@ -235,7 +235,7 @@ const sdn: BarNavigationProps = {
   label4: {
     children: "Desktop",
     htmlElement: "label",
-    className: "sdn-label-rqsM33MP",
+    className: "sdn-label-1WuqrUuH",
   },
   button5: {
     className: "sdn-button-G8vyYXTc",
@@ -247,6 +247,6 @@ const sdn: BarNavigationProps = {
   label5: {
     children: "General",
     htmlElement: "label",
-    className: "sdn-label-rqsM33MP",
+    className: "sdn-label-1WuqrUuH",
   },
 }

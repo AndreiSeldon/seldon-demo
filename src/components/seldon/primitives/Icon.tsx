@@ -35,22 +35,22 @@ export interface IconProps extends SVGAttributes<SVGElement> {
   className?: string
   icon?:
     | "__default__"
+    | "material-deviceMobile"
+    | "seldon-component"
     | "material-addCircle"
     | "material-cancel"
     | "material-arrowDownward"
     | "material-borderColor"
     | "material-dataset"
+    | "material-deviceTablet"
     | "material-accountCircle"
     | "material-addChart"
     | "material-addLocation"
+    | "material-laptopMac"
     | "material-addBox"
     | "material-bolt"
-    | "material-addComment"
-    | "material-deviceMobile"
-    | "material-deviceTablet"
-    | "material-laptopMac"
     | "material-desktopMac"
-    | "seldon-component"
+    | "material-addComment"
 }
 
 /**
@@ -83,20 +83,20 @@ export function Icon({
 }
 const iconMap = {
   __default__: IconDefault,
+  "material-deviceMobile": IconMaterialDeviceMobile,
+  "seldon-component": IconSeldonComponent,
   "material-addCircle": IconMaterialAddCircle,
   "material-cancel": IconMaterialCancel,
   "material-arrowDownward": IconMaterialArrowDownward,
   "material-borderColor": IconMaterialBorderColor,
   "material-dataset": IconMaterialDataset,
+  "material-deviceTablet": IconMaterialDeviceTablet,
   "material-accountCircle": IconMaterialAccountCircle,
   "material-addChart": IconMaterialAddChart,
   "material-addLocation": IconMaterialAddLocation,
+  "material-laptopMac": IconMaterialLaptopMac,
   "material-addBox": IconMaterialAddBox,
   "material-bolt": IconMaterialBolt,
-  "material-addComment": IconMaterialAddComment,
-  "material-deviceMobile": IconMaterialDeviceMobile,
-  "material-deviceTablet": IconMaterialDeviceTablet,
-  "material-laptopMac": IconMaterialLaptopMac,
   "material-desktopMac": IconMaterialDesktopMac,
-  "seldon-component": IconSeldonComponent,
+  "material-addComment": IconMaterialAddComment,
 }

@@ -628,12 +628,7 @@ html {
   white-space: normal;
 }
 
-.sdn-icon-1ihZT8Ll {
-  font-size: 0.8rem;
-  color: hsl(0 0% 100%);
-}
-
-.sdn-label-rqsM33MP {
+.sdn-label-1WuqrUuH {
   color: hsl(0 0% 100%);
   width: fit-content;
   height: fit-content;
@@ -686,6 +681,11 @@ html {
   line-clamp: 2;
   webkit-box-orient: vertical;
   box-orient: vertical;
+}
+
+.sdn-icon-1ihZT8Ll {
+  font-size: 0.8rem;
+  color: hsl(0 0% 100%);
 }
 
 .sdn-label-1R07j0Td {
