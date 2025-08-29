@@ -13,195 +13,36 @@
  *****/
  
 import { HTMLAttributes } from "react"
-import { Button, ButtonProps } from "../elements/Button"
-import { ButtonNav, ButtonNavProps } from "../elements/ButtonNav"
 import { Frame } from "../frames/Frame"
-import { Icon, IconProps } from "../primitives/Icon"
 
 export interface BarNavigationMobileProps extends HTMLAttributes<HTMLElement> {
   className?: string
-  buttonNav?: ButtonNavProps
-  icon?: IconProps
-  button1?: ButtonProps
-  icon2?: IconProps
-  button2?: ButtonProps
-  icon3?: IconProps
-  button3?: ButtonProps
-  icon4?: IconProps
-  button4?: ButtonProps
-  icon5?: IconProps
-  button5?: ButtonProps
-  icon6?: IconProps
 }
 
 /**
  * Navigation Bar
- *
+ * 
  * Level: Module
- *
+ * 
  * Intent: Provides primary navigation controls for traversing sections or views.
- *
+ * 
  * Tags: navigation, navbar, menu, UI, header, section, links, routing
- *
+ * 
  * @example
  * ```tsx
  * <BarNavigationMobile
- *   buttonNav={() => {}}
- *   icon="material-star"
- *   button1={() => {}}
- *   button2={() => {}}
- *   button3={() => {}}
- *   button4={() => {}}
- *   button5={() => {}}
+
  * />
  * ```
  */
 export function BarNavigationMobile({
   className = "",
-  buttonNav,
-  icon,
-  button1 = sdn.button1,
-  icon2,
-  button2 = sdn.button2,
-  icon3,
-  button3 = sdn.button3,
-  icon4,
-  button4 = sdn.button4,
-  icon5,
-  button5 = sdn.button5,
-  icon6,
   ...props
 }: BarNavigationMobileProps) {
   return (
     <Frame
       className={"sdn-barNavigation sdn-barNavigation-yAQPDoP0 " + className}
       {...props}
-    >
-      {buttonNav && (
-        <ButtonNav
-          {...{ ...sdn.buttonNav, ...buttonNav }}
-          className={
-            "sdn-button-G8vyYXTc" +
-            (buttonNav?.className ? " " + buttonNav.className : "")
-          }
-          icon={{ ...sdn.icon, ...icon }}
-        />
-      )}
-      <Button
-        {...{ ...sdn.button1, ...button1 }}
-        className={
-          "sdn-button-G8vyYXTc" +
-          (button1?.className ? " " + button1.className : "")
-        }
-        icon={{
-          ...sdn.icon2,
-          ...icon2,
-          className:
-            "sdn-icon-1ihZT8Ll" +
-            (icon2?.className ? " " + icon2.className : ""),
-        }}
-      />
-      <Button
-        {...{ ...sdn.button2, ...button2 }}
-        className={
-          "sdn-button-G8vyYXTc" +
-          (button2?.className ? " " + button2.className : "")
-        }
-        icon={{
-          ...sdn.icon3,
-          ...icon3,
-          className:
-            "sdn-icon-1ihZT8Ll" +
-            (icon3?.className ? " " + icon3.className : ""),
-        }}
-      />
-      <Button
-        {...{ ...sdn.button3, ...button3 }}
-        className={
-          "sdn-button-G8vyYXTc" +
-          (button3?.className ? " " + button3.className : "")
-        }
-        icon={{
-          ...sdn.icon4,
-          ...icon4,
-          className:
-            "sdn-icon-1ihZT8Ll" +
-            (icon4?.className ? " " + icon4.className : ""),
-        }}
-      />
-      <Button
-        {...{ ...sdn.button4, ...button4 }}
-        className={
-          "sdn-button-G8vyYXTc" +
-          (button4?.className ? " " + button4.className : "")
-        }
-        icon={{
-          ...sdn.icon5,
-          ...icon5,
-          className:
-            "sdn-icon-1ihZT8Ll" +
-            (icon5?.className ? " " + icon5.className : ""),
-        }}
-      />
-      <Button
-        {...{ ...sdn.button5, ...button5 }}
-        className={
-          "sdn-button-G8vyYXTc" +
-          (button5?.className ? " " + button5.className : "")
-        }
-        icon={{
-          ...sdn.icon6,
-          ...icon6,
-          className:
-            "sdn-icon-1ihZT8Ll" +
-            (icon6?.className ? " " + icon6.className : ""),
-        }}
-      />
-    </Frame>
+    />
   )
-}
-
-const sdn: BarNavigationMobileProps = {
-  buttonNav: {
-    className: "sdn-button-G8vyYXTc",
-  },
-  icon: {
-    icon: "__default__",
-    className: "sdn-icon-1ihZT8Ll",
-  },
-  button1: {
-    className: "sdn-button-G8vyYXTc",
-  },
-  icon2: {
-    icon: "seldon-component",
-    className: "sdn-icon-1ihZT8Ll",
-  },
-  button2: {
-    className: "sdn-button-G8vyYXTc",
-  },
-  icon3: {
-    icon: "seldon-image",
-    className: "sdn-icon-1ihZT8Ll",
-  },
-  button3: {
-    className: "sdn-button-G8vyYXTc",
-  },
-  icon4: {
-    icon: "material-accountCircle",
-    className: "sdn-icon-1ihZT8Ll",
-  },
-  button4: {
-    className: "sdn-button-G8vyYXTc",
-  },
-  icon5: {
-    icon: "seldon-frameColumns",
-    className: "sdn-icon-1ihZT8Ll",
-  },
-  button5: {
-    className: "sdn-button-G8vyYXTc",
-  },
-  icon6: {
-    icon: "seldon-input",
-    className: "sdn-icon-1ihZT8Ll",
-  },
 }
