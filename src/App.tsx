@@ -1,9 +1,12 @@
 
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import "./App.css";
 import "./components/seldon/styles.css";
+import "./nav/seldon/styles.css";
+import { BarNavigation } from "./nav/seldon/modules/BarNavigation";
 import { CardProduct } from "./components/seldon/parts/CardProduct";
 import { CardProductInline } from "./components/seldon/parts/CardProductInline";
 import { CardProductMixed } from "./components/seldon/parts/CardProductMixed";
@@ -16,8 +19,7 @@ function Screen1() {
     <div
       style={{ padding: 20, gap: 20, display: "flex", flexDirection: "column" }}
     >
-      <h2>Screen 1 - CardProductInline Demo</h2>
-
+      <h2>Screen 1 - General Components</h2>
       {/* Default components with default theme */}
       <div
         style={{
@@ -33,12 +35,20 @@ function Screen1() {
           label2={{ children: "Yoohoo!" }}
         />
       </div>
-
+    </div>
+  );
+}
+function Screen2() {
+  return (
+    <div
+      style={{ padding: 20, gap: 20, display: "flex", flexDirection: "column" }}
+    >
+      <h2>Screen 2 - Product Cards</h2>
       {/* Default CardProduct */}
       <CardProduct />
 
       {/* Customized CardProduct */}
-      <CardProduct 
+      <CardProduct
         tagline={{ children: "New Product" }}
         titleProps={{ children: "Customized Card" }}
         button={{ onClick: () => alert("Special button clicked!") }}
@@ -129,9 +139,6 @@ function Screen1() {
     </div>
   );
 }
-function Screen2() {
-  return <div style={{ padding: 20 }}>Screen 2</div>;
-}
 function Screen3() {
   return <div style={{ padding: 20 }}>Screen 3</div>;
 }
@@ -142,23 +149,23 @@ function Screen5() {
   return <div style={{ padding: 20 }}>Screen 5</div>;
 }
 
-function App() {
+function AppWithNav() {
   const mobile = useMediaQuery({ maxWidth: 600 });
   const tablet = useMediaQuery({ minWidth: 601, maxWidth: 900 });
   const laptop = useMediaQuery({ minWidth: 901, maxWidth: 1200 });
   const desktop = useMediaQuery({ minWidth: 1201 });
+  const navigate = useNavigate();
 
   let nav;
   if (mobile) {
     nav = (
-      <nav style={{ background: "#eee", padding: 16 }}>
-        <div>Mobile Navigation</div>
-        <Link to="/">Screen 1</Link>
-        <Link to="/screen2">Screen 2</Link>
-        <Link to="/screen3">Screen 3</Link>
-        <Link to="/screen4">Screen 4</Link>
-        <Link to="/screen5">Screen 5</Link>
-      </nav>
+      <BarNavigation
+        button={{ onClick: () => navigate("/") }}
+        button2={{ onClick: () => navigate("/screen2") }}
+        button3={{ onClick: () => navigate("/screen3") }}
+        button4={{ onClick: () => navigate("/screen4") }}
+        button5={{ onClick: () => navigate("/screen5") }}
+      />
     );
   } else if (tablet) {
     nav = (
@@ -214,7 +221,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <>
       <Fonts />
       {nav}
       <Routes>
@@ -224,6 +231,14 @@ function App() {
         <Route path="/screen4" element={<Screen4 />} />
         <Route path="/screen5" element={<Screen5 />} />
       </Routes>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppWithNav />
     </Router>
   );
 }
