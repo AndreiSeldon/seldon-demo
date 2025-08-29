@@ -127,7 +127,7 @@ function AppWithNav() {
     : laptop
     ? { minWidth: 901, maxWidth: 1200 }
     : desktop
-    ? { minWidth: 1201 }
+    ? { minWidth: 1201, marginLeft: 160 }
     : {};
 
   const navProps = {
