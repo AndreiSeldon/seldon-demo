@@ -193,11 +193,11 @@ const sdn: BarNavigationProps = {
     className: "sdn-button-G8vyYXTc",
   },
   icon: {
-    icon: "material-deviceMobile",
+    icon: "seldon-component",
     className: "sdn-icon-1ihZT8Ll",
   },
   label: {
-    children: "Mobile",
+    children: "General",
     htmlElement: "label",
     className: "sdn-label-1WuqrUuH",
   },
@@ -205,11 +205,11 @@ const sdn: BarNavigationProps = {
     className: "sdn-button-G8vyYXTc",
   },
   icon2: {
-    icon: "material-deviceTablet",
+    icon: "seldon-image",
     className: "sdn-icon-1ihZT8Ll",
   },
   label2: {
-    children: "Tablet",
+    children: "Cards",
     htmlElement: "label",
     className: "sdn-label-1WuqrUuH",
   },
@@ -217,11 +217,11 @@ const sdn: BarNavigationProps = {
     className: "sdn-button-G8vyYXTc",
   },
   icon3: {
-    icon: "material-laptopMac",
+    icon: "material-accountCircle",
     className: "sdn-icon-1ihZT8Ll",
   },
   label3: {
-    children: "Laptop",
+    children: "Avatars",
     htmlElement: "label",
     className: "sdn-label-1WuqrUuH",
   },
@@ -229,11 +229,11 @@ const sdn: BarNavigationProps = {
     className: "sdn-button-G8vyYXTc",
   },
   icon4: {
-    icon: "material-desktopMac",
+    icon: "seldon-frameColumns",
     className: "sdn-icon-1ihZT8Ll",
   },
   label4: {
-    children: "Desktop",
+    children: "Calendars",
     htmlElement: "label",
     className: "sdn-label-1WuqrUuH",
   },
@@ -241,11 +241,11 @@ const sdn: BarNavigationProps = {
     className: "sdn-button-G8vyYXTc",
   },
   icon5: {
-    icon: "seldon-component",
+    icon: "seldon-input",
     className: "sdn-icon-1ihZT8Ll",
   },
   label5: {
-    children: "General",
+    children: "Forms",
     htmlElement: "label",
     className: "sdn-label-1WuqrUuH",
   },

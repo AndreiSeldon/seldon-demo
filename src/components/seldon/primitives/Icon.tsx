@@ -25,31 +25,29 @@ import { IconMaterialBolt } from "../icons/IconMaterialBolt"
 import { IconMaterialBorderColor } from "../icons/IconMaterialBorderColor"
 import { IconMaterialCancel } from "../icons/IconMaterialCancel"
 import { IconMaterialDataset } from "../icons/IconMaterialDataset"
-import { IconMaterialDesktopMac } from "../icons/IconMaterialDesktopMac"
-import { IconMaterialDeviceMobile } from "../icons/IconMaterialDeviceMobile"
-import { IconMaterialDeviceTablet } from "../icons/IconMaterialDeviceTablet"
-import { IconMaterialLaptopMac } from "../icons/IconMaterialLaptopMac"
 import { IconSeldonComponent } from "../icons/IconSeldonComponent"
+import { IconSeldonFrameColumns } from "../icons/IconSeldonFrameColumns"
+import { IconSeldonImage } from "../icons/IconSeldonImage"
+import { IconSeldonInput } from "../icons/IconSeldonInput"
 
 export interface IconProps extends SVGAttributes<SVGElement> {
   className?: string
   icon?:
     | "__default__"
-    | "material-deviceMobile"
     | "seldon-component"
+    | "seldon-input"
     | "material-addCircle"
     | "material-cancel"
     | "material-arrowDownward"
     | "material-borderColor"
     | "material-dataset"
-    | "material-deviceTablet"
+    | "seldon-image"
     | "material-accountCircle"
     | "material-addChart"
     | "material-addLocation"
-    | "material-laptopMac"
     | "material-addBox"
     | "material-bolt"
-    | "material-desktopMac"
+    | "seldon-frameColumns"
     | "material-addComment"
 }
 
@@ -83,20 +81,19 @@ export function Icon({
 }
 const iconMap = {
   __default__: IconDefault,
-  "material-deviceMobile": IconMaterialDeviceMobile,
   "seldon-component": IconSeldonComponent,
+  "seldon-input": IconSeldonInput,
   "material-addCircle": IconMaterialAddCircle,
   "material-cancel": IconMaterialCancel,
   "material-arrowDownward": IconMaterialArrowDownward,
   "material-borderColor": IconMaterialBorderColor,
   "material-dataset": IconMaterialDataset,
-  "material-deviceTablet": IconMaterialDeviceTablet,
+  "seldon-image": IconSeldonImage,
   "material-accountCircle": IconMaterialAccountCircle,
   "material-addChart": IconMaterialAddChart,
   "material-addLocation": IconMaterialAddLocation,
-  "material-laptopMac": IconMaterialLaptopMac,
   "material-addBox": IconMaterialAddBox,
   "material-bolt": IconMaterialBolt,
-  "material-desktopMac": IconMaterialDesktopMac,
+  "seldon-frameColumns": IconSeldonFrameColumns,
   "material-addComment": IconMaterialAddComment,
 }
