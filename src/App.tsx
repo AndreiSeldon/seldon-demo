@@ -15,6 +15,52 @@ import { ButtonBar } from "./components/seldon/elements/ButtonBar";
 import { Title } from "./components/seldon/primitives/Title";
 import { Fonts } from "./components/seldon/Fonts";
 
+
+function Navigation() {
+
+  const mobile = useMediaQuery({ maxWidth: 600 });
+  const tablet = useMediaQuery({ minWidth: 601, maxWidth: 900 });
+  const laptop = useMediaQuery({ minWidth: 901, maxWidth: 1200 });
+  const desktop = useMediaQuery({ minWidth: 1201 });
+  const navigate = useNavigate();
+  const location = useLocation();
+  
+  const SELECTED_TAB = "var(--sdn-swatch-seldon-blue)";
+
+  const isActive = (path: string) => location.pathname === path;
+
+  const navProps = {
+    button: {
+      onClick: () => navigate("/"),
+      style: isActive("/") ? { backgroundColor: SELECTED_TAB } : undefined,
+    },
+    button2: {
+      onClick: () => navigate("/screen2"),
+      style: isActive("/screen2") ? { backgroundColor: SELECTED_TAB } : undefined,
+    },
+    button3: {
+      onClick: () => navigate("/screen3"),
+      style: isActive("/screen3") ? { backgroundColor: SELECTED_TAB } : undefined,
+    },
+    button4: {
+      onClick: () => navigate("/screen4"),
+      style: isActive("/screen4") ? { backgroundColor: SELECTED_TAB } : undefined,
+    },
+    button5: {
+      onClick: () => navigate("/screen5"),
+      style: isActive("/screen5") ? { backgroundColor: SELECTED_TAB } : undefined,
+    },
+  };
+
+  if (mobile) return <BarNavigationMobile {...navProps} />;
+  if (tablet) return <BarNavigationTablet {...navProps} />;
+  if (laptop) return <BarNavigation {...navProps} />;
+  if (desktop) return <BarNavigationDesktop {...navProps} />;
+
+  return <BarNavigationDesktop {...navProps} />;
+
+}
+
 function Screen1({ screenStyle }: { screenStyle: React.CSSProperties }) {
   return (
     <div
@@ -103,23 +149,14 @@ function Screen5({ screenStyle }: { screenStyle: React.CSSProperties }) {
   return <div style={{ padding: 20, ...screenStyle }}>Screen 5</div>;
 }
 
-function AppWithNav() {
+function DemoApp() {
 
   const mobile = useMediaQuery({ maxWidth: 600 });
   const tablet = useMediaQuery({ minWidth: 601, maxWidth: 900 });
   const laptop = useMediaQuery({ minWidth: 901, maxWidth: 1200 });
   const desktop = useMediaQuery({ minWidth: 1201 });
-  const navigate = useNavigate();
-  const location = useLocation();
 
-  const SELECTED_TAB = "var(--sdn-swatch-seldon-blue)";
-
-  // Helper to determine if a route is active
-  const isActive = (path: string) => location.pathname === path;
-
-  let nav;
-
-  // Define styles for each device type for screens
+  // Media queries for each device screen
   const screenStyle = mobile
     ? { minWidth: 0, maxWidth: 600 }
     : tablet
@@ -130,52 +167,11 @@ function AppWithNav() {
     ? { minWidth: 1201, marginLeft: 160 }
     : {};
 
-  const navProps = {
-    button: {
-      onClick: () => navigate("/"),
-      style: isActive("/") ? { backgroundColor: SELECTED_TAB } : undefined,
-    },
-    button2: {
-      onClick: () => navigate("/screen2"),
-      style: isActive("/screen2")
-        ? { backgroundColor: SELECTED_TAB }
-        : undefined,
-    },
-    button3: {
-      onClick: () => navigate("/screen3"),
-      style: isActive("/screen3")
-        ? { backgroundColor: SELECTED_TAB }
-        : undefined,
-    },
-    button4: {
-      onClick: () => navigate("/screen4"),
-      style: isActive("/screen4")
-        ? { backgroundColor: SELECTED_TAB }
-        : undefined,
-    },
-    button5: {
-      onClick: () => navigate("/screen5"),
-      style: isActive("/screen5")
-        ? { backgroundColor: SELECTED_TAB }
-        : undefined,
-    },
-  };
-
-  if (mobile) {
-    nav = <BarNavigationMobile {...navProps} />;
-  } else if (tablet) {
-    nav = <BarNavigationTablet {...navProps} />;
-  } else if (laptop) {
-    nav = <BarNavigation {...navProps} />;
-  } else {
-    nav = <BarNavigationDesktop {...navProps} />;
-  }
-
 
   return (
     <>
       <Fonts />
-      {nav}
+      <Navigation />
       <Routes>
         <Route path="/" element={<Screen1 screenStyle={screenStyle} />} />
         <Route path="/screen2" element={<Screen2 screenStyle={screenStyle} />} />
@@ -190,7 +186,7 @@ function AppWithNav() {
 function App() {
   return (
     <Router>
-      <AppWithNav />
+      <DemoApp />
     </Router>
   );
 }
