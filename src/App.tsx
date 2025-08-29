@@ -131,37 +131,47 @@ function AppWithNav() {
     : {};
 
   const navProps = {
-    button: {
+    buttonNav: {
       onClick: () => navigate("/"),
       style: isActive("/") ? { backgroundColor: SELECTED_TAB } : undefined,
     },
-    button2: {
+    buttonNav2: {
       onClick: () => navigate("/screen2"),
-      style: isActive("/screen2") ? { backgroundColor: SELECTED_TAB } : undefined,
+      style: isActive("/screen2")
+        ? { backgroundColor: SELECTED_TAB }
+        : undefined,
     },
-    button3: {
+    buttonNav3: {
       onClick: () => navigate("/screen3"),
-      style: isActive("/screen3") ? { backgroundColor: SELECTED_TAB } : undefined,
+      style: isActive("/screen3")
+        ? { backgroundColor: SELECTED_TAB }
+        : undefined,
     },
-    button4: {
+    buttonNav4: {
       onClick: () => navigate("/screen4"),
-      style: isActive("/screen4") ? { backgroundColor: SELECTED_TAB } : undefined,
+      style: isActive("/screen4")
+        ? { backgroundColor: SELECTED_TAB }
+        : undefined,
     },
-    button5: {
+    buttonNav5: {
       onClick: () => navigate("/screen5"),
-      style: isActive("/screen5") ? { backgroundColor: SELECTED_TAB } : undefined,
+      style: isActive("/screen5")
+        ? { backgroundColor: SELECTED_TAB }
+        : undefined,
     },
   };
 
-  if (mobile) {
-    nav = <BarNavigationMobile {...navProps} />;
-  } else if (tablet) {
-    nav = <BarNavigationTablet {...navProps} />;
-  } else if (laptop) {
-    nav = <BarNavigation {...navProps} />;
-  } else {
-    nav = <BarNavigationDesktop {...navProps} />;
-  }
+  // if (mobile) {
+  //   nav = <BarNavigationMobile {...navProps} />;
+  // } else if (tablet) {
+  //   nav = <BarNavigationTablet {...navProps} />;
+  // } else if (laptop) {
+  //   nav = <BarNavigation {...navProps} />;
+  // } else {
+  //   nav = <BarNavigationDesktop {...navProps} />;
+  // }
+
+  nav = <BarNavigation {...navProps} />;
 
   return (
     <>
