@@ -25,7 +25,6 @@ import { Icon, IconProps } from "../primitives/Icon"
 import { Label, LabelProps } from "../primitives/Label"
 import { Tagline, TaglineProps } from "../primitives/Tagline"
 import { Title, TitleProps } from "../primitives/Title"
-import { combineClassNames } from "../utils/class-name-utils"
 
 export interface CardProductProps extends HTMLAttributes<HTMLElement> {
   className?: string
@@ -88,109 +87,104 @@ export function CardProduct({
   label3,
   ...props
 }: CardProductProps) {
-  const frameClassName = combineClassNames("sdn-cardProduct", className)
-  const textblockDetailsProps = {
-    ...sdn.textblockDetails,
-    ...textblockDetails,
-    className: combineClassNames(
-      sdn.textblockDetails?.className,
-      textblockDetails?.className,
-    ),
-  }
-  const taglineProps = {
-    ...sdn.tagline,
-    ...tagline,
-    className: combineClassNames(sdn.tagline?.className, tagline?.className),
-  }
-  const titlePropsProps = {
-    ...sdn.titleProps,
-    ...titleProps,
-    className: combineClassNames(
-      sdn.titleProps?.className,
-      titleProps?.className,
-    ),
-  }
-  const descriptionProps = {
-    ...sdn.description,
-    ...description,
-    className: combineClassNames(
-      sdn.description?.className,
-      description?.className,
-    ),
-  }
-  const buttonBarProps = {
-    ...sdn.buttonBar,
-    ...buttonBar,
-    className: combineClassNames(
-      sdn.buttonBar?.className,
-      buttonBar?.className,
-    ),
-  }
-  const buttonProps = {
-    ...sdn.button,
-    ...button,
-    className: combineClassNames(sdn.button?.className, button?.className),
-  }
-  const iconProps = {
-    ...sdn.icon,
-    ...icon,
-    className: combineClassNames(sdn.icon?.className, icon?.className),
-  }
-  const labelProps = {
-    ...sdn.label,
-    ...label,
-    className: combineClassNames(sdn.label?.className, label?.className),
-  }
-  const button2Props = {
-    ...sdn.button2,
-    ...button2,
-    className: combineClassNames(sdn.button2?.className, button2?.className),
-  }
-  const icon2Props = {
-    ...sdn.icon2,
-    ...icon2,
-    className: combineClassNames(sdn.icon2?.className, icon2?.className),
-  }
-  const label2Props = {
-    ...sdn.label2,
-    ...label2,
-    className: combineClassNames(sdn.label2?.className, label2?.className),
-  }
-  const button3Props = {
-    ...sdn.button3,
-    ...button3,
-    className: combineClassNames(sdn.button3?.className, button3?.className),
-  }
-  const icon3Props = {
-    ...sdn.icon3,
-    ...icon3,
-    className: combineClassNames(sdn.icon3?.className, icon3?.className),
-  }
-  const label3Props = {
-    ...sdn.label3,
-    ...label3,
-    className: combineClassNames(sdn.label3?.className, label3?.className),
-  }
-
   return (
-    <Frame className={frameClassName} {...props}>
+    <Frame className={"sdn-cardProduct " + className} {...props}>
       <TextblockDetails
-        {...textblockDetailsProps}
-        tagline={taglineProps}
-        titleProps={titlePropsProps}
-        description={descriptionProps}
+        {...{ ...sdn.textblockDetails, ...textblockDetails }}
+        className={
+          "sdn-textblockDetails-Njjvy0sD" +
+          (textblockDetails?.className ? " " + textblockDetails.className : "")
+        }
+        tagline={{
+          ...sdn.tagline,
+          ...tagline,
+          className:
+            "sdn-tagline-57ug71iC" +
+            (tagline?.className ? " " + tagline.className : ""),
+        }}
+        titleProps={{
+          ...sdn.titleProps,
+          ...titleProps,
+          className:
+            "sdn-title-83oQ44Bx" +
+            (titleProps?.className ? " " + titleProps.className : ""),
+        }}
+        description={{
+          ...sdn.description,
+          ...description,
+          className:
+            "sdn-description-8Y5lFu0w" +
+            (description?.className ? " " + description.className : ""),
+        }}
       />
       <ButtonBar
-        {...buttonBarProps}
-        button={buttonProps}
-        icon={iconProps}
-        label={labelProps}
-        button2={button2Props}
-        icon2={icon2Props}
-        label2={label2Props}
-        button3={button3Props}
-        icon3={icon3Props}
-        label3={label3Props}
+        {...{ ...sdn.buttonBar, ...buttonBar }}
+        className={
+          "sdn-buttonBar-MMcNZdBT" +
+          (buttonBar?.className ? " " + buttonBar.className : "")
+        }
+        button={{
+          ...sdn.button,
+          ...button,
+          className:
+            "sdn-button-EOkV8PVa" +
+            (button?.className ? " " + button.className : ""),
+        }}
+        icon={{
+          ...sdn.icon,
+          ...icon,
+          className:
+            "sdn-icon-1ihZT8Ll" + (icon?.className ? " " + icon.className : ""),
+        }}
+        label={{
+          ...sdn.label,
+          ...label,
+          className:
+            "sdn-label-1R07j0Td" +
+            (label?.className ? " " + label.className : ""),
+        }}
+        button2={{
+          ...sdn.button2,
+          ...button2,
+          className:
+            "sdn-button-3D4pvOBS" +
+            (button2?.className ? " " + button2.className : ""),
+        }}
+        icon2={{
+          ...sdn.icon2,
+          ...icon2,
+          className:
+            "sdn-icon-1ihZT8Ll" +
+            (icon2?.className ? " " + icon2.className : ""),
+        }}
+        label2={{
+          ...sdn.label2,
+          ...label2,
+          className:
+            "sdn-label-1R07j0Td" +
+            (label2?.className ? " " + label2.className : ""),
+        }}
+        button3={{
+          ...sdn.button3,
+          ...button3,
+          className:
+            "sdn-button-3D4pvOBS" +
+            (button3?.className ? " " + button3.className : ""),
+        }}
+        icon3={{
+          ...sdn.icon3,
+          ...icon3,
+          className:
+            "sdn-icon-1ihZT8Ll" +
+            (icon3?.className ? " " + icon3.className : ""),
+        }}
+        label3={{
+          ...sdn.label3,
+          ...label3,
+          className:
+            "sdn-label-1R07j0Td" +
+            (label3?.className ? " " + label3.className : ""),
+        }}
       />
     </Frame>
   )

@@ -25,6 +25,11 @@ import { IconMaterialBolt } from "../icons/IconMaterialBolt"
 import { IconMaterialBorderColor } from "../icons/IconMaterialBorderColor"
 import { IconMaterialCancel } from "../icons/IconMaterialCancel"
 import { IconMaterialDataset } from "../icons/IconMaterialDataset"
+import { IconMaterialDesktopMac } from "../icons/IconMaterialDesktopMac"
+import { IconMaterialDeviceMobile } from "../icons/IconMaterialDeviceMobile"
+import { IconMaterialDeviceTablet } from "../icons/IconMaterialDeviceTablet"
+import { IconMaterialLaptopMac } from "../icons/IconMaterialLaptopMac"
+import { IconSeldonComponent } from "../icons/IconSeldonComponent"
 
 export interface IconProps extends SVGAttributes<SVGElement> {
   className?: string
@@ -41,6 +46,11 @@ export interface IconProps extends SVGAttributes<SVGElement> {
     | "material-addBox"
     | "material-bolt"
     | "material-addComment"
+    | "material-deviceMobile"
+    | "material-deviceTablet"
+    | "material-laptopMac"
+    | "material-desktopMac"
+    | "seldon-component"
 }
 
 /**
@@ -84,4 +94,9 @@ const iconMap = {
   "material-addBox": IconMaterialAddBox,
   "material-bolt": IconMaterialBolt,
   "material-addComment": IconMaterialAddComment,
+  "material-deviceMobile": IconMaterialDeviceMobile,
+  "material-deviceTablet": IconMaterialDeviceTablet,
+  "material-laptopMac": IconMaterialLaptopMac,
+  "material-desktopMac": IconMaterialDesktopMac,
+  "seldon-component": IconSeldonComponent,
 }
