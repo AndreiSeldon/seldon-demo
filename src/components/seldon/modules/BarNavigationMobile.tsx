@@ -81,7 +81,7 @@ export function BarNavigationMobile({
           ...sdn.icon,
           ...icon,
           className:
-            "sdn-icon-quwG9edJ" + (icon?.className ? " " + icon.className : ""),
+            "sdn-icon-1ihZT8Ll" + (icon?.className ? " " + icon.className : ""),
         }}
       />
       <Button
@@ -94,7 +94,7 @@ export function BarNavigationMobile({
           ...sdn.icon2,
           ...icon2,
           className:
-            "sdn-icon-quwG9edJ" +
+            "sdn-icon-1ihZT8Ll" +
             (icon2?.className ? " " + icon2.className : ""),
         }}
       />
@@ -108,7 +108,7 @@ export function BarNavigationMobile({
           ...sdn.icon3,
           ...icon3,
           className:
-            "sdn-icon-quwG9edJ" +
+            "sdn-icon-1ihZT8Ll" +
             (icon3?.className ? " " + icon3.className : ""),
         }}
       />
@@ -122,7 +122,7 @@ export function BarNavigationMobile({
           ...sdn.icon4,
           ...icon4,
           className:
-            "sdn-icon-quwG9edJ" +
+            "sdn-icon-1ihZT8Ll" +
             (icon4?.className ? " " + icon4.className : ""),
         }}
       />
@@ -136,7 +136,7 @@ export function BarNavigationMobile({
           ...sdn.icon5,
           ...icon5,
           className:
-            "sdn-icon-quwG9edJ" +
+            "sdn-icon-1ihZT8Ll" +
             (icon5?.className ? " " + icon5.className : ""),
         }}
       />
@@ -150,34 +150,34 @@ const sdn: BarNavigationMobileProps = {
   },
   icon: {
     icon: "seldon-component",
-    className: "sdn-icon-quwG9edJ",
+    className: "sdn-icon-1ihZT8Ll",
   },
   button2: {
     className: "sdn-button-G8vyYXTc",
   },
   icon2: {
     icon: "seldon-image",
-    className: "sdn-icon-quwG9edJ",
+    className: "sdn-icon-1ihZT8Ll",
   },
   button3: {
     className: "sdn-button-G8vyYXTc",
   },
   icon3: {
     icon: "material-accountCircle",
-    className: "sdn-icon-quwG9edJ",
+    className: "sdn-icon-1ihZT8Ll",
   },
   button4: {
     className: "sdn-button-G8vyYXTc",
   },
   icon4: {
     icon: "seldon-frameColumns",
-    className: "sdn-icon-quwG9edJ",
+    className: "sdn-icon-1ihZT8Ll",
   },
   button5: {
     className: "sdn-button-G8vyYXTc",
   },
   icon5: {
     icon: "seldon-input",
-    className: "sdn-icon-quwG9edJ",
+    className: "sdn-icon-1ihZT8Ll",
   },
 }
