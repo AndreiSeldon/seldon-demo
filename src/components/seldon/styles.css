@@ -359,8 +359,8 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  gap: auto;
+  justify-content: center;
+  gap: 1rem;
   right: 0px;
   bottom: 0px;
   left: 0px;
@@ -444,7 +444,7 @@ html {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  align-self: stretch;
+  width: fit-content;
   height: fit-content;
   padding: 1rem;
   border-radius: 0.25rem;
