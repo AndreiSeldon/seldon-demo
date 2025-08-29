@@ -161,17 +161,16 @@ function AppWithNav() {
     },
   };
 
-  // if (mobile) {
-  //   nav = <BarNavigationMobile {...navProps} />;
-  // } else if (tablet) {
-  //   nav = <BarNavigationTablet {...navProps} />;
-  // } else if (laptop) {
-  //   nav = <BarNavigation {...navProps} />;
-  // } else {
-  //   nav = <BarNavigationDesktop {...navProps} />;
-  // }
+  if (mobile) {
+    nav = <BarNavigationMobile {...navProps} />;
+  } else if (tablet) {
+    nav = <BarNavigationMobile {...navProps} />;
+  } else if (laptop) {
+    nav = <BarNavigation {...navProps} />;
+  } else {
+    nav = <BarNavigation {...navProps} />;
+  }
 
-  nav = <BarNavigation {...navProps} />;
 
   return (
     <>
