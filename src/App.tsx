@@ -5,6 +5,8 @@ import { useMediaQuery } from "react-responsive";
 import "./App.css";
 import "./components/seldon/styles.css";
 import { BarNavigation } from "./components/seldon/modules/BarNavigation";
+import { BarNavigationMobile } from "./components/seldon/modules/BarNavigationMobile";
+import { BarNavigationTablet } from "./components/seldon/modules/BarNavigationTablet";
 import { BarNavigationDesktop } from "./components/seldon/modules/BarNavigationDesktop";
 import { CardProduct } from "./components/seldon/parts/CardProduct";
 import { CardProductInline } from "./components/seldon/parts/CardProductInline";
@@ -107,7 +109,6 @@ function AppWithNav() {
   const tablet = useMediaQuery({ minWidth: 601, maxWidth: 900 });
   const laptop = useMediaQuery({ minWidth: 901, maxWidth: 1200 });
   const desktop = useMediaQuery({ minWidth: 1201 });
-  const general = { minWidth: 1201 };
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -152,10 +153,14 @@ function AppWithNav() {
     },
   };
 
-  if (desktop) {
-    nav = <BarNavigationDesktop {...navProps} />;
-  } else {
+  if (mobile) {
+    nav = <BarNavigationMobile {...navProps} />;
+  } else if (tablet) {
+    nav = <BarNavigationTablet {...navProps} />;
+  } else if (laptop) {
     nav = <BarNavigation {...navProps} />;
+  } else {
+    nav = <BarNavigationDesktop {...navProps} />;
   }
 
   return (
