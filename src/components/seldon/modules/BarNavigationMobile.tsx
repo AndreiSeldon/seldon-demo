@@ -13,18 +13,28 @@
  *****/
  
 import { HTMLAttributes } from "react"
-import { ButtonIconic, ButtonIconicProps } from "../elements/ButtonIconic"
+import { Button, ButtonProps } from "../elements/Button"
 import { Frame } from "../frames/Frame"
 import { Icon, IconProps } from "../primitives/Icon"
+import { Label, LabelProps } from "../primitives/Label"
 
 export interface BarNavigationMobileProps extends HTMLAttributes<HTMLElement> {
   className?: string
-  buttonIconic?: ButtonIconicProps
+  button?: ButtonProps
   icon?: IconProps
-  buttonIconic2?: ButtonIconicProps
+  label?: LabelProps
+  button2?: ButtonProps
   icon2?: IconProps
-  buttonIconic3?: ButtonIconicProps
+  label2?: LabelProps
+  button3?: ButtonProps
   icon3?: IconProps
+  label3?: LabelProps
+  button4?: ButtonProps
+  icon4?: IconProps
+  label4?: LabelProps
+  button5?: ButtonProps
+  icon5?: IconProps
+  label5?: LabelProps
 }
 
 /**
@@ -39,21 +49,33 @@ export interface BarNavigationMobileProps extends HTMLAttributes<HTMLElement> {
  * @example
  * ```tsx
  * <BarNavigationMobile
- *   buttonIconic={() => {}}
+ *   button={() => {}}
  *   icon="material-star"
- *   buttonIconic1={() => {}}
- *   buttonIconic2={() => {}}
+ *   label="Button Label"
+ *   button1={() => {}}
+ *   button2={() => {}}
+ *   button3={() => {}}
+ *   button4={() => {}}
  * />
  * ```
  */
 export function BarNavigationMobile({
   className = "",
-  buttonIconic,
+  button = sdn.button,
   icon,
-  buttonIconic2,
+  label,
+  button2 = sdn.button2,
   icon2,
-  buttonIconic3,
+  label2,
+  button3 = sdn.button3,
   icon3,
+  label3,
+  button4 = sdn.button4,
+  icon4,
+  label4,
+  button5 = sdn.button5,
+  icon5,
+  label5,
   ...props
 }: BarNavigationMobileProps) {
   return (
@@ -61,60 +83,173 @@ export function BarNavigationMobile({
       className={"sdn-barNavigation sdn-barNavigation-3LOEMAIz " + className}
       {...props}
     >
-      {buttonIconic && (
-        <ButtonIconic
-          {...{ ...sdn.buttonIconic, ...buttonIconic }}
-          className={
-            "sdn-button-GZMXBjbU" +
-            (buttonIconic?.className ? " " + buttonIconic.className : "")
-          }
-          icon={{ ...sdn.icon, ...icon }}
-        />
-      )}
-      {buttonIconic2 && (
-        <ButtonIconic
-          {...{ ...sdn.buttonIconic2, ...buttonIconic2 }}
-          className={
-            "sdn-button-GZMXBjbU" +
-            (buttonIconic2?.className ? " " + buttonIconic2.className : "")
-          }
-          icon={{ ...sdn.icon2, ...icon2 }}
-        />
-      )}
-      {buttonIconic3 && (
-        <ButtonIconic
-          {...{ ...sdn.buttonIconic3, ...buttonIconic3 }}
-          className={
-            "sdn-button-GZMXBjbU" +
-            (buttonIconic3?.className ? " " + buttonIconic3.className : "")
-          }
-          icon={{ ...sdn.icon3, ...icon3 }}
-        />
-      )}
+      <Button
+        {...{ ...sdn.button, ...button }}
+        className={
+          "sdn-button-H2MS2kSo" +
+          (button?.className ? " " + button.className : "")
+        }
+        icon={{
+          ...sdn.icon,
+          ...icon,
+          className:
+            "sdn-icon-1ihZT8Ll" + (icon?.className ? " " + icon.className : ""),
+        }}
+        label={{
+          ...sdn.label,
+          ...label,
+          className:
+            "sdn-label-1WuqrUuH" +
+            (label?.className ? " " + label.className : ""),
+        }}
+      />
+      <Button
+        {...{ ...sdn.button2, ...button2 }}
+        className={
+          "sdn-button-H2MS2kSo" +
+          (button2?.className ? " " + button2.className : "")
+        }
+        icon={{
+          ...sdn.icon2,
+          ...icon2,
+          className:
+            "sdn-icon-1ihZT8Ll" +
+            (icon2?.className ? " " + icon2.className : ""),
+        }}
+        label={{
+          ...sdn.label2,
+          ...label2,
+          className:
+            "sdn-label-1WuqrUuH" +
+            (label2?.className ? " " + label2.className : ""),
+        }}
+      />
+      <Button
+        {...{ ...sdn.button3, ...button3 }}
+        className={
+          "sdn-button-H2MS2kSo" +
+          (button3?.className ? " " + button3.className : "")
+        }
+        icon={{
+          ...sdn.icon3,
+          ...icon3,
+          className:
+            "sdn-icon-1ihZT8Ll" +
+            (icon3?.className ? " " + icon3.className : ""),
+        }}
+        label={{
+          ...sdn.label3,
+          ...label3,
+          className:
+            "sdn-label-1WuqrUuH" +
+            (label3?.className ? " " + label3.className : ""),
+        }}
+      />
+      <Button
+        {...{ ...sdn.button4, ...button4 }}
+        className={
+          "sdn-button-H2MS2kSo" +
+          (button4?.className ? " " + button4.className : "")
+        }
+        icon={{
+          ...sdn.icon4,
+          ...icon4,
+          className:
+            "sdn-icon-1ihZT8Ll" +
+            (icon4?.className ? " " + icon4.className : ""),
+        }}
+        label={{
+          ...sdn.label4,
+          ...label4,
+          className:
+            "sdn-label-1WuqrUuH" +
+            (label4?.className ? " " + label4.className : ""),
+        }}
+      />
+      <Button
+        {...{ ...sdn.button5, ...button5 }}
+        className={
+          "sdn-button-H2MS2kSo" +
+          (button5?.className ? " " + button5.className : "")
+        }
+        icon={{
+          ...sdn.icon5,
+          ...icon5,
+          className:
+            "sdn-icon-1ihZT8Ll" +
+            (icon5?.className ? " " + icon5.className : ""),
+        }}
+        label={{
+          ...sdn.label5,
+          ...label5,
+          className:
+            "sdn-label-1WuqrUuH" +
+            (label5?.className ? " " + label5.className : ""),
+        }}
+      />
     </Frame>
   )
 }
 
 const sdn: BarNavigationMobileProps = {
-  buttonIconic: {
-    className: "sdn-button-GZMXBjbU",
+  button: {
+    className: "sdn-button-H2MS2kSo",
   },
   icon: {
     icon: "seldon-component",
     className: "sdn-icon-1ihZT8Ll",
   },
-  buttonIconic2: {
-    className: "sdn-button-GZMXBjbU",
+  label: {
+    children: "General",
+    htmlElement: "label",
+    className: "sdn-label-1WuqrUuH",
+  },
+  button2: {
+    className: "sdn-button-H2MS2kSo",
   },
   icon2: {
     icon: "seldon-image",
     className: "sdn-icon-1ihZT8Ll",
   },
-  buttonIconic3: {
-    className: "sdn-button-GZMXBjbU",
+  label2: {
+    children: "Cards",
+    htmlElement: "label",
+    className: "sdn-label-1WuqrUuH",
+  },
+  button3: {
+    className: "sdn-button-H2MS2kSo",
   },
   icon3: {
     icon: "material-accountCircle",
     className: "sdn-icon-1ihZT8Ll",
+  },
+  label3: {
+    children: "Avatars",
+    htmlElement: "label",
+    className: "sdn-label-1WuqrUuH",
+  },
+  button4: {
+    className: "sdn-button-H2MS2kSo",
+  },
+  icon4: {
+    icon: "seldon-frameColumns",
+    className: "sdn-icon-1ihZT8Ll",
+  },
+  label4: {
+    children: "Calendars",
+    htmlElement: "label",
+    className: "sdn-label-1WuqrUuH",
+  },
+  button5: {
+    className: "sdn-button-H2MS2kSo",
+  },
+  icon5: {
+    icon: "seldon-input",
+    className: "sdn-icon-1ihZT8Ll",
+  },
+  label5: {
+    children: "Forms",
+    htmlElement: "label",
+    className: "sdn-label-1WuqrUuH",
   },
 }
