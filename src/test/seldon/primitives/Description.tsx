@@ -40,7 +40,7 @@ export interface DescriptionProps
  *   width="fill"
  *   height="fit"
  *   color="@swatch.black"
- *   opacity="[object Object]"
+ *   opacity="{"value":100,"unit":"%"}"
  *   textCase="normal"
  *   textDecoration="none"
  *   wrapText="true"
