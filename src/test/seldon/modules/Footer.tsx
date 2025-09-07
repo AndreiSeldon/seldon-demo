@@ -362,66 +362,66 @@ const sdn: FooterProps = {
   titleProps: {
     children: "ABC, Corp.",
     htmlElement: "h4",
-    className: "sdn-title-8hBLUS4E",
+    className: "sdn-title-VbgtFctx",
   },
   description: {
     children: "Building amazing products for the future.",
     htmlElement: "p",
-    className: "sdn-description-4zVJ4flp",
+    className: "sdn-description-81ZMmipp",
   },
   sectionNav: {
     className: "sdn-sectionNav-WkLUDUzz",
   },
   link: {
     children: "About",
-    className: "sdn-link-vW1MeGhD",
+    className: "sdn-link-njVdDePS",
   },
   link2: {
     children: "Contact",
-    className: "sdn-link-vW1MeGhD",
+    className: "sdn-link-njVdDePS",
   },
   link3: {
     children: "Support",
-    className: "sdn-link-vW1MeGhD",
+    className: "sdn-link-njVdDePS",
   },
   sectionSocial: {
     className: "sdn-sectionSocial-qU8bhoQo",
   },
   button: {
-    className: "sdn-button-RSASOmfR",
+    className: "sdn-button-x9x3q6Vz",
   },
   icon: {
     icon: "social-twitter",
-    className: "sdn-icon-9QNsDKzQ",
+    className: "sdn-icon-c2I7NfSF",
   },
   label: {
     children: "Twitter",
     htmlElement: "label",
-    className: "sdn-label-h95ddstO",
+    className: "sdn-label-D5XDFCjw",
   },
   button2: {
-    className: "sdn-button-RSASOmfR",
+    className: "sdn-button-x9x3q6Vz",
   },
   icon2: {
     icon: "social-linkedin",
-    className: "sdn-icon-9QNsDKzQ",
+    className: "sdn-icon-c2I7NfSF",
   },
   label2: {
     children: "LinkedIn",
     htmlElement: "label",
-    className: "sdn-label-h95ddstO",
+    className: "sdn-label-D5XDFCjw",
   },
   button3: {
-    className: "sdn-button-RSASOmfR",
+    className: "sdn-button-x9x3q6Vz",
   },
   icon3: {
     icon: "social-instagram",
-    className: "sdn-icon-9QNsDKzQ",
+    className: "sdn-icon-c2I7NfSF",
   },
   label3: {
     children: "Instagram",
     htmlElement: "label",
-    className: "sdn-label-h95ddstO",
+    className: "sdn-label-D5XDFCjw",
   },
   sectionNewsletter: {
     className: "sdn-sectionNewsletter-gKBcXokR",
@@ -429,42 +429,42 @@ const sdn: FooterProps = {
   title2Props: {
     children: "Stay Updated",
     htmlElement: "h4",
-    className: "sdn-title-RSecIJhF",
+    className: "sdn-title-ZNv3yyIf",
   },
   description2: {
     children: "Subscribe to our newsletter for the latest updates.",
     htmlElement: "p",
-    className: "sdn-description-4zVJ4flp",
+    className: "sdn-description-81ZMmipp",
   },
   input: {
     inputType: "email",
-    className: "sdn-input-1eWkCbCf",
+    className: "sdn-input-ql0VAnWO",
   },
   button4: {
-    className: "sdn-button-w0MhS67M",
+    className: "sdn-button-1vFl3DD9",
   },
   icon4: {
     icon: "material-send",
-    className: "sdn-icon-9QNsDKzQ",
+    className: "sdn-icon-c2I7NfSF",
   },
   label4: {
     children: "Subscribe",
     htmlElement: "label",
-    className: "sdn-label-h95ddstO",
+    className: "sdn-label-D5XDFCjw",
   },
   sectionLegal: {
     className: "sdn-sectionLegal-SWrHEAUp",
   },
   link4: {
     children: "Privacy Policy",
-    className: "sdn-link-vW1MeGhD",
+    className: "sdn-link-njVdDePS",
   },
   link5: {
     children: "Terms of Service",
-    className: "sdn-link-vW1MeGhD",
+    className: "sdn-link-njVdDePS",
   },
   link6: {
     children: "Cookie Policy",
-    className: "sdn-link-vW1MeGhD",
+    className: "sdn-link-njVdDePS",
   },
 }
