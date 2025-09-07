@@ -1,0 +1,56 @@
+/*****
+ *
+ * This code was generated using Seldon (https://seldon.app)
+ *
+ * Licensed under the Terms of Use: https://seldon.digital/terms-of-service
+ * Do not redistribute or sublicense without permission.
+ *
+ * You may not use this software, or any derivative works of it,
+ * in whole or in part, for the purposes of training, fine-tuning,
+ * or otherwise improving (directly or indirectly) any machine learning
+ * or artificial intelligence system.
+ * 
+ *****/
+ 
+import { HTMLAttributes } from "react"
+import { HTMLParagraph } from "../native-react/HTML.Paragraph"
+import { HTMLSpan } from "../native-react/HTML.Span"
+
+export interface DescriptionProps
+  extends HTMLAttributes<HTMLParagraphElement | HTMLSpanElement> {
+  className?: string
+  children?: string
+  htmlElement?: "p" | "span"
+}
+
+/**
+ * Description
+ *
+ * Level: Primitive
+ *
+ * Intent: Presents descriptive text content used for clarification or support.
+ *
+ * Tags: description, text, content, primitive, support, info
+ *
+ * @example
+ * ```tsx
+ * <Description
+ *   children="Description"
+ *   htmlElement="p"
+ * />
+ * ```
+ */
+export function Description({
+  className = "",
+  htmlElement,
+  ...props
+}: DescriptionProps) {
+  switch (htmlElement) {
+    case "span":
+      return <HTMLSpan className={"sdn-description " + className} {...props} />
+    default:
+      return (
+        <HTMLParagraph className={"sdn-description " + className} {...props} />
+      )
+  }
+}
