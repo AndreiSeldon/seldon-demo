@@ -183,11 +183,11 @@ export function TableHead({
       />
       <TableRowHeader
         {...tableRowHeader2Props}
-        tableHeader={tableHeader6Props}
-        tableHeader2={tableHeader7Props}
-        tableHeader3={tableHeader8Props}
-        tableHeader4={tableHeader9Props}
-        tableHeader5={tableHeader10Props}
+        tableHeader6={tableHeader6Props}
+        tableHeader7={tableHeader7Props}
+        tableHeader8={tableHeader8Props}
+        tableHeader9={tableHeader9Props}
+        tableHeader10={tableHeader10Props}
       />
     </HTMLThead>
   )

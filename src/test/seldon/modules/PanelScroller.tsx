@@ -193,15 +193,15 @@ export function PanelScroller({
       <Frame {...frameScrollerProps}></Frame>
       <ButtonBar
         {...buttonBarProps}
-        button={button2Props}
-        icon={icon2Props}
-        label={label2Props}
-        button2={button3Props}
-        icon2={icon3Props}
-        label2={label3Props}
-        button3={button4Props}
-        icon3={icon4Props}
-        label3={label4Props}
+        button2={button2Props}
+        icon2={icon2Props}
+        label2={label2Props}
+        button3={button3Props}
+        icon3={icon3Props}
+        label3={label3Props}
+        button4={button4Props}
+        icon4={icon4Props}
+        label4={label4Props}
       />
     </HTMLDiv>
   )

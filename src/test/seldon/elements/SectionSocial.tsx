@@ -115,8 +115,8 @@ export function SectionSocial({
   return (
     <Frame className={frameClassName} {...props}>
       <Button {...buttonProps} icon={iconProps} label={labelProps} />
-      <Button {...button2Props} icon={icon2Props} label={label2Props} />
-      <Button {...button3Props} icon={icon3Props} label={label3Props} />
+      <Button {...button2Props} icon2={icon2Props} label2={label2Props} />
+      <Button {...button3Props} icon3={icon3Props} label3={label3Props} />
     </Frame>
   )
 }

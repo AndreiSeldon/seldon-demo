@@ -243,19 +243,19 @@ export function TableBody({
       />
       <TableRowData
         {...tableRowData2Props}
-        tableData={tableData6Props}
-        tableData2={tableData7Props}
-        tableData3={tableData8Props}
-        tableData4={tableData9Props}
-        tableData5={tableData10Props}
+        tableData6={tableData6Props}
+        tableData7={tableData7Props}
+        tableData8={tableData8Props}
+        tableData9={tableData9Props}
+        tableData10={tableData10Props}
       />
       <TableRowData
         {...tableRowData3Props}
-        tableData={tableData11Props}
-        tableData2={tableData12Props}
-        tableData3={tableData13Props}
-        tableData4={tableData14Props}
-        tableData5={tableData15Props}
+        tableData11={tableData11Props}
+        tableData12={tableData12Props}
+        tableData13={tableData13Props}
+        tableData14={tableData14Props}
+        tableData15={tableData15Props}
       />
     </HTMLTbody>
   )
