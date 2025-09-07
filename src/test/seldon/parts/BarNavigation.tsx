@@ -159,10 +159,10 @@ export function BarNavigation({
   return (
     <Frame className={frameClassName} {...props}>
       <Button {...buttonProps} icon={iconProps} label={labelProps} />
-      <Button {...button2Props} icon={icon2Props} label={label2Props} />
-      <Button {...button3Props} icon={icon3Props} label={label3Props} />
-      <Button {...button4Props} icon={icon4Props} label={label4Props} />
-      <Button {...button5Props} icon={icon5Props} label={label5Props} />
+      <Button {...button2Props} icon2={icon2Props} label2={label2Props} />
+      <Button {...button3Props} icon3={icon3Props} label3={label3Props} />
+      <Button {...button4Props} icon4={icon4Props} label4={label4Props} />
+      <Button {...button5Props} icon5={icon5Props} label5={label5Props} />
     </Frame>
   )
 }
