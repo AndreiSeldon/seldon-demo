@@ -370,10 +370,10 @@ export function WidgetTodo({
         <ListTodo
           {...listTodoProps}
           listItemTodo={listItemTodoProps}
-          listItemTodo={listItemTodo2Props}
-          listItemTodo={listItemTodo3Props}
-          listItemTodo={listItemTodo4Props}
-          listItemTodo={listItemTodo5Props}
+          listItemTodo2={listItemTodo2Props}
+          listItemTodo3={listItemTodo3Props}
+          listItemTodo4={listItemTodo4Props}
+          listItemTodo5={listItemTodo5Props}
         />
       )}
     </HTMLDiv>
