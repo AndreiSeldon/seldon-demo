@@ -194,11 +194,11 @@ export function PanelDialog({
         icon={icon2Props}
         label={label2Props}
         button2={button3Props}
-        icon2={icon3Props}
-        label2={label3Props}
+        icon={icon3Props}
+        label={label3Props}
         button3={button4Props}
-        icon3={icon4Props}
-        label3={label4Props}
+        icon={icon4Props}
+        label={label4Props}
       />
     </HTMLDiv>
   )

@@ -465,45 +465,45 @@ export function Table({
         tableRowHeader={tableRowHeaderProps}
         tableheader={tableHeaderProps}
         tableHeader={tableHeader2Props}
-        tableHeader2={tableHeader3Props}
-        tableHeader3={tableHeader4Props}
-        tableHeader4={tableHeader5Props}
+        tableHeader={tableHeader3Props}
+        tableHeader={tableHeader4Props}
+        tableHeader={tableHeader5Props}
         tableRowHeader2={tableRowHeader2Props}
-        tableHeader5={tableHeader6Props}
-        tableHeader6={tableHeader7Props}
-        tableHeader7={tableHeader8Props}
-        tableHeader8={tableHeader9Props}
-        tableHeader9={tableHeader10Props}
+        tableHeader={tableHeader6Props}
+        tableHeader={tableHeader7Props}
+        tableHeader={tableHeader8Props}
+        tableHeader={tableHeader9Props}
+        tableHeader={tableHeader10Props}
       />
       <TableBody
         {...tableBodyProps}
         tableRowData={tableRowDataProps}
         tabledata={tableDataProps}
         tableData={tableData2Props}
-        tableData2={tableData3Props}
-        tableData3={tableData4Props}
-        tableData4={tableData5Props}
+        tableData={tableData3Props}
+        tableData={tableData4Props}
+        tableData={tableData5Props}
         tableRowData2={tableRowData2Props}
-        tableData5={tableData6Props}
-        tableData6={tableData7Props}
-        tableData7={tableData8Props}
-        tableData8={tableData9Props}
-        tableData9={tableData10Props}
+        tableData={tableData6Props}
+        tableData={tableData7Props}
+        tableData={tableData8Props}
+        tableData={tableData9Props}
+        tableData={tableData10Props}
         tableRowData3={tableRowData3Props}
-        tableData10={tableData11Props}
-        tableData11={tableData12Props}
-        tableData12={tableData13Props}
-        tableData13={tableData14Props}
-        tableData14={tableData15Props}
+        tableData={tableData11Props}
+        tableData={tableData12Props}
+        tableData={tableData13Props}
+        tableData={tableData14Props}
+        tableData={tableData15Props}
       />
       <TableFoot
         {...tableFootProps}
         tableRowFooter={tableRowFooterProps}
         tableData={tableData16Props}
-        tableData2={tableData17Props}
-        tableData3={tableData18Props}
-        tableData4={tableData19Props}
-        tableData5={tableData20Props}
+        tableData={tableData17Props}
+        tableData={tableData18Props}
+        tableData={tableData19Props}
+        tableData={tableData20Props}
       />
     </HTMLTable>
   )
