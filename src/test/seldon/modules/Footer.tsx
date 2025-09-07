@@ -318,33 +318,33 @@ export function Footer({
         <SectionNav
           {...sectionNavProps}
           link={linkProps}
-          link={link2Props}
-          link={link3Props}
+          link2={link2Props}
+          link3={link3Props}
         />
       )}
       {sectionSocial && (
         <SectionSocial
           {...sectionSocialProps}
           button={buttonProps}
-          button={button2Props}
-          button={button3Props}
+          button2={button2Props}
+          button3={button3Props}
         />
       )}
       {sectionNewsletter && (
         <SectionNewsletter
           {...sectionNewsletterProps}
-          title2Props={title2PropsProps}
-          description={description2Props}
+          titleProps={titlePropsProps}
+          description={descriptionProps}
           input={inputProps}
-          button={button4Props}
+          button={buttonProps}
         />
       )}
       {sectionLegal && (
         <SectionLegal
           {...sectionLegalProps}
-          link={link4Props}
-          link={link5Props}
-          link={link6Props}
+          link={linkProps}
+          link2={link2Props}
+          link3={link3Props}
         />
       )}
     </HTMLFooter>
