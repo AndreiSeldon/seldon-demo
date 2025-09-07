@@ -277,35 +277,35 @@ export function ListTodo({
         checkbox={checkboxProps}
         label={labelProps}
         chipCount={chipCountProps}
-        label={label2Props}
+        label2={label2Props}
       />
       <ListItemTodo
         {...listItemTodo2Props}
         checkbox2={checkbox2Props}
         label3={label3Props}
         chipCount2={chipCount2Props}
-        label={label4Props}
+        label4={label4Props}
       />
       <ListItemTodo
         {...listItemTodo3Props}
         checkbox3={checkbox3Props}
         label5={label5Props}
         chipCount3={chipCount3Props}
-        label={label6Props}
+        label6={label6Props}
       />
       <ListItemTodo
         {...listItemTodo4Props}
         checkbox4={checkbox4Props}
         label7={label7Props}
         chipCount4={chipCount4Props}
-        label={label8Props}
+        label8={label8Props}
       />
       <ListItemTodo
         {...listItemTodo5Props}
         checkbox5={checkbox5Props}
         label9={label9Props}
         chipCount5={chipCount5Props}
-        label={label10Props}
+        label10={label10Props}
       />
     </HTMLUl>
   )
