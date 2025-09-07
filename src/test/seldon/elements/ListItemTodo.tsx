@@ -82,7 +82,7 @@ export function ListItemTodo({
     <HTMLLi className={frameClassName} {...props}>
       <Checkbox {...checkboxProps} />
       <Label {...labelProps} />
-      <ChipCount {...chipCountProps} label2={label2Props} />
+      <ChipCount {...chipCountProps} label={label2Props} />
     </HTMLLi>
   )
 }

@@ -521,47 +521,47 @@ export function CalendarMonth({
       />
       <CalendarWeek
         {...calendarWeek2Props}
-        tableData9={tableData9Props}
-        tableData10={tableData10Props}
-        tableData11={tableData11Props}
-        tableData12={tableData12Props}
-        tableData13={tableData13Props}
-        tableData14={tableData14Props}
-        tableData15={tableData15Props}
-        tableData16={tableData16Props}
+        tableData={tableData9Props}
+        tableData2={tableData10Props}
+        tableData3={tableData11Props}
+        tableData4={tableData12Props}
+        tableData5={tableData13Props}
+        tableData6={tableData14Props}
+        tableData7={tableData15Props}
+        tableData8={tableData16Props}
       />
       <CalendarWeek
         {...calendarWeek3Props}
-        tableData17={tableData17Props}
-        tableData18={tableData18Props}
-        tableData19={tableData19Props}
-        tableData20={tableData20Props}
-        tableData21={tableData21Props}
-        tableData22={tableData22Props}
-        tableData23={tableData23Props}
-        tableData24={tableData24Props}
+        tableData={tableData17Props}
+        tableData2={tableData18Props}
+        tableData3={tableData19Props}
+        tableData4={tableData20Props}
+        tableData5={tableData21Props}
+        tableData6={tableData22Props}
+        tableData7={tableData23Props}
+        tableData8={tableData24Props}
       />
       <CalendarWeek
         {...calendarWeek4Props}
-        tableData25={tableData25Props}
-        tableData26={tableData26Props}
-        tableData27={tableData27Props}
-        tableData28={tableData28Props}
-        tableData29={tableData29Props}
-        tableData30={tableData30Props}
-        tableData31={tableData31Props}
-        tableData32={tableData32Props}
+        tableData={tableData25Props}
+        tableData2={tableData26Props}
+        tableData3={tableData27Props}
+        tableData4={tableData28Props}
+        tableData5={tableData29Props}
+        tableData6={tableData30Props}
+        tableData7={tableData31Props}
+        tableData8={tableData32Props}
       />
       <CalendarWeek
         {...calendarWeek5Props}
-        tableData33={tableData33Props}
-        tableData34={tableData34Props}
-        tableData35={tableData35Props}
-        tableData36={tableData36Props}
-        tableData37={tableData37Props}
-        tableData38={tableData38Props}
-        tableData39={tableData39Props}
-        tableData40={tableData40Props}
+        tableData={tableData33Props}
+        tableData2={tableData34Props}
+        tableData3={tableData35Props}
+        tableData4={tableData36Props}
+        tableData5={tableData37Props}
+        tableData6={tableData38Props}
+        tableData7={tableData39Props}
+        tableData8={tableData40Props}
       />
     </HTMLTbody>
   )

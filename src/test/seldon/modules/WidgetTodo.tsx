@@ -365,11 +365,7 @@ export function WidgetTodo({
         icon={iconProps}
         label={labelProps}
       />
-      <InputSearch
-        {...inputSearchProps}
-        icon2={icon2Props}
-        input={inputProps}
-      />
+      <InputSearch {...inputSearchProps} icon={icon2Props} input={inputProps} />
       {listTodo && (
         <ListTodo
           {...listTodoProps}
