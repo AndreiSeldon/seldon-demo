@@ -334,17 +334,17 @@ export function Footer({
         <SectionNewsletter
           {...sectionNewsletterProps}
           title2Props={title2PropsProps}
-          description={description2Props}
+          description2={description2Props}
           input={inputProps}
-          button={button4Props}
+          button4={button4Props}
         />
       )}
       {sectionLegal && (
         <SectionLegal
           {...sectionLegalProps}
-          link={link4Props}
-          link2={link5Props}
-          link3={link6Props}
+          link4={link4Props}
+          link5={link5Props}
+          link6={link6Props}
         />
       )}
     </HTMLFooter>
