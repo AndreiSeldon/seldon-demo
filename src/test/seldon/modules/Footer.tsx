@@ -373,7 +373,7 @@ const sdn: FooterProps = {
     className: "sdn-sectionNav-8odyDgjE",
   },
   link: {
-    children: "FIXED",
+    children: "About",
     className: "sdn-link-3S3IhaQz",
   },
   link2: {
