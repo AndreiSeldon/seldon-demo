@@ -79,18 +79,31 @@ export interface TableProps extends TableHTMLAttributes<HTMLTableElement> {
  * @example
  * ```tsx
  * <Table
- *   ariaHidden="false"
- *   borderCollapse="collapse"
- *   width="fill"
- *   height="fit"
- *   wrapChildren="false"
- *   clip="true"
+ *   tableHead="{}"
+ *   tableRowHeader="{}"
+ *   tableHeader="{}"
+ *   tableHeader1="{}"
+ *   tableHeader2="{}"
+ *   tableHeader3="{}"
+ *   tableHeader4="{}"
+ *   tableRowHeader1="{}"
+ *   tableBody="{}"
+ *   tableRowData="{}"
+ *   tableData="{}"
+ *   tableData1="{}"
+ *   tableData2="{}"
+ *   tableData3="{}"
+ *   tableData4="{}"
+ *   tableRowData1="{}"
+ *   tableRowData2="{}"
+ *   tableFoot="{}"
+ *   tableRowFooter="{}"
  * />
  * ```
  */
 export function Table({
   className = "",
-  tableHead,
+  tableHead = sdn.tableHead,
   tableRowHeader,
   tableHeader,
   tableHeader2,
@@ -103,7 +116,7 @@ export function Table({
   tableHeader8,
   tableHeader9,
   tableHeader10,
-  tableBody,
+  tableBody = sdn.tableBody,
   tableRowData,
   tableData,
   tableData2,
@@ -122,7 +135,7 @@ export function Table({
   tableData13,
   tableData14,
   tableData15,
-  tableFoot,
+  tableFoot = sdn.tableFoot,
   tableRowFooter,
   tableData16,
   tableData17,
@@ -447,438 +460,201 @@ export function Table({
 
   return (
     <HTMLTable className={frameClassName} {...props}>
-      <TableHead {...tableHeadProps} />
-      <TableBody {...tableBodyProps} />
-      <TableFoot {...tableFootProps} />
+      <TableHead
+        {...tableHeadProps}
+        tableRowHeader={tableRowHeaderProps}
+        tableheader={tableHeaderProps}
+        tableHeader={tableHeader2Props}
+        tableHeader2={tableHeader3Props}
+        tableHeader3={tableHeader4Props}
+        tableHeader4={tableHeader5Props}
+        tableRowHeader2={tableRowHeader2Props}
+        tableHeader5={tableHeader6Props}
+        tableHeader6={tableHeader7Props}
+        tableHeader7={tableHeader8Props}
+        tableHeader8={tableHeader9Props}
+        tableHeader9={tableHeader10Props}
+      />
+      <TableBody
+        {...tableBodyProps}
+        tableRowData={tableRowDataProps}
+        tabledata={tableDataProps}
+        tableData={tableData2Props}
+        tableData2={tableData3Props}
+        tableData3={tableData4Props}
+        tableData4={tableData5Props}
+        tableRowData2={tableRowData2Props}
+        tableData5={tableData6Props}
+        tableData6={tableData7Props}
+        tableData7={tableData8Props}
+        tableData8={tableData9Props}
+        tableData9={tableData10Props}
+        tableRowData3={tableRowData3Props}
+        tableData10={tableData11Props}
+        tableData11={tableData12Props}
+        tableData12={tableData13Props}
+        tableData13={tableData14Props}
+        tableData14={tableData15Props}
+      />
+      <TableFoot
+        {...tableFootProps}
+        tableRowFooter={tableRowFooterProps}
+        tableData={tableData16Props}
+        tableData2={tableData17Props}
+        tableData3={tableData18Props}
+        tableData4={tableData19Props}
+        tableData5={tableData20Props}
+      />
     </HTMLTable>
   )
 }
 
 const sdn: TableProps = {
   tableHead: {
-    ariaHidden: "false",
-    width: "fill",
-    height: "fit",
-    wrapChildren: "false",
-    clip: "true",
     className: "sdn-tableHead-uy4q5Wj2",
   },
   tableRowHeader: {
-    ariaHidden: "false",
-    width: "fill",
-    height: "fit",
-    wrapChildren: "false",
     className: "sdn-tableRowHeader-bwETb2nO",
   },
   tableHeader: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-dYKgVhiE",
   },
   tableHeader2: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-dYKgVhiE",
   },
   tableHeader3: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-dYKgVhiE",
   },
   tableHeader4: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-dYKgVhiE",
   },
   tableHeader5: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-dYKgVhiE",
   },
   tableRowHeader2: {
-    ariaHidden: "false",
-    width: "fill",
-    height: "fit",
-    wrapChildren: "false",
     className: "sdn-tableRowHeader-bwETb2nO",
   },
   tableHeader6: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-dYKgVhiE",
   },
   tableHeader7: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-dYKgVhiE",
   },
   tableHeader8: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-dYKgVhiE",
   },
   tableHeader9: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-dYKgVhiE",
   },
   tableHeader10: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-dYKgVhiE",
   },
   tableBody: {
-    ariaHidden: "false",
-    width: "fill",
-    height: "fit",
-    wrapChildren: "false",
-    clip: "true",
     className: "sdn-tableBody-9epPgjzZ",
   },
   tableRowData: {
-    ariaHidden: "false",
-    width: "fill",
-    height: "fit",
-    wrapChildren: "false",
     className: "sdn-tableRowData-SiSYuTrE",
   },
   tableData: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-55olpoKC",
   },
   tableData2: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-55olpoKC",
   },
   tableData3: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-55olpoKC",
   },
   tableData4: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-55olpoKC",
   },
   tableData5: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-55olpoKC",
   },
   tableRowData2: {
-    ariaHidden: "false",
-    width: "fill",
-    height: "fit",
-    wrapChildren: "false",
     className: "sdn-tableRowData-SiSYuTrE",
   },
   tableData6: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-55olpoKC",
   },
   tableData7: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-55olpoKC",
   },
   tableData8: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-55olpoKC",
   },
   tableData9: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-55olpoKC",
   },
   tableData10: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-55olpoKC",
   },
   tableRowData3: {
-    ariaHidden: "false",
-    width: "fill",
-    height: "fit",
-    wrapChildren: "false",
     className: "sdn-tableRowData-SiSYuTrE",
   },
   tableData11: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-55olpoKC",
   },
   tableData12: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-55olpoKC",
   },
   tableData13: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-55olpoKC",
   },
   tableData14: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-55olpoKC",
   },
   tableData15: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-55olpoKC",
   },
   tableFoot: {
-    ariaHidden: "false",
-    width: "fill",
-    height: "fit",
-    wrapChildren: "false",
-    clip: "true",
     className: "sdn-tableFoot-uLhbj7q9",
   },
   tableRowFooter: {
-    ariaHidden: "false",
-    width: "fill",
-    height: "fit",
-    wrapChildren: "false",
     className: "sdn-tableRowFooter-dcd1PDWA",
   },
   tableData16: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-55olpoKC",
   },
   tableData17: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-55olpoKC",
   },
   tableData18: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-55olpoKC",
   },
   tableData19: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-55olpoKC",
   },
   tableData20: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-55olpoKC",
   },
 }

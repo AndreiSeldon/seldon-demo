@@ -38,22 +38,17 @@ export interface SectionBrandProps extends HTMLAttributes<HTMLElement> {
  * @example
  * ```tsx
  * <SectionBrand
- *   ariaHidden="false"
- *   orientation="vertical"
- *   align="left"
- *   width="fit"
- *   height="fit"
- *   gap="@gap.cozy"
- *   wrapChildren="false"
- *   cursor="default"
+ *   image="/image.jpg"
+ *   title="Product Title"
+ *   description="Product description text"
  * />
  * ```
  */
 export function SectionBrand({
   className = "",
-  image,
-  titleProps,
-  description,
+  image = sdn.image,
+  titleProps = sdn.titleProps,
+  description = sdn.description,
   ...props
 }: SectionBrandProps) {
   const frameClassName = combineClassNames("sdn-sectionLegal", className)
@@ -91,35 +86,16 @@ export function SectionBrand({
 const sdn: SectionBrandProps = {
   image: {
     src: "https://static.seldon.app/logo.svg",
-    alt: "Company Logo",
-    ariaHidden: "false",
-    width: "@dimension.large",
-    height: "fill",
     className: "sdn-image-Jt9aipZ9",
   },
   titleProps: {
     children: "Company Name",
     htmlElement: "h4",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
-    lines: "2",
     className: "sdn-title-eHPXbujP",
   },
   description: {
     children: "Building amazing products for the future.",
     htmlElement: "p",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-description-wvuIQKxS",
   },
 }

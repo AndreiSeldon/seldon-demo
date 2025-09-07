@@ -21,22 +21,17 @@ export interface FrameScrollerProps extends HTMLAttributes<HTMLDivElement> {
 
 /**
  * Scroller
- *
+ * 
  * Level: Frame
- *
+ * 
  * Intent: Frame component schema with horizontal or vertical scroll behavior, allowing overflow content to remain accessible within bounds.
- *
+ * 
  * Tags: frame, scroll, scroller, overflow, ui, horizontal, vertical, content
- *
+ * 
  * @example
  * ```tsx
  * <FrameScroller
- *   ariaHidden="false"
- *   orientation="vertical"
- *   wrapChildren="false"
- *   width="fill"
- *   height="fill"
- *   scroll="vertical"
+
  * />
  * ```
  */

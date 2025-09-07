@@ -40,20 +40,17 @@ export interface HeaderPanelProps extends HTMLAttributes<HTMLElement> {
  * @example
  * ```tsx
  * <HeaderPanel
- *   ariaHidden="false"
- *   orientation="horizontal"
- *   align="center"
- *   width="fill"
- *   height="fit"
- *   gap="@gap.cozy"
- *   wrapChildren="false"
+ *   title="Product Title"
+ *   button={() => {}}
+ *   icon="material-star"
+ *   label="Button Label"
  * />
  * ```
  */
 export function HeaderPanel({
   className = "",
-  titleProps,
-  button,
+  titleProps = sdn.titleProps,
+  button = sdn.button,
   icon,
   label,
   ...props
@@ -86,7 +83,7 @@ export function HeaderPanel({
   return (
     <Frame className={frameClassName} {...props}>
       <Title {...titlePropsProps} />
-      <Button {...buttonProps} />
+      <Button {...buttonProps} icon={iconProps} label={labelProps} />
     </Frame>
   )
 }
@@ -95,41 +92,18 @@ const sdn: HeaderPanelProps = {
   titleProps: {
     children: "Title",
     htmlElement: "h4",
-    width: "fill",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
-    lines: "2",
     className: "sdn-title-dUVYCsWI",
   },
   button: {
-    buttonSize: "@fontSize.medium",
-    orientation: "horizontal",
-    align: "center",
-    width: "fit",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
-    className: "sdn-button-HoT3tFK6",
+    className: "sdn-button-5TPGVTpj",
   },
   icon: {
     icon: "__default__",
-    color: "[object Object]",
-    size: "[object Object]",
-    ariaHidden: "false",
     className: "sdn-icon-wKsld4qS",
   },
   label: {
     children: "Button",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-QE5N5XMK",
   },
 }

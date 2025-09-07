@@ -36,20 +36,15 @@ export interface InputSearchProps extends HTMLAttributes<HTMLElement> {
  * @example
  * ```tsx
  * <InputSearch
- *   ariaHidden="false"
- *   orientation="horizontal"
- *   align="left"
- *   width="fill"
- *   height="fit"
- *   gap="@gap.tight"
- *   wrapChildren="false"
+ *   icon="material-star"
+ *   input="{}"
  * />
  * ```
  */
 export function InputSearch({
   className = "",
-  icon,
-  input,
+  icon = sdn.icon,
+  input = sdn.input,
   ...props
 }: InputSearchProps) {
   const frameClassName = combineClassNames("sdn-inputSearch", className)
@@ -75,19 +70,10 @@ export function InputSearch({
 const sdn: InputSearchProps = {
   icon: {
     icon: "material-search",
-    color: "@swatch.black",
-    size: "@size.medium",
-    ariaHidden: "false",
     className: "sdn-icon-SakY06Rx",
   },
   input: {
     inputType: "text",
-    placeholder: "Search for...",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textCase: "normal",
-    textDecoration: "none",
     className: "sdn-input-kFUwcMTq",
   },
 }

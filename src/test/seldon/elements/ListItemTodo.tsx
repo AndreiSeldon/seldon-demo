@@ -39,20 +39,17 @@ export interface ListItemTodoProps extends LiHTMLAttributes<HTMLLIElement> {
  * @example
  * ```tsx
  * <ListItemTodo
- *   ariaHidden="false"
- *   orientation="horizontal"
- *   align="right"
- *   width="fill"
- *   height="fit"
- *   gap="@gap.cozy"
+ *   checkbox="{}"
+ *   label="Button Label"
+ *   chipCount="{}"
  * />
  * ```
  */
 export function ListItemTodo({
   className = "",
-  checkbox,
-  label,
-  chipCount,
+  checkbox = sdn.checkbox,
+  label = sdn.label,
+  chipCount = sdn.chipCount,
   label2,
   ...props
 }: ListItemTodoProps) {
@@ -85,49 +82,27 @@ export function ListItemTodo({
     <HTMLLi className={frameClassName} {...props}>
       <Checkbox {...checkboxProps} />
       <Label {...labelProps} />
-      <ChipCount {...chipCountProps} />
+      <ChipCount {...chipCountProps} label={label2Props} />
     </HTMLLi>
   )
 }
 
 const sdn: ListItemTodoProps = {
   checkbox: {
-    buttonSize: "@fontSize.medium",
-    checked: "false",
     inputType: "checkbox",
-    width: "fit",
-    color: "@swatch.black",
-    accentColor: "@swatch.primary",
-    align: "center",
     className: "sdn-checkbox-e4nLS1ce",
   },
   label: {
     children: "Label",
     htmlElement: "label",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-kUPUPew7",
   },
   chipCount: {
-    buttonSize: "@fontSize.xsmall",
-    orientation: "horizontal",
-    align: "left",
-    width: "fit",
-    height: "fit",
-    cursor: "pointer",
     className: "sdn-chipCount-juyoB86N",
   },
   label2: {
     children: "Label",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-4xhSms9L",
   },
 }

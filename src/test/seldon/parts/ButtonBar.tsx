@@ -44,25 +44,23 @@ export interface ButtonBarProps extends HTMLAttributes<HTMLElement> {
  * @example
  * ```tsx
  * <ButtonBar
- *   ariaHidden="false"
- *   orientation="horizontal"
- *   align="right"
- *   wrapChildren="true"
- *   width="fill"
- *   height="fit"
- *   gap="@gap.cozy"
+ *   button={() => {}}
+ *   icon="material-star"
+ *   label="Button Label"
+ *   button1={() => {}}
+ *   button2={() => {}}
  * />
  * ```
  */
 export function ButtonBar({
   className = "",
-  button,
+  button = sdn.button,
   icon,
   label,
-  button2,
+  button2 = sdn.button2,
   icon2,
   label2,
-  button3,
+  button3 = sdn.button3,
   icon3,
   label3,
   ...props
@@ -116,93 +114,48 @@ export function ButtonBar({
 
   return (
     <Frame className={frameClassName} {...props}>
-      <Button {...buttonProps} />
-      <Button {...button2Props} />
-      <Button {...button3Props} />
+      <Button {...buttonProps} icon={iconProps} label={labelProps} />
+      <Button {...button2Props} icon={icon2Props} label={label2Props} />
+      <Button {...button3Props} icon={icon3Props} label={label3Props} />
     </Frame>
   )
 }
 
 const sdn: ButtonBarProps = {
   button: {
-    buttonSize: "@fontSize.medium",
-    orientation: "horizontal",
-    align: "center",
-    width: "fit",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
-    className: "sdn-button-bEAjiYmh",
+    className: "sdn-button-tmW0D5Yl",
   },
   icon: {
     icon: "material-add",
-    color: "[object Object]",
-    size: "[object Object]",
-    ariaHidden: "false",
     className: "sdn-icon-vkgwzWrj",
   },
   label: {
     children: "Add",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-iBTpKhvZ",
   },
   button2: {
-    buttonSize: "@fontSize.medium",
-    orientation: "horizontal",
-    align: "center",
-    width: "fit",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
-    className: "sdn-button-bEAjiYmh",
+    className: "sdn-button-tmW0D5Yl",
   },
   icon2: {
     icon: "material-remove",
-    color: "[object Object]",
-    size: "[object Object]",
-    ariaHidden: "false",
     className: "sdn-icon-vkgwzWrj",
   },
   label2: {
     children: "Remove",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-iBTpKhvZ",
   },
   button3: {
-    buttonSize: "@fontSize.medium",
-    orientation: "horizontal",
-    align: "center",
-    width: "fit",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
-    className: "sdn-button-bEAjiYmh",
+    className: "sdn-button-tmW0D5Yl",
   },
   icon3: {
     icon: "__default__",
-    color: "[object Object]",
-    size: "[object Object]",
-    ariaHidden: "false",
     className: "sdn-icon-vkgwzWrj",
   },
   label3: {
     children: "Button",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-iBTpKhvZ",
   },
 }

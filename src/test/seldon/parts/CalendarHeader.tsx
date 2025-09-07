@@ -47,19 +47,21 @@ export interface CalendarHeaderProps
  * @example
  * ```tsx
  * <CalendarHeader
- *   display="show"
- *   ariaHidden="false"
- *   orientation="horizontal"
- *   align="left"
- *   width="fill"
- *   height="fit"
- *   wrapChildren="false"
+ *   calendarWeekdays="{}"
+ *   tableHeader="{}"
+ *   tableHeader1="{}"
+ *   tableHeader2="{}"
+ *   tableHeader3="{}"
+ *   tableHeader4="{}"
+ *   tableHeader5="{}"
+ *   tableHeader6="{}"
+ *   tableHeader7="{}"
  * />
  * ```
  */
 export function CalendarHeader({
   className = "",
-  calendarWeekdays,
+  calendarWeekdays = sdn.calendarWeekdays,
   tableHeader,
   tableHeader2,
   tableHeader3,
@@ -146,116 +148,55 @@ export function CalendarHeader({
 
   return (
     <HTMLThead className={frameClassName} {...props}>
-      <CalendarWeekdays {...calendarWeekdaysProps} />
+      <CalendarWeekdays
+        {...calendarWeekdaysProps}
+        tableHeader={tableHeaderProps}
+        tableHeader2={tableHeader2Props}
+        tableHeader3={tableHeader3Props}
+        tableHeader4={tableHeader4Props}
+        tableHeader5={tableHeader5Props}
+        tableHeader6={tableHeader6Props}
+        tableHeader7={tableHeader7Props}
+        tableHeader8={tableHeader8Props}
+      />
     </HTMLThead>
   )
 }
 
 const sdn: CalendarHeaderProps = {
   calendarWeekdays: {
-    display: "show",
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "left",
-    width: "fill",
-    height: "fill",
-    wrapChildren: "false",
     className: "sdn-calendarWeekdays-QJPVHGuG",
   },
   tableHeader: {
-    ariaHidden: "false",
     children: "Jan",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-nYRsU1Bx",
   },
   tableHeader2: {
-    ariaHidden: "false",
     children: "Mon",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-N5DNHkDt",
   },
   tableHeader3: {
-    ariaHidden: "false",
     children: "Tue",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-N5DNHkDt",
   },
   tableHeader4: {
-    ariaHidden: "false",
     children: "Wed",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-N5DNHkDt",
   },
   tableHeader5: {
-    ariaHidden: "false",
     children: "Thu",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-N5DNHkDt",
   },
   tableHeader6: {
-    ariaHidden: "false",
     children: "Fri",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-N5DNHkDt",
   },
   tableHeader7: {
-    ariaHidden: "false",
     children: "Sat",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-N5DNHkDt",
   },
   tableHeader8: {
-    ariaHidden: "false",
     children: "Sun",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-N5DNHkDt",
   },
 }

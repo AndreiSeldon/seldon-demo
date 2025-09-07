@@ -35,11 +35,6 @@ export interface LabelProps extends HTMLAttributes<HTMLSpanElement> {
  * <Label
  *   children="Label"
  *   htmlElement="label"
- *   width="fit"
- *   height="fit"
- *   color="@swatch.black"
- *   opacity="{"value":100,"unit":"%"}"
- *   wrapText="false"
  * />
  * ```
  */

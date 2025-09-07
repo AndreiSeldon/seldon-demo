@@ -36,14 +36,9 @@ export interface SectionLegalProps extends HTMLAttributes<HTMLElement> {
  * @example
  * ```tsx
  * <SectionLegal
- *   ariaHidden="false"
- *   orientation="vertical"
- *   align="left"
- *   width="fit"
- *   height="fit"
- *   gap="@gap.cozy"
- *   wrapChildren="false"
- *   cursor="default"
+ *   link="{}"
+ *   link1="{}"
+ *   link2="{}"
  * />
  * ```
  */
@@ -82,27 +77,15 @@ export function SectionLegal({
 
 const sdn: SectionLegalProps = {
   link: {
-    ariaHidden: "false",
-    cursor: "pointer",
     children: "Privacy Policy",
-    color: "@swatch.primary",
-    textDecoration: "underline",
     className: "sdn-link-33644ZNi",
   },
   link2: {
-    ariaHidden: "false",
-    cursor: "pointer",
     children: "Terms of Service",
-    color: "@swatch.primary",
-    textDecoration: "underline",
     className: "sdn-link-33644ZNi",
   },
   link3: {
-    ariaHidden: "false",
-    cursor: "pointer",
     children: "Cookie Policy",
-    color: "@swatch.primary",
-    textDecoration: "underline",
     className: "sdn-link-33644ZNi",
   },
 }

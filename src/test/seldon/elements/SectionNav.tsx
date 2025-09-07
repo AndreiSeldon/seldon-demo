@@ -36,14 +36,9 @@ export interface SectionNavProps extends HTMLAttributes<HTMLElement> {
  * @example
  * ```tsx
  * <SectionNav
- *   ariaHidden="false"
- *   orientation="vertical"
- *   align="left"
- *   width="fit"
- *   height="fit"
- *   gap="@gap.cozy"
- *   wrapChildren="false"
- *   cursor="default"
+ *   link="{}"
+ *   link1="{}"
+ *   link2="{}"
  * />
  * ```
  */
@@ -82,27 +77,15 @@ export function SectionNav({
 
 const sdn: SectionNavProps = {
   link: {
-    ariaHidden: "false",
-    cursor: "pointer",
     children: "About",
-    color: "@swatch.primary",
-    textDecoration: "underline",
     className: "sdn-link-33644ZNi",
   },
   link2: {
-    ariaHidden: "false",
-    cursor: "pointer",
     children: "Contact",
-    color: "@swatch.primary",
-    textDecoration: "underline",
     className: "sdn-link-33644ZNi",
   },
   link3: {
-    ariaHidden: "false",
-    cursor: "pointer",
     children: "Support",
-    color: "@swatch.primary",
-    textDecoration: "underline",
     className: "sdn-link-33644ZNi",
   },
 }

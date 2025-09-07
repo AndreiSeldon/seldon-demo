@@ -18,7 +18,6 @@ import { HTMLImg } from "../native-react/HTML.Img"
 export interface ImageProps extends ImgHTMLAttributes<HTMLImageElement> {
   className?: string
   src?: string
-  alt?: string
 }
 
 /**
@@ -34,10 +33,6 @@ export interface ImageProps extends ImgHTMLAttributes<HTMLImageElement> {
  * ```tsx
  * <Image
  *   src="https://static.seldon.app/background-default-dark.jpg"
- *   alt="Default image"
- *   ariaHidden="false"
- *   width="fill"
- *   height="fill"
  * />
  * ```
  */

@@ -48,14 +48,6 @@ export interface SubtitleProps
  * <Subtitle
  *   children="Subtitle"
  *   htmlElement="h5"
- *   width="fill"
- *   height="fit"
- *   color="@swatch.black"
- *   opacity="{"value":100,"unit":"%"}"
- *   textCase="normal"
- *   textDecoration="none"
- *   wrapText="true"
- *   lines="2"
  * />
  * ```
  */

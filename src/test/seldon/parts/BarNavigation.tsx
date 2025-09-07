@@ -50,31 +50,31 @@ export interface BarNavigationProps extends HTMLAttributes<HTMLElement> {
  * @example
  * ```tsx
  * <BarNavigation
- *   ariaHidden="false"
- *   orientation="horizontal"
- *   align="left"
- *   width="fill"
- *   height="fit"
- *   gap="@gap.compact"
- *   wrapChildren="false"
+ *   button={() => {}}
+ *   icon="material-star"
+ *   label="Button Label"
+ *   button1={() => {}}
+ *   button2={() => {}}
+ *   button3={() => {}}
+ *   button4={() => {}}
  * />
  * ```
  */
 export function BarNavigation({
   className = "",
-  button,
+  button = sdn.button,
   icon,
   label,
-  button2,
+  button2 = sdn.button2,
   icon2,
   label2,
-  button3,
+  button3 = sdn.button3,
   icon3,
   label3,
-  button4,
+  button4 = sdn.button4,
   icon4,
   label4,
-  button5,
+  button5 = sdn.button5,
   icon5,
   label5,
   ...props
@@ -158,149 +158,74 @@ export function BarNavigation({
 
   return (
     <Frame className={frameClassName} {...props}>
-      <Button {...buttonProps} />
-      <Button {...button2Props} />
-      <Button {...button3Props} />
-      <Button {...button4Props} />
-      <Button {...button5Props} />
+      <Button {...buttonProps} icon={iconProps} label={labelProps} />
+      <Button {...button2Props} icon={icon2Props} label={label2Props} />
+      <Button {...button3Props} icon={icon3Props} label={label3Props} />
+      <Button {...button4Props} icon={icon4Props} label={label4Props} />
+      <Button {...button5Props} icon={icon5Props} label={label5Props} />
     </Frame>
   )
 }
 
 const sdn: BarNavigationProps = {
   button: {
-    buttonSize: "@fontSize.medium",
-    orientation: "vertical",
-    align: "center",
-    width: "fill",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
     className: "sdn-button-3Ie49tQr",
   },
   icon: {
     icon: "material-home",
-    color: "[object Object]",
-    size: "@size.medium",
-    ariaHidden: "false",
     className: "sdn-icon-R26bpHVd",
   },
   label: {
     children: "Home",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-VZw5Qkvo",
   },
   button2: {
-    buttonSize: "@fontSize.medium",
-    orientation: "vertical",
-    align: "center",
-    width: "fill",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
     className: "sdn-button-baHFtibY",
   },
   icon2: {
     icon: "material-search",
-    color: "[object Object]",
-    size: "@size.medium",
-    ariaHidden: "false",
     className: "sdn-icon-SakY06Rx",
   },
   label2: {
     children: "Search",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-gapBP7xo",
   },
   button3: {
-    buttonSize: "@fontSize.medium",
-    orientation: "vertical",
-    align: "center",
-    width: "fill",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
     className: "sdn-button-baHFtibY",
   },
   icon3: {
     icon: "material-favorite",
-    color: "[object Object]",
-    size: "@size.medium",
-    ariaHidden: "false",
     className: "sdn-icon-SakY06Rx",
   },
   label3: {
     children: "Favorites",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-gapBP7xo",
   },
   button4: {
-    buttonSize: "@fontSize.medium",
-    orientation: "vertical",
-    align: "center",
-    width: "fill",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
     className: "sdn-button-baHFtibY",
   },
   icon4: {
     icon: "material-accountCircle",
-    color: "[object Object]",
-    size: "@size.medium",
-    ariaHidden: "false",
     className: "sdn-icon-SakY06Rx",
   },
   label4: {
     children: "Profile",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-gapBP7xo",
   },
   button5: {
-    buttonSize: "@fontSize.medium",
-    orientation: "vertical",
-    align: "center",
-    width: "fill",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
     className: "sdn-button-baHFtibY",
   },
   icon5: {
     icon: "material-settings",
-    color: "[object Object]",
-    size: "@size.medium",
-    ariaHidden: "false",
     className: "sdn-icon-SakY06Rx",
   },
   label5: {
     children: "Settings",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-gapBP7xo",
   },
 }

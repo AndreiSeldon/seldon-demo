@@ -43,20 +43,17 @@ export interface AvatarProps extends HTMLAttributes<HTMLElement> {
  * @example
  * ```tsx
  * <Avatar
- *   ariaHidden="false"
- *   orientation="horizontal"
- *   align="center"
- *   width="fill"
- *   height="fit"
- *   gap="@gap.cozy"
- *   wrapChildren="false"
+ *   image="/image.jpg"
+ *   textblockAvatar="{}"
+ *   title="Product Title"
+ *   subtitle="Product Title"
  * />
  * ```
  */
 export function Avatar({
   className = "",
-  image,
-  textblockAvatar,
+  image = sdn.image,
+  textblockAvatar = sdn.textblockAvatar,
   titleProps,
   subtitle,
   ...props
@@ -92,7 +89,11 @@ export function Avatar({
   return (
     <Frame className={frameClassName} {...props}>
       <Image {...imageProps} />
-      <TextblockAvatar {...textblockAvatarProps} />
+      <TextblockAvatar
+        {...textblockAvatarProps}
+        titleProps={titlePropsProps}
+        subtitle={subtitleProps}
+      />
     </Frame>
   )
 }
@@ -100,45 +101,19 @@ export function Avatar({
 const sdn: AvatarProps = {
   image: {
     src: "https://static.seldon.app/avatar-user.jpg",
-    alt: "Default image",
-    ariaHidden: "false",
-    width: "@dimension.medium",
-    height: "@dimension.medium",
     className: "sdn-image-aKgtQ77y",
   },
   textblockAvatar: {
-    ariaHidden: "false",
-    orientation: "vertical",
-    width: "fill",
-    height: "fit",
-    gap: "@gap.tight",
-    wrapChildren: "false",
     className: "sdn-textblockAvatar-ALOXD1fQ",
   },
   titleProps: {
     children: "Full Name",
     htmlElement: "h4",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.primary",
-    opacity: "[object Object]",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
-    lines: "2",
     className: "sdn-title-qIqahzxr",
   },
   subtitle: {
     children: "email@example.com",
     htmlElement: "h5",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.swatch1",
-    opacity: "[object Object]",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
-    lines: "2",
     className: "sdn-subtitle-7SAlj8M1",
   },
 }

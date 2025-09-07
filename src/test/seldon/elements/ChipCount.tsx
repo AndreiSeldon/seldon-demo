@@ -19,14 +19,6 @@ import { combineClassNames } from "../utils/class-name-utils"
 
 export interface ChipCountProps extends HTMLAttributes<HTMLSpanElement> {
   className?: string
-  buttonSize?:
-    | "@fontSize.xxsmall"
-    | "@fontSize.xsmall"
-    | "@fontSize.small"
-    | "@fontSize.medium"
-    | "@fontSize.large"
-    | "@fontSize.xlarge"
-    | "@fontSize.xxlarge"
   label?: LabelProps
 }
 
@@ -42,16 +34,15 @@ export interface ChipCountProps extends HTMLAttributes<HTMLSpanElement> {
  * @example
  * ```tsx
  * <ChipCount
- *   buttonSize="@fontSize.xsmall"
- *   orientation="horizontal"
- *   align="left"
- *   width="fill"
- *   height="fit"
- *   cursor="pointer"
+ *   label="Button Label"
  * />
  * ```
  */
-export function ChipCount({ className = "", label, ...props }: ChipCountProps) {
+export function ChipCount({
+  className = "",
+  label = sdn.label,
+  ...props
+}: ChipCountProps) {
   const frameClassName = combineClassNames("sdn-chipCount", className)
   const labelProps = {
     ...sdn.label,
@@ -70,11 +61,6 @@ const sdn: ChipCountProps = {
   label: {
     children: "Label",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-4xhSms9L",
   },
 }

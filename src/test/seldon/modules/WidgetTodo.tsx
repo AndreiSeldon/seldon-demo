@@ -77,24 +77,32 @@ export interface WidgetTodoProps extends HTMLAttributes<HTMLDivElement> {
  * @example
  * ```tsx
  * <WidgetTodo
- *   ariaHidden="false"
- *   orientation="vertical"
- *   width="fill"
- *   height="[object Object]"
- *   gap="@gap.tight"
- *   wrapChildren="false"
- *   clip="true"
+ *   headerPanel="{}"
+ *   title="Product Title"
+ *   button={() => {}}
+ *   icon="material-star"
+ *   label="Button Label"
+ *   inputSearch="{}"
+ *   input="{}"
+ *   listTodo="{}"
+ *   listItemTodo="{}"
+ *   checkbox="{}"
+ *   chipCount="{}"
+ *   listItemTodo1="{}"
+ *   listItemTodo2="{}"
+ *   listItemTodo3="{}"
+ *   listItemTodo4="{}"
  * />
  * ```
  */
 export function WidgetTodo({
   className = "",
-  headerPanel,
+  headerPanel = sdn.headerPanel,
   titleProps,
   button,
   icon,
   label,
-  inputSearch,
+  inputSearch = sdn.inputSearch,
   icon2,
   input,
   listTodo,
@@ -350,8 +358,14 @@ export function WidgetTodo({
 
   return (
     <HTMLDiv className={frameClassName} {...props}>
-      <HeaderPanel {...headerPanelProps} />
-      <InputSearch {...inputSearchProps} />
+      <HeaderPanel
+        {...headerPanelProps}
+        titleProps={titlePropsProps}
+        button={buttonProps}
+        icon={iconProps}
+        label={labelProps}
+      />
+      <InputSearch {...inputSearchProps} icon={icon2Props} input={inputProps} />
       {listTodo && (
         <ListTodo
           {...listTodoProps}
@@ -368,330 +382,137 @@ export function WidgetTodo({
 
 const sdn: WidgetTodoProps = {
   headerPanel: {
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "center",
-    width: "fill",
-    height: "fit",
-    gap: "@gap.cozy",
-    wrapChildren: "false",
     className: "sdn-headerPanel-JaYwjnHG",
   },
   titleProps: {
     children: "Title",
     htmlElement: "h4",
-    width: "fill",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
-    lines: "2",
     className: "sdn-title-JooGsPwE",
   },
   button: {
-    buttonSize: "@fontSize.medium",
-    orientation: "horizontal",
-    align: "center",
-    width: "fit",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
-    className: "sdn-button-bEAjiYmh",
+    className: "sdn-button-tmW0D5Yl",
   },
   icon: {
     icon: "__default__",
-    color: "[object Object]",
-    size: "[object Object]",
-    ariaHidden: "false",
     className: "sdn-icon-vkgwzWrj",
   },
   label: {
     children: "Button",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-iBTpKhvZ",
   },
   inputSearch: {
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "left",
-    width: "fill",
-    height: "fit",
-    gap: "@gap.tight",
-    wrapChildren: "false",
     className: "sdn-inputSearch-AvA61QtL",
   },
   icon2: {
     icon: "material-search",
-    color: "@swatch.black",
-    size: "@size.medium",
-    ariaHidden: "false",
     className: "sdn-icon-EoNoqX7Q",
   },
   input: {
     inputType: "text",
-    placeholder: "Search for...",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textCase: "normal",
-    textDecoration: "none",
     className: "sdn-input-45AmU5Pj",
   },
   listTodo: {
-    ariaHidden: "false",
-    orientation: "vertical",
-    width: "fill",
-    height: "fill",
-    scroll: "vertical",
-    wrapChildren: "false",
-    clip: "true",
     className: "sdn-listTodo-KwdT1DmY",
   },
   listItemTodo: {
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "right",
-    width: "fill",
-    height: "fit",
-    gap: "@gap.cozy",
     className: "sdn-listItemTodo-lMNurJWj",
   },
   checkbox: {
-    buttonSize: "@fontSize.medium",
-    checked: "false",
     inputType: "checkbox",
-    width: "fit",
-    color: "@swatch.black",
-    accentColor: "@swatch.primary",
-    align: "center",
     className: "sdn-checkbox-urbJTVek",
   },
   label2: {
     children: "Label",
     htmlElement: "label",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-OuNDR5PZ",
   },
   chipCount: {
-    buttonSize: "@fontSize.xsmall",
-    orientation: "horizontal",
-    align: "left",
-    width: "fit",
-    height: "fit",
-    cursor: "pointer",
     className: "sdn-chipCount-bvUeHYSs",
   },
   label3: {
     children: "Label",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-NYdtKGmd",
   },
   listItemTodo2: {
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "right",
-    width: "fill",
-    height: "fit",
-    gap: "@gap.cozy",
     className: "sdn-listItemTodo-lMNurJWj",
   },
   checkbox2: {
-    buttonSize: "@fontSize.medium",
-    checked: "false",
     inputType: "checkbox",
-    width: "fit",
-    color: "@swatch.black",
-    accentColor: "@swatch.primary",
-    align: "center",
     className: "sdn-checkbox-urbJTVek",
   },
   label4: {
     children: "Label",
     htmlElement: "label",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-OuNDR5PZ",
   },
   chipCount2: {
-    buttonSize: "@fontSize.xsmall",
-    orientation: "horizontal",
-    align: "left",
-    width: "fit",
-    height: "fit",
-    cursor: "pointer",
     className: "sdn-chipCount-bvUeHYSs",
   },
   label5: {
     children: "Label",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-NYdtKGmd",
   },
   listItemTodo3: {
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "right",
-    width: "fill",
-    height: "fit",
-    gap: "@gap.cozy",
     className: "sdn-listItemTodo-lMNurJWj",
   },
   checkbox3: {
-    buttonSize: "@fontSize.medium",
-    checked: "false",
     inputType: "checkbox",
-    width: "fit",
-    color: "@swatch.black",
-    accentColor: "@swatch.primary",
-    align: "center",
     className: "sdn-checkbox-urbJTVek",
   },
   label6: {
     children: "Label",
     htmlElement: "label",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-OuNDR5PZ",
   },
   chipCount3: {
-    buttonSize: "@fontSize.xsmall",
-    orientation: "horizontal",
-    align: "left",
-    width: "fit",
-    height: "fit",
-    cursor: "pointer",
     className: "sdn-chipCount-bvUeHYSs",
   },
   label7: {
     children: "Label",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-NYdtKGmd",
   },
   listItemTodo4: {
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "right",
-    width: "fill",
-    height: "fit",
-    gap: "@gap.cozy",
     className: "sdn-listItemTodo-lMNurJWj",
   },
   checkbox4: {
-    buttonSize: "@fontSize.medium",
-    checked: "false",
     inputType: "checkbox",
-    width: "fit",
-    color: "@swatch.black",
-    accentColor: "@swatch.primary",
-    align: "center",
     className: "sdn-checkbox-urbJTVek",
   },
   label8: {
     children: "Label",
     htmlElement: "label",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-OuNDR5PZ",
   },
   chipCount4: {
-    buttonSize: "@fontSize.xsmall",
-    orientation: "horizontal",
-    align: "left",
-    width: "fit",
-    height: "fit",
-    cursor: "pointer",
     className: "sdn-chipCount-bvUeHYSs",
   },
   label9: {
     children: "Label",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-NYdtKGmd",
   },
   listItemTodo5: {
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "right",
-    width: "fill",
-    height: "fit",
-    gap: "@gap.cozy",
     className: "sdn-listItemTodo-bsBo6hNF",
   },
   checkbox5: {
-    buttonSize: "@fontSize.medium",
-    checked: "false",
     inputType: "checkbox",
-    width: "fit",
-    color: "@swatch.black",
-    accentColor: "@swatch.primary",
-    align: "center",
     className: "sdn-checkbox-urbJTVek",
   },
   label10: {
     children: "Label",
     htmlElement: "label",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-OuNDR5PZ",
   },
   chipCount5: {
-    buttonSize: "@fontSize.xsmall",
-    orientation: "horizontal",
-    align: "left",
-    width: "fit",
-    height: "fit",
-    cursor: "pointer",
     className: "sdn-chipCount-bvUeHYSs",
   },
   label11: {
     children: "Label",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-NYdtKGmd",
   },
 }

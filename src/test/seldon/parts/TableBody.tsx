@@ -52,29 +52,32 @@ export interface TableBodyProps extends HTMLAttributes<HTMLElement> {
  * @example
  * ```tsx
  * <TableBody
- *   ariaHidden="false"
- *   width="fill"
- *   height="fit"
- *   wrapChildren="false"
- *   clip="true"
+ *   tableRowData="{}"
+ *   tableData="{}"
+ *   tableData1="{}"
+ *   tableData2="{}"
+ *   tableData3="{}"
+ *   tableData4="{}"
+ *   tableRowData1="{}"
+ *   tableRowData2="{}"
  * />
  * ```
  */
 export function TableBody({
   className = "",
-  tableRowData,
+  tableRowData = sdn.tableRowData,
   tableData,
   tableData2,
   tableData3,
   tableData4,
   tableData5,
-  tableRowData2,
+  tableRowData2 = sdn.tableRowData2,
   tableData6,
   tableData7,
   tableData8,
   tableData9,
   tableData10,
-  tableRowData3,
+  tableRowData3 = sdn.tableRowData3,
   tableData11,
   tableData12,
   tableData13,
@@ -230,213 +233,102 @@ export function TableBody({
 
   return (
     <HTMLTbody className={frameClassName} {...props}>
-      <TableRowData {...tableRowDataProps} />
-      <TableRowData {...tableRowData2Props} />
-      <TableRowData {...tableRowData3Props} />
+      <TableRowData
+        {...tableRowDataProps}
+        tableData={tableDataProps}
+        tableData2={tableData2Props}
+        tableData3={tableData3Props}
+        tableData4={tableData4Props}
+        tableData5={tableData5Props}
+      />
+      <TableRowData
+        {...tableRowData2Props}
+        tableData={tableData6Props}
+        tableData2={tableData7Props}
+        tableData3={tableData8Props}
+        tableData4={tableData9Props}
+        tableData5={tableData10Props}
+      />
+      <TableRowData
+        {...tableRowData3Props}
+        tableData={tableData11Props}
+        tableData2={tableData12Props}
+        tableData3={tableData13Props}
+        tableData4={tableData14Props}
+        tableData5={tableData15Props}
+      />
     </HTMLTbody>
   )
 }
 
 const sdn: TableBodyProps = {
   tableRowData: {
-    ariaHidden: "false",
-    width: "fill",
-    height: "fit",
-    wrapChildren: "false",
     className: "sdn-tableRowData-emJSLzNt",
   },
   tableData: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-pUUaa0JM",
   },
   tableData2: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-pUUaa0JM",
   },
   tableData3: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-pUUaa0JM",
   },
   tableData4: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-pUUaa0JM",
   },
   tableData5: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-pUUaa0JM",
   },
   tableRowData2: {
-    ariaHidden: "false",
-    width: "fill",
-    height: "fit",
-    wrapChildren: "false",
     className: "sdn-tableRowData-emJSLzNt",
   },
   tableData6: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-pUUaa0JM",
   },
   tableData7: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-pUUaa0JM",
   },
   tableData8: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-pUUaa0JM",
   },
   tableData9: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-pUUaa0JM",
   },
   tableData10: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-pUUaa0JM",
   },
   tableRowData3: {
-    ariaHidden: "false",
-    width: "fill",
-    height: "fit",
-    wrapChildren: "false",
     className: "sdn-tableRowData-emJSLzNt",
   },
   tableData11: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-pUUaa0JM",
   },
   tableData12: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-pUUaa0JM",
   },
   tableData13: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-pUUaa0JM",
   },
   tableData14: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-pUUaa0JM",
   },
   tableData15: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-pUUaa0JM",
   },
 }

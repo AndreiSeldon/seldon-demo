@@ -44,23 +44,21 @@ export interface SectionNewsletterProps extends HTMLAttributes<HTMLElement> {
  * @example
  * ```tsx
  * <SectionNewsletter
- *   ariaHidden="false"
- *   orientation="vertical"
- *   align="left"
- *   width="fit"
- *   height="fit"
- *   gap="@gap.cozy"
- *   wrapChildren="false"
- *   cursor="default"
+ *   title="Product Title"
+ *   description="Product description text"
+ *   input="{}"
+ *   button={() => {}}
+ *   icon="material-star"
+ *   label="Button Label"
  * />
  * ```
  */
 export function SectionNewsletter({
   className = "",
-  titleProps,
-  description,
-  input,
-  button,
+  titleProps = sdn.titleProps,
+  description = sdn.description,
+  input = sdn.input,
+  button = sdn.button,
   icon,
   label,
   ...props
@@ -108,7 +106,7 @@ export function SectionNewsletter({
       <Title {...titlePropsProps} />
       <Description {...descriptionProps} />
       <Input {...inputProps} />
-      <Button {...buttonProps} />
+      <Button {...buttonProps} icon={iconProps} label={labelProps} />
     </Frame>
   )
 }
@@ -117,63 +115,27 @@ const sdn: SectionNewsletterProps = {
   titleProps: {
     children: "Stay Updated",
     htmlElement: "h4",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
-    lines: "2",
     className: "sdn-title-CNcSOHOw",
   },
   description: {
     children: "Subscribe to our newsletter for the latest updates.",
     htmlElement: "p",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-description-At1EHBUM",
   },
   input: {
     inputType: "email",
-    placeholder: "Enter your email",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textCase: "normal",
-    textDecoration: "none",
     className: "sdn-input-Bm7gMQ7A",
   },
   button: {
-    buttonSize: "@fontSize.xsmall",
-    orientation: "horizontal",
-    align: "center",
-    width: "fit",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
     className: "sdn-button-5TPGVTpj",
   },
   icon: {
     icon: "material-send",
-    color: "[object Object]",
-    size: "[object Object]",
-    ariaHidden: "false",
     className: "sdn-icon-OzjKOYjf",
   },
   label: {
     children: "Subscribe",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-4xhSms9L",
   },
 }

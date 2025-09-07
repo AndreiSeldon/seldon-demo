@@ -44,26 +44,23 @@ export interface SectionSocialProps extends HTMLAttributes<HTMLElement> {
  * @example
  * ```tsx
  * <SectionSocial
- *   ariaHidden="false"
- *   orientation="vertical"
- *   align="left"
- *   width="fit"
- *   height="fit"
- *   gap="@gap.cozy"
- *   wrapChildren="false"
- *   cursor="default"
+ *   button={() => {}}
+ *   icon="material-star"
+ *   label="Button Label"
+ *   button1={() => {}}
+ *   button2={() => {}}
  * />
  * ```
  */
 export function SectionSocial({
   className = "",
-  button,
+  button = sdn.button,
   icon,
   label,
-  button2,
+  button2 = sdn.button2,
   icon2,
   label2,
-  button3,
+  button3 = sdn.button3,
   icon3,
   label3,
   ...props
@@ -117,93 +114,48 @@ export function SectionSocial({
 
   return (
     <Frame className={frameClassName} {...props}>
-      <Button {...buttonProps} />
-      <Button {...button2Props} />
-      <Button {...button3Props} />
+      <Button {...buttonProps} icon={iconProps} label={labelProps} />
+      <Button {...button2Props} icon={icon2Props} label={label2Props} />
+      <Button {...button3Props} icon={icon3Props} label={label3Props} />
     </Frame>
   )
 }
 
 const sdn: SectionSocialProps = {
   button: {
-    buttonSize: "@fontSize.xsmall",
-    orientation: "horizontal",
-    align: "left",
-    width: "fill",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
     className: "sdn-button-e2pTp5af",
   },
   icon: {
     icon: "social-twitter",
-    color: "[object Object]",
-    size: "[object Object]",
-    ariaHidden: "false",
     className: "sdn-icon-OzjKOYjf",
   },
   label: {
     children: "Twitter",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-4xhSms9L",
   },
   button2: {
-    buttonSize: "@fontSize.xsmall",
-    orientation: "horizontal",
-    align: "left",
-    width: "fill",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
     className: "sdn-button-e2pTp5af",
   },
   icon2: {
     icon: "social-linkedin",
-    color: "[object Object]",
-    size: "[object Object]",
-    ariaHidden: "false",
     className: "sdn-icon-OzjKOYjf",
   },
   label2: {
     children: "LinkedIn",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-4xhSms9L",
   },
   button3: {
-    buttonSize: "@fontSize.xsmall",
-    orientation: "horizontal",
-    align: "left",
-    width: "fill",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
     className: "sdn-button-e2pTp5af",
   },
   icon3: {
     icon: "social-instagram",
-    color: "[object Object]",
-    size: "[object Object]",
-    ariaHidden: "false",
     className: "sdn-icon-OzjKOYjf",
   },
   label3: {
     children: "Instagram",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-4xhSms9L",
   },
 }

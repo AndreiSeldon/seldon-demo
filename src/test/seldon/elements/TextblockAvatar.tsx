@@ -36,19 +36,15 @@ export interface TextblockAvatarProps extends HTMLAttributes<HTMLElement> {
  * @example
  * ```tsx
  * <TextblockAvatar
- *   ariaHidden="false"
- *   orientation="vertical"
- *   width="fill"
- *   height="fit"
- *   gap="@gap.tight"
- *   wrapChildren="false"
+ *   title="Product Title"
+ *   subtitle="Product Title"
  * />
  * ```
  */
 export function TextblockAvatar({
   className = "",
-  titleProps,
-  subtitle,
+  titleProps = sdn.titleProps,
+  subtitle = sdn.subtitle,
   ...props
 }: TextblockAvatarProps) {
   const frameClassName = combineClassNames("sdn-textblockAvatar", className)
@@ -78,27 +74,11 @@ const sdn: TextblockAvatarProps = {
   titleProps: {
     children: "Default Title",
     htmlElement: "h4",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
-    lines: "2",
     className: "sdn-title-eHPXbujP",
   },
   subtitle: {
     children: "Details",
     htmlElement: "h5",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
-    lines: "2",
     className: "sdn-subtitle-aE7NioiN",
   },
 }

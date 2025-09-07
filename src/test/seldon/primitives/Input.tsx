@@ -42,12 +42,6 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
  * ```tsx
  * <Input
  *   inputType="text"
- *   placeholder="Placeholder text"
- *   width="fill"
- *   height="fit"
- *   color="@swatch.black"
- *   textCase="normal"
- *   textDecoration="none"
  * />
  * ```
  */

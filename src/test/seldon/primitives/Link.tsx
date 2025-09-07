@@ -32,11 +32,7 @@ export interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
  * @example
  * ```tsx
  * <Link
- *   ariaHidden="false"
- *   cursor="pointer"
  *   children="Link"
- *   color="@swatch.primary"
- *   textDecoration="underline"
  * />
  * ```
  */

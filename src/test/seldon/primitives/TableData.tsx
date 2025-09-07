@@ -32,15 +32,7 @@ export interface TableDataProps extends TdHTMLAttributes<HTMLTableCellElement> {
  * @example
  * ```tsx
  * <TableData
- *   ariaHidden="false"
  *   children="Cell"
- *   width="fill"
- *   height="fit"
- *   color="@swatch.black"
- *   textAlign="left"
- *   textCase="normal"
- *   textDecoration="none"
- *   wrapText="true"
  * />
  * ```
  */

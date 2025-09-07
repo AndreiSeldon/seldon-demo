@@ -48,14 +48,6 @@ export interface TitleProps
  * <Title
  *   children="Title"
  *   htmlElement="h4"
- *   width="fill"
- *   height="fit"
- *   color="@swatch.black"
- *   opacity="{"value":100,"unit":"%"}"
- *   textCase="normal"
- *   textDecoration="none"
- *   wrapText="true"
- *   lines="2"
  * />
  * ```
  */

@@ -61,39 +61,40 @@ export interface ListTodoProps extends HTMLAttributes<HTMLUListElement> {
  * @example
  * ```tsx
  * <ListTodo
- *   ariaHidden="false"
- *   orientation="vertical"
- *   width="fill"
- *   height="fit"
- *   scroll="vertical"
- *   wrapChildren="false"
- *   clip="true"
+ *   listItemTodo="{}"
+ *   checkbox="{}"
+ *   label="Button Label"
+ *   chipCount="{}"
+ *   listItemTodo1="{}"
+ *   listItemTodo2="{}"
+ *   listItemTodo3="{}"
+ *   listItemTodo4="{}"
  * />
  * ```
  */
 export function ListTodo({
   className = "",
-  listItemTodo,
+  listItemTodo = sdn.listItemTodo,
   checkbox,
   label,
   chipCount,
   label2,
-  listItemTodo2,
+  listItemTodo2 = sdn.listItemTodo2,
   checkbox2,
   label3,
   chipCount2,
   label4,
-  listItemTodo3,
+  listItemTodo3 = sdn.listItemTodo3,
   checkbox3,
   label5,
   chipCount3,
   label6,
-  listItemTodo4,
+  listItemTodo4 = sdn.listItemTodo4,
   checkbox4,
   label7,
   chipCount4,
   label8,
-  listItemTodo5,
+  listItemTodo5 = sdn.listItemTodo5,
   checkbox5,
   label9,
   chipCount5,
@@ -271,254 +272,144 @@ export function ListTodo({
 
   return (
     <HTMLUl className={frameClassName} {...props}>
-      <ListItemTodo {...listItemTodoProps} />
-      <ListItemTodo {...listItemTodo2Props} />
-      <ListItemTodo {...listItemTodo3Props} />
-      <ListItemTodo {...listItemTodo4Props} />
-      <ListItemTodo {...listItemTodo5Props} />
+      <ListItemTodo
+        {...listItemTodoProps}
+        checkbox={checkboxProps}
+        label={labelProps}
+        chipCount={chipCountProps}
+        label={label2Props}
+      />
+      <ListItemTodo
+        {...listItemTodo2Props}
+        checkbox={checkbox2Props}
+        label={label3Props}
+        chipCount={chipCount2Props}
+        label={label4Props}
+      />
+      <ListItemTodo
+        {...listItemTodo3Props}
+        checkbox={checkbox3Props}
+        label={label5Props}
+        chipCount={chipCount3Props}
+        label={label6Props}
+      />
+      <ListItemTodo
+        {...listItemTodo4Props}
+        checkbox={checkbox4Props}
+        label={label7Props}
+        chipCount={chipCount4Props}
+        label={label8Props}
+      />
+      <ListItemTodo
+        {...listItemTodo5Props}
+        checkbox={checkbox5Props}
+        label={label9Props}
+        chipCount={chipCount5Props}
+        label={label10Props}
+      />
     </HTMLUl>
   )
 }
 
 const sdn: ListTodoProps = {
   listItemTodo: {
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "right",
-    width: "fill",
-    height: "fit",
-    gap: "@gap.cozy",
     className: "sdn-listItemTodo-MwSraoIQ",
   },
   checkbox: {
-    buttonSize: "@fontSize.medium",
-    checked: "false",
     inputType: "checkbox",
-    width: "fit",
-    color: "@swatch.black",
-    accentColor: "@swatch.primary",
-    align: "center",
     className: "sdn-checkbox-e4nLS1ce",
   },
   label: {
     children: "Label",
     htmlElement: "label",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-kUPUPew7",
   },
   chipCount: {
-    buttonSize: "@fontSize.xsmall",
-    orientation: "horizontal",
-    align: "left",
-    width: "fit",
-    height: "fit",
-    cursor: "pointer",
     className: "sdn-chipCount-juyoB86N",
   },
   label2: {
     children: "Label",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-4xhSms9L",
   },
   listItemTodo2: {
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "right",
-    width: "fill",
-    height: "fit",
-    gap: "@gap.cozy",
     className: "sdn-listItemTodo-MwSraoIQ",
   },
   checkbox2: {
-    buttonSize: "@fontSize.medium",
-    checked: "false",
     inputType: "checkbox",
-    width: "fit",
-    color: "@swatch.black",
-    accentColor: "@swatch.primary",
-    align: "center",
     className: "sdn-checkbox-e4nLS1ce",
   },
   label3: {
     children: "Label",
     htmlElement: "label",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-kUPUPew7",
   },
   chipCount2: {
-    buttonSize: "@fontSize.xsmall",
-    orientation: "horizontal",
-    align: "left",
-    width: "fit",
-    height: "fit",
-    cursor: "pointer",
     className: "sdn-chipCount-juyoB86N",
   },
   label4: {
     children: "Label",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-4xhSms9L",
   },
   listItemTodo3: {
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "right",
-    width: "fill",
-    height: "fit",
-    gap: "@gap.cozy",
     className: "sdn-listItemTodo-MwSraoIQ",
   },
   checkbox3: {
-    buttonSize: "@fontSize.medium",
-    checked: "false",
     inputType: "checkbox",
-    width: "fit",
-    color: "@swatch.black",
-    accentColor: "@swatch.primary",
-    align: "center",
     className: "sdn-checkbox-e4nLS1ce",
   },
   label5: {
     children: "Label",
     htmlElement: "label",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-kUPUPew7",
   },
   chipCount3: {
-    buttonSize: "@fontSize.xsmall",
-    orientation: "horizontal",
-    align: "left",
-    width: "fit",
-    height: "fit",
-    cursor: "pointer",
     className: "sdn-chipCount-juyoB86N",
   },
   label6: {
     children: "Label",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-4xhSms9L",
   },
   listItemTodo4: {
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "right",
-    width: "fill",
-    height: "fit",
-    gap: "@gap.cozy",
     className: "sdn-listItemTodo-MwSraoIQ",
   },
   checkbox4: {
-    buttonSize: "@fontSize.medium",
-    checked: "false",
     inputType: "checkbox",
-    width: "fit",
-    color: "@swatch.black",
-    accentColor: "@swatch.primary",
-    align: "center",
     className: "sdn-checkbox-e4nLS1ce",
   },
   label7: {
     children: "Label",
     htmlElement: "label",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-kUPUPew7",
   },
   chipCount4: {
-    buttonSize: "@fontSize.xsmall",
-    orientation: "horizontal",
-    align: "left",
-    width: "fit",
-    height: "fit",
-    cursor: "pointer",
     className: "sdn-chipCount-juyoB86N",
   },
   label8: {
     children: "Label",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-4xhSms9L",
   },
   listItemTodo5: {
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "right",
-    width: "fill",
-    height: "fit",
-    gap: "@gap.cozy",
     className: "sdn-listItemTodo-bsBo6hNF",
   },
   checkbox5: {
-    buttonSize: "@fontSize.medium",
-    checked: "false",
     inputType: "checkbox",
-    width: "fit",
-    color: "@swatch.black",
-    accentColor: "@swatch.primary",
-    align: "center",
     className: "sdn-checkbox-e4nLS1ce",
   },
   label9: {
     children: "Label",
     htmlElement: "label",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-kUPUPew7",
   },
   chipCount5: {
-    buttonSize: "@fontSize.xsmall",
-    orientation: "horizontal",
-    align: "left",
-    width: "fit",
-    height: "fit",
-    cursor: "pointer",
     className: "sdn-chipCount-juyoB86N",
   },
   label10: {
     children: "Label",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-4xhSms9L",
   },
 }

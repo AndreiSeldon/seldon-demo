@@ -77,13 +77,23 @@ export interface FooterProps extends HTMLAttributes<HTMLElement> {
  * @example
  * ```tsx
  * <Footer
- *   ariaHidden="false"
- *   orientation="horizontal"
- *   width="fill"
- *   height="fit"
- *   gap="@gap.comfortable"
- *   wrapChildren="false"
- *   cursor="default"
+ *   sectionBrand="{}"
+ *   image="/image.jpg"
+ *   title="Product Title"
+ *   description="Product description text"
+ *   sectionNav="{}"
+ *   link="{}"
+ *   link1="{}"
+ *   link2="{}"
+ *   sectionSocial="{}"
+ *   button={() => {}}
+ *   icon="material-star"
+ *   label="Button Label"
+ *   button1={() => {}}
+ *   button2={() => {}}
+ *   sectionNewsletter="{}"
+ *   input="{}"
+ *   sectionLegal="{}"
  * />
  * ```
  */
@@ -343,282 +353,118 @@ export function Footer({
 
 const sdn: FooterProps = {
   sectionBrand: {
-    ariaHidden: "false",
-    orientation: "vertical",
-    align: "left",
-    width: "fit",
-    height: "fit",
-    gap: "@gap.cozy",
-    wrapChildren: "false",
-    cursor: "default",
     className: "sdn-sectionBrand-KjkT9q07",
   },
   image: {
     src: "https://static.seldon.app/logo.svg",
-    alt: "Company Logo",
-    ariaHidden: "false",
-    width: "@dimension.large",
-    height: "fill",
     className: "sdn-image-Jt9aipZ9",
   },
   titleProps: {
     children: "ABC, Corp.",
     htmlElement: "h4",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
-    lines: "2",
     className: "sdn-title-TAhSq6GU",
   },
   description: {
     children: "Building amazing products for the future.",
     htmlElement: "p",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-description-ajcQtAs8",
   },
   sectionNav: {
-    ariaHidden: "false",
-    orientation: "vertical",
-    align: "left",
-    width: "fit",
-    height: "fit",
-    gap: "@gap.cozy",
-    wrapChildren: "false",
-    cursor: "default",
     className: "sdn-sectionNav-8odyDgjE",
   },
   link: {
-    ariaHidden: "false",
-    cursor: "pointer",
     children: "About",
-    color: "@swatch.primary",
-    textDecoration: "underline",
     className: "sdn-link-3S3IhaQz",
   },
   link2: {
-    ariaHidden: "false",
-    cursor: "pointer",
     children: "Contact",
-    color: "@swatch.primary",
-    textDecoration: "underline",
     className: "sdn-link-3S3IhaQz",
   },
   link3: {
-    ariaHidden: "false",
-    cursor: "pointer",
     children: "Support",
-    color: "@swatch.primary",
-    textDecoration: "underline",
     className: "sdn-link-3S3IhaQz",
   },
   sectionSocial: {
-    ariaHidden: "false",
-    orientation: "vertical",
-    align: "left",
-    width: "fit",
-    height: "fit",
-    gap: "@gap.cozy",
-    wrapChildren: "false",
-    cursor: "default",
     className: "sdn-sectionSocial-dIGdknCk",
   },
   button: {
-    buttonSize: "@fontSize.xsmall",
-    orientation: "horizontal",
-    align: "left",
-    width: "fill",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
     className: "sdn-button-81ylevGe",
   },
   icon: {
     icon: "social-twitter",
-    color: "[object Object]",
-    size: "[object Object]",
-    ariaHidden: "false",
     className: "sdn-icon-S5LllGVe",
   },
   label: {
     children: "Twitter",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-NYdtKGmd",
   },
   button2: {
-    buttonSize: "@fontSize.xsmall",
-    orientation: "horizontal",
-    align: "left",
-    width: "fill",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
     className: "sdn-button-81ylevGe",
   },
   icon2: {
     icon: "social-linkedin",
-    color: "[object Object]",
-    size: "[object Object]",
-    ariaHidden: "false",
     className: "sdn-icon-S5LllGVe",
   },
   label2: {
     children: "LinkedIn",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-NYdtKGmd",
   },
   button3: {
-    buttonSize: "@fontSize.xsmall",
-    orientation: "horizontal",
-    align: "left",
-    width: "fill",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
     className: "sdn-button-81ylevGe",
   },
   icon3: {
     icon: "social-instagram",
-    color: "[object Object]",
-    size: "[object Object]",
-    ariaHidden: "false",
     className: "sdn-icon-S5LllGVe",
   },
   label3: {
     children: "Instagram",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-NYdtKGmd",
   },
   sectionNewsletter: {
-    ariaHidden: "false",
-    orientation: "vertical",
-    align: "left",
-    width: "fit",
-    height: "fit",
-    gap: "@gap.cozy",
-    wrapChildren: "false",
-    cursor: "default",
     className: "sdn-sectionNewsletter-UwOyO3f6",
   },
   title2Props: {
     children: "Stay Updated",
     htmlElement: "h4",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
-    lines: "2",
     className: "sdn-title-ScKhi5IU",
   },
   description2: {
     children: "Subscribe to our newsletter for the latest updates.",
     htmlElement: "p",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    opacity: "[object Object]",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-description-ajcQtAs8",
   },
   input: {
     inputType: "email",
-    placeholder: "Enter your email",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textCase: "normal",
-    textDecoration: "none",
     className: "sdn-input-Hm8H3dZs",
   },
   button4: {
-    buttonSize: "@fontSize.xsmall",
-    orientation: "horizontal",
-    align: "center",
-    width: "fit",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
     className: "sdn-button-tmW0D5Yl",
   },
   icon4: {
     icon: "material-send",
-    color: "[object Object]",
-    size: "[object Object]",
-    ariaHidden: "false",
     className: "sdn-icon-S5LllGVe",
   },
   label4: {
     children: "Subscribe",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-NYdtKGmd",
   },
   sectionLegal: {
-    ariaHidden: "false",
-    orientation: "vertical",
-    align: "left",
-    width: "fit",
-    height: "fit",
-    gap: "@gap.cozy",
-    wrapChildren: "false",
-    cursor: "default",
     className: "sdn-sectionLegal-xSeylfV6",
   },
   link4: {
-    ariaHidden: "false",
-    cursor: "pointer",
     children: "Privacy Policy",
-    color: "@swatch.primary",
-    textDecoration: "underline",
     className: "sdn-link-3S3IhaQz",
   },
   link5: {
-    ariaHidden: "false",
-    cursor: "pointer",
     children: "Terms of Service",
-    color: "@swatch.primary",
-    textDecoration: "underline",
     className: "sdn-link-3S3IhaQz",
   },
   link6: {
-    ariaHidden: "false",
-    cursor: "pointer",
     children: "Cookie Policy",
-    color: "@swatch.primary",
-    textDecoration: "underline",
     className: "sdn-link-3S3IhaQz",
   },
 }

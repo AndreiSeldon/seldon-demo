@@ -39,20 +39,21 @@ export interface TableRowHeaderProps
  * @example
  * ```tsx
  * <TableRowHeader
- *   ariaHidden="false"
- *   width="fill"
- *   height="fit"
- *   wrapChildren="false"
+ *   tableHeader="{}"
+ *   tableHeader1="{}"
+ *   tableHeader2="{}"
+ *   tableHeader3="{}"
+ *   tableHeader4="{}"
  * />
  * ```
  */
 export function TableRowHeader({
   className = "",
-  tableHeader,
-  tableHeader2,
-  tableHeader3,
-  tableHeader4,
-  tableHeader5,
+  tableHeader = sdn.tableHeader,
+  tableHeader2 = sdn.tableHeader2,
+  tableHeader3 = sdn.tableHeader3,
+  tableHeader4 = sdn.tableHeader4,
+  tableHeader5 = sdn.tableHeader5,
   ...props
 }: TableRowHeaderProps) {
   const frameClassName = combineClassNames("sdn-tableRowHeader", className)
@@ -110,63 +111,23 @@ export function TableRowHeader({
 
 const sdn: TableRowHeaderProps = {
   tableHeader: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-vuu0itV7",
   },
   tableHeader2: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-vuu0itV7",
   },
   tableHeader3: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-vuu0itV7",
   },
   tableHeader4: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-vuu0itV7",
   },
   tableHeader5: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-vuu0itV7",
   },
 }

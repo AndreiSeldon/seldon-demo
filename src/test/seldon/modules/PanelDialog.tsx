@@ -55,25 +55,27 @@ export interface PanelDialogProps extends HTMLAttributes<HTMLDivElement> {
  * @example
  * ```tsx
  * <PanelDialog
- *   ariaHidden="false"
- *   orientation="vertical"
- *   width="[object Object]"
- *   height="[object Object]"
- *   gap="evenly-spaced"
- *   wrapChildren="false"
- *   clip="true"
+ *   headerPanel="{}"
+ *   title="Product Title"
+ *   button={() => {}}
+ *   icon="material-star"
+ *   label="Button Label"
+ *   frame="{}"
+ *   buttonBar="{}"
+ *   button1={() => {}}
+ *   button2={() => {}}
  * />
  * ```
  */
 export function PanelDialog({
   className = "",
-  headerPanel,
+  headerPanel = sdn.headerPanel,
   titleProps,
   button,
   icon,
   label,
-  frame,
-  buttonBar,
+  frame = sdn.frame,
+  buttonBar = sdn.buttonBar,
   button2,
   icon2,
   label2,
@@ -178,162 +180,91 @@ export function PanelDialog({
 
   return (
     <HTMLDiv className={frameClassName} {...props}>
-      <HeaderPanel {...headerPanelProps} />
+      <HeaderPanel
+        {...headerPanelProps}
+        titleProps={titlePropsProps}
+        button={buttonProps}
+        icon={iconProps}
+        label={labelProps}
+      />
       <Frame {...frameProps}></Frame>
-      <ButtonBar {...buttonBarProps} />
+      <ButtonBar
+        {...buttonBarProps}
+        button={button2Props}
+        icon={icon2Props}
+        label={label2Props}
+        button2={button3Props}
+        icon2={icon3Props}
+        label2={label3Props}
+        button3={button4Props}
+        icon3={icon4Props}
+        label3={label4Props}
+      />
     </HTMLDiv>
   )
 }
 
 const sdn: PanelDialogProps = {
   headerPanel: {
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "center",
-    width: "fill",
-    height: "fit",
-    gap: "@gap.cozy",
-    wrapChildren: "false",
     className: "sdn-headerPanel-d3oW1WgZ",
   },
   titleProps: {
     children: "Title",
     htmlElement: "h4",
-    width: "fill",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
-    lines: "2",
     className: "sdn-title-TAhSq6GU",
   },
   button: {
-    buttonSize: "@fontSize.medium",
-    orientation: "horizontal",
-    align: "center",
-    width: "fit",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
-    className: "sdn-button-bEAjiYmh",
+    className: "sdn-button-tmW0D5Yl",
   },
   icon: {
     icon: "__default__",
-    color: "[object Object]",
-    size: "[object Object]",
-    ariaHidden: "false",
     className: "sdn-icon-vkgwzWrj",
   },
   label: {
     children: "Button",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-iBTpKhvZ",
   },
   frame: {
-    ariaHidden: "false",
-    orientation: "vertical",
-    width: "fill",
-    height: "fill",
-    gap: "@gap.compact",
-    wrapChildren: "false",
     className: "sdn-frame-vW0dEshD",
   },
   buttonBar: {
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "right",
-    wrapChildren: "true",
-    width: "fill",
-    height: "fit",
-    gap: "@gap.cozy",
     className: "sdn-buttonBar-TOrTqmRG",
   },
   button2: {
-    buttonSize: "@fontSize.medium",
-    orientation: "horizontal",
-    align: "center",
-    width: "fit",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
-    className: "sdn-button-bEAjiYmh",
+    className: "sdn-button-tmW0D5Yl",
   },
   icon2: {
     icon: "material-add",
-    color: "[object Object]",
-    size: "[object Object]",
-    ariaHidden: "false",
     className: "sdn-icon-vkgwzWrj",
   },
   label2: {
     children: "Add",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-iBTpKhvZ",
   },
   button3: {
-    buttonSize: "@fontSize.medium",
-    orientation: "horizontal",
-    align: "center",
-    width: "fit",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
-    className: "sdn-button-bEAjiYmh",
+    className: "sdn-button-tmW0D5Yl",
   },
   icon3: {
     icon: "material-remove",
-    color: "[object Object]",
-    size: "[object Object]",
-    ariaHidden: "false",
     className: "sdn-icon-vkgwzWrj",
   },
   label3: {
     children: "Remove",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-iBTpKhvZ",
   },
   button4: {
-    buttonSize: "@fontSize.medium",
-    orientation: "horizontal",
-    align: "center",
-    width: "fit",
-    height: "fit",
-    gap: "[object Object]",
-    cursor: "pointer",
-    className: "sdn-button-bEAjiYmh",
+    className: "sdn-button-tmW0D5Yl",
   },
   icon4: {
     icon: "__default__",
-    color: "[object Object]",
-    size: "[object Object]",
-    ariaHidden: "false",
     className: "sdn-icon-vkgwzWrj",
   },
   label4: {
     children: "Button",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-iBTpKhvZ",
   },
 }

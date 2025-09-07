@@ -47,23 +47,25 @@ export interface TableHeadProps
  * @example
  * ```tsx
  * <TableHead
- *   ariaHidden="false"
- *   width="fill"
- *   height="fit"
- *   wrapChildren="false"
- *   clip="true"
+ *   tableRowHeader="{}"
+ *   tableHeader="{}"
+ *   tableHeader1="{}"
+ *   tableHeader2="{}"
+ *   tableHeader3="{}"
+ *   tableHeader4="{}"
+ *   tableRowHeader1="{}"
  * />
  * ```
  */
 export function TableHead({
   className = "",
-  tableRowHeader,
+  tableRowHeader = sdn.tableRowHeader,
   tableHeader,
   tableHeader2,
   tableHeader3,
   tableHeader4,
   tableHeader5,
-  tableRowHeader2,
+  tableRowHeader2 = sdn.tableRowHeader2,
   tableHeader6,
   tableHeader7,
   tableHeader8,
@@ -171,145 +173,71 @@ export function TableHead({
 
   return (
     <HTMLThead className={frameClassName} {...props}>
-      <TableRowHeader {...tableRowHeaderProps} />
-      <TableRowHeader {...tableRowHeader2Props} />
+      <TableRowHeader
+        {...tableRowHeaderProps}
+        tableHeader={tableHeaderProps}
+        tableHeader2={tableHeader2Props}
+        tableHeader3={tableHeader3Props}
+        tableHeader4={tableHeader4Props}
+        tableHeader5={tableHeader5Props}
+      />
+      <TableRowHeader
+        {...tableRowHeader2Props}
+        tableHeader={tableHeader6Props}
+        tableHeader2={tableHeader7Props}
+        tableHeader3={tableHeader8Props}
+        tableHeader4={tableHeader9Props}
+        tableHeader5={tableHeader10Props}
+      />
     </HTMLThead>
   )
 }
 
 const sdn: TableHeadProps = {
   tableRowHeader: {
-    ariaHidden: "false",
-    width: "fill",
-    height: "fit",
-    wrapChildren: "false",
     className: "sdn-tableRowHeader-bwETb2nO",
   },
   tableHeader: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-vuu0itV7",
   },
   tableHeader2: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-vuu0itV7",
   },
   tableHeader3: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-vuu0itV7",
   },
   tableHeader4: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-vuu0itV7",
   },
   tableHeader5: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-vuu0itV7",
   },
   tableRowHeader2: {
-    ariaHidden: "false",
-    width: "fill",
-    height: "fit",
-    wrapChildren: "false",
     className: "sdn-tableRowHeader-bwETb2nO",
   },
   tableHeader6: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-vuu0itV7",
   },
   tableHeader7: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-vuu0itV7",
   },
   tableHeader8: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-vuu0itV7",
   },
   tableHeader9: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-vuu0itV7",
   },
   tableHeader10: {
-    ariaHidden: "false",
     children: "Column",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-vuu0itV7",
   },
 }

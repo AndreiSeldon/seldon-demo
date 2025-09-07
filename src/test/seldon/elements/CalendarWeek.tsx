@@ -41,26 +41,27 @@ export interface CalendarWeekProps extends HTMLAttributes<HTMLTableRowElement> {
  * @example
  * ```tsx
  * <CalendarWeek
- *   display="show"
- *   ariaHidden="false"
- *   orientation="horizontal"
- *   align="left"
- *   width="fill"
- *   height="fill"
- *   wrapChildren="false"
+ *   tableData="{}"
+ *   tableData1="{}"
+ *   tableData2="{}"
+ *   tableData3="{}"
+ *   tableData4="{}"
+ *   tableData5="{}"
+ *   tableData6="{}"
+ *   tableData7="{}"
  * />
  * ```
  */
 export function CalendarWeek({
   className = "",
-  tableData,
-  tableData2,
-  tableData3,
-  tableData4,
-  tableData5,
-  tableData6,
-  tableData7,
-  tableData8,
+  tableData = sdn.tableData,
+  tableData2 = sdn.tableData2,
+  tableData3 = sdn.tableData3,
+  tableData4 = sdn.tableData4,
+  tableData5 = sdn.tableData5,
+  tableData6 = sdn.tableData6,
+  tableData7 = sdn.tableData7,
+  tableData8 = sdn.tableData8,
   ...props
 }: CalendarWeekProps) {
   const frameClassName = combineClassNames("sdn-calendarWeek", className)
@@ -145,99 +146,35 @@ export function CalendarWeek({
 
 const sdn: CalendarWeekProps = {
   tableData: {
-    ariaHidden: "false",
     children: "##",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-nevz6yex",
   },
   tableData2: {
-    ariaHidden: "false",
     children: "##",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-p6ZKEayj",
   },
   tableData3: {
-    ariaHidden: "false",
     children: "##",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-p6ZKEayj",
   },
   tableData4: {
-    ariaHidden: "false",
     children: "##",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-p6ZKEayj",
   },
   tableData5: {
-    ariaHidden: "false",
     children: "##",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-p6ZKEayj",
   },
   tableData6: {
-    ariaHidden: "false",
     children: "##",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-p6ZKEayj",
   },
   tableData7: {
-    ariaHidden: "false",
     children: "##",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-p6ZKEayj",
   },
   tableData8: {
-    ariaHidden: "false",
     children: "##",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-p6ZKEayj",
   },
 }

@@ -13,15 +13,12 @@
  *****/
  
 import { SVGAttributes } from "react"
+import { IconDefault } from "../icons/IconDefault"
+import { IconMaterialSearch } from "../icons/IconMaterialSearch"
 
 export interface IconProps extends SVGAttributes<SVGElement> {
   className?: string
-  size?:
-    | "@size.xsmall"
-    | "@size.small"
-    | "@size.medium"
-    | "@size.large"
-    | "@size.xlarge"
+  icon?: "__default__" | "material-search"
 }
 
 /**
@@ -37,9 +34,6 @@ export interface IconProps extends SVGAttributes<SVGElement> {
  * ```tsx
  * <Icon
  *   icon="__default__"
- *   color="@swatch.black"
- *   size="@size.medium"
- *   ariaHidden="false"
  * />
  * ```
  */

@@ -41,17 +41,18 @@ export interface TableFootProps
  * @example
  * ```tsx
  * <TableFoot
- *   ariaHidden="false"
- *   width="fill"
- *   height="fit"
- *   wrapChildren="false"
- *   clip="true"
+ *   tableRowFooter="{}"
+ *   tableData="{}"
+ *   tableData1="{}"
+ *   tableData2="{}"
+ *   tableData3="{}"
+ *   tableData4="{}"
  * />
  * ```
  */
 export function TableFoot({
   className = "",
-  tableRowFooter,
+  tableRowFooter = sdn.tableRowFooter,
   tableData,
   tableData2,
   tableData3,
@@ -111,77 +112,40 @@ export function TableFoot({
 
   return (
     <HTMLTfoot className={frameClassName} {...props}>
-      <TableRowFooter {...tableRowFooterProps} />
+      <TableRowFooter
+        {...tableRowFooterProps}
+        tableData={tableDataProps}
+        tableData2={tableData2Props}
+        tableData3={tableData3Props}
+        tableData4={tableData4Props}
+        tableData5={tableData5Props}
+      />
     </HTMLTfoot>
   )
 }
 
 const sdn: TableFootProps = {
   tableRowFooter: {
-    ariaHidden: "false",
-    width: "fill",
-    height: "fit",
-    wrapChildren: "false",
     className: "sdn-tableRowFooter-d62jQ8Qb",
   },
   tableData: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-pUUaa0JM",
   },
   tableData2: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-pUUaa0JM",
   },
   tableData3: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-pUUaa0JM",
   },
   tableData4: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-pUUaa0JM",
   },
   tableData5: {
-    ariaHidden: "false",
     children: "Cell",
-    width: "fill",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-pUUaa0JM",
   },
 }

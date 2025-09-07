@@ -97,19 +97,36 @@ export interface CalendarProps extends TableHTMLAttributes<HTMLTableElement> {
  * @example
  * ```tsx
  * <Calendar
- *   ariaHidden="false"
- *   orientation="vertical"
- *   width="fill"
- *   height="fit"
- *   gap="evenly-spaced"
- *   wrapChildren="false"
- *   clip="true"
+ *   calendarHeader="{}"
+ *   calendarWeekdays="{}"
+ *   tableHeader="{}"
+ *   tableHeader1="{}"
+ *   tableHeader2="{}"
+ *   tableHeader3="{}"
+ *   tableHeader4="{}"
+ *   tableHeader5="{}"
+ *   tableHeader6="{}"
+ *   tableHeader7="{}"
+ *   calendarMonth="{}"
+ *   calendarWeek="{}"
+ *   tableData="{}"
+ *   tableData1="{}"
+ *   tableData2="{}"
+ *   tableData3="{}"
+ *   tableData4="{}"
+ *   tableData5="{}"
+ *   tableData6="{}"
+ *   tableData7="{}"
+ *   calendarWeek1="{}"
+ *   calendarWeek2="{}"
+ *   calendarWeek3="{}"
+ *   calendarWeek4="{}"
  * />
  * ```
  */
 export function Calendar({
   className = "",
-  calendarHeader,
+  calendarHeader = sdn.calendarHeader,
   calendarWeekdays,
   tableHeader,
   tableHeader2,
@@ -119,7 +136,7 @@ export function Calendar({
   tableHeader6,
   tableHeader7,
   tableHeader8,
-  calendarMonth,
+  calendarMonth = sdn.calendarMonth,
   calendarWeek,
   tableData,
   tableData2,
@@ -619,667 +636,281 @@ export function Calendar({
 
   return (
     <HTMLTable className={frameClassName} {...props}>
-      <CalendarHeader {...calendarHeaderProps} />
-      <CalendarMonth {...calendarMonthProps} />
+      <CalendarHeader
+        {...calendarHeaderProps}
+        calendarWeekdays={calendarWeekdaysProps}
+        tableheader={tableHeaderProps}
+        tableHeader={tableHeader2Props}
+        tableHeader2={tableHeader3Props}
+        tableHeader3={tableHeader4Props}
+        tableHeader4={tableHeader5Props}
+        tableHeader5={tableHeader6Props}
+        tableHeader6={tableHeader7Props}
+        tableHeader7={tableHeader8Props}
+      />
+      <CalendarMonth
+        {...calendarMonthProps}
+        calendarWeek={calendarWeekProps}
+        tabledata={tableDataProps}
+        tableData={tableData2Props}
+        tableData2={tableData3Props}
+        tableData3={tableData4Props}
+        tableData4={tableData5Props}
+        tableData5={tableData6Props}
+        tableData6={tableData7Props}
+        tableData7={tableData8Props}
+        calendarWeek2={calendarWeek2Props}
+        tableData8={tableData9Props}
+        tableData9={tableData10Props}
+        tableData10={tableData11Props}
+        tableData11={tableData12Props}
+        tableData12={tableData13Props}
+        tableData13={tableData14Props}
+        tableData14={tableData15Props}
+        tableData15={tableData16Props}
+        calendarWeek3={calendarWeek3Props}
+        tableData16={tableData17Props}
+        tableData17={tableData18Props}
+        tableData18={tableData19Props}
+        tableData19={tableData20Props}
+        tableData20={tableData21Props}
+        tableData21={tableData22Props}
+        tableData22={tableData23Props}
+        tableData23={tableData24Props}
+        calendarWeek4={calendarWeek4Props}
+        tableData24={tableData25Props}
+        tableData25={tableData26Props}
+        tableData26={tableData27Props}
+        tableData27={tableData28Props}
+        tableData28={tableData29Props}
+        tableData29={tableData30Props}
+        tableData30={tableData31Props}
+        tableData31={tableData32Props}
+        calendarWeek5={calendarWeek5Props}
+        tableData32={tableData33Props}
+        tableData33={tableData34Props}
+        tableData34={tableData35Props}
+        tableData35={tableData36Props}
+        tableData36={tableData37Props}
+        tableData37={tableData38Props}
+        tableData38={tableData39Props}
+        tableData39={tableData40Props}
+      />
     </HTMLTable>
   )
 }
 
 const sdn: CalendarProps = {
   calendarHeader: {
-    display: "show",
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "left",
-    width: "fill",
-    height: "fit",
-    wrapChildren: "false",
     className: "sdn-calendarHeader-u2dLM6Go",
   },
   calendarWeekdays: {
-    display: "show",
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "left",
-    width: "fill",
-    height: "fill",
-    wrapChildren: "false",
     className: "sdn-calendarWeekdays-1gi4AgYQ",
   },
   tableHeader: {
-    ariaHidden: "false",
     children: "Jan",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-i6Dg4Tqb",
   },
   tableHeader2: {
-    ariaHidden: "false",
     children: "Mon",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-2ZG04UVD",
   },
   tableHeader3: {
-    ariaHidden: "false",
     children: "Tue",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-2ZG04UVD",
   },
   tableHeader4: {
-    ariaHidden: "false",
     children: "Wed",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-2ZG04UVD",
   },
   tableHeader5: {
-    ariaHidden: "false",
     children: "Thu",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-2ZG04UVD",
   },
   tableHeader6: {
-    ariaHidden: "false",
     children: "Fri",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-2ZG04UVD",
   },
   tableHeader7: {
-    ariaHidden: "false",
     children: "Sat",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-2ZG04UVD",
   },
   tableHeader8: {
-    ariaHidden: "false",
     children: "Sun",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableHeader-2ZG04UVD",
   },
   calendarMonth: {
-    display: "show",
-    ariaHidden: "false",
-    orientation: "vertical",
-    align: "left",
-    width: "fill",
-    height: "fit",
-    wrapChildren: "false",
     className: "sdn-calendarMonth-zK9HbeV5",
   },
   calendarWeek: {
-    display: "show",
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "left",
-    width: "fill",
-    height: "fill",
-    wrapChildren: "false",
     className: "sdn-calendarWeek-Ga2T7ueL",
   },
   tableData: {
-    ariaHidden: "false",
     children: "01",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-D8pYHkhB",
   },
   tableData2: {
-    ariaHidden: "false",
-    children: "",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData3: {
-    ariaHidden: "false",
-    children: "",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData4: {
-    ariaHidden: "false",
-    children: "",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData5: {
-    ariaHidden: "false",
     children: "01",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData6: {
-    ariaHidden: "false",
     children: "02",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData7: {
-    ariaHidden: "false",
     children: "03",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData8: {
-    ariaHidden: "false",
     children: "04",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   calendarWeek2: {
-    display: "show",
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "left",
-    width: "fill",
-    height: "fill",
-    wrapChildren: "false",
     className: "sdn-calendarWeek-Ga2T7ueL",
   },
   tableData9: {
-    ariaHidden: "false",
     children: "02",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-D8pYHkhB",
   },
   tableData10: {
-    ariaHidden: "false",
     children: "05",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData11: {
-    ariaHidden: "false",
     children: "06",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData12: {
-    ariaHidden: "false",
     children: "07",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData13: {
-    ariaHidden: "false",
     children: "08",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData14: {
-    ariaHidden: "false",
     children: "09",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData15: {
-    ariaHidden: "false",
     children: "10",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData16: {
-    ariaHidden: "false",
     children: "11",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   calendarWeek3: {
-    display: "show",
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "left",
-    width: "fill",
-    height: "fill",
-    wrapChildren: "false",
     className: "sdn-calendarWeek-Ga2T7ueL",
   },
   tableData17: {
-    ariaHidden: "false",
     children: "03",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-D8pYHkhB",
   },
   tableData18: {
-    ariaHidden: "false",
     children: "12",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData19: {
-    ariaHidden: "false",
     children: "13",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData20: {
-    ariaHidden: "false",
     children: "14",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData21: {
-    ariaHidden: "false",
     children: "15",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData22: {
-    ariaHidden: "false",
     children: "16",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData23: {
-    ariaHidden: "false",
     children: "17",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData24: {
-    ariaHidden: "false",
     children: "18",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   calendarWeek4: {
-    display: "show",
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "left",
-    width: "fill",
-    height: "fill",
-    wrapChildren: "false",
     className: "sdn-calendarWeek-Ga2T7ueL",
   },
   tableData25: {
-    ariaHidden: "false",
     children: "04",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-D8pYHkhB",
   },
   tableData26: {
-    ariaHidden: "false",
     children: "19",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData27: {
-    ariaHidden: "false",
     children: "20",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData28: {
-    ariaHidden: "false",
     children: "21",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData29: {
-    ariaHidden: "false",
     children: "22",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData30: {
-    ariaHidden: "false",
     children: "23",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData31: {
-    ariaHidden: "false",
     children: "24",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData32: {
-    ariaHidden: "false",
     children: "25",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   calendarWeek5: {
-    display: "show",
-    ariaHidden: "false",
-    orientation: "horizontal",
-    align: "left",
-    width: "fill",
-    height: "fill",
-    wrapChildren: "false",
     className: "sdn-calendarWeek-Ga2T7ueL",
   },
   tableData33: {
-    ariaHidden: "false",
     children: "05",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-D8pYHkhB",
   },
   tableData34: {
-    ariaHidden: "false",
     children: "26",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData35: {
-    ariaHidden: "false",
     children: "27",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData36: {
-    ariaHidden: "false",
     children: "28",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData37: {
-    ariaHidden: "false",
     children: "29",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData38: {
-    ariaHidden: "false",
     children: "30",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData39: {
-    ariaHidden: "false",
     children: "31",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
   tableData40: {
-    ariaHidden: "false",
-    children: "",
-    width: "[object Object]",
-    height: "fit",
-    color: "@swatch.black",
-    textAlign: "left",
-    textCase: "normal",
-    textDecoration: "none",
-    wrapText: "true",
     className: "sdn-tableData-v0DCcfBn",
   },
 }

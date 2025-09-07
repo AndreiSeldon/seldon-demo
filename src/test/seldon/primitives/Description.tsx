@@ -37,13 +37,6 @@ export interface DescriptionProps
  * <Description
  *   children="Description"
  *   htmlElement="p"
- *   width="fill"
- *   height="fit"
- *   color="@swatch.black"
- *   opacity="{"value":100,"unit":"%"}"
- *   textCase="normal"
- *   textDecoration="none"
- *   wrapText="true"
  * />
  * ```
  */

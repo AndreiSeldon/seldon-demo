@@ -17,12 +17,6 @@ import { HTMLInput } from "../native-react/HTML.Input"
 
 export interface CheckboxProps extends InputHTMLAttributes<HTMLInputElement> {
   className?: string
-  buttonSize?:
-    | "@fontSize.xsmall"
-    | "@fontSize.small"
-    | "@fontSize.medium"
-    | "@fontSize.large"
-    | "@fontSize.xlarge"
   inputType?: "checkbox"
 }
 
@@ -38,12 +32,7 @@ export interface CheckboxProps extends InputHTMLAttributes<HTMLInputElement> {
  * @example
  * ```tsx
  * <Checkbox
- *   buttonSize="@fontSize.medium"
- *   checked="false"
  *   inputType="checkbox"
- *   width="fit"
- *   color="@swatch.black"
- *   accentColor="@swatch.primary"
  * />
  * ```
  */

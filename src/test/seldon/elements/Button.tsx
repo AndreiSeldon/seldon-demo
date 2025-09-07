@@ -20,14 +20,6 @@ import { combineClassNames } from "../utils/class-name-utils"
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string
-  buttonSize?:
-    | "@fontSize.xxsmall"
-    | "@fontSize.xsmall"
-    | "@fontSize.small"
-    | "@fontSize.medium"
-    | "@fontSize.large"
-    | "@fontSize.xlarge"
-    | "@fontSize.xxlarge"
   icon?: IconProps
   label?: LabelProps
 }
@@ -44,17 +36,17 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
  * @example
  * ```tsx
  * <Button
- *   buttonSize="@fontSize.medium"
- *   orientation="horizontal"
- *   align="center"
- *   width="fit"
- *   height="fit"
- *   gap="[object Object]"
- *   cursor="pointer"
+ *   icon="material-star"
+ *   label="Button Label"
  * />
  * ```
  */
-export function Button({ className = "", icon, label, ...props }: ButtonProps) {
+export function Button({
+  className = "",
+  icon = sdn.icon,
+  label = sdn.label,
+  ...props
+}: ButtonProps) {
   const frameClassName = combineClassNames("sdn-button", className)
   const iconProps = {
     ...sdn.icon,
@@ -78,19 +70,11 @@ export function Button({ className = "", icon, label, ...props }: ButtonProps) {
 const sdn: ButtonProps = {
   icon: {
     icon: "__default__",
-    color: "[object Object]",
-    size: "[object Object]",
-    ariaHidden: "false",
     className: "sdn-icon-wKsld4qS",
   },
   label: {
     children: "Button",
     htmlElement: "label",
-    width: "fit",
-    height: "fit",
-    color: "[object Object]",
-    opacity: "[object Object]",
-    wrapText: "false",
     className: "sdn-label-QE5N5XMK",
   },
 }

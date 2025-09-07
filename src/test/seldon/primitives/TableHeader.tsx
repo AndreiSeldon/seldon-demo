@@ -33,15 +33,7 @@ export interface TableHeaderProps
  * @example
  * ```tsx
  * <TableHeader
- *   ariaHidden="false"
  *   children="Column"
- *   width="fill"
- *   height="fit"
- *   color="@swatch.black"
- *   textAlign="left"
- *   textCase="normal"
- *   textDecoration="none"
- *   wrapText="true"
  * />
  * ```
  */
