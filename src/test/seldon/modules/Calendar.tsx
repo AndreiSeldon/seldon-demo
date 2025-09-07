@@ -29,12 +29,60 @@ export interface CalendarProps extends TableHTMLAttributes<HTMLTableElement> {
   className?: string
   calendarHeader?: CalendarHeaderProps
   calendarWeekdays?: CalendarWeekdaysProps
+  tableHeader?: TableHeaderProps
+  tableHeader2?: TableHeaderProps
+  tableHeader3?: TableHeaderProps
+  tableHeader4?: TableHeaderProps
+  tableHeader5?: TableHeaderProps
+  tableHeader6?: TableHeaderProps
+  tableHeader7?: TableHeaderProps
+  tableHeader8?: TableHeaderProps
   calendarMonth?: CalendarMonthProps
   calendarWeek?: CalendarWeekProps
+  tableData?: TableDataProps
+  tableData2?: TableDataProps
+  tableData3?: TableDataProps
+  tableData4?: TableDataProps
+  tableData5?: TableDataProps
+  tableData6?: TableDataProps
+  tableData7?: TableDataProps
+  tableData8?: TableDataProps
   calendarWeek2?: CalendarWeekProps
+  tableData9?: TableDataProps
+  tableData10?: TableDataProps
+  tableData11?: TableDataProps
+  tableData12?: TableDataProps
+  tableData13?: TableDataProps
+  tableData14?: TableDataProps
+  tableData15?: TableDataProps
+  tableData16?: TableDataProps
   calendarWeek3?: CalendarWeekProps
+  tableData17?: TableDataProps
+  tableData18?: TableDataProps
+  tableData19?: TableDataProps
+  tableData20?: TableDataProps
+  tableData21?: TableDataProps
+  tableData22?: TableDataProps
+  tableData23?: TableDataProps
+  tableData24?: TableDataProps
   calendarWeek4?: CalendarWeekProps
+  tableData25?: TableDataProps
+  tableData26?: TableDataProps
+  tableData27?: TableDataProps
+  tableData28?: TableDataProps
+  tableData29?: TableDataProps
+  tableData30?: TableDataProps
+  tableData31?: TableDataProps
+  tableData32?: TableDataProps
   calendarWeek5?: CalendarWeekProps
+  tableData33?: TableDataProps
+  tableData34?: TableDataProps
+  tableData35?: TableDataProps
+  tableData36?: TableDataProps
+  tableData37?: TableDataProps
+  tableData38?: TableDataProps
+  tableData39?: TableDataProps
+  tableData40?: TableDataProps
 }
 
 /**
@@ -591,14 +639,62 @@ export function Calendar({
       <CalendarHeader
         {...calendarHeaderProps}
         calendarWeekdays={calendarWeekdaysProps}
+        tableHeader={tableHeaderProps}
+        tableHeader2={tableHeader2Props}
+        tableHeader3={tableHeader3Props}
+        tableHeader4={tableHeader4Props}
+        tableHeader5={tableHeader5Props}
+        tableHeader6={tableHeader6Props}
+        tableHeader7={tableHeader7Props}
+        tableHeader8={tableHeader8Props}
       />
       <CalendarMonth
         {...calendarMonthProps}
         calendarWeek={calendarWeekProps}
+        tableData={tableDataProps}
+        tableData2={tableData2Props}
+        tableData3={tableData3Props}
+        tableData4={tableData4Props}
+        tableData5={tableData5Props}
+        tableData6={tableData6Props}
+        tableData7={tableData7Props}
+        tableData8={tableData8Props}
         calendarWeek2={calendarWeek2Props}
+        tableData9={tableData9Props}
+        tableData10={tableData10Props}
+        tableData11={tableData11Props}
+        tableData12={tableData12Props}
+        tableData13={tableData13Props}
+        tableData14={tableData14Props}
+        tableData15={tableData15Props}
+        tableData16={tableData16Props}
         calendarWeek3={calendarWeek3Props}
+        tableData17={tableData17Props}
+        tableData18={tableData18Props}
+        tableData19={tableData19Props}
+        tableData20={tableData20Props}
+        tableData21={tableData21Props}
+        tableData22={tableData22Props}
+        tableData23={tableData23Props}
+        tableData24={tableData24Props}
         calendarWeek4={calendarWeek4Props}
+        tableData25={tableData25Props}
+        tableData26={tableData26Props}
+        tableData27={tableData27Props}
+        tableData28={tableData28Props}
+        tableData29={tableData29Props}
+        tableData30={tableData30Props}
+        tableData31={tableData31Props}
+        tableData32={tableData32Props}
         calendarWeek5={calendarWeek5Props}
+        tableData33={tableData33Props}
+        tableData34={tableData34Props}
+        tableData35={tableData35Props}
+        tableData36={tableData36Props}
+        tableData37={tableData37Props}
+        tableData38={tableData38Props}
+        tableData39={tableData39Props}
+        tableData40={tableData40Props}
       />
     </HTMLTable>
   )

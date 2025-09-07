@@ -44,13 +44,21 @@ export interface FooterProps extends HTMLAttributes<HTMLElement> {
   link3?: LinkProps
   sectionSocial?: SectionSocialProps
   button?: ButtonProps
+  icon?: IconProps
+  label?: LabelProps
   button2?: ButtonProps
+  icon2?: IconProps
+  label2?: LabelProps
   button3?: ButtonProps
+  icon3?: IconProps
+  label3?: LabelProps
   sectionNewsletter?: SectionNewsletterProps
   title2Props?: TitleProps
   description2?: DescriptionProps
   input?: InputProps
   button4?: ButtonProps
+  icon4?: IconProps
+  label4?: LabelProps
   sectionLegal?: SectionLegalProps
   link4?: LinkProps
   link5?: LinkProps
