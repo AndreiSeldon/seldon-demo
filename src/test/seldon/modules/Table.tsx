@@ -499,11 +499,11 @@ export function Table({
       <TableFoot
         {...tableFootProps}
         tableRowFooter={tableRowFooterProps}
-        tableData={tableData16Props}
-        tableData2={tableData17Props}
-        tableData3={tableData18Props}
-        tableData4={tableData19Props}
-        tableData5={tableData20Props}
+        tableData16={tableData16Props}
+        tableData17={tableData17Props}
+        tableData18={tableData18Props}
+        tableData19={tableData19Props}
+        tableData20={tableData20Props}
       />
     </HTMLTable>
   )
