@@ -112,22 +112,22 @@ export function TableRowFooter({
 const sdn: TableRowFooterProps = {
   tableData: {
     children: "Cell",
-    className: "sdn-tableData-mEMD5gQz",
+    className: "sdn-tableData-N5L2ERY3",
   },
   tableData2: {
     children: "Cell",
-    className: "sdn-tableData-mEMD5gQz",
+    className: "sdn-tableData-N5L2ERY3",
   },
   tableData3: {
     children: "Cell",
-    className: "sdn-tableData-mEMD5gQz",
+    className: "sdn-tableData-N5L2ERY3",
   },
   tableData4: {
     children: "Cell",
-    className: "sdn-tableData-mEMD5gQz",
+    className: "sdn-tableData-N5L2ERY3",
   },
   tableData5: {
     children: "Cell",
-    className: "sdn-tableData-mEMD5gQz",
+    className: "sdn-tableData-N5L2ERY3",
   },
 }

@@ -198,61 +198,61 @@ export function CardProduct({
 
 const sdn: CardProductProps = {
   textblockDetails: {
-    className: "sdn-textblockDetails-HS0WPhOt",
+    className: "sdn-textblockDetails-M4Swm0Uc",
   },
   tagline: {
     children: "Tagline",
     htmlElement: "p",
-    className: "sdn-tagline-hNiZd5lq",
+    className: "sdn-tagline-tIjBWfYj",
   },
   titleProps: {
     children: "Product Card Title",
     htmlElement: "h4",
-    className: "sdn-title-MFYclLNP",
+    className: "sdn-title-RMTH85Tp",
   },
   description: {
     children:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus.",
     htmlElement: "p",
-    className: "sdn-description-aQpx3YUf",
+    className: "sdn-description-jezV8BhY",
   },
   buttonBar: {
-    className: "sdn-buttonBar-4jSzBhCz",
+    className: "sdn-buttonBar-tpvAqIPw",
   },
   button: {
-    className: "sdn-button-l5QIFhBA",
+    className: "sdn-button-u5H28i6V",
   },
   icon: {
     icon: "material-add",
-    className: "sdn-icon-qjR6AamZ",
+    className: "sdn-icon-AINLFCtj",
   },
   label: {
     children: "Add",
     htmlElement: "label",
-    className: "sdn-label-tIu6mzVx",
+    className: "sdn-label-ZZ7xIL8m",
   },
   button2: {
-    className: "sdn-button-l5QIFhBA",
+    className: "sdn-button-u5H28i6V",
   },
   icon2: {
     icon: "material-remove",
-    className: "sdn-icon-qjR6AamZ",
+    className: "sdn-icon-AINLFCtj",
   },
   label2: {
     children: "Remove",
     htmlElement: "label",
-    className: "sdn-label-tIu6mzVx",
+    className: "sdn-label-ZZ7xIL8m",
   },
   button3: {
-    className: "sdn-button-l5QIFhBA",
+    className: "sdn-button-u5H28i6V",
   },
   icon3: {
     icon: "__default__",
-    className: "sdn-icon-qjR6AamZ",
+    className: "sdn-icon-AINLFCtj",
   },
   label3: {
     children: "Button",
     htmlElement: "label",
-    className: "sdn-label-tIu6mzVx",
+    className: "sdn-label-ZZ7xIL8m",
   },
 }

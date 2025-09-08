@@ -112,22 +112,22 @@ export function TableRowHeader({
 const sdn: TableRowHeaderProps = {
   tableHeader: {
     children: "Column",
-    className: "sdn-tableHeader-9KhFscIS",
+    className: "sdn-tableHeader-uPRzBcnD",
   },
   tableHeader2: {
     children: "Column",
-    className: "sdn-tableHeader-9KhFscIS",
+    className: "sdn-tableHeader-uPRzBcnD",
   },
   tableHeader3: {
     children: "Column",
-    className: "sdn-tableHeader-9KhFscIS",
+    className: "sdn-tableHeader-uPRzBcnD",
   },
   tableHeader4: {
     children: "Column",
-    className: "sdn-tableHeader-9KhFscIS",
+    className: "sdn-tableHeader-uPRzBcnD",
   },
   tableHeader5: {
     children: "Column",
-    className: "sdn-tableHeader-9KhFscIS",
+    className: "sdn-tableHeader-uPRzBcnD",
   },
 }

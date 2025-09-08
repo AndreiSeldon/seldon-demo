@@ -87,17 +87,17 @@ const sdn: TextblockDetailsProps = {
   tagline: {
     children: "Tagline",
     htmlElement: "p",
-    className: "sdn-tagline-hNiZd5lq",
+    className: "sdn-tagline-tIjBWfYj",
   },
   titleProps: {
     children: "Product Card Title",
     htmlElement: "h4",
-    className: "sdn-title-MFYclLNP",
+    className: "sdn-title-RMTH85Tp",
   },
   description: {
     children:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus.",
     htmlElement: "p",
-    className: "sdn-description-aQpx3YUf",
+    className: "sdn-description-jezV8BhY",
   },
 }

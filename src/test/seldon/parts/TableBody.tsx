@@ -263,72 +263,72 @@ export function TableBody({
 
 const sdn: TableBodyProps = {
   tableRowData: {
-    className: "sdn-tableRowData-zoRe0OjF",
+    className: "sdn-tableRowData-XANcsdE0",
   },
   tableData: {
     children: "Cell",
-    className: "sdn-tableData-mEMD5gQz",
+    className: "sdn-tableData-N5L2ERY3",
   },
   tableData2: {
     children: "Cell",
-    className: "sdn-tableData-mEMD5gQz",
+    className: "sdn-tableData-N5L2ERY3",
   },
   tableData3: {
     children: "Cell",
-    className: "sdn-tableData-mEMD5gQz",
+    className: "sdn-tableData-N5L2ERY3",
   },
   tableData4: {
     children: "Cell",
-    className: "sdn-tableData-mEMD5gQz",
+    className: "sdn-tableData-N5L2ERY3",
   },
   tableData5: {
     children: "Cell",
-    className: "sdn-tableData-mEMD5gQz",
+    className: "sdn-tableData-N5L2ERY3",
   },
   tableRowData2: {
-    className: "sdn-tableRowData-zoRe0OjF",
+    className: "sdn-tableRowData-XANcsdE0",
   },
   tableData6: {
     children: "Cell",
-    className: "sdn-tableData-mEMD5gQz",
+    className: "sdn-tableData-N5L2ERY3",
   },
   tableData7: {
     children: "Cell",
-    className: "sdn-tableData-mEMD5gQz",
+    className: "sdn-tableData-N5L2ERY3",
   },
   tableData8: {
     children: "Cell",
-    className: "sdn-tableData-mEMD5gQz",
+    className: "sdn-tableData-N5L2ERY3",
   },
   tableData9: {
     children: "Cell",
-    className: "sdn-tableData-mEMD5gQz",
+    className: "sdn-tableData-N5L2ERY3",
   },
   tableData10: {
     children: "Cell",
-    className: "sdn-tableData-mEMD5gQz",
+    className: "sdn-tableData-N5L2ERY3",
   },
   tableRowData3: {
-    className: "sdn-tableRowData-zoRe0OjF",
+    className: "sdn-tableRowData-XANcsdE0",
   },
   tableData11: {
     children: "Cell",
-    className: "sdn-tableData-mEMD5gQz",
+    className: "sdn-tableData-N5L2ERY3",
   },
   tableData12: {
     children: "Cell",
-    className: "sdn-tableData-mEMD5gQz",
+    className: "sdn-tableData-N5L2ERY3",
   },
   tableData13: {
     children: "Cell",
-    className: "sdn-tableData-mEMD5gQz",
+    className: "sdn-tableData-N5L2ERY3",
   },
   tableData14: {
     children: "Cell",
-    className: "sdn-tableData-mEMD5gQz",
+    className: "sdn-tableData-N5L2ERY3",
   },
   tableData15: {
     children: "Cell",
-    className: "sdn-tableData-mEMD5gQz",
+    className: "sdn-tableData-N5L2ERY3",
   },
 }

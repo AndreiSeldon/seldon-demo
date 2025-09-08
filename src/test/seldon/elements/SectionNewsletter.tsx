@@ -115,27 +115,27 @@ const sdn: SectionNewsletterProps = {
   titleProps: {
     children: "Stay Updated",
     htmlElement: "h4",
-    className: "sdn-title-erojOOd9",
+    className: "sdn-title-373RObV5",
   },
   description: {
     children: "Subscribe to our newsletter for the latest updates.",
     htmlElement: "p",
-    className: "sdn-description-rCm7Kwyz",
+    className: "sdn-description-YHPBL4w7",
   },
   input: {
     inputType: "email",
-    className: "sdn-input-gBYtHgke",
+    className: "sdn-input-V9bSjDG8",
   },
   button: {
-    className: "sdn-button-l5QIFhBA",
+    className: "sdn-button-u5H28i6V",
   },
   icon: {
     icon: "material-send",
-    className: "sdn-icon-Cj1ns3Eq",
+    className: "sdn-icon-LsZW5WwN",
   },
   label: {
     children: "Subscribe",
     htmlElement: "label",
-    className: "sdn-label-WTCxGWIz",
+    className: "sdn-label-6fhi2gOH",
   },
 }

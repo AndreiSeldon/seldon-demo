@@ -13,9 +13,9 @@
  *****/
  
 import { HTMLAttributes } from "react"
-import { HTMLDiv } from "../native-react/HTML.Div"
+import { Frame } from "../frames/Frame"
 
-export interface FrameScrollerProps extends HTMLAttributes<HTMLDivElement> {
+export interface FrameScrollerProps extends HTMLAttributes<HTMLElement> {
   className?: string
 }
 
@@ -39,5 +39,5 @@ export function FrameScroller({
   className = "",
   ...props
 }: FrameScrollerProps) {
-  return <HTMLDiv className={"sdn-frameScroller " + className} {...props} />
+  return <Frame className={"sdn-frameScroller " + className} {...props} />
 }

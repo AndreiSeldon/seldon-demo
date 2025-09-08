@@ -206,65 +206,65 @@ export function PanelDialog({
 
 const sdn: PanelDialogProps = {
   headerPanel: {
-    className: "sdn-headerPanel-a6vCDnPQ",
+    className: "sdn-headerPanel-dz4IbLD8",
   },
   titleProps: {
     children: "Title",
     htmlElement: "h4",
-    className: "sdn-title-9Nh0zX1n",
+    className: "sdn-title-e5rUVnHX",
   },
   button: {
-    className: "sdn-button-l5QIFhBA",
+    className: "sdn-button-u5H28i6V",
   },
   icon: {
     icon: "__default__",
-    className: "sdn-icon-qjR6AamZ",
+    className: "sdn-icon-AINLFCtj",
   },
   label: {
     children: "Button",
     htmlElement: "label",
-    className: "sdn-label-tIu6mzVx",
+    className: "sdn-label-ZZ7xIL8m",
   },
   frame: {
-    className: "sdn-frame-wz3T9thN",
+    className: "sdn-frame-tstPP72G",
   },
   buttonBar: {
-    className: "sdn-buttonBar-vfkMI3wF",
+    className: "sdn-buttonBar-mHqgnMHp",
   },
   button2: {
-    className: "sdn-button-l5QIFhBA",
+    className: "sdn-button-u5H28i6V",
   },
   icon2: {
     icon: "material-add",
-    className: "sdn-icon-qjR6AamZ",
+    className: "sdn-icon-AINLFCtj",
   },
   label2: {
     children: "Add",
     htmlElement: "label",
-    className: "sdn-label-tIu6mzVx",
+    className: "sdn-label-ZZ7xIL8m",
   },
   button3: {
-    className: "sdn-button-l5QIFhBA",
+    className: "sdn-button-u5H28i6V",
   },
   icon3: {
     icon: "material-remove",
-    className: "sdn-icon-qjR6AamZ",
+    className: "sdn-icon-AINLFCtj",
   },
   label3: {
     children: "Remove",
     htmlElement: "label",
-    className: "sdn-label-tIu6mzVx",
+    className: "sdn-label-ZZ7xIL8m",
   },
   button4: {
-    className: "sdn-button-l5QIFhBA",
+    className: "sdn-button-u5H28i6V",
   },
   icon4: {
     icon: "__default__",
-    className: "sdn-icon-qjR6AamZ",
+    className: "sdn-icon-AINLFCtj",
   },
   label4: {
     children: "Button",
     htmlElement: "label",
-    className: "sdn-label-tIu6mzVx",
+    className: "sdn-label-ZZ7xIL8m",
   },
 }

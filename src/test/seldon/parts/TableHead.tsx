@@ -195,49 +195,49 @@ export function TableHead({
 
 const sdn: TableHeadProps = {
   tableRowHeader: {
-    className: "sdn-tableRowHeader-7sRw4XQt",
+    className: "sdn-tableRowHeader-LhRAeVgb",
   },
   tableHeader: {
     children: "Column",
-    className: "sdn-tableHeader-9KhFscIS",
+    className: "sdn-tableHeader-uPRzBcnD",
   },
   tableHeader2: {
     children: "Column",
-    className: "sdn-tableHeader-9KhFscIS",
+    className: "sdn-tableHeader-uPRzBcnD",
   },
   tableHeader3: {
     children: "Column",
-    className: "sdn-tableHeader-9KhFscIS",
+    className: "sdn-tableHeader-uPRzBcnD",
   },
   tableHeader4: {
     children: "Column",
-    className: "sdn-tableHeader-9KhFscIS",
+    className: "sdn-tableHeader-uPRzBcnD",
   },
   tableHeader5: {
     children: "Column",
-    className: "sdn-tableHeader-9KhFscIS",
+    className: "sdn-tableHeader-uPRzBcnD",
   },
   tableRowHeader2: {
-    className: "sdn-tableRowHeader-7sRw4XQt",
+    className: "sdn-tableRowHeader-LhRAeVgb",
   },
   tableHeader6: {
     children: "Column",
-    className: "sdn-tableHeader-9KhFscIS",
+    className: "sdn-tableHeader-uPRzBcnD",
   },
   tableHeader7: {
     children: "Column",
-    className: "sdn-tableHeader-9KhFscIS",
+    className: "sdn-tableHeader-uPRzBcnD",
   },
   tableHeader8: {
     children: "Column",
-    className: "sdn-tableHeader-9KhFscIS",
+    className: "sdn-tableHeader-uPRzBcnD",
   },
   tableHeader9: {
     children: "Column",
-    className: "sdn-tableHeader-9KhFscIS",
+    className: "sdn-tableHeader-uPRzBcnD",
   },
   tableHeader10: {
     children: "Column",
-    className: "sdn-tableHeader-9KhFscIS",
+    className: "sdn-tableHeader-uPRzBcnD",
   },
 }

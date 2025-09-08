@@ -90,19 +90,19 @@ export function ListItemTodo({
 const sdn: ListItemTodoProps = {
   checkbox: {
     inputType: "checkbox",
-    className: "sdn-checkbox-bGfzuWyQ",
+    className: "sdn-checkbox-LcY8saEk",
   },
   label: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-Ewbe0cOG",
+    className: "sdn-label-B5CHjY4D",
   },
   chipCount: {
-    className: "sdn-chipCount-x9JOw5FJ",
+    className: "sdn-chipCount-2IUfUb2A",
   },
   label2: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-WTCxGWIz",
+    className: "sdn-label-6fhi2gOH",
   },
 }

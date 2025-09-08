@@ -78,14 +78,14 @@ export function SectionNav({
 const sdn: SectionNavProps = {
   link: {
     children: "About",
-    className: "sdn-link-s1QUepQN",
+    className: "sdn-link-4xIHoTQ8",
   },
   link2: {
     children: "Contact",
-    className: "sdn-link-s1QUepQN",
+    className: "sdn-link-4xIHoTQ8",
   },
   link3: {
     children: "Support",
-    className: "sdn-link-s1QUepQN",
+    className: "sdn-link-4xIHoTQ8",
   },
 }
