@@ -20,8 +20,8 @@ import { combineClassNames } from "../utils/class-name-utils"
 export interface SectionLegalProps extends HTMLAttributes<HTMLElement> {
   className?: string
   link?: LinkProps
+  link1?: LinkProps
   link2?: LinkProps
-  link3?: LinkProps
 }
 
 /**
@@ -45,8 +45,8 @@ export interface SectionLegalProps extends HTMLAttributes<HTMLElement> {
 export function SectionLegal({
   className = "",
   link,
+  link1,
   link2,
-  link3,
   ...props
 }: SectionLegalProps) {
   const frameClassName = combineClassNames("sdn-sectionLegal", className)
@@ -55,22 +55,22 @@ export function SectionLegal({
     ...link,
     className: combineClassNames(sdn.link?.className, link?.className),
   }
+  const link1Props = {
+    ...sdn.link1,
+    ...link1,
+    className: combineClassNames(sdn.link1?.className, link1?.className),
+  }
   const link2Props = {
     ...sdn.link2,
     ...link2,
     className: combineClassNames(sdn.link2?.className, link2?.className),
   }
-  const link3Props = {
-    ...sdn.link3,
-    ...link3,
-    className: combineClassNames(sdn.link3?.className, link3?.className),
-  }
 
   return (
     <Frame className={frameClassName} {...props}>
       {link && <Link {...linkProps} />}
+      {link1 && <Link {...link1Props} />}
       {link2 && <Link {...link2Props} />}
-      {link3 && <Link {...link3Props} />}
     </Frame>
   )
 }
@@ -80,11 +80,11 @@ const sdn: SectionLegalProps = {
     children: "Privacy Policy",
     className: "sdn-link-vW1MeGhD",
   },
-  link2: {
+  link1: {
     children: "Terms of Service",
     className: "sdn-link-vW1MeGhD",
   },
-  link3: {
+  link2: {
     children: "Cookie Policy",
     className: "sdn-link-vW1MeGhD",
   },

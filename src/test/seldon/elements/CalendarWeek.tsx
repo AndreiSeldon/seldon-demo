@@ -20,13 +20,13 @@ import { combineClassNames } from "../utils/class-name-utils"
 export interface CalendarWeekProps extends HTMLAttributes<HTMLTableRowElement> {
   className?: string
   tableData?: TableDataProps
+  tableData1?: TableDataProps
   tableData2?: TableDataProps
   tableData3?: TableDataProps
   tableData4?: TableDataProps
   tableData5?: TableDataProps
   tableData6?: TableDataProps
   tableData7?: TableDataProps
-  tableData8?: TableDataProps
 }
 
 /**
@@ -55,13 +55,13 @@ export interface CalendarWeekProps extends HTMLAttributes<HTMLTableRowElement> {
 export function CalendarWeek({
   className = "",
   tableData = sdn.tableData,
+  tableData1 = sdn.tableData1,
   tableData2 = sdn.tableData2,
   tableData3 = sdn.tableData3,
   tableData4 = sdn.tableData4,
   tableData5 = sdn.tableData5,
   tableData6 = sdn.tableData6,
   tableData7 = sdn.tableData7,
-  tableData8 = sdn.tableData8,
   ...props
 }: CalendarWeekProps) {
   const frameClassName = combineClassNames("sdn-calendarWeek", className)
@@ -71,6 +71,14 @@ export function CalendarWeek({
     className: combineClassNames(
       sdn.tableData?.className,
       tableData?.className,
+    ),
+  }
+  const tableData1Props = {
+    ...sdn.tableData1,
+    ...tableData1,
+    className: combineClassNames(
+      sdn.tableData1?.className,
+      tableData1?.className,
     ),
   }
   const tableData2Props = {
@@ -121,25 +129,17 @@ export function CalendarWeek({
       tableData7?.className,
     ),
   }
-  const tableData8Props = {
-    ...sdn.tableData8,
-    ...tableData8,
-    className: combineClassNames(
-      sdn.tableData8?.className,
-      tableData8?.className,
-    ),
-  }
 
   return (
     <HTMLTr className={frameClassName} {...props}>
       <TableData {...tableDataProps} />
+      <TableData {...tableData1Props} />
       <TableData {...tableData2Props} />
       <TableData {...tableData3Props} />
       <TableData {...tableData4Props} />
       <TableData {...tableData5Props} />
       <TableData {...tableData6Props} />
       <TableData {...tableData7Props} />
-      <TableData {...tableData8Props} />
     </HTMLTr>
   )
 }
@@ -148,6 +148,10 @@ const sdn: CalendarWeekProps = {
   tableData: {
     children: "##",
     className: "sdn-tableData-xIxYZnz3",
+  },
+  tableData1: {
+    children: "##",
+    className: "sdn-tableData-ZKXSDcvW",
   },
   tableData2: {
     children: "##",
@@ -170,10 +174,6 @@ const sdn: CalendarWeekProps = {
     className: "sdn-tableData-ZKXSDcvW",
   },
   tableData7: {
-    children: "##",
-    className: "sdn-tableData-ZKXSDcvW",
-  },
-  tableData8: {
     children: "##",
     className: "sdn-tableData-ZKXSDcvW",
   },
