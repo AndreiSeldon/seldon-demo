@@ -17,7 +17,7 @@ import { Button, ButtonProps } from "../elements/Button"
 import { Frame } from "../frames/Frame"
 import { Icon, IconProps } from "../primitives/Icon"
 import { Label, LabelProps } from "../primitives/Label"
-import { combineClassNames } from "../utils/class-name-utils"
+import { combineClassNames } from "../utils/class-name"
 
 export interface ButtonBarProps extends HTMLAttributes<HTMLElement> {
   className?: string

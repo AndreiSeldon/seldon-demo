@@ -23,7 +23,7 @@ import { CalendarHeader, CalendarHeaderProps } from "../parts/CalendarHeader"
 import { CalendarMonth, CalendarMonthProps } from "../parts/CalendarMonth"
 import { TableData, TableDataProps } from "../primitives/TableData"
 import { TableHeader, TableHeaderProps } from "../primitives/TableHeader"
-import { combineClassNames } from "../utils/class-name-utils"
+import { combineClassNames } from "../utils/class-name"
 
 export interface CalendarProps extends TableHTMLAttributes<HTMLTableElement> {
   className?: string

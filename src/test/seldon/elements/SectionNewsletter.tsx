@@ -20,7 +20,7 @@ import { Icon, IconProps } from "../primitives/Icon"
 import { Input, InputProps } from "../primitives/Input"
 import { Label, LabelProps } from "../primitives/Label"
 import { Title, TitleProps } from "../primitives/Title"
-import { combineClassNames } from "../utils/class-name-utils"
+import { combineClassNames } from "../utils/class-name"
 
 export interface SectionNewsletterProps extends HTMLAttributes<HTMLElement> {
   className?: string

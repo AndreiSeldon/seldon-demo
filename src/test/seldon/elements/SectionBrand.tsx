@@ -17,7 +17,7 @@ import { Frame } from "../frames/Frame"
 import { Description, DescriptionProps } from "../primitives/Description"
 import { Image, ImageProps } from "../primitives/Image"
 import { Title, TitleProps } from "../primitives/Title"
-import { combineClassNames } from "../utils/class-name-utils"
+import { combineClassNames } from "../utils/class-name"
 
 export interface SectionBrandProps extends HTMLAttributes<HTMLElement> {
   className?: string

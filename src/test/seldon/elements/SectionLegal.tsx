@@ -15,7 +15,7 @@
 import { HTMLAttributes } from "react"
 import { Frame } from "../frames/Frame"
 import { Link, LinkProps } from "../primitives/Link"
-import { combineClassNames } from "../utils/class-name-utils"
+import { combineClassNames } from "../utils/class-name"
 
 export interface SectionLegalProps extends HTMLAttributes<HTMLElement> {
   className?: string

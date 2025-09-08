@@ -16,7 +16,7 @@ import { HTMLAttributes } from "react"
 import { CalendarWeek, CalendarWeekProps } from "../elements/CalendarWeek"
 import { HTMLTbody } from "../native-react/HTML.Tbody"
 import { TableData, TableDataProps } from "../primitives/TableData"
-import { combineClassNames } from "../utils/class-name-utils"
+import { combineClassNames } from "../utils/class-name"
 
 export interface CalendarMonthProps extends HTMLAttributes<HTMLElement> {
   className?: string

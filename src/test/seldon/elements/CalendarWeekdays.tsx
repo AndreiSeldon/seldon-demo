@@ -15,7 +15,7 @@
 import { HTMLAttributes } from "react"
 import { HTMLTr } from "../native-react/HTML.Tr"
 import { TableHeader, TableHeaderProps } from "../primitives/TableHeader"
-import { combineClassNames } from "../utils/class-name-utils"
+import { combineClassNames } from "../utils/class-name"
 
 export interface CalendarWeekdaysProps
   extends HTMLAttributes<HTMLTableRowElement> {

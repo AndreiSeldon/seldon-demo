@@ -19,7 +19,7 @@ import {
 } from "../elements/CalendarWeekdays"
 import { HTMLThead } from "../native-react/HTML.Thead"
 import { TableHeader, TableHeaderProps } from "../primitives/TableHeader"
-import { combineClassNames } from "../utils/class-name-utils"
+import { combineClassNames } from "../utils/class-name"
 
 export interface CalendarHeaderProps
   extends HTMLAttributes<HTMLTableSectionElement> {
