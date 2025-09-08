@@ -92,18 +92,18 @@ const sdn: HeaderPanelProps = {
   titleProps: {
     children: "Title",
     htmlElement: "h4",
-    className: "sdn-title-26xYrQ67",
+    className: "sdn-title-gcIrQKwe",
   },
   button: {
-    className: "sdn-button-zKVzh6Co",
+    className: "sdn-button-2C7Q63th",
   },
   icon: {
     icon: "__default__",
-    className: "sdn-icon-tYgrnrpK",
+    className: "sdn-icon-0U6HPcqg",
   },
   label: {
     children: "Button",
     htmlElement: "label",
-    className: "sdn-label-J4a5vLPS",
+    className: "sdn-label-KCewo9e4",
   },
 }

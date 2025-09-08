@@ -63,7 +63,7 @@ export function SectionNewsletter({
   label,
   ...props
 }: SectionNewsletterProps) {
-  const frameClassName = combineClassNames("sdn-sectionLegal", className)
+  const frameClassName = combineClassNames("sdn-sectionNav", className)
   const titlePropsProps = {
     ...sdn.titleProps,
     ...titleProps,
@@ -115,27 +115,27 @@ const sdn: SectionNewsletterProps = {
   titleProps: {
     children: "Stay Updated",
     htmlElement: "h4",
-    className: "sdn-title-dpMCLwTu",
+    className: "sdn-title-43OJyy0H",
   },
   description: {
     children: "Subscribe to our newsletter for the latest updates.",
     htmlElement: "p",
-    className: "sdn-description-P1yUAxlm",
+    className: "sdn-description-dMeFK2mf",
   },
   input: {
     inputType: "email",
-    className: "sdn-input-utSN1f6c",
+    className: "sdn-input-KBSlXHPV",
   },
   button: {
-    className: "sdn-button-zKVzh6Co",
+    className: "sdn-button-2C7Q63th",
   },
   icon: {
     icon: "material-send",
-    className: "sdn-icon-ye3boFyw",
+    className: "sdn-icon-28O6p5JW",
   },
   label: {
     children: "Subscribe",
     htmlElement: "label",
-    className: "sdn-label-MVNPc4Zf",
+    className: "sdn-label-9HxYft27",
   },
 }

@@ -353,118 +353,118 @@ export function Footer({
 
 const sdn: FooterProps = {
   sectionBrand: {
-    className: "sdn-sectionBrand-n8bCBW38",
+    className: "sdn-sectionBrand-B1oi3enF",
   },
   image: {
     src: "https://static.seldon.app/logo.svg",
-    className: "sdn-image-D4WJED3v",
+    className: "sdn-image-bMSZaBso",
   },
   titleProps: {
     children: "ABC, Corp.",
     htmlElement: "h4",
-    className: "sdn-title-QmAh94bG",
+    className: "sdn-title-OZ0IHItS",
   },
   description: {
     children: "Building amazing products for the future.",
     htmlElement: "p",
-    className: "sdn-description-P1yUAxlm",
+    className: "sdn-description-8sXR1ldT",
   },
   sectionNav: {
-    className: "sdn-sectionNav-U5vMOgyO",
+    className: "sdn-sectionNav-eIQqBArI",
   },
   link: {
     children: "About",
-    className: "sdn-link-x3ZvbG9F",
+    className: "sdn-link-7Gzo4PzI",
   },
   link2: {
     children: "Contact",
-    className: "sdn-link-x3ZvbG9F",
+    className: "sdn-link-7Gzo4PzI",
   },
   link3: {
     children: "Support",
-    className: "sdn-link-x3ZvbG9F",
+    className: "sdn-link-7Gzo4PzI",
   },
   sectionSocial: {
-    className: "sdn-sectionSocial-1m3xDr7V",
+    className: "sdn-sectionSocial-2j4DBDdw",
   },
   button: {
-    className: "sdn-button-75B6bQJY",
+    className: "sdn-button-26llmjhB",
   },
   icon: {
     icon: "social-twitter",
-    className: "sdn-icon-ye3boFyw",
+    className: "sdn-icon-28O6p5JW",
   },
   label: {
     children: "Twitter",
     htmlElement: "label",
-    className: "sdn-label-MVNPc4Zf",
+    className: "sdn-label-9HxYft27",
   },
   button2: {
-    className: "sdn-button-75B6bQJY",
+    className: "sdn-button-26llmjhB",
   },
   icon2: {
     icon: "social-linkedin",
-    className: "sdn-icon-ye3boFyw",
+    className: "sdn-icon-28O6p5JW",
   },
   label2: {
     children: "LinkedIn",
     htmlElement: "label",
-    className: "sdn-label-MVNPc4Zf",
+    className: "sdn-label-9HxYft27",
   },
   button3: {
-    className: "sdn-button-75B6bQJY",
+    className: "sdn-button-26llmjhB",
   },
   icon3: {
     icon: "social-instagram",
-    className: "sdn-icon-ye3boFyw",
+    className: "sdn-icon-28O6p5JW",
   },
   label3: {
     children: "Instagram",
     htmlElement: "label",
-    className: "sdn-label-MVNPc4Zf",
+    className: "sdn-label-9HxYft27",
   },
   sectionNewsletter: {
-    className: "sdn-sectionNewsletter-dC8o3YUt",
+    className: "sdn-sectionNewsletter-N6aVzpTd",
   },
   title2Props: {
     children: "Stay Updated",
     htmlElement: "h4",
-    className: "sdn-title-dpMCLwTu",
+    className: "sdn-title-43OJyy0H",
   },
   description2: {
     children: "Subscribe to our newsletter for the latest updates.",
     htmlElement: "p",
-    className: "sdn-description-P1yUAxlm",
+    className: "sdn-description-dMeFK2mf",
   },
   input: {
     inputType: "email",
-    className: "sdn-input-utSN1f6c",
+    className: "sdn-input-KBSlXHPV",
   },
   button4: {
-    className: "sdn-button-zKVzh6Co",
+    className: "sdn-button-2C7Q63th",
   },
   icon4: {
     icon: "material-send",
-    className: "sdn-icon-ye3boFyw",
+    className: "sdn-icon-28O6p5JW",
   },
   label4: {
     children: "Subscribe",
     htmlElement: "label",
-    className: "sdn-label-MVNPc4Zf",
+    className: "sdn-label-9HxYft27",
   },
   sectionLegal: {
-    className: "sdn-sectionLegal-Cp1d1YH9",
+    className: "sdn-sectionLegal-P1hP4OGa",
   },
   link4: {
     children: "Privacy Policy",
-    className: "sdn-link-x3ZvbG9F",
+    className: "sdn-link-7Gzo4PzI",
   },
   link5: {
     children: "Terms of Service",
-    className: "sdn-link-x3ZvbG9F",
+    className: "sdn-link-7Gzo4PzI",
   },
   link6: {
     children: "Cookie Policy",
-    className: "sdn-link-x3ZvbG9F",
+    className: "sdn-link-7Gzo4PzI",
   },
 }

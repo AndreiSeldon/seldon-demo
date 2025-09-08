@@ -49,7 +49,7 @@ export function SectionNav({
   link3,
   ...props
 }: SectionNavProps) {
-  const frameClassName = combineClassNames("sdn-sectionLegal", className)
+  const frameClassName = combineClassNames("sdn-sectionNav", className)
   const linkProps = {
     ...sdn.link,
     ...link,
@@ -78,14 +78,14 @@ export function SectionNav({
 const sdn: SectionNavProps = {
   link: {
     children: "About",
-    className: "sdn-link-x3ZvbG9F",
+    className: "sdn-link-7Gzo4PzI",
   },
   link2: {
     children: "Contact",
-    className: "sdn-link-x3ZvbG9F",
+    className: "sdn-link-7Gzo4PzI",
   },
   link3: {
     children: "Support",
-    className: "sdn-link-x3ZvbG9F",
+    className: "sdn-link-7Gzo4PzI",
   },
 }

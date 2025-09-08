@@ -191,14 +191,14 @@ export function PanelScroller({
       <ButtonBar
         {...buttonBarProps}
         button={button2Props}
-        icon2={icon2Props}
-        label2={label2Props}
+        icon={icon2Props}
+        label={label2Props}
         button2={button3Props}
-        icon3={icon3Props}
-        label3={label3Props}
+        icon2={icon3Props}
+        label2={label3Props}
         button3={button4Props}
-        icon4={icon4Props}
-        label4={label4Props}
+        icon3={icon4Props}
+        label3={label4Props}
       />
     </HTMLDiv>
   )
@@ -206,65 +206,65 @@ export function PanelScroller({
 
 const sdn: PanelScrollerProps = {
   headerPanel: {
-    className: "sdn-headerPanel-XMem4EUw",
+    className: "sdn-headerPanel-AGaiS9FB",
   },
   titleProps: {
     children: "Title",
     htmlElement: "h4",
-    className: "sdn-title-26xYrQ67",
+    className: "sdn-title-gcIrQKwe",
   },
   button: {
-    className: "sdn-button-zKVzh6Co",
+    className: "sdn-button-2C7Q63th",
   },
   icon: {
     icon: "__default__",
-    className: "sdn-icon-tYgrnrpK",
+    className: "sdn-icon-0U6HPcqg",
   },
   label: {
     children: "Button",
     htmlElement: "label",
-    className: "sdn-label-J4a5vLPS",
+    className: "sdn-label-KCewo9e4",
   },
   frame: {
-    className: "sdn-frame-8zGDBYrC",
+    className: "sdn-frame-BCPgoLOB",
   },
   buttonBar: {
-    className: "sdn-buttonBar-g5XcjK7m",
+    className: "sdn-buttonBar-G4MkaIUB",
   },
   button2: {
-    className: "sdn-button-zKVzh6Co",
+    className: "sdn-button-2C7Q63th",
   },
   icon2: {
     icon: "material-add",
-    className: "sdn-icon-tYgrnrpK",
+    className: "sdn-icon-0U6HPcqg",
   },
   label2: {
     children: "Add",
     htmlElement: "label",
-    className: "sdn-label-J4a5vLPS",
+    className: "sdn-label-KCewo9e4",
   },
   button3: {
-    className: "sdn-button-zKVzh6Co",
+    className: "sdn-button-2C7Q63th",
   },
   icon3: {
     icon: "material-remove",
-    className: "sdn-icon-tYgrnrpK",
+    className: "sdn-icon-0U6HPcqg",
   },
   label3: {
     children: "Remove",
     htmlElement: "label",
-    className: "sdn-label-J4a5vLPS",
+    className: "sdn-label-KCewo9e4",
   },
   button4: {
-    className: "sdn-button-zKVzh6Co",
+    className: "sdn-button-2C7Q63th",
   },
   icon4: {
     icon: "__default__",
-    className: "sdn-icon-tYgrnrpK",
+    className: "sdn-icon-0U6HPcqg",
   },
   label4: {
     children: "Button",
     htmlElement: "label",
-    className: "sdn-label-J4a5vLPS",
+    className: "sdn-label-KCewo9e4",
   },
 }

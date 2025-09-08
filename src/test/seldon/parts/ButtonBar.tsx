@@ -123,39 +123,39 @@ export function ButtonBar({
 
 const sdn: ButtonBarProps = {
   button: {
-    className: "sdn-button-zKVzh6Co",
+    className: "sdn-button-2C7Q63th",
   },
   icon: {
     icon: "material-add",
-    className: "sdn-icon-tYgrnrpK",
+    className: "sdn-icon-0U6HPcqg",
   },
   label: {
     children: "Add",
     htmlElement: "label",
-    className: "sdn-label-J4a5vLPS",
+    className: "sdn-label-KCewo9e4",
   },
   button2: {
-    className: "sdn-button-zKVzh6Co",
+    className: "sdn-button-2C7Q63th",
   },
   icon2: {
     icon: "material-remove",
-    className: "sdn-icon-tYgrnrpK",
+    className: "sdn-icon-0U6HPcqg",
   },
   label2: {
     children: "Remove",
     htmlElement: "label",
-    className: "sdn-label-J4a5vLPS",
+    className: "sdn-label-KCewo9e4",
   },
   button3: {
-    className: "sdn-button-zKVzh6Co",
+    className: "sdn-button-2C7Q63th",
   },
   icon3: {
     icon: "__default__",
-    className: "sdn-icon-tYgrnrpK",
+    className: "sdn-icon-0U6HPcqg",
   },
   label3: {
     children: "Button",
     htmlElement: "label",
-    className: "sdn-label-J4a5vLPS",
+    className: "sdn-label-KCewo9e4",
   },
 }
