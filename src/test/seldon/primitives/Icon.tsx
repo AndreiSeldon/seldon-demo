@@ -16,21 +16,10 @@ import { SVGAttributes } from "react"
 import { IconDefault } from "../icons/IconDefault"
 import { IconMaterialAdd } from "../icons/IconMaterialAdd"
 import { IconMaterialRemove } from "../icons/IconMaterialRemove"
-import { IconMaterialSend } from "../icons/IconMaterialSend"
-import { IconSocialInstagram } from "../icons/IconSocialInstagram"
-import { IconSocialLinkedin } from "../icons/IconSocialLinkedin"
-import { IconSocialTwitter } from "../icons/IconSocialTwitter"
 
 export interface IconProps extends SVGAttributes<SVGElement> {
   className?: string
-  icon?:
-    | "__default__"
-    | "material-send"
-    | "social-twitter"
-    | "social-linkedin"
-    | "social-instagram"
-    | "material-add"
-    | "material-remove"
+  icon?: "__default__" | "material-add" | "material-remove"
 }
 
 /**
@@ -63,10 +52,6 @@ export function Icon({
 }
 const iconMap = {
   __default__: IconDefault,
-  "material-send": IconMaterialSend,
-  "social-twitter": IconSocialTwitter,
-  "social-linkedin": IconSocialLinkedin,
-  "social-instagram": IconSocialInstagram,
   "material-add": IconMaterialAdd,
   "material-remove": IconMaterialRemove,
 }
