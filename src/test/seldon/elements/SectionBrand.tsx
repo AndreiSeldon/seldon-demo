@@ -51,7 +51,7 @@ export function SectionBrand({
   description = sdn.description,
   ...props
 }: SectionBrandProps) {
-  const frameClassName = combineClassNames("sdn-sectionLegal", className)
+  const frameClassName = combineClassNames("sdn-sectionNav", className)
   const imageProps = {
     ...sdn.image,
     ...image,

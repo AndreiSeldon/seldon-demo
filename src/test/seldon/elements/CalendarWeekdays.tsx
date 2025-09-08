@@ -21,13 +21,13 @@ export interface CalendarWeekdaysProps
   extends HTMLAttributes<HTMLTableRowElement> {
   className?: string
   tableHeader?: TableHeaderProps
+  tableHeader1?: TableHeaderProps
   tableHeader2?: TableHeaderProps
   tableHeader3?: TableHeaderProps
   tableHeader4?: TableHeaderProps
   tableHeader5?: TableHeaderProps
   tableHeader6?: TableHeaderProps
   tableHeader7?: TableHeaderProps
-  tableHeader8?: TableHeaderProps
 }
 
 /**
@@ -56,13 +56,13 @@ export interface CalendarWeekdaysProps
 export function CalendarWeekdays({
   className = "",
   tableHeader = sdn.tableHeader,
+  tableHeader1 = sdn.tableHeader1,
   tableHeader2 = sdn.tableHeader2,
   tableHeader3 = sdn.tableHeader3,
   tableHeader4 = sdn.tableHeader4,
   tableHeader5 = sdn.tableHeader5,
   tableHeader6 = sdn.tableHeader6,
   tableHeader7 = sdn.tableHeader7,
-  tableHeader8 = sdn.tableHeader8,
   ...props
 }: CalendarWeekdaysProps) {
   const frameClassName = combineClassNames("sdn-calendarWeek", className)
@@ -72,6 +72,14 @@ export function CalendarWeekdays({
     className: combineClassNames(
       sdn.tableHeader?.className,
       tableHeader?.className,
+    ),
+  }
+  const tableHeader1Props = {
+    ...sdn.tableHeader1,
+    ...tableHeader1,
+    className: combineClassNames(
+      sdn.tableHeader1?.className,
+      tableHeader1?.className,
     ),
   }
   const tableHeader2Props = {
@@ -122,25 +130,17 @@ export function CalendarWeekdays({
       tableHeader7?.className,
     ),
   }
-  const tableHeader8Props = {
-    ...sdn.tableHeader8,
-    ...tableHeader8,
-    className: combineClassNames(
-      sdn.tableHeader8?.className,
-      tableHeader8?.className,
-    ),
-  }
 
   return (
     <HTMLTr className={frameClassName} {...props}>
       <TableHeader {...tableHeaderProps} />
+      <TableHeader {...tableHeader1Props} />
       <TableHeader {...tableHeader2Props} />
       <TableHeader {...tableHeader3Props} />
       <TableHeader {...tableHeader4Props} />
       <TableHeader {...tableHeader5Props} />
       <TableHeader {...tableHeader6Props} />
       <TableHeader {...tableHeader7Props} />
-      <TableHeader {...tableHeader8Props} />
     </HTMLTr>
   )
 }
@@ -148,34 +148,34 @@ export function CalendarWeekdays({
 const sdn: CalendarWeekdaysProps = {
   tableHeader: {
     children: "January",
-    className: "sdn-tableHeader-ZE6bK5aT",
+    className: "sdn-tableHeader-0vohXdHh",
+  },
+  tableHeader1: {
+    children: "Monday",
+    className: "sdn-tableHeader-44jrNNCf",
   },
   tableHeader2: {
-    children: "Monday",
-    className: "sdn-tableHeader-VXZy267v",
+    children: "Tuesday",
+    className: "sdn-tableHeader-44jrNNCf",
   },
   tableHeader3: {
-    children: "Tuesday",
-    className: "sdn-tableHeader-VXZy267v",
+    children: "Wednesday",
+    className: "sdn-tableHeader-44jrNNCf",
   },
   tableHeader4: {
-    children: "Wednesday",
-    className: "sdn-tableHeader-VXZy267v",
+    children: "Thursday",
+    className: "sdn-tableHeader-44jrNNCf",
   },
   tableHeader5: {
-    children: "Thursday",
-    className: "sdn-tableHeader-VXZy267v",
+    children: "Friday",
+    className: "sdn-tableHeader-44jrNNCf",
   },
   tableHeader6: {
-    children: "Friday",
-    className: "sdn-tableHeader-VXZy267v",
+    children: "Saturday",
+    className: "sdn-tableHeader-44jrNNCf",
   },
   tableHeader7: {
-    children: "Saturday",
-    className: "sdn-tableHeader-VXZy267v",
-  },
-  tableHeader8: {
     children: "Sunday",
-    className: "sdn-tableHeader-VXZy267v",
+    className: "sdn-tableHeader-44jrNNCf",
   },
 }

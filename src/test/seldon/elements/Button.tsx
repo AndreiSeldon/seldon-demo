@@ -70,11 +70,11 @@ export function Button({
 const sdn: ButtonProps = {
   icon: {
     icon: "__default__",
-    className: "sdn-icon-aKMbhg7j",
+    className: "sdn-icon-GlAjRy7y",
   },
   label: {
     children: "Button",
     htmlElement: "label",
-    className: "sdn-label-BqRjHtit",
+    className: "sdn-label-HzRymP5z",
   },
 }
