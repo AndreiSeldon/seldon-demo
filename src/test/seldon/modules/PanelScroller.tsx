@@ -15,7 +15,7 @@
 import { HTMLAttributes } from "react"
 import { Button, ButtonProps } from "../elements/Button"
 import { HeaderPanel, HeaderPanelProps } from "../elements/HeaderPanel"
-import { FrameScroller, FrameScrollerProps } from "../frames/FrameScroller"
+import { Frame, FrameProps } from "../frames/Frame"
 import { HTMLDiv } from "../native-react/HTML.Div"
 import { ButtonBar, ButtonBarProps } from "../parts/ButtonBar"
 import { Icon, IconProps } from "../primitives/Icon"
@@ -30,7 +30,7 @@ export interface PanelScrollerProps extends HTMLAttributes<HTMLDivElement> {
   button?: ButtonProps
   icon?: IconProps
   label?: LabelProps
-  frameScroller?: FrameScrollerProps
+  frame?: FrameProps
   buttonBar?: ButtonBarProps
   button2?: ButtonProps
   icon2?: IconProps
@@ -60,7 +60,7 @@ export interface PanelScrollerProps extends HTMLAttributes<HTMLDivElement> {
  *   button={() => {}}
  *   icon="material-star"
  *   label="Button Label"
- *   frameScroller="{}"
+ *   frame="{}"
  *   buttonBar="{}"
  *   button1={() => {}}
  *   button2={() => {}}
@@ -74,7 +74,7 @@ export function PanelScroller({
   button,
   icon,
   label,
-  frameScroller = sdn.frameScroller,
+  frame = sdn.frame,
   buttonBar = sdn.buttonBar,
   button2,
   icon2,
@@ -119,13 +119,10 @@ export function PanelScroller({
     ...label,
     className: combineClassNames(sdn.label?.className, label?.className),
   }
-  const frameScrollerProps = {
-    ...sdn.frameScroller,
-    ...frameScroller,
-    className: combineClassNames(
-      sdn.frameScroller?.className,
-      frameScroller?.className,
-    ),
+  const frameProps = {
+    ...sdn.frame,
+    ...frame,
+    className: combineClassNames(sdn.frame?.className, frame?.className),
   }
   const buttonBarProps = {
     ...sdn.buttonBar,
@@ -190,7 +187,7 @@ export function PanelScroller({
         icon={iconProps}
         label={labelProps}
       />
-      <Frame {...frameScrollerProps}></Frame>
+      <Frame {...frameProps}></Frame>
       <ButtonBar
         {...buttonBarProps}
         button={button2Props}
@@ -209,65 +206,65 @@ export function PanelScroller({
 
 const sdn: PanelScrollerProps = {
   headerPanel: {
-    className: "sdn-headerPanel-ba6Pa0u6",
+    className: "sdn-headerPanel-XMem4EUw",
   },
   titleProps: {
     children: "Title",
     htmlElement: "h4",
-    className: "sdn-title-e5rUVnHX",
+    className: "sdn-title-26xYrQ67",
   },
   button: {
-    className: "sdn-button-u5H28i6V",
+    className: "sdn-button-zKVzh6Co",
   },
   icon: {
     icon: "__default__",
-    className: "sdn-icon-AINLFCtj",
+    className: "sdn-icon-tYgrnrpK",
   },
   label: {
     children: "Button",
     htmlElement: "label",
-    className: "sdn-label-ZZ7xIL8m",
+    className: "sdn-label-J4a5vLPS",
   },
-  frameScroller: {
-    className: "sdn-frameScroller-L6T66wUt",
+  frame: {
+    className: "sdn-frame-8zGDBYrC",
   },
   buttonBar: {
-    className: "sdn-buttonBar-K6j5uLMa",
+    className: "sdn-buttonBar-g5XcjK7m",
   },
   button2: {
-    className: "sdn-button-u5H28i6V",
+    className: "sdn-button-zKVzh6Co",
   },
   icon2: {
     icon: "material-add",
-    className: "sdn-icon-AINLFCtj",
+    className: "sdn-icon-tYgrnrpK",
   },
   label2: {
     children: "Add",
     htmlElement: "label",
-    className: "sdn-label-ZZ7xIL8m",
+    className: "sdn-label-J4a5vLPS",
   },
   button3: {
-    className: "sdn-button-u5H28i6V",
+    className: "sdn-button-zKVzh6Co",
   },
   icon3: {
     icon: "material-remove",
-    className: "sdn-icon-AINLFCtj",
+    className: "sdn-icon-tYgrnrpK",
   },
   label3: {
     children: "Remove",
     htmlElement: "label",
-    className: "sdn-label-ZZ7xIL8m",
+    className: "sdn-label-J4a5vLPS",
   },
   button4: {
-    className: "sdn-button-u5H28i6V",
+    className: "sdn-button-zKVzh6Co",
   },
   icon4: {
     icon: "__default__",
-    className: "sdn-icon-AINLFCtj",
+    className: "sdn-icon-tYgrnrpK",
   },
   label4: {
     children: "Button",
     htmlElement: "label",
-    className: "sdn-label-ZZ7xIL8m",
+    className: "sdn-label-J4a5vLPS",
   },
 }

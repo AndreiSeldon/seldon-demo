@@ -123,39 +123,39 @@ export function SectionSocial({
 
 const sdn: SectionSocialProps = {
   button: {
-    className: "sdn-button-psYiblqm",
+    className: "sdn-button-75B6bQJY",
   },
   icon: {
     icon: "social-twitter",
-    className: "sdn-icon-LsZW5WwN",
+    className: "sdn-icon-ye3boFyw",
   },
   label: {
     children: "Twitter",
     htmlElement: "label",
-    className: "sdn-label-6fhi2gOH",
+    className: "sdn-label-MVNPc4Zf",
   },
   button2: {
-    className: "sdn-button-psYiblqm",
+    className: "sdn-button-75B6bQJY",
   },
   icon2: {
     icon: "social-linkedin",
-    className: "sdn-icon-LsZW5WwN",
+    className: "sdn-icon-ye3boFyw",
   },
   label2: {
     children: "LinkedIn",
     htmlElement: "label",
-    className: "sdn-label-6fhi2gOH",
+    className: "sdn-label-MVNPc4Zf",
   },
   button3: {
-    className: "sdn-button-psYiblqm",
+    className: "sdn-button-75B6bQJY",
   },
   icon3: {
     icon: "social-instagram",
-    className: "sdn-icon-LsZW5WwN",
+    className: "sdn-icon-ye3boFyw",
   },
   label3: {
     children: "Instagram",
     htmlElement: "label",
-    className: "sdn-label-6fhi2gOH",
+    className: "sdn-label-MVNPc4Zf",
   },
 }

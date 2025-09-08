@@ -61,6 +61,6 @@ const sdn: ChipCountProps = {
   label: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-6fhi2gOH",
+    className: "sdn-label-MVNPc4Zf",
   },
 }

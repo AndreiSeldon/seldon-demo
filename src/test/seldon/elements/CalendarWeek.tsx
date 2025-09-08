@@ -147,34 +147,34 @@ export function CalendarWeek({
 const sdn: CalendarWeekProps = {
   tableData: {
     children: "##",
-    className: "sdn-tableData-MF0S7M6K",
+    className: "sdn-tableData-6WZp3aoP",
   },
   tableData2: {
     children: "##",
-    className: "sdn-tableData-A5Q9E8Uw",
+    className: "sdn-tableData-A6p8rrj6",
   },
   tableData3: {
     children: "##",
-    className: "sdn-tableData-A5Q9E8Uw",
+    className: "sdn-tableData-A6p8rrj6",
   },
   tableData4: {
     children: "##",
-    className: "sdn-tableData-A5Q9E8Uw",
+    className: "sdn-tableData-A6p8rrj6",
   },
   tableData5: {
     children: "##",
-    className: "sdn-tableData-A5Q9E8Uw",
+    className: "sdn-tableData-A6p8rrj6",
   },
   tableData6: {
     children: "##",
-    className: "sdn-tableData-A5Q9E8Uw",
+    className: "sdn-tableData-A6p8rrj6",
   },
   tableData7: {
     children: "##",
-    className: "sdn-tableData-A5Q9E8Uw",
+    className: "sdn-tableData-A6p8rrj6",
   },
   tableData8: {
     children: "##",
-    className: "sdn-tableData-A5Q9E8Uw",
+    className: "sdn-tableData-A6p8rrj6",
   },
 }

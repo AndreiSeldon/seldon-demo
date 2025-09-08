@@ -511,150 +511,150 @@ export function Table({
 
 const sdn: TableProps = {
   tableHead: {
-    className: "sdn-tableHead-MDCXjP7u",
+    className: "sdn-tableHead-XZql4kn0",
   },
   tableRowHeader: {
-    className: "sdn-tableRowHeader-LhRAeVgb",
+    className: "sdn-tableRowHeader-YrvdOcx9",
   },
   tableHeader: {
     children: "Column",
-    className: "sdn-tableHeader-uPRzBcnD",
+    className: "sdn-tableHeader-QUs6lQst",
   },
   tableHeader2: {
     children: "Column",
-    className: "sdn-tableHeader-uPRzBcnD",
+    className: "sdn-tableHeader-QUs6lQst",
   },
   tableHeader3: {
     children: "Column",
-    className: "sdn-tableHeader-uPRzBcnD",
+    className: "sdn-tableHeader-QUs6lQst",
   },
   tableHeader4: {
     children: "Column",
-    className: "sdn-tableHeader-uPRzBcnD",
+    className: "sdn-tableHeader-QUs6lQst",
   },
   tableHeader5: {
     children: "Column",
-    className: "sdn-tableHeader-uPRzBcnD",
+    className: "sdn-tableHeader-QUs6lQst",
   },
   tableRowHeader2: {
-    className: "sdn-tableRowHeader-LhRAeVgb",
+    className: "sdn-tableRowHeader-YrvdOcx9",
   },
   tableHeader6: {
     children: "Column",
-    className: "sdn-tableHeader-uPRzBcnD",
+    className: "sdn-tableHeader-QUs6lQst",
   },
   tableHeader7: {
     children: "Column",
-    className: "sdn-tableHeader-uPRzBcnD",
+    className: "sdn-tableHeader-QUs6lQst",
   },
   tableHeader8: {
     children: "Column",
-    className: "sdn-tableHeader-uPRzBcnD",
+    className: "sdn-tableHeader-QUs6lQst",
   },
   tableHeader9: {
     children: "Column",
-    className: "sdn-tableHeader-uPRzBcnD",
+    className: "sdn-tableHeader-QUs6lQst",
   },
   tableHeader10: {
     children: "Column",
-    className: "sdn-tableHeader-uPRzBcnD",
+    className: "sdn-tableHeader-QUs6lQst",
   },
   tableBody: {
-    className: "sdn-tableBody-SlqoJ9VQ",
+    className: "sdn-tableBody-gxg434bu",
   },
   tableRowData: {
-    className: "sdn-tableRowData-XANcsdE0",
+    className: "sdn-tableRowData-RicjxvBx",
   },
   tableData: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableData2: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableData3: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableData4: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableData5: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableRowData2: {
-    className: "sdn-tableRowData-XANcsdE0",
+    className: "sdn-tableRowData-RicjxvBx",
   },
   tableData6: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableData7: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableData8: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableData9: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableData10: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableRowData3: {
-    className: "sdn-tableRowData-XANcsdE0",
+    className: "sdn-tableRowData-RicjxvBx",
   },
   tableData11: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableData12: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableData13: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableData14: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableData15: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableFoot: {
-    className: "sdn-tableFoot-bg9zomHn",
+    className: "sdn-tableFoot-Qy22Wo5q",
   },
   tableRowFooter: {
-    className: "sdn-tableRowFooter-yLp4E2VS",
+    className: "sdn-tableRowFooter-69sgRXa4",
   },
   tableData16: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableData17: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableData18: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableData19: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableData20: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
 }

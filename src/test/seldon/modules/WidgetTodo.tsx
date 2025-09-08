@@ -382,137 +382,137 @@ export function WidgetTodo({
 
 const sdn: WidgetTodoProps = {
   headerPanel: {
-    className: "sdn-headerPanel-ba6Pa0u6",
+    className: "sdn-headerPanel-XMem4EUw",
   },
   titleProps: {
     children: "Title",
     htmlElement: "h4",
-    className: "sdn-title-e5rUVnHX",
+    className: "sdn-title-26xYrQ67",
   },
   button: {
-    className: "sdn-button-u5H28i6V",
+    className: "sdn-button-zKVzh6Co",
   },
   icon: {
     icon: "__default__",
-    className: "sdn-icon-AINLFCtj",
+    className: "sdn-icon-tYgrnrpK",
   },
   label: {
     children: "Button",
     htmlElement: "label",
-    className: "sdn-label-ZZ7xIL8m",
+    className: "sdn-label-J4a5vLPS",
   },
   inputSearch: {
-    className: "sdn-inputSearch-exNpTPDI",
+    className: "sdn-inputSearch-l3P3oaih",
   },
   icon2: {
     icon: "material-search",
-    className: "sdn-icon-TAl2Dqmw",
+    className: "sdn-icon-OboDodMV",
   },
   input: {
     inputType: "text",
-    className: "sdn-input-KHCG9p5k",
+    className: "sdn-input-0NVWyzco",
   },
   listTodo: {
-    className: "sdn-listTodo-G5AGhCEK",
+    className: "sdn-listTodo-oEB3mcTz",
   },
   listItemTodo: {
-    className: "sdn-listItemTodo-K79KhuKE",
+    className: "sdn-listItemTodo-qaToHldo",
   },
   checkbox: {
     inputType: "checkbox",
-    className: "sdn-checkbox-LcY8saEk",
+    className: "sdn-checkbox-L452djoh",
   },
   label2: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-B5CHjY4D",
+    className: "sdn-label-PV1F9nbJ",
   },
   chipCount: {
-    className: "sdn-chipCount-2IUfUb2A",
+    className: "sdn-chipCount-5A85yCo8",
   },
   label3: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-6fhi2gOH",
+    className: "sdn-label-MVNPc4Zf",
   },
   listItemTodo2: {
-    className: "sdn-listItemTodo-K79KhuKE",
+    className: "sdn-listItemTodo-qaToHldo",
   },
   checkbox2: {
     inputType: "checkbox",
-    className: "sdn-checkbox-LcY8saEk",
+    className: "sdn-checkbox-L452djoh",
   },
   label4: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-B5CHjY4D",
+    className: "sdn-label-PV1F9nbJ",
   },
   chipCount2: {
-    className: "sdn-chipCount-2IUfUb2A",
+    className: "sdn-chipCount-5A85yCo8",
   },
   label5: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-6fhi2gOH",
+    className: "sdn-label-MVNPc4Zf",
   },
   listItemTodo3: {
-    className: "sdn-listItemTodo-K79KhuKE",
+    className: "sdn-listItemTodo-qaToHldo",
   },
   checkbox3: {
     inputType: "checkbox",
-    className: "sdn-checkbox-LcY8saEk",
+    className: "sdn-checkbox-L452djoh",
   },
   label6: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-B5CHjY4D",
+    className: "sdn-label-PV1F9nbJ",
   },
   chipCount3: {
-    className: "sdn-chipCount-2IUfUb2A",
+    className: "sdn-chipCount-5A85yCo8",
   },
   label7: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-6fhi2gOH",
+    className: "sdn-label-MVNPc4Zf",
   },
   listItemTodo4: {
-    className: "sdn-listItemTodo-K79KhuKE",
+    className: "sdn-listItemTodo-qaToHldo",
   },
   checkbox4: {
     inputType: "checkbox",
-    className: "sdn-checkbox-LcY8saEk",
+    className: "sdn-checkbox-L452djoh",
   },
   label8: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-B5CHjY4D",
+    className: "sdn-label-PV1F9nbJ",
   },
   chipCount4: {
-    className: "sdn-chipCount-2IUfUb2A",
+    className: "sdn-chipCount-5A85yCo8",
   },
   label9: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-6fhi2gOH",
+    className: "sdn-label-MVNPc4Zf",
   },
   listItemTodo5: {
-    className: "sdn-listItemTodo-PCsiiMTC",
+    className: "sdn-listItemTodo-tcymDTLt",
   },
   checkbox5: {
     inputType: "checkbox",
-    className: "sdn-checkbox-LcY8saEk",
+    className: "sdn-checkbox-L452djoh",
   },
   label10: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-B5CHjY4D",
+    className: "sdn-label-PV1F9nbJ",
   },
   chipCount5: {
-    className: "sdn-chipCount-2IUfUb2A",
+    className: "sdn-chipCount-5A85yCo8",
   },
   label11: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-6fhi2gOH",
+    className: "sdn-label-MVNPc4Zf",
   },
 }

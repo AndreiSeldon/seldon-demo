@@ -78,14 +78,14 @@ export function SectionLegal({
 const sdn: SectionLegalProps = {
   link: {
     children: "Privacy Policy",
-    className: "sdn-link-4xIHoTQ8",
+    className: "sdn-link-x3ZvbG9F",
   },
   link2: {
     children: "Terms of Service",
-    className: "sdn-link-4xIHoTQ8",
+    className: "sdn-link-x3ZvbG9F",
   },
   link3: {
     children: "Cookie Policy",
-    className: "sdn-link-4xIHoTQ8",
+    className: "sdn-link-x3ZvbG9F",
   },
 }

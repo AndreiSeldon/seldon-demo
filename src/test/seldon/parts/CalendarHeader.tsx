@@ -165,38 +165,38 @@ export function CalendarHeader({
 
 const sdn: CalendarHeaderProps = {
   calendarWeekdays: {
-    className: "sdn-calendarWeekdays-9ts28iij",
+    className: "sdn-calendarWeekdays-BYrCZadH",
   },
   tableHeader: {
     children: "Jan",
-    className: "sdn-tableHeader-Nr00wz33",
+    className: "sdn-tableHeader-bucdv2Ay",
   },
   tableHeader2: {
     children: "Mon",
-    className: "sdn-tableHeader-3ABPtvpt",
+    className: "sdn-tableHeader-2Y5vmaif",
   },
   tableHeader3: {
     children: "Tue",
-    className: "sdn-tableHeader-3ABPtvpt",
+    className: "sdn-tableHeader-2Y5vmaif",
   },
   tableHeader4: {
     children: "Wed",
-    className: "sdn-tableHeader-3ABPtvpt",
+    className: "sdn-tableHeader-2Y5vmaif",
   },
   tableHeader5: {
     children: "Thu",
-    className: "sdn-tableHeader-3ABPtvpt",
+    className: "sdn-tableHeader-2Y5vmaif",
   },
   tableHeader6: {
     children: "Fri",
-    className: "sdn-tableHeader-3ABPtvpt",
+    className: "sdn-tableHeader-2Y5vmaif",
   },
   tableHeader7: {
     children: "Sat",
-    className: "sdn-tableHeader-3ABPtvpt",
+    className: "sdn-tableHeader-2Y5vmaif",
   },
   tableHeader8: {
     children: "Sun",
-    className: "sdn-tableHeader-3ABPtvpt",
+    className: "sdn-tableHeader-2Y5vmaif",
   },
 }

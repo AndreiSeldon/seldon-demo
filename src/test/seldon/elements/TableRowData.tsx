@@ -111,22 +111,22 @@ export function TableRowData({
 const sdn: TableRowDataProps = {
   tableData: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableData2: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableData3: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableData4: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
   tableData5: {
     children: "Cell",
-    className: "sdn-tableData-N5L2ERY3",
+    className: "sdn-tableData-FPFZ6E5l",
   },
 }

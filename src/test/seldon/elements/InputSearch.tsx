@@ -70,10 +70,10 @@ export function InputSearch({
 const sdn: InputSearchProps = {
   icon: {
     icon: "material-search",
-    className: "sdn-icon-TAl2Dqmw",
+    className: "sdn-icon-OboDodMV",
   },
   input: {
     inputType: "text",
-    className: "sdn-input-KHCG9p5k",
+    className: "sdn-input-0NVWyzco",
   },
 }
