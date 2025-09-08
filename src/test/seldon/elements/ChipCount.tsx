@@ -12,47 +12,38 @@
  * 
  *****/
  
-import { ButtonHTMLAttributes } from "react"
-import { HTMLButton } from "../native-react/HTML.Button"
-import { Icon, IconProps } from "../primitives/Icon"
+import { HTMLAttributes } from "react"
+import { HTMLSpan } from "../native-react/HTML.Span"
 import { Label, LabelProps } from "../primitives/Label"
 import { combineClassNames } from "../utils/class-name-utils"
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ChipCountProps extends HTMLAttributes<HTMLSpanElement> {
   className?: string
-  icon?: IconProps
   label?: LabelProps
 }
 
 /**
- * Button
+ * Chip Count
  *
  * Level: Element
  *
- * Intent: Standard button for triggering actions like submit, confirm, or cancel.
+ * Intent: Defines a chip component variant that displays a numeric count, often used for notifications, filters, or grouped item indicators.
  *
- * Tags: button, action, UI, primary, click, control, submit, call to action
+ * Tags: chip, count, ui, badge, number, indicator, filter, tag
  *
  * @example
  * ```tsx
- * <Button
- *   icon="material-star"
+ * <ChipCount
  *   label="Button Label"
  * />
  * ```
  */
-export function Button({
+export function ChipCount({
   className = "",
-  icon = sdn.icon,
   label = sdn.label,
   ...props
-}: ButtonProps) {
-  const frameClassName = combineClassNames("sdn-button", className)
-  const iconProps = {
-    ...sdn.icon,
-    ...icon,
-    className: combineClassNames(sdn.icon?.className, icon?.className),
-  }
+}: ChipCountProps) {
+  const frameClassName = combineClassNames("sdn-chipCount", className)
   const labelProps = {
     ...sdn.label,
     ...label,
@@ -60,21 +51,16 @@ export function Button({
   }
 
   return (
-    <HTMLButton className={frameClassName} {...props}>
-      <Icon {...iconProps} />
+    <HTMLSpan className={frameClassName} {...props}>
       <Label {...labelProps} />
-    </HTMLButton>
+    </HTMLSpan>
   )
 }
 
-const sdn: ButtonProps = {
-  icon: {
-    icon: "__default__",
-    className: "sdn-icon-qjR6AamZ",
-  },
+const sdn: ChipCountProps = {
   label: {
-    children: "Button",
+    children: "Label",
     htmlElement: "label",
-    className: "sdn-label-tIu6mzVx",
+    className: "sdn-label-WTCxGWIz",
   },
 }

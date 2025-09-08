@@ -15,47 +15,47 @@
 import { HTMLAttributes } from "react"
 import { Frame } from "../frames/Frame"
 import { Description, DescriptionProps } from "../primitives/Description"
-import { Image, ImageProps } from "../primitives/Image"
+import { Tagline, TaglineProps } from "../primitives/Tagline"
 import { Title, TitleProps } from "../primitives/Title"
 import { combineClassNames } from "../utils/class-name-utils"
 
-export interface SectionBrandProps extends HTMLAttributes<HTMLElement> {
+export interface TextblockDetailsProps extends HTMLAttributes<HTMLElement> {
   className?: string
-  image?: ImageProps
+  tagline?: TaglineProps
   titleProps?: TitleProps
   description?: DescriptionProps
 }
 
 /**
- * Section Brand
+ * Textblock Details
  *
  * Level: Element
  *
- * Intent: Brand section containing logo, company name, and tagline. Can be used in footers, headers, or any other layout context. Follows Material Design layout patterns.
+ * Intent: Displays detailed text content like descriptions or metadata.
  *
- * Tags: section, brand, logo, company, element, layout, header, footer
+ * Tags: text, details, description, metadata, info, UI, content
  *
  * @example
  * ```tsx
- * <SectionBrand
- *   image="/image.jpg"
+ * <TextblockDetails
+ *   tagline="Featured Product"
  *   title="Product Title"
  *   description="Product description text"
  * />
  * ```
  */
-export function SectionBrand({
+export function TextblockDetails({
   className = "",
-  image = sdn.image,
+  tagline = sdn.tagline,
   titleProps = sdn.titleProps,
   description = sdn.description,
   ...props
-}: SectionBrandProps) {
-  const frameClassName = combineClassNames("sdn-sectionLegal", className)
-  const imageProps = {
-    ...sdn.image,
-    ...image,
-    className: combineClassNames(sdn.image?.className, image?.className),
+}: TextblockDetailsProps) {
+  const frameClassName = combineClassNames("sdn-textblockDetails", className)
+  const taglineProps = {
+    ...sdn.tagline,
+    ...tagline,
+    className: combineClassNames(sdn.tagline?.className, tagline?.className),
   }
   const titlePropsProps = {
     ...sdn.titleProps,
@@ -76,26 +76,28 @@ export function SectionBrand({
 
   return (
     <Frame className={frameClassName} {...props}>
-      <Image {...imageProps} />
+      <Tagline {...taglineProps} />
       <Title {...titlePropsProps} />
       <Description {...descriptionProps} />
     </Frame>
   )
 }
 
-const sdn: SectionBrandProps = {
-  image: {
-    src: "https://static.seldon.app/logo.svg",
-    className: "sdn-image-oRexiiwq",
+const sdn: TextblockDetailsProps = {
+  tagline: {
+    children: "Tagline",
+    htmlElement: "p",
+    className: "sdn-tagline-hNiZd5lq",
   },
   titleProps: {
-    children: "Company Name",
+    children: "Product Card Title",
     htmlElement: "h4",
-    className: "sdn-title-aDZCncB9",
+    className: "sdn-title-MFYclLNP",
   },
   description: {
-    children: "Building amazing products for the future.",
+    children:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus.",
     htmlElement: "p",
-    className: "sdn-description-opmj5R6r",
+    className: "sdn-description-aQpx3YUf",
   },
 }

@@ -65,7 +65,7 @@ export function SectionSocial({
   label3,
   ...props
 }: SectionSocialProps) {
-  const frameClassName = combineClassNames("sdn-sectionNav", className)
+  const frameClassName = combineClassNames("sdn-sectionLegal", className)
   const buttonProps = {
     ...sdn.button,
     ...button,
@@ -123,39 +123,39 @@ export function SectionSocial({
 
 const sdn: SectionSocialProps = {
   button: {
-    className: "sdn-button-RSASOmfR",
+    className: "sdn-button-CwVFBNpW",
   },
   icon: {
     icon: "social-twitter",
-    className: "sdn-icon-9QNsDKzQ",
+    className: "sdn-icon-Cj1ns3Eq",
   },
   label: {
     children: "Twitter",
     htmlElement: "label",
-    className: "sdn-label-RBwTVAGl",
+    className: "sdn-label-WTCxGWIz",
   },
   button2: {
-    className: "sdn-button-RSASOmfR",
+    className: "sdn-button-CwVFBNpW",
   },
   icon2: {
     icon: "social-linkedin",
-    className: "sdn-icon-9QNsDKzQ",
+    className: "sdn-icon-Cj1ns3Eq",
   },
   label2: {
     children: "LinkedIn",
     htmlElement: "label",
-    className: "sdn-label-RBwTVAGl",
+    className: "sdn-label-WTCxGWIz",
   },
   button3: {
-    className: "sdn-button-RSASOmfR",
+    className: "sdn-button-CwVFBNpW",
   },
   icon3: {
     icon: "social-instagram",
-    className: "sdn-icon-9QNsDKzQ",
+    className: "sdn-icon-Cj1ns3Eq",
   },
   label3: {
     children: "Instagram",
     htmlElement: "label",
-    className: "sdn-label-RBwTVAGl",
+    className: "sdn-label-WTCxGWIz",
   },
 }

@@ -17,54 +17,45 @@ import { HTMLTr } from "../native-react/HTML.Tr"
 import { TableData, TableDataProps } from "../primitives/TableData"
 import { combineClassNames } from "../utils/class-name-utils"
 
-export interface CalendarWeekProps extends HTMLAttributes<HTMLTableRowElement> {
+export interface TableRowDataProps extends HTMLAttributes<HTMLTableRowElement> {
   className?: string
   tableData?: TableDataProps
   tableData2?: TableDataProps
   tableData3?: TableDataProps
   tableData4?: TableDataProps
   tableData5?: TableDataProps
-  tableData6?: TableDataProps
-  tableData7?: TableDataProps
-  tableData8?: TableDataProps
 }
 
 /**
- * Week
+ * Data Row
  *
  * Level: Element
  *
- * Intent: Schema for a full week view, rendering seven days with events, selection state, and range interactions.
+ * Intent: Displays data cells for a standard row in a data table.
  *
- * Tags: calendar, week, schedule, timeslot, events, overlap, scroll, ui
+ * Tags: table, row, data, cells, UI, list, grid, structured
  *
  * @example
  * ```tsx
- * <CalendarWeek
+ * <TableRowData
  *   tableData="{}"
  *   tableData1="{}"
  *   tableData2="{}"
  *   tableData3="{}"
  *   tableData4="{}"
- *   tableData5="{}"
- *   tableData6="{}"
- *   tableData7="{}"
  * />
  * ```
  */
-export function CalendarWeek({
+export function TableRowData({
   className = "",
   tableData = sdn.tableData,
   tableData2 = sdn.tableData2,
   tableData3 = sdn.tableData3,
   tableData4 = sdn.tableData4,
   tableData5 = sdn.tableData5,
-  tableData6 = sdn.tableData6,
-  tableData7 = sdn.tableData7,
-  tableData8 = sdn.tableData8,
   ...props
-}: CalendarWeekProps) {
-  const frameClassName = combineClassNames("sdn-calendarWeek", className)
+}: TableRowDataProps) {
+  const frameClassName = combineClassNames("sdn-tableRowData", className)
   const tableDataProps = {
     ...sdn.tableData,
     ...tableData,
@@ -105,30 +96,6 @@ export function CalendarWeek({
       tableData5?.className,
     ),
   }
-  const tableData6Props = {
-    ...sdn.tableData6,
-    ...tableData6,
-    className: combineClassNames(
-      sdn.tableData6?.className,
-      tableData6?.className,
-    ),
-  }
-  const tableData7Props = {
-    ...sdn.tableData7,
-    ...tableData7,
-    className: combineClassNames(
-      sdn.tableData7?.className,
-      tableData7?.className,
-    ),
-  }
-  const tableData8Props = {
-    ...sdn.tableData8,
-    ...tableData8,
-    className: combineClassNames(
-      sdn.tableData8?.className,
-      tableData8?.className,
-    ),
-  }
 
   return (
     <HTMLTr className={frameClassName} {...props}>
@@ -137,44 +104,29 @@ export function CalendarWeek({
       <TableData {...tableData3Props} />
       <TableData {...tableData4Props} />
       <TableData {...tableData5Props} />
-      <TableData {...tableData6Props} />
-      <TableData {...tableData7Props} />
-      <TableData {...tableData8Props} />
     </HTMLTr>
   )
 }
 
-const sdn: CalendarWeekProps = {
+const sdn: TableRowDataProps = {
   tableData: {
-    children: "##",
-    className: "sdn-tableData-OOkkpRzA",
+    children: "Cell",
+    className: "sdn-tableData-mEMD5gQz",
   },
   tableData2: {
-    children: "##",
-    className: "sdn-tableData-XQo9umG6",
+    children: "Cell",
+    className: "sdn-tableData-mEMD5gQz",
   },
   tableData3: {
-    children: "##",
-    className: "sdn-tableData-XQo9umG6",
+    children: "Cell",
+    className: "sdn-tableData-mEMD5gQz",
   },
   tableData4: {
-    children: "##",
-    className: "sdn-tableData-XQo9umG6",
+    children: "Cell",
+    className: "sdn-tableData-mEMD5gQz",
   },
   tableData5: {
-    children: "##",
-    className: "sdn-tableData-XQo9umG6",
-  },
-  tableData6: {
-    children: "##",
-    className: "sdn-tableData-XQo9umG6",
-  },
-  tableData7: {
-    children: "##",
-    className: "sdn-tableData-XQo9umG6",
-  },
-  tableData8: {
-    children: "##",
-    className: "sdn-tableData-XQo9umG6",
+    children: "Cell",
+    className: "sdn-tableData-mEMD5gQz",
   },
 }

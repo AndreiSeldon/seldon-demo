@@ -13,29 +13,31 @@
  *****/
  
 import { HTMLAttributes } from "react"
-import { HTMLTh } from "../native-react/HTML.Th"
+import { HTMLDiv } from "../native-react/HTML.Div"
 
-export interface TableHeaderProps extends HTMLAttributes<HTMLTableCellElement> {
+export interface FrameScrollerProps extends HTMLAttributes<HTMLDivElement> {
   className?: string
-  children?: string
 }
 
 /**
- * Table Header
- *
- * Level: Primitive
- *
- * Intent: Defines a column header in a table for labeling data.
- *
- * Tags: table, header, th, column label, primitive, heading, grid
- *
+ * Scroller
+ * 
+ * Level: Frame
+ * 
+ * Intent: Frame component schema with horizontal or vertical scroll behavior, allowing overflow content to remain accessible within bounds.
+ * 
+ * Tags: frame, scroll, scroller, overflow, ui, horizontal, vertical, content
+ * 
  * @example
  * ```tsx
- * <TableHeader
- *   children="Column"
+ * <FrameScroller
+
  * />
  * ```
  */
-export function TableHeader({ className = "", ...props }: TableHeaderProps) {
-  return <HTMLTh className={"sdn-tableData " + className} {...props} />
+export function FrameScroller({
+  className = "",
+  ...props
+}: FrameScrollerProps) {
+  return <HTMLDiv className={"sdn-frameScroller " + className} {...props} />
 }

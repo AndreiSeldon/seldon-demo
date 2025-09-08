@@ -15,55 +15,47 @@
 import { HTMLAttributes } from "react"
 import { Button, ButtonProps } from "../elements/Button"
 import { Frame } from "../frames/Frame"
-import { Description, DescriptionProps } from "../primitives/Description"
 import { Icon, IconProps } from "../primitives/Icon"
-import { Input, InputProps } from "../primitives/Input"
 import { Label, LabelProps } from "../primitives/Label"
 import { Title, TitleProps } from "../primitives/Title"
 import { combineClassNames } from "../utils/class-name-utils"
 
-export interface SectionNewsletterProps extends HTMLAttributes<HTMLElement> {
+export interface HeaderPanelProps extends HTMLAttributes<HTMLElement> {
   className?: string
   titleProps?: TitleProps
-  description?: DescriptionProps
-  input?: InputProps
   button?: ButtonProps
   icon?: IconProps
   label?: LabelProps
 }
 
 /**
- * Section Newsletter
+ * Panel Header
  *
  * Level: Element
  *
- * Intent: Newsletter signup section with email input and subscribe button. Can be used in footers, headers, sidebars, or any other layout context. Follows Material Design form patterns.
+ * Intent: Divides header space into interactive or informational panels.
  *
- * Tags: section, newsletter, signup, form, email, subscription, element, layout, header, footer, sidebar
+ * Tags: header, panels, layout, top bar, UI, modular, zones, sections
  *
  * @example
  * ```tsx
- * <SectionNewsletter
+ * <HeaderPanel
  *   title="Product Title"
- *   description="Product description text"
- *   input="{}"
  *   button={() => {}}
  *   icon="material-star"
  *   label="Button Label"
  * />
  * ```
  */
-export function SectionNewsletter({
+export function HeaderPanel({
   className = "",
   titleProps = sdn.titleProps,
-  description = sdn.description,
-  input = sdn.input,
   button = sdn.button,
   icon,
   label,
   ...props
-}: SectionNewsletterProps) {
-  const frameClassName = combineClassNames("sdn-sectionLegal", className)
+}: HeaderPanelProps) {
+  const frameClassName = combineClassNames("sdn-headerPanel", className)
   const titlePropsProps = {
     ...sdn.titleProps,
     ...titleProps,
@@ -71,19 +63,6 @@ export function SectionNewsletter({
       sdn.titleProps?.className,
       titleProps?.className,
     ),
-  }
-  const descriptionProps = {
-    ...sdn.description,
-    ...description,
-    className: combineClassNames(
-      sdn.description?.className,
-      description?.className,
-    ),
-  }
-  const inputProps = {
-    ...sdn.input,
-    ...input,
-    className: combineClassNames(sdn.input?.className, input?.className),
   }
   const buttonProps = {
     ...sdn.button,
@@ -104,38 +83,27 @@ export function SectionNewsletter({
   return (
     <Frame className={frameClassName} {...props}>
       <Title {...titlePropsProps} />
-      <Description {...descriptionProps} />
-      <Input {...inputProps} />
       <Button {...buttonProps} icon={iconProps} label={labelProps} />
     </Frame>
   )
 }
 
-const sdn: SectionNewsletterProps = {
+const sdn: HeaderPanelProps = {
   titleProps: {
-    children: "Stay Updated",
+    children: "Title",
     htmlElement: "h4",
-    className: "sdn-title-erojOOd9",
-  },
-  description: {
-    children: "Subscribe to our newsletter for the latest updates.",
-    htmlElement: "p",
-    className: "sdn-description-rCm7Kwyz",
-  },
-  input: {
-    inputType: "email",
-    className: "sdn-input-gBYtHgke",
+    className: "sdn-title-9Nh0zX1n",
   },
   button: {
     className: "sdn-button-l5QIFhBA",
   },
   icon: {
-    icon: "material-send",
-    className: "sdn-icon-Cj1ns3Eq",
+    icon: "__default__",
+    className: "sdn-icon-qjR6AamZ",
   },
   label: {
-    children: "Subscribe",
+    children: "Button",
     htmlElement: "label",
-    className: "sdn-label-WTCxGWIz",
+    className: "sdn-label-tIu6mzVx",
   },
 }

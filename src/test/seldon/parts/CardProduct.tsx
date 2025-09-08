@@ -14,13 +14,26 @@
  
 import { HTMLAttributes } from "react"
 import { Button, ButtonProps } from "../elements/Button"
+import {
+  TextblockDetails,
+  TextblockDetailsProps,
+} from "../elements/TextblockDetails"
 import { Frame } from "../frames/Frame"
+import { ButtonBar, ButtonBarProps } from "../parts/ButtonBar"
+import { Description, DescriptionProps } from "../primitives/Description"
 import { Icon, IconProps } from "../primitives/Icon"
 import { Label, LabelProps } from "../primitives/Label"
+import { Tagline, TaglineProps } from "../primitives/Tagline"
+import { Title, TitleProps } from "../primitives/Title"
 import { combineClassNames } from "../utils/class-name-utils"
 
-export interface ButtonBarProps extends HTMLAttributes<HTMLElement> {
+export interface CardProductProps extends HTMLAttributes<HTMLElement> {
   className?: string
+  textblockDetails?: TextblockDetailsProps
+  tagline?: TaglineProps
+  titleProps?: TitleProps
+  description?: DescriptionProps
+  buttonBar?: ButtonBarProps
   button?: ButtonProps
   icon?: IconProps
   label?: LabelProps
@@ -33,17 +46,22 @@ export interface ButtonBarProps extends HTMLAttributes<HTMLElement> {
 }
 
 /**
- * Button Bar
+ * Product Card
  *
  * Level: Part
  *
- * Intent: Groups multiple buttons in a horizontal layout for related actions.
+ * Intent: Product card schema optimized for ecommerce use cases, supporting pricing, images, descriptions, and action triggers.
  *
- * Tags: button group, bar, actions, UI, layout, controls, inline, cluster
+ * Tags: card, product, ecommerce, ui, pricing, image, cta, catalog
  *
  * @example
  * ```tsx
- * <ButtonBar
+ * <CardProduct
+ *   textblockDetails="{}"
+ *   tagline="Featured Product"
+ *   title="Product Title"
+ *   description="Product description text"
+ *   buttonBar="{}"
  *   button={() => {}}
  *   icon="material-star"
  *   label="Button Label"
@@ -52,20 +70,62 @@ export interface ButtonBarProps extends HTMLAttributes<HTMLElement> {
  * />
  * ```
  */
-export function ButtonBar({
+export function CardProduct({
   className = "",
-  button = sdn.button,
+  textblockDetails = sdn.textblockDetails,
+  tagline,
+  titleProps,
+  description,
+  buttonBar = sdn.buttonBar,
+  button,
   icon,
   label,
-  button2 = sdn.button2,
+  button2,
   icon2,
   label2,
-  button3 = sdn.button3,
+  button3,
   icon3,
   label3,
   ...props
-}: ButtonBarProps) {
-  const frameClassName = combineClassNames("sdn-buttonBar", className)
+}: CardProductProps) {
+  const frameClassName = combineClassNames("sdn-cardProduct", className)
+  const textblockDetailsProps = {
+    ...sdn.textblockDetails,
+    ...textblockDetails,
+    className: combineClassNames(
+      sdn.textblockDetails?.className,
+      textblockDetails?.className,
+    ),
+  }
+  const taglineProps = {
+    ...sdn.tagline,
+    ...tagline,
+    className: combineClassNames(sdn.tagline?.className, tagline?.className),
+  }
+  const titlePropsProps = {
+    ...sdn.titleProps,
+    ...titleProps,
+    className: combineClassNames(
+      sdn.titleProps?.className,
+      titleProps?.className,
+    ),
+  }
+  const descriptionProps = {
+    ...sdn.description,
+    ...description,
+    className: combineClassNames(
+      sdn.description?.className,
+      description?.className,
+    ),
+  }
+  const buttonBarProps = {
+    ...sdn.buttonBar,
+    ...buttonBar,
+    className: combineClassNames(
+      sdn.buttonBar?.className,
+      buttonBar?.className,
+    ),
+  }
   const buttonProps = {
     ...sdn.button,
     ...button,
@@ -114,14 +174,51 @@ export function ButtonBar({
 
   return (
     <Frame className={frameClassName} {...props}>
-      <Button {...buttonProps} icon={iconProps} label={labelProps} />
-      <Button {...button2Props} icon={icon2Props} label={label2Props} />
-      <Button {...button3Props} icon={icon3Props} label={label3Props} />
+      <TextblockDetails
+        {...textblockDetailsProps}
+        tagline={taglineProps}
+        titleProps={titlePropsProps}
+        description={descriptionProps}
+      />
+      <ButtonBar
+        {...buttonBarProps}
+        button={buttonProps}
+        icon={iconProps}
+        label={labelProps}
+        button2={button2Props}
+        icon2={icon2Props}
+        label2={label2Props}
+        button3={button3Props}
+        icon3={icon3Props}
+        label3={label3Props}
+      />
     </Frame>
   )
 }
 
-const sdn: ButtonBarProps = {
+const sdn: CardProductProps = {
+  textblockDetails: {
+    className: "sdn-textblockDetails-HS0WPhOt",
+  },
+  tagline: {
+    children: "Tagline",
+    htmlElement: "p",
+    className: "sdn-tagline-hNiZd5lq",
+  },
+  titleProps: {
+    children: "Product Card Title",
+    htmlElement: "h4",
+    className: "sdn-title-MFYclLNP",
+  },
+  description: {
+    children:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus.",
+    htmlElement: "p",
+    className: "sdn-description-aQpx3YUf",
+  },
+  buttonBar: {
+    className: "sdn-buttonBar-4jSzBhCz",
+  },
   button: {
     className: "sdn-button-l5QIFhBA",
   },

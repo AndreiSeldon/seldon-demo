@@ -12,30 +12,30 @@
  * 
  *****/
  
-import { HTMLAttributes } from "react"
-import { HTMLTh } from "../native-react/HTML.Th"
+import { InputHTMLAttributes } from "react"
+import { HTMLInput } from "../native-react/HTML.Input"
 
-export interface TableHeaderProps extends HTMLAttributes<HTMLTableCellElement> {
+export interface CheckboxProps extends InputHTMLAttributes<HTMLInputElement> {
   className?: string
-  children?: string
+  inputType?: "checkbox"
 }
 
 /**
- * Table Header
+ * Checkbox
  *
  * Level: Primitive
  *
- * Intent: Defines a column header in a table for labeling data.
+ * Intent: Basic form control for toggling a binary value.
  *
- * Tags: table, header, th, column label, primitive, heading, grid
+ * Tags: checkbox, form, input, boolean, toggle, primitive, control
  *
  * @example
  * ```tsx
- * <TableHeader
- *   children="Column"
+ * <Checkbox
+ *   inputType="checkbox"
  * />
  * ```
  */
-export function TableHeader({ className = "", ...props }: TableHeaderProps) {
-  return <HTMLTh className={"sdn-tableData " + className} {...props} />
+export function Checkbox({ className = "", ...props }: CheckboxProps) {
+  return <HTMLInput className={"sdn-checkbox " + className} {...props} />
 }
