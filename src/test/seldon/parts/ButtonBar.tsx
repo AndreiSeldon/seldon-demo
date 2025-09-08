@@ -142,7 +142,7 @@ const sdn: ButtonBarProps = {
     className: "sdn-icon-GlAjRy7y",
   },
   label2: {
-    children: "Remove",
+    children: "TEST",
     htmlElement: "label",
     className: "sdn-label-HzRymP5z",
   },
