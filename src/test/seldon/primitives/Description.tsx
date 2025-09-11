@@ -54,3 +54,11 @@ export function Description({
       )
   }
 }
+
+const sdn: DescriptionProps = {
+  description: {
+    children: "Description",
+    htmlElement: "p",
+    className: "sdn-description",
+  },
+}

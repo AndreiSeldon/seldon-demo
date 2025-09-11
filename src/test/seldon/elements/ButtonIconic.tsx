@@ -15,13 +15,12 @@
 import { ButtonHTMLAttributes } from "react"
 import { HTMLButton } from "../native-react/HTML.Button"
 import { Icon, IconProps } from "../primitives/Icon"
-import { Label, LabelProps } from "../primitives/Label"
 import { combineClassNames } from "../utils/class-name"
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonIconicProps
+  extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string
   icon?: IconProps
-  label?: LabelProps
 }
 
 /**
@@ -35,46 +34,36 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
  *
  * @example
  * ```tsx
- * <Button
+ * <ButtonIconic
  *   icon="material-star"
- *   label="Button Label"
  * />
  * ```
  */
-export function Button({
+export function ButtonIconic({
   className = "",
   icon = sdn.icon,
-  label = sdn.label,
   ...props
-}: ButtonProps) {
-  const frameClassName = combineClassNames("sdn-button", className)
+}: ButtonIconicProps) {
+  const frameClassName = combineClassNames(
+    "sdn-button sdn-button-01go2-",
+    className,
+  )
   const iconProps = {
     ...sdn.icon,
     ...icon,
     className: combineClassNames(sdn.icon?.className, icon?.className),
   }
-  const labelProps = {
-    ...sdn.label,
-    ...label,
-    className: combineClassNames(sdn.label?.className, label?.className),
-  }
 
   return (
     <HTMLButton className={frameClassName} {...props}>
       <Icon {...iconProps} />
-      <Label {...labelProps} />
     </HTMLButton>
   )
 }
 
-const sdn: ButtonProps = {
+const sdn: ButtonIconicProps = {
   icon: {
     icon: "__default__",
     className: "sdn-icon-0symaN",
-  },
-  label: {
-    children: "Label",
-    htmlElement: "label",
-    className: "sdn-label-yEVn-M",
   },
 }

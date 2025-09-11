@@ -18,7 +18,8 @@ import { Icon, IconProps } from "../primitives/Icon"
 import { Label, LabelProps } from "../primitives/Label"
 import { combineClassNames } from "../utils/class-name"
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonChipProps
+  extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string
   icon?: IconProps
   label?: LabelProps
@@ -35,19 +36,22 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
  *
  * @example
  * ```tsx
- * <Button
+ * <ButtonChip
  *   icon="material-star"
  *   label="Button Label"
  * />
  * ```
  */
-export function Button({
+export function ButtonChip({
   className = "",
   icon = sdn.icon,
   label = sdn.label,
   ...props
-}: ButtonProps) {
-  const frameClassName = combineClassNames("sdn-button", className)
+}: ButtonChipProps) {
+  const frameClassName = combineClassNames(
+    "sdn-button sdn-button-0QOda7",
+    className,
+  )
   const iconProps = {
     ...sdn.icon,
     ...icon,
@@ -67,7 +71,7 @@ export function Button({
   )
 }
 
-const sdn: ButtonProps = {
+const sdn: ButtonChipProps = {
   icon: {
     icon: "__default__",
     className: "sdn-icon-0symaN",
@@ -75,6 +79,6 @@ const sdn: ButtonProps = {
   label: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-yEVn-M",
+    className: "sdn-label-FuunCK",
   },
 }

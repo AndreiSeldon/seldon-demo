@@ -57,3 +57,11 @@ export function Tagline({
       return <HTMLParagraph className={"sdn-tagline " + className} {...props} />
   }
 }
+
+const sdn: TaglineProps = {
+  tagline: {
+    children: "Tagline",
+    htmlElement: "p",
+    className: "sdn-tagline",
+  },
+}

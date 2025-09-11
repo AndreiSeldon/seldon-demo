@@ -41,3 +41,11 @@ export interface LabelProps extends HTMLAttributes<HTMLSpanElement> {
 export function Label({ className = "", htmlElement, ...props }: LabelProps) {
   return <HTMLSpan className={"sdn-label " + className} {...props} />
 }
+
+const sdn: LabelProps = {
+  label: {
+    children: "Label",
+    htmlElement: "label",
+    className: "sdn-label",
+  },
+}

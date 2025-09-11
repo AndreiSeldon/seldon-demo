@@ -39,3 +39,10 @@ export interface LinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
 export function Link({ className = "", ...props }: LinkProps) {
   return <HTMLAnchor className={"sdn-link " + className} {...props} />
 }
+
+const sdn: LinkProps = {
+  link: {
+    children: "Link",
+    className: "sdn-link",
+  },
+}

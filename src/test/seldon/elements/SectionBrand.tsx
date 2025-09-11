@@ -51,7 +51,7 @@ export function SectionBrand({
   description = sdn.description,
   ...props
 }: SectionBrandProps) {
-  const frameClassName = combineClassNames("sdn-sectionNav", className)
+  const frameClassName = combineClassNames("sdn-sectionLegal", className)
   const imageProps = {
     ...sdn.image,
     ...image,
@@ -86,16 +86,16 @@ export function SectionBrand({
 const sdn: SectionBrandProps = {
   image: {
     src: "https://static.seldon.app/logo.svg",
-    className: "sdn-image-hb2er8xx",
+    className: "sdn-image-fpGrIr0X",
   },
   titleProps: {
     children: "Company Name",
     htmlElement: "h4",
-    className: "sdn-title-8J24ly3B",
+    className: "sdn-title-44QRhRaz",
   },
   description: {
     children: "Building amazing products for the future.",
     htmlElement: "p",
-    className: "sdn-description-9VNwgG8q",
+    className: "sdn-description-fq5UetL1",
   },
 }

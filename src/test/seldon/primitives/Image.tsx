@@ -39,3 +39,10 @@ export interface ImageProps extends ImgHTMLAttributes<HTMLImageElement> {
 export function Image({ className = "", ...props }: ImageProps) {
   return <HTMLImg className={"sdn-image " + className} {...props} />
 }
+
+const sdn: ImageProps = {
+  image: {
+    src: "https://static.seldon.app/background-default-dark.jpg",
+    className: "sdn-image",
+  },
+}

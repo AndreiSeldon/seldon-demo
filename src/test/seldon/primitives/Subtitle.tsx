@@ -20,7 +20,7 @@ import { HTMLHeading4 } from "../native-react/HTML.Heading4"
 import { HTMLHeading5 } from "../native-react/HTML.Heading5"
 import { HTMLHeading6 } from "../native-react/HTML.Heading6"
 
-export interface TitleProps
+export interface SubtitleProps
   extends HTMLAttributes<
     | HTMLHeadingElement
     | HTMLHeadingElement
@@ -35,43 +35,47 @@ export interface TitleProps
 }
 
 /**
- * Title
+ * Subtitle
  *
  * Level: Primitive
  *
- * Intent: Prominent title text used at the top of sections or views.
+ * Intent: Displays supporting text under a main title or heading.
  *
- * Tags: title, heading, top, section, primitive, UI
+ * Tags: subtitle, heading, text, support, primitive, UI
  *
  * @example
  * ```tsx
- * <Title
- *   children="Title"
- *   htmlElement="h4"
+ * <Subtitle
+ *   children="Subtitle"
+ *   htmlElement="h5"
  * />
  * ```
  */
-export function Title({ className = "", htmlElement, ...props }: TitleProps) {
+export function Subtitle({
+  className = "",
+  htmlElement,
+  ...props
+}: SubtitleProps) {
   switch (htmlElement) {
     case "h1":
-      return <HTMLHeading1 className={"sdn-title " + className} {...props} />
+      return <HTMLHeading1 className={"sdn-subtitle " + className} {...props} />
     case "h2":
-      return <HTMLHeading2 className={"sdn-title " + className} {...props} />
+      return <HTMLHeading2 className={"sdn-subtitle " + className} {...props} />
     case "h3":
-      return <HTMLHeading3 className={"sdn-title " + className} {...props} />
-    case "h5":
-      return <HTMLHeading5 className={"sdn-title " + className} {...props} />
+      return <HTMLHeading3 className={"sdn-subtitle " + className} {...props} />
+    case "h4":
+      return <HTMLHeading4 className={"sdn-subtitle " + className} {...props} />
     case "h6":
-      return <HTMLHeading6 className={"sdn-title " + className} {...props} />
+      return <HTMLHeading6 className={"sdn-subtitle " + className} {...props} />
     default:
-      return <HTMLHeading4 className={"sdn-title " + className} {...props} />
+      return <HTMLHeading5 className={"sdn-subtitle " + className} {...props} />
   }
 }
 
-const sdn: TitleProps = {
-  title: {
-    children: "Title",
-    htmlElement: "h4",
-    className: "sdn-title",
+const sdn: SubtitleProps = {
+  subtitle: {
+    children: "Subtitle",
+    htmlElement: "h5",
+    className: "sdn-subtitle",
   },
 }

@@ -13,9 +13,8 @@
  *****/
  
 import { HTMLAttributes } from "react"
-import { Button, ButtonProps } from "../elements/Button"
 import { ButtonBarProps } from "../elements/ButtonBar"
-import { ButtonIconic, ButtonIconicProps } from "../elements/ButtonIconic"
+import { ButtonOutlined, ButtonOutlinedProps } from "../elements/ButtonOutlined"
 import {
   TextblockDetails,
   TextblockDetailsProps,
@@ -28,18 +27,16 @@ import { Tagline, TaglineProps } from "../primitives/Tagline"
 import { Title, TitleProps } from "../primitives/Title"
 import { combineClassNames } from "../utils/class-name"
 
-export interface CardProductProps extends HTMLAttributes<HTMLElement> {
+export interface CardProductHeroProps extends HTMLAttributes<HTMLElement> {
   className?: string
   textblockDetails?: TextblockDetailsProps
   tagline?: TaglineProps
   titleProps?: TitleProps
   description?: DescriptionProps
   buttonBar?: ButtonBarProps
-  button?: ButtonProps
+  buttonOutlined?: ButtonOutlinedProps
   icon?: IconProps
   label?: LabelProps
-  buttonIconic1?: ButtonIconicProps
-  icon2?: IconProps
 }
 
 /**
@@ -53,34 +50,34 @@ export interface CardProductProps extends HTMLAttributes<HTMLElement> {
  *
  * @example
  * ```tsx
- * <CardProduct
+ * <CardProductHero
  *   textblockDetails="{}"
  *   tagline="Featured Product"
  *   title="Product Title"
  *   description="Product description text"
  *   buttonBar="{}"
- *   button={() => {}}
+ *   buttonOutlined={() => {}}
  *   icon="material-star"
  *   label="Button Label"
- *   buttonIconic1={() => {}}
  * />
  * ```
  */
-export function CardProduct({
+export function CardProductHero({
   className = "",
   textblockDetails = sdn.textblockDetails,
   tagline,
   titleProps,
   description,
   buttonBar = sdn.buttonBar,
-  button,
+  buttonOutlined,
   icon,
   label,
-  buttonIconic1,
-  icon2,
   ...props
-}: CardProductProps) {
-  const frameClassName = combineClassNames("sdn-cardProduct", className)
+}: CardProductHeroProps) {
+  const frameClassName = combineClassNames(
+    "sdn-cardProduct sdn-cardProduct-oqID55",
+    className,
+  )
   const textblockDetailsProps = {
     ...sdn.textblockDetails,
     ...textblockDetails,
@@ -118,10 +115,13 @@ export function CardProduct({
       buttonBar?.className,
     ),
   }
-  const buttonProps = {
-    ...sdn.button,
-    ...button,
-    className: combineClassNames(sdn.button?.className, button?.className),
+  const buttonOutlinedProps = {
+    ...sdn.buttonOutlined,
+    ...buttonOutlined,
+    className: combineClassNames(
+      sdn.buttonOutlined?.className,
+      buttonOutlined?.className,
+    ),
   }
   const iconProps = {
     ...sdn.icon,
@@ -133,19 +133,6 @@ export function CardProduct({
     ...label,
     className: combineClassNames(sdn.label?.className, label?.className),
   }
-  const buttonIconic1Props = {
-    ...sdn.buttonIconic1,
-    ...buttonIconic1,
-    className: combineClassNames(
-      sdn.buttonIconic1?.className,
-      buttonIconic1?.className,
-    ),
-  }
-  const icon2Props = {
-    ...sdn.icon2,
-    ...icon2,
-    className: combineClassNames(sdn.icon2?.className, icon2?.className),
-  }
 
   return (
     <Frame className={frameClassName} {...props}>
@@ -156,39 +143,42 @@ export function CardProduct({
         description={descriptionProps}
       />
       <Frame {...buttonBarProps}>
-        <Button {...buttonProps} icon={iconProps} label={labelProps} />
-        {buttonIconic1 && (
-          <ButtonIconic {...buttonIconic1Props} icon={icon2Props} />
+        {buttonOutlined && (
+          <ButtonOutlined
+            {...buttonOutlinedProps}
+            icon={iconProps}
+            label={labelProps}
+          />
         )}
       </Frame>
     </Frame>
   )
 }
 
-const sdn: CardProductProps = {
+const sdn: CardProductHeroProps = {
   textblockDetails: {
-    className: "sdn-textblockDetails-Xx9AA1",
+    className: "sdn-textblockDetails-gwjK0Q",
   },
   tagline: {
     children: "Tagline",
     htmlElement: "p",
-    className: "sdn-tagline-1EkRxm",
+    className: "sdn-tagline-JHxwEI",
   },
   titleProps: {
     children: "Title",
     htmlElement: "h4",
-    className: "sdn-title-BTzexg",
+    className: "sdn-title-YjOJyx",
   },
   description: {
     children: "Description",
     htmlElement: "p",
-    className: "sdn-description-V1GofM",
+    className: "sdn-description-NUNsNj",
   },
   buttonBar: {
-    className: "sdn-buttonBar-NXSwAB",
+    className: "sdn-buttonBar-8_pBvl",
   },
-  button: {
-    className: "sdn-button-HjzV76",
+  buttonOutlined: {
+    className: "sdn-button-rgfIWs",
   },
   icon: {
     icon: "__default__",
@@ -197,13 +187,6 @@ const sdn: CardProductProps = {
   label: {
     children: "Label",
     htmlElement: "label",
-    className: "sdn-label-FuunCK",
-  },
-  buttonIconic1: {
-    className: "sdn-button-EmvstI",
-  },
-  icon2: {
-    icon: "__default__",
-    className: "sdn-icon-0symaN",
+    className: "sdn-label-KLbdk5",
   },
 }

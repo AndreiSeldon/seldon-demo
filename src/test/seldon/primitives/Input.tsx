@@ -48,3 +48,10 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 export function Input({ className = "", ...props }: InputProps) {
   return <HTMLInput className={"sdn-input " + className} {...props} />
 }
+
+const sdn: InputProps = {
+  input: {
+    inputType: "text",
+    className: "sdn-input",
+  },
+}
