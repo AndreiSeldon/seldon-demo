@@ -14,7 +14,13 @@
  
 import { SVGAttributes } from "react"
 import { IconDefault } from "../icons/IconDefault"
+import { IconMaterialAdd } from "../icons/IconMaterialAdd"
+import { IconMaterialDelete } from "../icons/IconMaterialDelete"
+import { IconMaterialFavorite } from "../icons/IconMaterialFavorite"
+import { IconMaterialFullscreen } from "../icons/IconMaterialFullscreen"
+import { IconMaterialPerson } from "../icons/IconMaterialPerson"
 import { IconMaterialSend } from "../icons/IconMaterialSend"
+import { IconMaterialUpload } from "../icons/IconMaterialUpload"
 import { IconSocialInstagram } from "../icons/IconSocialInstagram"
 import { IconSocialLinkedin } from "../icons/IconSocialLinkedin"
 import { IconSocialTwitter } from "../icons/IconSocialTwitter"
@@ -23,10 +29,16 @@ export interface IconProps extends SVGAttributes<SVGElement> {
   className?: string
   icon?:
     | "__default__"
+    | "material-upload"
+    | "material-add"
+    | "material-person"
+    | "material-favorite"
+    | "material-fullscreen"
     | "material-send"
     | "social-linkedin"
     | "social-instagram"
     | "social-twitter"
+    | "material-delete"
 }
 
 /**
@@ -66,8 +78,14 @@ const sdn: IconProps = {
 }
 const iconMap = {
   __default__: IconDefault,
+  "material-upload": IconMaterialUpload,
+  "material-add": IconMaterialAdd,
+  "material-person": IconMaterialPerson,
+  "material-favorite": IconMaterialFavorite,
+  "material-fullscreen": IconMaterialFullscreen,
   "material-send": IconMaterialSend,
   "social-linkedin": IconSocialLinkedin,
   "social-instagram": IconSocialInstagram,
   "social-twitter": IconSocialTwitter,
+  "material-delete": IconMaterialDelete,
 }

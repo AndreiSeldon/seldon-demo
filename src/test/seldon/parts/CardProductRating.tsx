@@ -165,37 +165,37 @@ export function CardProductRating({
 
 const sdn: CardProductRatingProps = {
   buttonBar: {
-    className: "sdn-buttonBar-NXSwAB",
+    className: "sdn-buttonBar-h6stIK",
   },
   buttonIconic: {
     className: "sdn-button--Nygng",
   },
   icon: {
-    icon: "__default__",
+    icon: "material-upload",
     className: "sdn-icon-0symaN",
   },
   buttonIconic2: {
     className: "sdn-button-4yIieN",
   },
   icon2: {
-    icon: "__default__",
+    icon: "material-favorite",
     className: "sdn-icon-0symaN",
   },
   textblockDetails: {
     className: "sdn-textblockDetails-Xx9AA1",
   },
   tagline: {
-    children: "Tagline",
+    children: "★ 4.6 stars",
     htmlElement: "p",
     className: "sdn-tagline-qh_8ke",
   },
   titleProps: {
-    children: "Title",
+    children: "Berkley Springs",
     htmlElement: "h4",
     className: "sdn-title-urTlxY",
   },
   description: {
-    children: "Description",
+    children: "Feb 4-9 · $100-200",
     htmlElement: "p",
     className: "sdn-description-vmMJE8",
   },

@@ -160,17 +160,17 @@ const sdn: CardProductHeroProps = {
     className: "sdn-textblockDetails-gwjK0Q",
   },
   tagline: {
-    children: "Tagline",
+    children: "Museum of the day",
     htmlElement: "p",
     className: "sdn-tagline-JHxwEI",
   },
   titleProps: {
-    children: "Title",
+    children: "Rijksmuseum",
     htmlElement: "h4",
     className: "sdn-title-YjOJyx",
   },
   description: {
-    children: "Description",
+    children: "Amsterdam, The Netherlands",
     htmlElement: "p",
     className: "sdn-description-NUNsNj",
   },
@@ -181,11 +181,11 @@ const sdn: CardProductHeroProps = {
     className: "sdn-button-rgfIWs",
   },
   icon: {
-    icon: "__default__",
+    icon: "material-add",
     className: "sdn-icon-0symaN",
   },
   label: {
-    children: "Label",
+    children: "Follow",
     htmlElement: "label",
     className: "sdn-label-KLbdk5",
   },

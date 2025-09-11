@@ -190,17 +190,17 @@ const sdn: CardProductFeaturedProps = {
     className: "sdn-textblockDetails-fSv-i8",
   },
   titleProps: {
-    children: "Title",
+    children: "Domplein 2",
     htmlElement: "h4",
     className: "sdn-title-QQMR_a",
   },
   description: {
-    children: "Description",
+    children: "3512 JE Utrecht",
     htmlElement: "p",
     className: "sdn-description-aCgSm9",
   },
   description2: {
-    children: "Description",
+    children: "€490.000",
     htmlElement: "p",
     className: "sdn-description-aCgSm9",
   },
@@ -211,11 +211,11 @@ const sdn: CardProductFeaturedProps = {
     className: "sdn-button-0QOda7",
   },
   icon: {
-    icon: "__default__",
+    icon: "material-person",
     className: "sdn-icon-0symaN",
   },
   label: {
-    children: "Label",
+    children: "4",
     htmlElement: "label",
     className: "sdn-label-HeWOtm",
   },
@@ -223,11 +223,11 @@ const sdn: CardProductFeaturedProps = {
     className: "sdn-button-0QOda7",
   },
   icon2: {
-    icon: "__default__",
+    icon: "material-fullscreen",
     className: "sdn-icon-0symaN",
   },
   label2: {
-    children: "Label",
+    children: "150 m²",
     htmlElement: "label",
     className: "sdn-label-HeWOtm",
   },

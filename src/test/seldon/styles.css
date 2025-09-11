@@ -431,6 +431,18 @@ html {
   margin: 1rem;
 }
 
+.sdn-buttonBar-h6stIK {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+  flex: 1 0 0;
+  height: fit-content;
+  margin: 1rem;
+}
+
 .sdn-buttonBar-NXSwAB {
   flex-wrap: wrap;
   display: flex;
